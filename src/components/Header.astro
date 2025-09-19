@@ -7,6 +7,30 @@ export interface Props {
 
 const { lang } = Astro.props;
 const translate = t(lang);
+
+// 获取当前路径并构建对应语言的URL
+const currentPath = Astro.url.pathname;
+let enUrl = "/";
+let zhUrl = "/zh";
+
+if (currentPath.startsWith("/zh/")) {
+    // 当前在中文页面
+    const subPath = currentPath.replace("/zh", "");
+    enUrl = subPath === "/" ? "/" : subPath;
+    zhUrl = currentPath;
+} else if (currentPath === "/zh") {
+    // 中文首页
+    enUrl = "/";
+    zhUrl = "/zh";
+} else if (currentPath === "/") {
+    // 英文首页
+    enUrl = "/";
+    zhUrl = "/zh";
+} else {
+    // 其他英文页面
+    enUrl = currentPath;
+    zhUrl = "/zh" + currentPath;
+}
 ---
 
 <style>
@@ -21,7 +45,10 @@ const translate = t(lang);
     <div class="max-w-6xl mx-auto px-6 py-4">
         <nav class="flex items-center justify-between">
             <!-- Logo -->
-            <div class="flex items-center space-x-3">
+            <a
+                href={lang === "zh" ? "/zh" : "/"}
+                class="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200"
+            >
                 <img
                     src="/images/logo.webp"
                     alt="Arclet Copier"
@@ -31,18 +58,18 @@ const translate = t(lang);
                     class="font-serif font-semibold text-xl text-secondary-900"
                     >Arclet Copier</span
                 >
-            </div>
+            </a>
 
             <!-- Navigation Links -->
             <div class="hidden md:flex items-center space-x-8">
                 <a
-                    href="#features"
+                    href={lang === "zh" ? "/zh#features" : "/#features"}
                     class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
                 >
                     {translate("nav.features")}
                 </a>
                 <a
-                    href="#download"
+                    href={lang === "zh" ? "/zh#download" : "/#download"}
                     class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
                 >
                     {translate("nav.download")}
@@ -62,13 +89,13 @@ const translate = t(lang);
                     class="flex items-center space-x-2 bg-secondary-100 rounded-lg p-1"
                 >
                     <a
-                        href="/"
+                        href={enUrl}
                         class={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ${lang === "en" ? "bg-white text-primary-600 shadow-soft" : "text-secondary-600 hover:text-secondary-800"}`}
                     >
                         EN
                     </a>
                     <a
-                        href="/zh"
+                        href={zhUrl}
                         class={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ${lang === "zh" ? "bg-white text-primary-600 shadow-soft" : "text-secondary-600 hover:text-secondary-800"}`}
                     >
                         中文

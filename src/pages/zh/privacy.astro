@@ -1,0 +1,145 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<Layout title="隐私政策 - Arclet Copier">
+    <Header lang="zh" />
+
+    <main class="pt-24 pb-16">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
+                <h1
+                    class="text-4xl font-serif font-semibold text-secondary-900 mb-8"
+                >
+                    隐私政策
+                </h1>
+
+                <div class="prose prose-lg max-w-none">
+                    <p class="text-secondary-600 mb-8">
+                        最后更新时间：2024年1月1日
+                    </p>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            1. 信息收集
+                        </h2>
+                        <p class="text-secondary-700 mb-4">
+                            Arclet Copier
+                            是一个浏览器扩展程序，我们致力于保护您的隐私。我们不会收集、存储或传输您的个人信息。
+                        </p>
+                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                            <li>我们不会收集您的个人身份信息</li>
+                            <li>我们不会跟踪您的浏览行为</li>
+                            <li>我们不会收集您复制的内容</li>
+                            <li>我们不会与第三方分享任何数据</li>
+                        </ul>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            2. 本地存储
+                        </h2>
+                        <p class="text-secondary-700 mb-4">
+                            扩展程序可能会在您的设备上本地存储一些配置信息，包括：
+                        </p>
+                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                            <li>用户设置和偏好</li>
+                            <li>扩展程序配置</li>
+                            <li>复制历史记录（仅存储在本地，不会上传）</li>
+                        </ul>
+                        <p class="text-secondary-700 mt-4">
+                            这些信息仅存储在您的本地设备上，不会发送到我们的服务器或任何第三方服务。
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            3. 权限使用
+                        </h2>
+                        <p class="text-secondary-700 mb-4">
+                            扩展程序需要一些浏览器权限来正常运行：
+                        </p>
+                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                            <li>
+                                <strong>activeTab</strong
+                                >：访问当前活动标签页以执行复制功能
+                            </li>
+                            <li>
+                                <strong>storage</strong>：在本地存储用户设置
+                            </li>
+                            <li>
+                                <strong>clipboardWrite</strong
+                                >：将内容写入剪贴板
+                            </li>
+                        </ul>
+                        <p class="text-secondary-700 mt-4">
+                            我们仅在必要时使用这些权限，不会滥用或超出功能需要的范围。
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            4. 第三方服务
+                        </h2>
+                        <p class="text-secondary-700">
+                            我们不使用任何第三方分析服务、广告服务或数据收集服务。扩展程序完全在本地运行，不会向外部服务器发送任何数据。
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            5. 数据安全
+                        </h2>
+                        <p class="text-secondary-700">
+                            由于我们不收集或存储您的个人数据，因此不存在数据泄露的风险。所有功能都在您的本地设备上运行，确保您的隐私得到最大程度的保护。
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            6. 政策更新
+                        </h2>
+                        <p class="text-secondary-700">
+                            我们可能会不时更新此隐私政策。任何更改都会在此页面上发布，并在扩展程序更新时通知用户。
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            7. 联系我们
+                        </h2>
+                        <p class="text-secondary-700">
+                            如果您对此隐私政策有任何问题或疑虑，请通过 GitHub
+                            项目页面与我们联系：
+                            <a
+                                href="https://github.com/rokcso/arclet-copier"
+                                class="text-primary-600 hover:text-primary-700 underline"
+                                target="_blank"
+                            >
+                                https://github.com/rokcso/arclet-copier
+                            </a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <Footer lang="zh" />
+</Layout>

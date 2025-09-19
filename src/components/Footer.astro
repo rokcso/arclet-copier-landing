@@ -115,14 +115,14 @@ const translate = t(lang);
             </p>
             <div class="flex items-center space-x-6 mt-4 md:mt-0">
                 <a
-                    href="#"
+                    href={lang === "zh" ? "/zh/privacy" : "/privacy"}
                     class="text-secondary-400 hover:text-white text-sm transition-colors duration-200"
-                    >隐私政策</a
+                    >{lang === "zh" ? "隐私政策" : "Privacy Policy"}</a
                 >
                 <a
-                    href="#"
+                    href={lang === "zh" ? "/zh/terms" : "/terms"}
                     class="text-secondary-400 hover:text-white text-sm transition-colors duration-200"
-                    >使用条款</a
+                    >{lang === "zh" ? "使用条款" : "Terms of Service"}</a
                 >
             </div>
         </div>

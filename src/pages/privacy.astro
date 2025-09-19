@@ -1,0 +1,99 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Privacy Policy - Arclet Copier">
+    <Header lang="en" />
+
+    <main class="pt-24 pb-16">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
+                <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">Privacy Policy</h1>
+
+                <div class="prose prose-lg max-w-none">
+                    <p class="text-secondary-600 mb-8">
+                        Last updated: January 1, 2024
+                    </p>
+
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-semibold text-secondary-900 mb-4">1. Information Collection</h2>
+                        <p class="text-secondary-700 mb-4">
+                            Arclet Copier is a browser extension, and we are committed to protecting your privacy. We do not collect, store, or transmit your personal information.
+                        </p>
+                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                            <li>We do not collect your personal identification information</li>
+                            <li>We do not track your browsing behavior</li>
+                            <li>We do not collect the content you copy</li>
+                            <li>We do not share any data with third parties</li>
+                        </ul>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-semibold text-secondary-900 mb-4">2. Local Storage</h2>
+                        <p class="text-secondary-700 mb-4">
+                            The extension may store some configuration information locally on your device, including:
+                        </p>
+                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                            <li>User settings and preferences</li>
+                            <li>Extension configuration</li>
+                            <li>Copy history (stored locally only, not uploaded)</li>
+                        </ul>
+                        <p class="text-secondary-700 mt-4">
+                            This information is stored only on your local device and is not sent to our servers or any third-party services.
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-semibold text-secondary-900 mb-4">3. Permission Usage</h2>
+                        <p class="text-secondary-700 mb-4">
+                            The extension requires certain browser permissions to function properly:
+                        </p>
+                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                            <li><strong>activeTab</strong>: Access the current active tab to perform copy functions</li>
+                            <li><strong>storage</strong>: Store user settings locally</li>
+                            <li><strong>clipboardWrite</strong>: Write content to the clipboard</li>
+                        </ul>
+                        <p class="text-secondary-700 mt-4">
+                            We only use these permissions when necessary and do not abuse or exceed the scope required for functionality.
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-semibold text-secondary-900 mb-4">4. Third-Party Services</h2>
+                        <p class="text-secondary-700">
+                            We do not use any third-party analytics services, advertising services, or data collection services. The extension runs entirely locally and does not send any data to external servers.
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-semibold text-secondary-900 mb-4">5. Data Security</h2>
+                        <p class="text-secondary-700">
+                            Since we do not collect or store your personal data, there is no risk of data breaches. All functionality runs on your local device, ensuring maximum privacy protection.
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-semibold text-secondary-900 mb-4">6. Policy Updates</h2>
+                        <p class="text-secondary-700">
+                            We may update this privacy policy from time to time. Any changes will be posted on this page and users will be notified when the extension is updated.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-semibold text-secondary-900 mb-4">7. Contact Us</h2>
+                        <p class="text-secondary-700">
+                            If you have any questions or concerns about this privacy policy, please contact us through our GitHub project page:
+                            <a href="https://github.com/rokcso/arclet-copier" class="text-primary-600 hover:text-primary-700 underline" target="_blank">
+                                https://github.com/rokcso/arclet-copier
+                            </a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <Footer lang="en" />
+</Layout>
