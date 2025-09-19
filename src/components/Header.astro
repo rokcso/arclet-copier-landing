@@ -1,80 +1,138 @@
 ---
-import { t, type Language } from '../i18n/utils';
+import { t, type Language } from "../i18n/utils";
 
 export interface Props {
-  lang: Language;
+    lang: Language;
 }
 
 const { lang } = Astro.props;
 const translate = t(lang);
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-secondary-200">
-  <div class="max-w-6xl mx-auto px-6 py-4">
-    <nav class="flex items-center justify-between">
-      <!-- Logo -->
-      <div class="flex items-center space-x-3">
-        <img src="/images/icon256.png" alt="Arclet Copier" class="w-8 h-8" />
-        <span class="font-serif font-semibold text-xl text-secondary-900">Arclet Copier</span>
-      </div>
+<style>
+    .logo-rotate:hover {
+        transform: rotate(-360deg);
+    }
+</style>
 
-      <!-- Navigation Links -->
-      <div class="hidden md:flex items-center space-x-8">
-        <a href="#features" class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium">
-          {translate('nav.features')}
-        </a>
-        <a href="#download" class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium">
-          {translate('nav.download')}
-        </a>
-        <a href="https://github.com/rokcso/arclet-copier" target="_blank" class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium">
-          {translate('nav.github')}
-        </a>
-      </div>
+<header
+    class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-secondary-200"
+>
+    <div class="max-w-6xl mx-auto px-6 py-4">
+        <nav class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <img
+                    src="/images/logo.webp"
+                    alt="Arclet Copier"
+                    class="w-8 h-8 transition-transform duration-500 logo-rotate"
+                />
+                <span
+                    class="font-serif font-semibold text-xl text-secondary-900"
+                    >Arclet Copier</span
+                >
+            </div>
 
-      <!-- Language Switcher -->
-      <div class="flex items-center space-x-4">
-        <div class="flex items-center space-x-2 bg-secondary-100 rounded-lg p-1">
-          <a href="/" class={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ${lang === 'en' ? 'bg-white text-primary-600 shadow-soft' : 'text-secondary-600 hover:text-secondary-800'}`}>
-            EN
-          </a>
-          <a href="/zh" class={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ${lang === 'zh' ? 'bg-white text-primary-600 shadow-soft' : 'text-secondary-600 hover:text-secondary-800'}`}>
-            中文
-          </a>
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a
+                    href="#features"
+                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+                >
+                    {translate("nav.features")}
+                </a>
+                <a
+                    href="#download"
+                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+                >
+                    {translate("nav.download")}
+                </a>
+                <a
+                    href="https://github.com/rokcso/arclet-copier"
+                    target="_blank"
+                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+                >
+                    {translate("nav.github")}
+                </a>
+            </div>
+
+            <!-- Language Switcher -->
+            <div class="flex items-center space-x-4">
+                <div
+                    class="flex items-center space-x-2 bg-secondary-100 rounded-lg p-1"
+                >
+                    <a
+                        href="/"
+                        class={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ${lang === "en" ? "bg-white text-primary-600 shadow-soft" : "text-secondary-600 hover:text-secondary-800"}`}
+                    >
+                        EN
+                    </a>
+                    <a
+                        href="/zh"
+                        class={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ${lang === "zh" ? "bg-white text-primary-600 shadow-soft" : "text-secondary-600 hover:text-secondary-800"}`}
+                    >
+                        中文
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button
+                    class="md:hidden p-2 text-secondary-600 hover:text-secondary-800"
+                    id="mobile-menu-btn"
+                >
+                    <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div
+            class="md:hidden mt-4 pb-4 border-t border-secondary-200 hidden"
+            id="mobile-menu"
+        >
+            <div class="flex flex-col space-y-3 pt-4">
+                <a
+                    href="#features"
+                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+                >
+                    {translate("nav.features")}
+                </a>
+                <a
+                    href="#download"
+                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+                >
+                    {translate("nav.download")}
+                </a>
+                <a
+                    href="https://github.com/rokcso/arclet-copier"
+                    target="_blank"
+                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+                >
+                    {translate("nav.github")}
+                </a>
+            </div>
         </div>
-
-        <!-- Mobile Menu Button -->
-        <button class="md:hidden p-2 text-secondary-600 hover:text-secondary-800" id="mobile-menu-btn">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="md:hidden mt-4 pb-4 border-t border-secondary-200 hidden" id="mobile-menu">
-      <div class="flex flex-col space-y-3 pt-4">
-        <a href="#features" class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium">
-          {translate('nav.features')}
-        </a>
-        <a href="#download" class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium">
-          {translate('nav.download')}
-        </a>
-        <a href="https://github.com/rokcso/arclet-copier" target="_blank" class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium">
-          {translate('nav.github')}
-        </a>
-      </div>
     </div>
-  </div>
 </header>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
+    document.addEventListener("DOMContentLoaded", () => {
+        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
 
-    mobileMenuBtn?.addEventListener('click', () => {
-      mobileMenu?.classList.toggle('hidden');
+        mobileMenuBtn?.addEventListener("click", () => {
+            mobileMenu?.classList.toggle("hidden");
+        });
     });
-  });
 </script>
