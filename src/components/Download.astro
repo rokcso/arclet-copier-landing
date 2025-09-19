@@ -1,0 +1,312 @@
+---
+import { t, type Language } from "../i18n/utils";
+
+export interface Props {
+    lang: Language;
+}
+
+const { lang } = Astro.props;
+const translate = t(lang);
+---
+
+<section id="download" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <h2
+                class="text-4xl md:text-5xl font-serif font-semibold text-secondary-900 mb-4"
+            >
+                {translate("download.title")}
+            </h2>
+            <p class="text-xl text-secondary-600 max-w-2xl mx-auto">
+                {translate("download.subtitle")}
+            </p>
+        </div>
+
+        <!-- Download Options -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <!-- Chrome Web Store -->
+            <div
+                class="bg-secondary-50 rounded-2xl p-8 text-center hover:bg-white hover:shadow-soft-lg transition-all duration-300 border border-transparent hover:border-secondary-200"
+            >
+                <div
+                    class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6"
+                >
+                    <svg
+                        class="w-16 h-16"
+                        viewBox="0 0 190 190"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        fill="none"
+                        ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"></g><g
+                            id="SVGRepo_iconCarrier"
+                        >
+                            <linearGradient
+                                id="d"
+                                x1="28.3"
+                                x2="80.8"
+                                y1="75"
+                                y2="44.4"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop
+                                    offset="0"
+                                    stop-color="#a52714"
+                                    stop-opacity=".6"></stop>
+                                <stop
+                                    offset=".7"
+                                    stop-color="#a52714"
+                                    stop-opacity="0"></stop>
+                            </linearGradient>
+                            <linearGradient
+                                id="f"
+                                x1="109.9"
+                                x2="51.5"
+                                y1="164.5"
+                                y2="130.3"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop
+                                    offset="0"
+                                    stop-color="#055524"
+                                    stop-opacity=".4"></stop>
+                                <stop
+                                    offset=".3"
+                                    stop-color="#055524"
+                                    stop-opacity="0"></stop>
+                            </linearGradient>
+                            <linearGradient
+                                id="h"
+                                x1="121.9"
+                                x2="136.6"
+                                y1="49.8"
+                                y2="114.1"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop
+                                    offset="0"
+                                    stop-color="#ea6100"
+                                    stop-opacity=".3"></stop>
+                                <stop
+                                    offset=".7"
+                                    stop-color="#ea6100"
+                                    stop-opacity="0"></stop>
+                            </linearGradient>
+                            <radialGradient
+                                id="a"
+                                cx="91.2"
+                                cy="55"
+                                r="84.1"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop
+                                    offset="0"
+                                    stop-color="#3e2723"
+                                    stop-opacity=".2"></stop>
+                                <stop
+                                    offset="1"
+                                    stop-color="#3e2723"
+                                    stop-opacity="0"></stop>
+                            </radialGradient>
+                            <radialGradient
+                                id="i"
+                                cx="20.9"
+                                cy="47.5"
+                                r="78"
+                                xlink:href="#a"></radialGradient>
+                            <radialGradient
+                                id="j"
+                                cx="94.8"
+                                cy="95.1"
+                                r="87.9"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop
+                                    offset="0"
+                                    stop-color="#263238"
+                                    stop-opacity=".2"></stop>
+                                <stop
+                                    offset="1"
+                                    stop-color="#263238"
+                                    stop-opacity="0"></stop>
+                            </radialGradient>
+                            <radialGradient
+                                id="k"
+                                cx="33.3"
+                                cy="31"
+                                r="176.8"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop
+                                    offset="0"
+                                    stop-color="#ffffff"
+                                    stop-opacity=".1"></stop>
+                                <stop
+                                    offset="1"
+                                    stop-color="#ffffff"
+                                    stop-opacity="0"></stop>
+                            </radialGradient>
+                            <clipPath id="b">
+                                <circle cx="95" cy="95" r="88"></circle>
+                            </clipPath>
+                            <g clip-path="url(#b)">
+                                <use fill="#db4437" xlink:href="#c"></use>
+                                <use fill="url(#d)" xlink:href="#c"></use>
+                                <use fill="#0f9d58" xlink:href="#e"></use>
+                                <use fill="url(#f)" xlink:href="#e"></use>
+                                <use fill="#ffcd40" xlink:href="#g"></use>
+                                <use fill="url(#h)" xlink:href="#g"></use>
+                                <g fill-opacity=".1">
+                                    <path
+                                        fill="#3e2723"
+                                        d="M61.3 114.7L21 47.4l39 67.8z"></path>
+                                    <path
+                                        fill="#263238"
+                                        d="M128.8 116.3l-.8-.4-37.3 67 38.3-67z"
+                                    ></path>
+                                </g>
+                                <path
+                                    id="e"
+                                    d="M7 183h83.8l39-39v-29H60.2L7 23.5z"
+                                ></path>
+                                <path id="g" d="M95 55l34.6 60L91 183h92V55z"
+                                ></path>
+                                <path id="c" d="M21 7v108h39.4L95 55h88V7z"
+                                ></path>
+                                <path fill="url(#a)" d="M95 55v21l78.4-21z"
+                                ></path>
+                                <path
+                                    fill="url(#i)"
+                                    d="M21 47.5l57.2 57.2L60.4 115z"></path>
+                                <path
+                                    fill="url(#j)"
+                                    d="M90.8 183l21-78.3 17.8 10.3z"></path>
+                                <circle cx="95" cy="95" r="40" fill="#f1f1f1"
+                                ></circle>
+                                <circle cx="95" cy="95" r="32" fill="#4285f4"
+                                ></circle>
+                                <circle cx="95" cy="95" r="88" fill="url(#k)"
+                                ></circle>
+                                <g fill="#3e2723" fill-opacity=".1">
+                                    <path
+                                        fill="#ffffff"
+                                        d="M129.6 115a40 40 0 01-69.2 0L7 24.5 60.4 116a40 40 0 0069.2 0z"
+                                    ></path>
+                                    <path
+                                        d="M96 55h-.5a40 40 0 110 80h.5c22 0 40-18 40-40s-18-40-40-40zm-1 127a88 88 0 0088-87.5v.5A88 88 0 017 95v-.5A88 88 0 0095 182z"
+                                    ></path>
+                                    <g fill-opacity=".2">
+                                        <path
+                                            fill="#ffffff"
+                                            d="M130 116.3a39.3 39.3 0 003.4-32 38 38 0 01-3.8 30.7L92 183l38.2-66.5zM95 8a88 88 0 0188 87.5V95A88 88 0 007 95v.5A88 88 0 0195 8z"
+                                        ></path>
+                                        <path
+                                            d="M95 54c-22 0-40 18-40 40v1c0-22 18-40 40-40h88v-1z"
+                                        ></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g></svg
+                    >
+                </div>
+                <h3 class="text-2xl font-semibold text-secondary-900 mb-3">
+                    {translate("download.chrome_store")}
+                </h3>
+                <p class="text-secondary-600 mb-6">
+                    {translate("download.chrome_store_desc")}
+                </p>
+                <a
+                    href="https://chrome.google.com/webstore/category/extensions"
+                    target="_blank"
+                    class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-all duration-200 shadow-soft hover:shadow-soft-md"
+                >
+                    <svg
+                        class="w-5 h-5 mr-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        ></path>
+                    </svg>
+                    {lang === "zh" ? "立即安装" : "Install Now"}
+                </a>
+            </div>
+
+            <!-- GitHub Releases -->
+            <div
+                class="bg-secondary-50 rounded-2xl p-8 text-center hover:bg-white hover:shadow-soft-lg transition-all duration-300 border border-transparent hover:border-secondary-200"
+            >
+                <div
+                    class="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center text-secondary-700 mx-auto mb-6"
+                >
+                    <svg
+                        class="w-8 h-8"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                        ></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-secondary-900 mb-3">
+                    {translate("download.github_release")}
+                </h3>
+                <p class="text-secondary-600 mb-6">
+                    {translate("download.github_release_desc")}
+                </p>
+                <a
+                    href="https://github.com/rokcso/arclet-copier/releases"
+                    target="_blank"
+                    class="inline-flex items-center px-6 py-3 bg-white text-secondary-700 font-semibold rounded-xl border border-secondary-300 hover:bg-secondary-50 transition-all duration-200 shadow-soft hover:shadow-soft-md"
+                >
+                    <svg
+                        class="w-5 h-5 mr-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        ></path>
+                    </svg>
+                    {lang === "zh" ? "下载源码" : "Download Source"}
+                </a>
+            </div>
+        </div>
+
+        <!-- Installation Guide -->
+        <div class="bg-secondary-50 rounded-2xl p-8">
+            <h3
+                class="text-2xl font-semibold text-secondary-900 mb-6 text-center"
+            >
+                {translate("download.install_guide")}
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {
+                    [0, 1, 2, 3].map((index) => (
+                        <div class="bg-white rounded-xl p-6 text-center">
+                            <div class="w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-semibold text-lg mx-auto mb-4">
+                                {index + 1}
+                            </div>
+                            <p class="text-secondary-700 text-sm leading-relaxed">
+                                {translate(`download.install_steps.${index}`)}
+                            </p>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</section>

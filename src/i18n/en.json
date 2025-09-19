@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "Arclet Copier - Quick URL Copy Chrome Extension",
+    "description": "A clean and efficient Chrome extension for quick URL copying with smart parameter filtering, Markdown format, short URL generation, and QR code generation."
+  },
+  "nav": {
+    "features": "Features",
+    "download": "Download",
+    "github": "GitHub",
+    "about": "About"
+  },
+  "hero": {
+    "title": "Quick URL Copy",
+    "subtitle": "Clean & Efficient Chrome Extension",
+    "description": "Copy current page URL with one click. Supports parameter filtering, Markdown format, short URL generation, and QR code generation. Boost your productivity.",
+    "download": "Free Download",
+    "github": "View Source",
+    "version": "Current Version"
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "Designed for modern browsing experience",
+    "items": [
+      {
+        "title": "One-Click URL Copy",
+        "description": "Support popup click and hotkey silent copy for quick and easy operation"
+      },
+      {
+        "title": "Smart Parameter Cleaning",
+        "description": "Three-level cleaning modes, intelligently identify and remove tracking parameters"
+      },
+      {
+        "title": "Markdown Format",
+        "description": "Support copying as [Title](URL) format Markdown links"
+      },
+      {
+        "title": "Short URL Generation",
+        "description": "Generate and copy short URLs with one click, supports is.gd and TinyURL services"
+      },
+      {
+        "title": "QR Code Generation",
+        "description": "Generate QR codes for current page URLs, support copying QR code images"
+      },
+      {
+        "title": "Dark Theme",
+        "description": "Complete dark theme support, can follow system or manual switching"
+      },
+      {
+        "title": "Multi-Theme Color System",
+        "description": "5 theme colors available, interface elements and notification colors follow theme"
+      },
+      {
+        "title": "Hotkey Support",
+        "description": "Ctrl+Shift+C (Windows/Linux) or Cmd+Shift+C (Mac)"
+      },
+      {
+        "title": "Multi-Language Support",
+        "description": "Support 9 languages including Chinese, English, Spanish, Japanese, etc."
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "Interface Preview",
+    "popup": "Popup Interface",
+    "options": "Settings Page"
+  },
+  "download": {
+    "title": "Download Now",
+    "subtitle": "Free to use, open source and trustworthy",
+    "chrome_store": "Chrome Web Store",
+    "chrome_store_desc": "Install from official store, safe and reliable",
+    "github_release": "GitHub Releases",
+    "github_release_desc": "Download source package, manually install latest version",
+    "install_guide": "Installation Guide",
+    "install_steps": [
+      "Install from Chrome Web Store or download source package",
+      "Open Chrome extension management page chrome://extensions/",
+      "If using source package, enable developer mode and load unpacked extension",
+      "Start using Arclet Copier!"
+    ]
+  },
+  "footer": {
+    "description": "Arclet Copier is an open source Chrome extension",
+    "links": {
+      "github": "GitHub",
+      "website": "Official Website",
+      "developer": "Developer",
+      "feedback": "Feedback"
+    },
+    "copyright": "Developed by @rokcso"
+  }
+}

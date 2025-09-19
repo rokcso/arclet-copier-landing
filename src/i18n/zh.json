@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "Arclet Copier - 快速复制 URL 的 Chrome 扩展",
+    "description": "一款简洁高效的 Chrome 扩展程序，支持快速复制页面 URL、智能参数清理、Markdown 格式、短链生成和二维码生成。"
+  },
+  "nav": {
+    "features": "功能特色",
+    "download": "立即下载",
+    "github": "GitHub",
+    "about": "关于"
+  },
+  "hero": {
+    "title": "快速复制 URL",
+    "subtitle": "简洁高效的 Chrome 扩展",
+    "description": "一键复制当前页面 URL，支持参数过滤、Markdown 格式、短链生成和二维码生成。提升您的工作效率。",
+    "download": "免费下载",
+    "github": "查看源码",
+    "version": "当前版本"
+  },
+  "features": {
+    "title": "功能特色",
+    "subtitle": "为现代浏览体验而设计",
+    "items": [
+      {
+        "title": "一键复制 URL",
+        "description": "支持 popup 点击和快捷键静默复制，操作简单快捷"
+      },
+      {
+        "title": "智能参数清理",
+        "description": "三级清理模式，智能识别并移除跟踪参数，保护隐私"
+      },
+      {
+        "title": "Markdown 格式",
+        "description": "支持复制为 [标题](URL) 格式的 Markdown 链接"
+      },
+      {
+        "title": "短链生成",
+        "description": "一键生成短链并复制，支持 is.gd 和 TinyURL 服务"
+      },
+      {
+        "title": "二维码生成",
+        "description": "为当前页面URL生成二维码，支持复制二维码图片"
+      },
+      {
+        "title": "深色主题",
+        "description": "完整的深色主题支持，可跟随系统或手动切换"
+      },
+      {
+        "title": "多主题色系统",
+        "description": "5种主题色可选，界面元素和通知颜色统一跟随主题"
+      },
+      {
+        "title": "快捷键支持",
+        "description": "Ctrl+Shift+C (Windows/Linux) 或 Cmd+Shift+C (Mac)"
+      },
+      {
+        "title": "多语言支持",
+        "description": "支持9种语言，包括中文、英文、西班牙文、日文等"
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "界面预览",
+    "popup": "弹窗界面",
+    "options": "设置页面"
+  },
+  "download": {
+    "title": "立即下载",
+    "subtitle": "免费使用，开源可信",
+    "chrome_store": "Chrome 应用商店",
+    "chrome_store_desc": "从官方应用商店安装，安全可靠",
+    "github_release": "GitHub Releases",
+    "github_release_desc": "下载源码包，手动安装最新版本",
+    "install_guide": "安装指南",
+    "install_steps": [
+      "从 Chrome 应用商店安装，或下载源码包",
+      "打开 Chrome 扩展管理页面 chrome://extensions/",
+      "如果是源码包，开启开发者模式并加载解压的扩展程序",
+      "开始使用 Arclet Copier！"
+    ]
+  },
+  "footer": {
+    "description": "Arclet Copier 是一款开源的 Chrome 扩展程序",
+    "links": {
+      "github": "GitHub",
+      "website": "官方网站",
+      "developer": "开发者",
+      "feedback": "反馈建议"
+    },
+    "copyright": "由 @rokcso 开发"
+  }
+}

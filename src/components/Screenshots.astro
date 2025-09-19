@@ -1,0 +1,64 @@
+---
+import { t, type Language } from '../i18n/utils';
+
+export interface Props {
+  lang: Language;
+}
+
+const { lang } = Astro.props;
+const translate = t(lang);
+---
+
+<section class="py-20 bg-secondary-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-serif font-semibold text-secondary-900 mb-4">
+        {translate('screenshots.title')}
+      </h2>
+    </div>
+
+    <!-- Screenshots Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <!-- Popup Screenshot -->
+      <div class="space-y-6">
+        <div class="bg-white rounded-2xl p-6 shadow-soft-lg">
+          <img
+            src="/images/popup.webp"
+            alt={translate('screenshots.popup')}
+            class="w-full rounded-xl shadow-soft"
+            loading="lazy"
+          />
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-semibold text-secondary-900 mb-2">
+            {translate('screenshots.popup')}
+          </h3>
+          <p class="text-secondary-600">
+            {lang === 'zh' ? '简洁的弹窗界面，一键复制各种格式的 URL' : 'Clean popup interface for one-click URL copying in various formats'}
+          </p>
+        </div>
+      </div>
+
+      <!-- Options Screenshot -->
+      <div class="space-y-6">
+        <div class="bg-white rounded-2xl p-6 shadow-soft-lg">
+          <img
+            src="/images/options.webp"
+            alt={translate('screenshots.options')}
+            class="w-full rounded-xl shadow-soft"
+            loading="lazy"
+          />
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-semibold text-secondary-900 mb-2">
+            {translate('screenshots.options')}
+          </h3>
+          <p class="text-secondary-600">
+            {lang === 'zh' ? '专业的设置页面，丰富的自定义选项' : 'Professional settings page with rich customization options'}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

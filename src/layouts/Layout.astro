@@ -1,0 +1,116 @@
+---
+import { t, type Language } from '../i18n/utils';
+
+export interface Props {
+  title: string;
+  lang: Language;
+  description?: string;
+}
+
+const { title, lang, description } = Astro.props;
+const translate = t(lang);
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description || translate('meta.description')} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content={lang === 'zh' ? 'Chrome扩展,URL复制,浏览器插件,Markdown链接,短链生成,二维码' : 'Chrome extension,URL copy,browser plugin,Markdown links,short URL,QR code'} />
+    <meta name="author" content="rokcso" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={lang === 'en' ? 'https://arclet-copier.com/' : 'https://arclet-copier.com/zh'} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description || translate('meta.description')} />
+    <meta property="og:image" content="/images/icon256.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={lang === 'en' ? 'https://arclet-copier.com/' : 'https://arclet-copier.com/zh'} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description || translate('meta.description')} />
+    <meta property="twitter:image" content="/images/icon256.png" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icon32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icon16.png" />
+    <link rel="apple-touch-icon" href="/images/icon256.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={lang === 'en' ? 'https://arclet-copier.com/' : 'https://arclet-copier.com/zh'} />
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="https://arclet-copier.com/" />
+    <link rel="alternate" hreflang="zh" href="https://arclet-copier.com/zh" />
+    <link rel="alternate" hreflang="x-default" href="https://arclet-copier.com/" />
+
+    <title>{title}</title>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Arclet Copier",
+        "description": translate('meta.description'),
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "rokcso"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white text-secondary-800 font-sans">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+</style>
