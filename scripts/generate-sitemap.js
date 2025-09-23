@@ -17,6 +17,16 @@ const pages = [
     changefreq: "weekly",
   },
   {
+    url: "/ja/",
+    priority: "1.0",
+    changefreq: "weekly",
+  },
+  {
+    url: "/es/",
+    priority: "1.0",
+    changefreq: "weekly",
+  },
+  {
     url: "/privacy/",
     priority: "0.5",
     changefreq: "monthly",
@@ -27,12 +37,32 @@ const pages = [
     changefreq: "monthly",
   },
   {
+    url: "/ja/privacy/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/es/privacy/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
     url: "/terms/",
     priority: "0.5",
     changefreq: "monthly",
   },
   {
     url: "/zh/terms/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/ja/terms/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/es/terms/",
     priority: "0.5",
     changefreq: "monthly",
   },
