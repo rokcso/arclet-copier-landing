@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Arclet Copier - Quick URL Copy Chrome Extension",
-    "description": "A clean and efficient Chrome extension for quick URL copying with smart parameter filtering, Markdown format, short URL generation, and QR code generation."
+    "description": "A powerful Chrome extension for quick URL copying with smart parameter filtering, custom template system, batch copying, short URL generation, and QR code generation."
   },
   "nav": {
     "features": "Features",
@@ -11,11 +11,11 @@
   },
   "hero": {
     "title": "Quick URL Copy",
-    "subtitle": "Clean & Efficient Chrome Extension",
-    "description": "Copy current page URL with one click. Supports parameter filtering, Markdown format, short URL generation, and QR code generation. Boost your productivity.",
+    "subtitle": "Powerful Chrome Extension",
+    "description": "Copy current page URL with one click. Supports smart parameter filtering, custom templates, batch copying, short URL generation, and QR code generation. Boost your productivity.",
     "download": "Free Download",
     "github": "View Source",
-    "version": "Current Version"
+    "version": "Current Version v1.6.0"
   },
   "features": {
     "title": "Features",
@@ -23,39 +23,39 @@
     "items": [
       {
         "title": "One-Click URL Copy",
-        "description": "Support popup click and hotkey silent copy for quick and easy operation"
+        "description": "Support popup click, hotkey silent copy, and right-click menu access"
       },
       {
         "title": "Smart Parameter Cleaning",
-        "description": "Three-level cleaning modes, intelligently identify and remove tracking parameters"
+        "description": "Three-level modes: Off, Smart, Aggressive. Precisely remove UTM tracking parameters"
       },
       {
-        "title": "Markdown Format",
-        "description": "Support copying as [Title](URL) format Markdown links"
+        "title": "Custom Template System",
+        "description": "Powerful template engine with variable substitution and custom formats, real-time preview"
+      },
+      {
+        "title": "Batch Copy Feature",
+        "description": "Multi-window tab batch copying with filters, deduplication, and multiple export formats"
       },
       {
         "title": "Short URL Generation",
-        "description": "Generate and copy short URLs with one click, supports is.gd and TinyURL services"
+        "description": "Support is.gd and TinyURL services with caching mechanism and concurrent limits"
       },
       {
         "title": "QR Code Generation",
-        "description": "Generate QR codes for current page URLs, support copying QR code images"
+        "description": "Generate QR codes for current page URLs, support copying QR code images to clipboard"
       },
       {
-        "title": "Dark Theme",
-        "description": "Complete dark theme support, can follow system or manual switching"
-      },
-      {
-        "title": "Multi-Theme Color System",
-        "description": "5 theme colors available, interface elements and notification colors follow theme"
+        "title": "Modern Theme",
+        "description": "Arc-style design with Auto/Light/Dark modes and multiple theme colors"
       },
       {
         "title": "Hotkey Support",
-        "description": "Ctrl+Shift+C (Windows/Linux) or Cmd+Shift+C (Mac)"
+        "description": "Ctrl+Shift+C silent copy, right-click menu, popup Ctrl+C quick operation"
       },
       {
         "title": "Multi-Language Support",
-        "description": "Support 9 languages including Chinese, English, Spanish, Japanese, etc."
+        "description": "Support 9 languages: Chinese, English, Japanese, German, French, Spanish, etc."
       }
     ]
   },

@@ -23,8 +23,8 @@ const translate = t(lang);
         <meta
             name="keywords"
             content={lang === "zh"
-                ? "Chrome扩展,URL复制,浏览器插件,Markdown链接,短链生成,二维码"
-                : "Chrome extension,URL copy,browser plugin,Markdown links,short URL,QR code"}
+                ? "Chrome扩展,URL复制,浏览器插件,自定义模板,批量复制,短链生成,二维码,参数清理"
+                : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning"}
         />
         <meta name="author" content="rokcso" />
         <meta
@@ -153,9 +153,9 @@ const translate = t(lang);
                         : "https://arclet-copier.com/zh",
                 downloadUrl:
                     "https://chromewebstore.google.com/detail/arclet-copier/dpdlncggppceocfankkmlnmjflblckaa",
-                softwareVersion: "2.1.2",
+                softwareVersion: "1.6.0",
                 releaseNotes:
-                    "Latest version with enhanced features and bug fixes",
+                    "Latest version with custom template system, batch copying, and enhanced UI",
                 aggregateRating: {
                     "@type": "AggregateRating",
                     ratingValue: "4.8",
@@ -183,18 +183,19 @@ const translate = t(lang);
                 ],
                 featureList: [
                     "One-click URL copying",
-                    "Smart parameter cleaning",
-                    "Markdown format support",
-                    "Short URL generation",
-                    "QR code generation",
-                    "Dark theme support",
-                    "Multi-language support",
-                    "Hotkey support",
+                    "Smart parameter cleaning with 3 modes",
+                    "Custom template system with variables",
+                    "Batch copying with filters",
+                    "Short URL generation (is.gd, TinyURL)",
+                    "QR code generation and copying",
+                    "Modern Arc-style theme system",
+                    "Multi-language support (9 languages)",
+                    "Hotkey and right-click menu support",
                 ],
                 keywords:
                     lang === "zh"
-                        ? "Chrome扩展,URL复制,浏览器插件,Markdown链接,短链生成,二维码"
-                        : "Chrome extension,URL copy,browser plugin,Markdown links,short URL,QR code",
+                        ? "Chrome扩展,URL复制,浏览器插件,自定义模板,批量复制,短链生成,二维码,参数清理"
+                        : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning",
             })}
         />
 

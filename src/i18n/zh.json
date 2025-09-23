@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Arclet Copier - 快速复制 URL 的 Chrome 扩展",
-    "description": "一款简洁高效的 Chrome 扩展程序，支持快速复制页面 URL、智能参数清理、Markdown 格式、短链生成和二维码生成。"
+    "description": "一款功能强大的 Chrome 扩展程序，支持快速复制页面 URL、智能参数清理、自定义模板系统、批量复制、短链生成和二维码生成。"
   },
   "nav": {
     "features": "功能特色",
@@ -11,11 +11,11 @@
   },
   "hero": {
     "title": "快速复制 URL",
-    "subtitle": "简洁高效的 Chrome 扩展",
-    "description": "一键复制当前页面 URL，支持参数过滤、Markdown 格式、短链生成和二维码生成。提升您的工作效率。",
+    "subtitle": "功能强大的 Chrome 扩展",
+    "description": "一键复制当前页面 URL，支持智能参数清理、自定义模板、批量复制、短链生成和二维码生成。全面提升您的工作效率。",
     "download": "免费下载",
     "github": "查看源码",
-    "version": "当前版本"
+    "version": "当前版本 v1.6.0"
   },
   "features": {
     "title": "功能特色",
@@ -23,39 +23,39 @@
     "items": [
       {
         "title": "一键复制 URL",
-        "description": "支持 popup 点击和快捷键静默复制，操作简单快捷"
+        "description": "支持 popup 点击和快捷键静默复制，右键菜单快速访问"
       },
       {
         "title": "智能参数清理",
-        "description": "三级清理模式，智能识别并移除跟踪参数，保护隐私"
+        "description": "三级清理模式：关闭、智能、激进，精准移除UTM跟踪参数"
       },
       {
-        "title": "Markdown 格式",
-        "description": "支持复制为 [标题](URL) 格式的 Markdown 链接"
+        "title": "自定义模板系统",
+        "description": "强大的模板引擎，支持变量替换和自定义格式，实时预览"
+      },
+      {
+        "title": "批量复制功能",
+        "description": "多窗口标签页批量复制，支持过滤器、去重和多种导出格式"
       },
       {
         "title": "短链生成",
-        "description": "一键生成短链并复制，支持 is.gd 和 TinyURL 服务"
+        "description": "支持 is.gd 和 TinyURL 服务，带缓存机制和并发限制"
       },
       {
         "title": "二维码生成",
-        "description": "为当前页面URL生成二维码，支持复制二维码图片"
+        "description": "为当前页面URL生成二维码，支持复制二维码图片到剪贴板"
       },
       {
-        "title": "深色主题",
-        "description": "完整的深色主题支持，可跟随系统或手动切换"
-      },
-      {
-        "title": "多主题色系统",
-        "description": "5种主题色可选，界面元素和通知颜色统一跟随主题"
+        "title": "现代化主题",
+        "description": "Arc风格设计，自动/明亮/深色三种模式，多主题色彩可选"
       },
       {
         "title": "快捷键支持",
-        "description": "Ctrl+Shift+C (Windows/Linux) 或 Cmd+Shift+C (Mac)"
+        "description": "Ctrl+Shift+C静默复制，右键菜单，popup内Ctrl+C快速操作"
       },
       {
         "title": "多语言支持",
-        "description": "支持9种语言，包括中文、英文、西班牙文、日文等"
+        "description": "支持9种语言：中文、英文、日文、德文、法文、西班牙文等"
       }
     ]
   },
