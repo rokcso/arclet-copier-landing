@@ -2,27 +2,34 @@
 // Loading screen component
 ---
 
-<div id="loading-screen" class="fixed inset-0 z-50 bg-white flex items-center justify-center">
-  <div class="text-center">
-    <img src="/images/icon256.png" alt="Arclet Copier" class="w-16 h-16 mx-auto mb-4 rounded-2xl animate-pulse" />
-    <div class="text-secondary-600 font-medium">Loading...</div>
-  </div>
+<div
+    id="loading-screen"
+    class="fixed inset-0 z-50 bg-white flex items-center justify-center"
+>
+    <div class="text-center">
+        <img
+            src="/img/icon256.png"
+            alt="Arclet Copier"
+            class="w-16 h-16 mx-auto mb-4 rounded-2xl animate-pulse"
+        />
+        <div class="text-secondary-600 font-medium">Loading...</div>
+    </div>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const loadingScreen = document.getElementById('loading-screen');
+    document.addEventListener("DOMContentLoaded", () => {
+        const loadingScreen = document.getElementById("loading-screen");
 
-    // Hide loading screen after a short delay
-    setTimeout(() => {
-      if (loadingScreen) {
-        loadingScreen.style.opacity = '0';
-        loadingScreen.style.transition = 'opacity 0.3s ease-out';
-
+        // Hide loading screen after a short delay
         setTimeout(() => {
-          loadingScreen.remove();
-        }, 300);
-      }
-    }, 100);
-  });
+            if (loadingScreen) {
+                loadingScreen.style.opacity = "0";
+                loadingScreen.style.transition = "opacity 0.3s ease-out";
+
+                setTimeout(() => {
+                    loadingScreen.remove();
+                }, 300);
+            }
+        }, 100);
+    });
 </script>
