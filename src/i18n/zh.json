@@ -86,10 +86,15 @@
       "打开浏览器扩展管理页面（Chrome: chrome://extensions/ 或 Edge: edge://extensions/）",
       "如果是源码包，开启开发者模式并加载解压的扩展程序",
       "开始使用 Arclet Copier！"
-    ]
+    ],
+    "install_now": "立即安装",
+    "download_source": "下载源码"
   },
   "footer": {
     "description": "Arclet Copier 是一款开源的 Chrome 扩展程序",
+    "quick_links": "快速链接",
+    "privacy_policy": "隐私政策",
+    "terms_of_service": "使用条款",
     "links": {
       "github": "GitHub",
       "website": "官方网站",

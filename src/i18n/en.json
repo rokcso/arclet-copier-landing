@@ -86,10 +86,15 @@
       "Open browser extension management page (Chrome: chrome://extensions/ or Edge: edge://extensions/)",
       "If using source package, enable developer mode and load unpacked extension",
       "Start using Arclet Copier!"
-    ]
+    ],
+    "install_now": "Install Now",
+    "download_source": "Download Source"
   },
   "footer": {
     "description": "Arclet Copier is an open source Chrome extension",
+    "quick_links": "Quick Links",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service",
     "links": {
       "github": "GitHub",
       "website": "Official Website",

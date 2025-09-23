@@ -24,6 +24,8 @@ const translate = t(lang);
             name="keywords"
             content={lang === "zh"
                 ? "Chrome扩展,URL复制,浏览器插件,自定义模板,批量复制,短链生成,二维码,参数清理"
+                : lang === "es"
+                ? "Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros"
                 : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning"}
         />
         <meta name="author" content="rokcso" />
@@ -45,7 +47,9 @@ const translate = t(lang);
             property="og:url"
             content={lang === "en"
                 ? "https://arcletcopier.com/"
-                : "https://arcletcopier.com/zh"}
+                : lang === "zh"
+                ? "https://arcletcopier.com/zh"
+                : "https://arcletcopier.com/es"}
         />
         <meta property="og:title" content={title} />
         <meta
@@ -59,11 +63,15 @@ const translate = t(lang);
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:site" content="@rokcso" />
+        <meta property="twitter:creator" content="@rokcso" />
         <meta
             property="twitter:url"
             content={lang === "en"
                 ? "https://arcletcopier.com/"
-                : "https://arcletcopier.com/zh"}
+                : lang === "zh"
+                ? "https://arcletcopier.com/zh"
+                : "https://arcletcopier.com/es"}
         />
         <meta property="twitter:title" content={title} />
         <meta
@@ -74,6 +82,7 @@ const translate = t(lang);
             property="twitter:image"
             content={`https://arcletcopier.com/img/preview/${lang}/home-1-${lang}.webp`}
         />
+        <meta property="twitter:image:alt" content={`${title} - Interface Preview`} />
 
         <!-- Favicons -->
         <!-- Modern SVG favicon for browsers that support it -->
@@ -140,7 +149,9 @@ const translate = t(lang);
             rel="canonical"
             href={lang === "en"
                 ? "https://arcletcopier.com/"
-                : "https://arcletcopier.com/zh"}
+                : lang === "zh"
+                ? "https://arcletcopier.com/zh"
+                : "https://arcletcopier.com/es"}
         />
 
         <!-- Language alternates -->
@@ -149,6 +160,11 @@ const translate = t(lang);
             rel="alternate"
             hreflang="zh"
             href="https://arcletcopier.com/zh"
+        />
+        <link
+            rel="alternate"
+            hreflang="es"
+            href="https://arcletcopier.com/es"
         />
         <link
             rel="alternate"
@@ -171,7 +187,9 @@ const translate = t(lang);
                 url:
                     lang === "en"
                         ? "https://arcletcopier.com/"
-                        : "https://arcletcopier.com/zh",
+                        : lang === "zh"
+                        ? "https://arcletcopier.com/zh"
+                        : "https://arcletcopier.com/es",
                 downloadUrl:
                     "https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil",
                 softwareVersion: "1.6.0",
@@ -216,6 +234,8 @@ const translate = t(lang);
                 keywords:
                     lang === "zh"
                         ? "Chrome扩展,URL复制,浏览器插件,自定义模板,批量复制,短链生成,二维码,参数清理"
+                        : lang === "es"
+                        ? "Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros"
                         : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning",
             })}
         />

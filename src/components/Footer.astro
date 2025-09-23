@@ -66,7 +66,7 @@ const translate = t(lang);
             <!-- Quick Links -->
             <div>
                 <h3 class="font-semibold text-lg mb-4">
-                    {lang === "zh" ? "快速链接" : "Quick Links"}
+{translate("footer.quick_links")}
                 </h3>
                 <ul class="space-y-2">
                     <li>
@@ -117,14 +117,14 @@ const translate = t(lang);
             </p>
             <div class="flex items-center space-x-6 mt-4 md:mt-0">
                 <a
-                    href={lang === "zh" ? "/zh/privacy" : "/privacy"}
+href={lang === "en" ? "/privacy" : `/${lang}/privacy`}
                     class="text-secondary-400 hover:text-white text-sm transition-colors duration-200"
-                    >{lang === "zh" ? "隐私政策" : "Privacy Policy"}</a
+>{translate("footer.privacy_policy")}</a
                 >
                 <a
-                    href={lang === "zh" ? "/zh/terms" : "/terms"}
+href={lang === "en" ? "/terms" : `/${lang}/terms`}
                     class="text-secondary-400 hover:text-white text-sm transition-colors duration-200"
-                    >{lang === "zh" ? "使用条款" : "Terms of Service"}</a
+>{translate("footer.terms_of_service")}</a
                 >
                 <a
                     href="/sitemap.xml"
