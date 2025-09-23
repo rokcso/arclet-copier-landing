@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Arclet Copier - URL高速コピー Chrome拡張機能",
+    "description": "スマートなパラメータフィルタリング、カスタムテンプレートシステム、バッチコピー、短縮URL生成、QRコード生成機能を備えたURL高速コピー用の強力なChrome拡張機能。"
+  },
+  "nav": {
+    "features": "機能",
+    "download": "ダウンロード",
+    "github": "GitHub",
+    "about": "について"
+  },
+  "hero": {
+    "title": "高速URLコピー",
+    "subtitle": "強力なChrome拡張機能",
+    "description": "ワンクリックで現在のページのURLをコピー。スマートパラメータフィルタリング、カスタムテンプレート、バッチコピー、短縮URL生成、QRコード生成をサポート。生産性を向上させます。",
+    "download": "無料ダウンロード",
+    "github": "コードを見る",
+    "version": "現在のバージョン v1.6.0"
+  },
+  "features": {
+    "title": "機能",
+    "subtitle": "モダンなブラウジング体験のために設計",
+    "items": [
+      {
+        "title": "ワンクリックURLコピー",
+        "description": "ポップアップクリック、ホットキーサイレントコピー、右クリックメニューアクセスをサポート"
+      },
+      {
+        "title": "スマートパラメータクリーニング",
+        "description": "3段階モード：オフ、スマート、アグレッシブ。UTMトラッキングパラメータを正確に除去"
+      },
+      {
+        "title": "カスタムテンプレートシステム",
+        "description": "変数置換とカスタムフォーマット、リアルタイムプレビュー機能を備えた強力なテンプレートエンジン"
+      },
+      {
+        "title": "バッチコピー機能",
+        "description": "複数ウィンドウのタブをフィルター、重複除去、複数エクスポート形式でバッチコピー"
+      },
+      {
+        "title": "短縮URL生成",
+        "description": "is.gdとTinyURLサービスをサポート、キャッシュメカニズムと同時制限付き"
+      },
+      {
+        "title": "QRコード生成",
+        "description": "現在のページURLのQRコードを生成、QRコード画像のクリップボードコピーをサポート"
+      },
+      {
+        "title": "モダンテーマ",
+        "description": "Arcスタイルデザイン、自動/ライト/ダークモードと複数のテーマカラー"
+      },
+      {
+        "title": "ホットキーサポート",
+        "description": "Ctrl+Shift+Cサイレントコピー、右クリックメニュー、ポップアップCtrl+C高速操作"
+      },
+      {
+        "title": "多言語サポート",
+        "description": "9言語をサポート：中国語、英語、日本語、ドイツ語、フランス語、スペイン語など"
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "インターフェースプレビュー",
+    "home1": "拡張機能メインインターフェース",
+    "home1_desc": "クリーンで直感的な拡張ポップアップ、機能レイアウトが明確",
+    "home2": "バッチ操作サポート",
+    "home2_desc": "複数URLのバッチ操作をサポート、作業効率を向上",
+    "home3": "豊富な設定オプション",
+    "home3_desc": "短縮リンクサービス、通知、インターフェース言語、テーマなどの各種設定をカスタマイズ",
+    "home4": "カスタムコピーテンプレート",
+    "home4_desc": "様々な使用シーンに対応したカスタムコピー形式テンプレートを作成・編集"
+  },
+  "download": {
+    "title": "今すぐダウンロード",
+    "subtitle": "無料、オープンソース、信頼性",
+    "chrome_store": "Chrome ウェブストア",
+    "chrome_store_desc": "公式ストアからインストール、安全で信頼性",
+    "edge_store": "Edge アドオンストア",
+    "edge_store_desc": "Microsoft Edgeブラウザユーザー向け",
+    "github_release": "GitHub リリース",
+    "github_release_desc": "ソースパッケージをダウンロード、最新版を手動インストール",
+    "install_guide": "インストールガイド",
+    "install_steps": [
+      "ストアからインストール：Chrome ウェブストアまたはEdge アドオンストア",
+      "またはソースパッケージをダウンロードして手動インストール",
+      "ブラウザの拡張機能管理ページを開く（Chrome: chrome://extensions/ または Edge: edge://extensions/）",
+      "ソースパッケージを使用する場合、開発者モードを有効にして解凍された拡張機能を読み込む",
+      "Arclet Copierの使用を開始！"
+    ],
+    "install_now": "今すぐインストール",
+    "download_source": "コードをダウンロード"
+  },
+  "footer": {
+    "description": "Arclet CopierはオープンソースのChrome拡張機能です",
+    "quick_links": "クイックリンク",
+    "privacy_policy": "プライバシーポリシー",
+    "terms_of_service": "利用規約",
+    "links": {
+      "github": "GitHub",
+      "website": "公式サイト",
+      "developer": "開発者",
+      "feedback": "フィードバック",
+      "sitemap": "サイトマップ"
+    },
+    "copyright": "@rokcsolにより開発"
+  }
+}

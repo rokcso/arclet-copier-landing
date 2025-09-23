@@ -19,14 +19,16 @@ const getLanguageUrls = (path: string) => {
         return {
             en: subPath === "/" ? "/" : subPath,
             zh: path,
-            es: "/es" + subPath
+            es: "/es" + subPath,
+            ja: "/ja" + subPath
         };
     } else if (path === "/zh") {
         // 中文首页
         return {
             en: "/",
             zh: "/zh",
-            es: "/es"
+            es: "/es",
+            ja: "/ja"
         };
     } else if (path.startsWith("/es/")) {
         // 当前在西班牙语页面
@@ -34,28 +36,49 @@ const getLanguageUrls = (path: string) => {
         return {
             en: subPath === "/" ? "/" : subPath,
             zh: "/zh" + subPath,
-            es: path
+            es: path,
+            ja: "/ja" + subPath
         };
     } else if (path === "/es") {
         // 西班牙语首页
         return {
             en: "/",
             zh: "/zh",
-            es: "/es"
+            es: "/es",
+            ja: "/ja"
+        };
+    } else if (path.startsWith("/ja/")) {
+        // 当前在日语页面
+        const subPath = path.replace("/ja", "");
+        return {
+            en: subPath === "/" ? "/" : subPath,
+            zh: "/zh" + subPath,
+            es: "/es" + subPath,
+            ja: path
+        };
+    } else if (path === "/ja") {
+        // 日语首页
+        return {
+            en: "/",
+            zh: "/zh",
+            es: "/es",
+            ja: "/ja"
         };
     } else if (path === "/") {
         // 英文首页
         return {
             en: "/",
             zh: "/zh",
-            es: "/es"
+            es: "/es",
+            ja: "/ja"
         };
     } else {
         // 其他英文页面
         return {
             en: path,
             zh: "/zh" + path,
-            es: "/es" + path
+            es: "/es" + path,
+            ja: "/ja" + path
         };
     }
 };
@@ -66,7 +89,8 @@ const languageUrls = getLanguageUrls(currentPath);
 const languageOptions = [
     { code: "en", name: "English", flag: "🇺🇸", url: languageUrls.en },
     { code: "zh", name: "中文", flag: "🇨🇳", url: languageUrls.zh },
-    { code: "es", name: "Español", flag: "🇪🇸", url: languageUrls.es }
+    { code: "es", name: "Español", flag: "🇪🇸", url: languageUrls.es },
+    { code: "ja", name: "日本語", flag: "🇯🇵", url: languageUrls.ja }
 ];
 
 const currentLanguage = languageOptions.find(option => option.code === lang) || languageOptions[0];

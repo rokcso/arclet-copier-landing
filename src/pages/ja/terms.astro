@@ -1,0 +1,77 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { t } from "../../i18n/utils";
+
+const lang = "ja";
+const translate = t(lang);
+---
+
+<Layout title={`利用規約 - ${translate("meta.title")}`} lang={lang}>
+    <Header lang={lang} />
+    <main class="pt-20">
+        <div class="max-w-4xl mx-auto px-6 py-16">
+            <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">利用規約</h1>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-secondary-600 mb-8">最終更新日：2025年1月15日</p>
+
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold text-secondary-900 mb-4">1. 利用規約の同意</h2>
+                    <p class="text-secondary-700 leading-relaxed">
+                        Arclet Copier拡張機能を使用することにより、これらの利用規約に同意したものとみなされます。これらの規約に同意できない場合は、拡張機能を使用しないでください。
+                    </p>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold text-secondary-900 mb-4">2. 使用許可</h2>
+                    <p class="text-secondary-700 leading-relaxed mb-4">
+                        Arclet Copierは無料のオープンソースソフトウェアです。以下の条件下で使用できます：
+                    </p>
+                    <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                        <li>個人的および商業的目的での使用</li>
+                        <li>ソフトウェアの修正と配布（オープンソースライセンスに従って）</li>
+                        <li>適用される法律と規制の遵守</li>
+                    </ul>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold text-secondary-900 mb-4">3. 使用制限</h2>
+                    <p class="text-secondary-700 leading-relaxed mb-4">
+                        以下の行為は禁止されています：
+                    </p>
+                    <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                        <li>拡張機能を違法な目的で使用すること</li>
+                        <li>他者の知的財産権を侵害すること</li>
+                        <li>システムやネットワークの正常な動作を妨害すること</li>
+                        <li>第三者に損害を与える行為</li>
+                    </ul>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold text-secondary-900 mb-4">4. 免責事項</h2>
+                    <p class="text-secondary-700 leading-relaxed">
+                        Arclet Copierは「現状のまま」提供されます。使用によって生じた直接的または間接的な損害について、開発者は一切の責任を負いません。
+                    </p>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold text-secondary-900 mb-4">5. 規約の変更</h2>
+                    <p class="text-secondary-700 leading-relaxed">
+                        これらの利用規約は予告なく変更される場合があります。継続的な使用は変更された規約への同意を意味します。
+                    </p>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold text-secondary-900 mb-4">6. お問い合わせ</h2>
+                    <p class="text-secondary-700 leading-relaxed">
+                        利用規約についてご質問がある場合は、
+                        <a href="mailto:hi@rokcso.com" class="text-primary-600 hover:text-primary-700">hi@rokcso.com</a> までお問い合わせください。
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <Footer lang={lang} />
+</Layout>

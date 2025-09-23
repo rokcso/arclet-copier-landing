@@ -1,11 +1,13 @@
 import zhTranslations from './zh.json';
 import enTranslations from './en.json';
 import esTranslations from './es.json';
+import jaTranslations from './ja.json';
 
 export const translations = {
   zh: zhTranslations,
   en: enTranslations,
   es: esTranslations,
+  ja: jaTranslations,
 };
 
 export type Language = keyof typeof translations;
