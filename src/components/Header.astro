@@ -60,31 +60,24 @@ if (currentPath.startsWith("/zh/")) {
                 >
             </a>
 
-            <!-- Navigation Links -->
-            <div class="hidden md:flex items-center space-x-8">
-                <a
-                    href={lang === "zh" ? "/zh#features" : "/#features"}
-                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
-                >
-                    {translate("nav.features")}
-                </a>
-                <a
-                    href={lang === "zh" ? "/zh#download" : "/#download"}
-                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
-                >
-                    {translate("nav.download")}
-                </a>
-                <a
-                    href="https://github.com/rokcso/arclet-copier"
-                    target="_blank"
-                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
-                >
-                    {translate("nav.github")}
-                </a>
-            </div>
+            <!-- Right Side: Navigation Links & Language Switcher -->
+            <div class="flex items-center space-x-6">
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a
+                        href={lang === "zh" ? "/zh#features" : "/#features"}
+                        class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+                    >
+                        {translate("nav.features")}
+                    </a>
+                    <a
+                        href={lang === "zh" ? "/zh#download" : "/#download"}
+                        class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+                    >
+                        {translate("nav.download")}
+                    </a>
+                </div>
 
-            <!-- Language Switcher -->
-            <div class="flex items-center space-x-4">
                 <div
                     class="flex items-center space-x-2 bg-secondary-100 rounded-lg p-1"
                 >
@@ -140,13 +133,6 @@ if (currentPath.startsWith("/zh/")) {
                     class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
                 >
                     {translate("nav.download")}
-                </a>
-                <a
-                    href="https://github.com/rokcso/arclet-copier"
-                    target="_blank"
-                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
-                >
-                    {translate("nav.github")}
                 </a>
             </div>
         </div>
