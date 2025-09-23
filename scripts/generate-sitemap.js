@@ -2,7 +2,7 @@
 import fs from "fs";
 import path from "path";
 
-const SITE_URL = "https://arclet-copier.com";
+const SITE_URL = "https://arcletcopier.com";
 
 // 页面配置 - 标准 sitemap 格式
 const pages = [

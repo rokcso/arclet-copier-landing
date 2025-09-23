@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://arclet-copier.com",
+  site: "https://arcletcopier.com",
   integrations: [tailwind()],
   i18n: {
     defaultLocale: "en",
