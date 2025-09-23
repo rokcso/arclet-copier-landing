@@ -1,5 +1,5 @@
 # Robots.txt for Arclet Copier Landing Page
-# https://arclet-copier.com
+# https://arcletcopier.com
 
 User-agent: *
 Allow: /
@@ -17,7 +17,7 @@ Allow: /*.webp
 Allow: /*.svg
 
 # Sitemap location
-Sitemap: https://arclet-copier.com/sitemap.xml
+Sitemap: https://arcletcopier.com/sitemap.xml
 
 # Crawl-delay (optional, for being polite to servers)
 # Crawl-delay: 1
