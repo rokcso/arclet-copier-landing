@@ -61,20 +61,29 @@
   },
   "screenshots": {
     "title": "Interface Preview",
-    "popup": "Popup Interface",
-    "options": "Settings Page"
+    "home1": "Extension Main Interface",
+    "home1_desc": "Clean and intuitive extension popup with clear functional layout",
+    "home2": "Batch Operations Support",
+    "home2_desc": "Support batch operations on multiple URLs to improve work efficiency",
+    "home3": "Rich Settings Options",
+    "home3_desc": "Customize short link services, notifications, interface language, themes and various configurations",
+    "home4": "Custom Copy Templates",
+    "home4_desc": "Create and edit personalized copy format templates for various use cases"
   },
   "download": {
     "title": "Download Now",
     "subtitle": "Free to use, open source and trustworthy",
     "chrome_store": "Chrome Web Store",
     "chrome_store_desc": "Install from official store, safe and reliable",
+    "edge_store": "Edge Add-ons Store",
+    "edge_store_desc": "For Microsoft Edge browser users",
     "github_release": "GitHub Releases",
     "github_release_desc": "Download source package, manually install latest version",
     "install_guide": "Installation Guide",
     "install_steps": [
-      "Install from Chrome Web Store or download source package",
-      "Open Chrome extension management page chrome://extensions/",
+      "Install from store: Chrome Web Store or Edge Add-ons Store",
+      "Or download source package for manual installation",
+      "Open browser extension management page (Chrome: chrome://extensions/ or Edge: edge://extensions/)",
       "If using source package, enable developer mode and load unpacked extension",
       "Start using Arclet Copier!"
     ]

@@ -61,20 +61,29 @@
   },
   "screenshots": {
     "title": "界面预览",
-    "popup": "弹窗界面",
-    "options": "设置页面"
+    "home1": "扩展主界面",
+    "home1_desc": "简洁直观的扩展弹窗，一目了然的功能布局",
+    "home2": "批量操作支持",
+    "home2_desc": "支持批量操作多个URLs，提升工作效率",
+    "home3": "丰富的设置选项",
+    "home3_desc": "自定义短链服务、通知提醒、界面语言、主题外观等多样化配置",
+    "home4": "自定义复制模板",
+    "home4_desc": "创建和编辑个性化的复制格式模板，满足各种使用场景"
   },
   "download": {
     "title": "立即下载",
     "subtitle": "免费使用，开源可信",
     "chrome_store": "Chrome 应用商店",
     "chrome_store_desc": "从官方应用商店安装，安全可靠",
+    "edge_store": "Edge 扩展商店",
+    "edge_store_desc": "适用于 Microsoft Edge 浏览器用户",
     "github_release": "GitHub Releases",
     "github_release_desc": "下载源码包，手动安装最新版本",
     "install_guide": "安装指南",
     "install_steps": [
-      "从 Chrome 应用商店安装，或下载源码包",
-      "打开 Chrome 扩展管理页面 chrome://extensions/",
+      "从应用商店安装：Chrome 应用商店 或 Edge 扩展商店",
+      "或下载源码包进行手动安装",
+      "打开浏览器扩展管理页面（Chrome: chrome://extensions/ 或 Edge: edge://extensions/）",
       "如果是源码包，开启开发者模式并加载解压的扩展程序",
       "开始使用 Arclet Copier！"
     ]

@@ -21,66 +21,87 @@ const translate = t(lang);
         </div>
 
         <!-- Screenshots Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <!-- Popup Screenshot -->
-            <div class="space-y-6">
-                <div class="bg-white rounded-2xl p-6 shadow-soft-lg">
-                    <picture>
-                        <source srcset="/images/popup.webp" type="image/webp" />
-                        <img
-                            src="/images/popup.webp"
-                            alt={`${translate("screenshots.popup")} - Arclet Copier Extension Interface`}
-                            class="w-full rounded-xl shadow-soft"
-                            width="400"
-                            height="600"
-                            loading="lazy"
-                            decoding="async"
-                        />
-                    </picture>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Screenshot 1 -->
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl p-4 shadow-soft-lg">
+                    <img
+                        src={`/img/preview/${lang}/home-1-${lang}.webp`}
+                        alt={`${translate("screenshots.home1")} - Arclet Copier Extension`}
+                        class="w-full rounded-xl shadow-soft"
+                        loading="lazy"
+                        decoding="async"
+                    />
                 </div>
                 <div class="text-center">
-                    <h3 class="text-xl font-semibold text-secondary-900 mb-2">
-                        {translate("screenshots.popup")}
+                    <h3 class="text-lg font-semibold text-secondary-900 mb-2">
+                        {translate("screenshots.home1")}
                     </h3>
-                    <p class="text-secondary-600">
-                        {
-                            lang === "zh"
-                                ? "简洁的弹窗界面，一键复制各种格式的 URL"
-                                : "Clean popup interface for one-click URL copying in various formats"
-                        }
+                    <p class="text-secondary-600 text-sm">
+                        {translate("screenshots.home1_desc")}
                     </p>
                 </div>
             </div>
 
-            <!-- Options Screenshot -->
-            <div class="space-y-6">
-                <div class="bg-white rounded-2xl p-6 shadow-soft-lg">
-                    <picture>
-                        <source
-                            srcset="/images/options.webp"
-                            type="image/webp"
-                        />
-                        <img
-                            src="/images/options.webp"
-                            alt={`${translate("screenshots.options")} - Arclet Copier Settings Page`}
-                            class="w-full rounded-xl shadow-soft"
-                            width="800"
-                            height="600"
-                            loading="lazy"
-                            decoding="async"
-                        />
-                    </picture>
+            <!-- Screenshot 2 -->
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl p-4 shadow-soft-lg">
+                    <img
+                        src={`/img/preview/${lang}/home-2-${lang}.webp`}
+                        alt={`${translate("screenshots.home2")} - Arclet Copier Extension`}
+                        class="w-full rounded-xl shadow-soft"
+                        loading="lazy"
+                        decoding="async"
+                    />
                 </div>
                 <div class="text-center">
-                    <h3 class="text-xl font-semibold text-secondary-900 mb-2">
-                        {translate("screenshots.options")}
+                    <h3 class="text-lg font-semibold text-secondary-900 mb-2">
+                        {translate("screenshots.home2")}
                     </h3>
-                    <p class="text-secondary-600">
-                        {
-                            lang === "zh"
-                                ? "专业的设置页面，丰富的自定义选项"
-                                : "Professional settings page with rich customization options"
-                        }
+                    <p class="text-secondary-600 text-sm">
+                        {translate("screenshots.home2_desc")}
+                    </p>
+                </div>
+            </div>
+
+            <!-- Screenshot 3 -->
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl p-4 shadow-soft-lg">
+                    <img
+                        src={`/img/preview/${lang}/home-3-${lang}.webp`}
+                        alt={`${translate("screenshots.home3")} - Arclet Copier Extension`}
+                        class="w-full rounded-xl shadow-soft"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                </div>
+                <div class="text-center">
+                    <h3 class="text-lg font-semibold text-secondary-900 mb-2">
+                        {translate("screenshots.home3")}
+                    </h3>
+                    <p class="text-secondary-600 text-sm">
+                        {translate("screenshots.home3_desc")}
+                    </p>
+                </div>
+            </div>
+
+            <!-- Screenshot 4 -->
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl p-4 shadow-soft-lg">
+                    <img
+                        src={`/img/preview/${lang}/home-4-${lang}.webp`}
+                        alt={`${translate("screenshots.home4")} - Arclet Copier Extension`}
+                        class="w-full rounded-xl shadow-soft"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                </div>
+                <div class="text-center">
+                    <h3 class="text-lg font-semibold text-secondary-900 mb-2">
+                        {translate("screenshots.home4")}
+                    </h3>
+                    <p class="text-secondary-600 text-sm">
+                        {translate("screenshots.home4_desc")}
                     </p>
                 </div>
             </div>
