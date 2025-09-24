@@ -23,6 +23,7 @@ const getLanguageUrls = (path: string) => {
             de: "/de" + subPath,
             fr: "/fr" + subPath,
             pt: "/pt" + subPath,
+            ru: "/ru" + subPath,
             es: "/es" + subPath,
             ja: "/ja" + subPath,
         };
@@ -35,6 +36,7 @@ const getLanguageUrls = (path: string) => {
             de: "/de",
             fr: "/fr",
             pt: "/pt",
+            ru: "/ru",
             es: "/es",
             ja: "/ja",
         };
@@ -48,6 +50,7 @@ const getLanguageUrls = (path: string) => {
             de: "/de" + subPath,
             fr: "/fr" + subPath,
             pt: "/pt" + subPath,
+            ru: "/ru" + subPath,
             es: "/es" + subPath,
             ja: "/ja" + subPath,
         };
@@ -60,6 +63,7 @@ const getLanguageUrls = (path: string) => {
             de: "/de",
             fr: "/fr",
             pt: "/pt",
+            ru: "/ru",
             es: "/es",
             ja: "/ja",
         };
@@ -83,6 +87,7 @@ const getLanguageUrls = (path: string) => {
             de: "/de",
             fr: "/fr",
             pt: "/pt",
+            ru: "/ru",
             es: "/es",
             ja: "/ja",
         };
@@ -107,6 +112,7 @@ const getLanguageUrls = (path: string) => {
             de: "/de",
             fr: "/fr",
             pt: "/pt",
+            ru: "/ru",
             es: "/es",
             ja: "/ja",
         };
@@ -132,6 +138,34 @@ const getLanguageUrls = (path: string) => {
             de: "/de",
             fr: "/fr",
             pt: "/pt",
+            ru: "/ru",
+            es: "/es",
+            ja: "/ja",
+        };
+    } else if (path.startsWith("/ru/")) {
+        // 当前在俄语页面
+        const subPath = path.replace("/ru", "");
+        return {
+            en: subPath === "/" ? "/" : subPath,
+            zh: "/zh" + subPath,
+            "zh-tw": "/zh-tw" + subPath,
+            de: "/de" + subPath,
+            fr: "/fr" + subPath,
+            pt: "/pt" + subPath,
+            ru: path,
+            es: "/es" + subPath,
+            ja: "/ja" + subPath,
+        };
+    } else if (path === "/ru") {
+        // 俄语首页
+        return {
+            en: "/",
+            zh: "/zh",
+            "zh-tw": "/zh-tw",
+            de: "/de",
+            fr: "/fr",
+            pt: "/pt",
+            ru: "/ru",
             es: "/es",
             ja: "/ja",
         };
@@ -168,6 +202,7 @@ const getLanguageUrls = (path: string) => {
             de: "/de" + subPath,
             fr: "/fr" + subPath,
             pt: "/pt" + subPath,
+            ru: "/ru" + subPath,
             es: "/es" + subPath,
             ja: path,
         };
@@ -201,6 +236,7 @@ const getLanguageUrls = (path: string) => {
             de: "/de" + path,
             fr: "/fr" + path,
             pt: "/pt" + path,
+            ru: "/ru" + path,
             es: "/es" + path,
             ja: "/ja" + path,
         };
@@ -217,6 +253,7 @@ const languageOptions = [
     { code: "de", name: "Deutsch", flag: "🇩🇪", url: languageUrls.de },
     { code: "fr", name: "Français", flag: "🇫🇷", url: languageUrls.fr },
     { code: "pt", name: "Português", flag: "🇵🇹", url: languageUrls.pt },
+    { code: "ru", name: "Русский", flag: "🇷🇺", url: languageUrls.ru },
     { code: "es", name: "Español", flag: "🇪🇸", url: languageUrls.es },
     { code: "ja", name: "日本語", flag: "🇯🇵", url: languageUrls.ja },
 ];
