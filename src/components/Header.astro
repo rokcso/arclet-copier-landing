@@ -14,21 +14,42 @@ const currentPath = Astro.url.pathname;
 // 定义语言路径映射
 const getLanguageUrls = (path: string) => {
     if (path.startsWith("/zh/")) {
-        // 当前在中文页面
+        // 当前在简体中文页面
         const subPath = path.replace("/zh", "");
         return {
             en: subPath === "/" ? "/" : subPath,
             zh: path,
+            "zh-tw": "/zh-tw" + subPath,
             es: "/es" + subPath,
-            ja: "/ja" + subPath
+            ja: "/ja" + subPath,
         };
     } else if (path === "/zh") {
-        // 中文首页
+        // 简体中文首页
         return {
             en: "/",
             zh: "/zh",
+            "zh-tw": "/zh-tw",
             es: "/es",
-            ja: "/ja"
+            ja: "/ja",
+        };
+    } else if (path.startsWith("/zh-tw/")) {
+        // 当前在繁体中文页面
+        const subPath = path.replace("/zh-tw", "");
+        return {
+            en: subPath === "/" ? "/" : subPath,
+            zh: "/zh" + subPath,
+            "zh-tw": path,
+            es: "/es" + subPath,
+            ja: "/ja" + subPath,
+        };
+    } else if (path === "/zh-tw") {
+        // 繁体中文首页
+        return {
+            en: "/",
+            zh: "/zh",
+            "zh-tw": "/zh-tw",
+            es: "/es",
+            ja: "/ja",
         };
     } else if (path.startsWith("/es/")) {
         // 当前在西班牙语页面
@@ -36,16 +57,18 @@ const getLanguageUrls = (path: string) => {
         return {
             en: subPath === "/" ? "/" : subPath,
             zh: "/zh" + subPath,
+            "zh-tw": "/zh-tw" + subPath,
             es: path,
-            ja: "/ja" + subPath
+            ja: "/ja" + subPath,
         };
     } else if (path === "/es") {
         // 西班牙语首页
         return {
             en: "/",
             zh: "/zh",
+            "zh-tw": "/zh-tw",
             es: "/es",
-            ja: "/ja"
+            ja: "/ja",
         };
     } else if (path.startsWith("/ja/")) {
         // 当前在日语页面
@@ -53,32 +76,36 @@ const getLanguageUrls = (path: string) => {
         return {
             en: subPath === "/" ? "/" : subPath,
             zh: "/zh" + subPath,
+            "zh-tw": "/zh-tw" + subPath,
             es: "/es" + subPath,
-            ja: path
+            ja: path,
         };
     } else if (path === "/ja") {
         // 日语首页
         return {
             en: "/",
             zh: "/zh",
+            "zh-tw": "/zh-tw",
             es: "/es",
-            ja: "/ja"
+            ja: "/ja",
         };
     } else if (path === "/") {
         // 英文首页
         return {
             en: "/",
             zh: "/zh",
+            "zh-tw": "/zh-tw",
             es: "/es",
-            ja: "/ja"
+            ja: "/ja",
         };
     } else {
         // 其他英文页面
         return {
             en: path,
             zh: "/zh" + path,
+            "zh-tw": "/zh-tw" + path,
             es: "/es" + path,
-            ja: "/ja" + path
+            ja: "/ja" + path,
         };
     }
 };
@@ -88,12 +115,15 @@ const languageUrls = getLanguageUrls(currentPath);
 // 语言选项配置
 const languageOptions = [
     { code: "en", name: "English", flag: "🇺🇸", url: languageUrls.en },
-    { code: "zh", name: "中文", flag: "🇨🇳", url: languageUrls.zh },
+    { code: "zh", name: "简体中文", flag: "🇨🇳", url: languageUrls.zh },
+    { code: "zh-tw", name: "繁體中文", flag: "🇨🇳", url: languageUrls["zh-tw"] },
     { code: "es", name: "Español", flag: "🇪🇸", url: languageUrls.es },
-    { code: "ja", name: "日本語", flag: "🇯🇵", url: languageUrls.ja }
+    { code: "ja", name: "日本語", flag: "🇯🇵", url: languageUrls.ja },
 ];
 
-const currentLanguage = languageOptions.find(option => option.code === lang) || languageOptions[0];
+const currentLanguage =
+    languageOptions.find((option) => option.code === lang) ||
+    languageOptions[0];
 ---
 
 <style>
@@ -190,13 +220,17 @@ const currentLanguage = languageOptions.find(option => option.code === lang) || 
                 <!-- Navigation Links -->
                 <div class="hidden md:flex items-center space-x-6">
                     <a
-                        href={lang === "en" ? "/#features" : `/${lang}#features`}
+                        href={lang === "en"
+                            ? "/#features"
+                            : `/${lang}#features`}
                         class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
                     >
                         {translate("nav.features")}
                     </a>
                     <a
-                        href={lang === "en" ? "/#download" : `/${lang}#download`}
+                        href={lang === "en"
+                            ? "/#download"
+                            : `/${lang}#download`}
                         class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
                     >
                         {translate("nav.download")}
@@ -211,21 +245,32 @@ const currentLanguage = languageOptions.find(option => option.code === lang) || 
                     >
                         <span class="flag">{currentLanguage.flag}</span>
                         <span>{currentLanguage.name}</span>
-                        <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        <svg
+                            class="w-4 h-4 transition-transform duration-200"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
 
                     <div class="language-dropdown-menu">
-                        {languageOptions.map((option) => (
-                            <a
-                                href={option.url}
-                                class={`language-option ${option.code === lang ? 'active' : ''}`}
-                            >
-                                <span class="flag">{option.flag}</span>
-                                <span>{option.name}</span>
-                            </a>
-                        ))}
+                        {
+                            languageOptions.map((option) => (
+                                <a
+                                    href={option.url}
+                                    class={`language-option ${option.code === lang ? "active" : ""}`}
+                                >
+                                    <span class="flag">{option.flag}</span>
+                                    <span>{option.name}</span>
+                                </a>
+                            ))
+                        }
                     </div>
                 </div>
 

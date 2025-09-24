@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Arclet Copier - 快速複製 URL 的 Chrome 擴充功能",
+    "description": "一款功能強大的 Chrome 擴充程式，支援快速複製頁面 URL、智慧參數清理、自訂範本系統、批量複製、短鏈生成和 QR Code 生成。"
+  },
+  "nav": {
+    "features": "功能特色",
+    "download": "立即下載",
+    "github": "GitHub",
+    "about": "關於"
+  },
+  "hero": {
+    "title": "快速複製 URL",
+    "subtitle": "功能強大的 Chrome 擴充功能",
+    "description": "一鍵複製目前頁面 URL，支援智慧參數清理、自訂範本、批量複製、短鏈生成和 QR Code 生成。全面提升您的工作效率。",
+    "download": "免費下載",
+    "github": "檢視原始碼",
+    "version": "目前版本 v1.6.0"
+  },
+  "features": {
+    "title": "功能特色",
+    "subtitle": "為現代瀏覽體驗而設計",
+    "items": [
+      {
+        "title": "一鍵複製 URL",
+        "description": "支援彈出視窗點擊和快捷鍵靜默複製，右鍵選單快速存取"
+      },
+      {
+        "title": "智慧參數清理",
+        "description": "三級清理模式：關閉、智慧、激進，精準移除 UTM 追蹤參數"
+      },
+      {
+        "title": "自訂範本系統",
+        "description": "強大的範本引擎，支援變數替換和自訂格式，即時預覽"
+      },
+      {
+        "title": "批量複製功能",
+        "description": "多視窗分頁批量複製，支援篩選器、去重和多種匯出格式"
+      },
+      {
+        "title": "短鏈生成",
+        "description": "支援 is.gd 和 TinyURL 服務，附快取機制和並行限制"
+      },
+      {
+        "title": "QR Code 生成",
+        "description": "為目前頁面 URL 生成 QR Code，支援複製 QR Code 圖片到剪貼簿"
+      },
+      {
+        "title": "現代化主題",
+        "description": "Arc 風格設計，自動/明亮/深色三種模式，多主題色彩可選"
+      },
+      {
+        "title": "快捷鍵支援",
+        "description": "Ctrl+Shift+C 靜默複製，右鍵選單，彈出視窗內 Ctrl+C 快速操作"
+      },
+      {
+        "title": "多語言支援",
+        "description": "支援9種語言：中文、英文、日文、德文、法文、西班牙文等"
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "介面預覽",
+    "home1": "擴充功能主介面",
+    "home1_desc": "簡潔直觀的擴充功能彈出視窗，一目了然的功能佈局",
+    "home2": "批量操作支援",
+    "home2_desc": "支援批量操作多個 URLs，提升工作效率",
+    "home3": "豐富的設定選項",
+    "home3_desc": "自訂短鏈服務、通知提醒、介面語言、主題外觀等多樣化設定",
+    "home4": "自訂複製範本",
+    "home4_desc": "建立和編輯個人化的複製格式範本，滿足各種使用情境"
+  },
+  "download": {
+    "title": "立即下載",
+    "subtitle": "免費使用，開源可信",
+    "chrome_store": "Chrome 應用程式商店",
+    "chrome_store_desc": "從官方應用程式商店安裝，安全可靠",
+    "edge_store": "Edge 擴充功能商店",
+    "edge_store_desc": "適用於 Microsoft Edge 瀏覽器使用者",
+    "github_release": "GitHub Releases",
+    "github_release_desc": "下載原始碼套件，手動安裝最新版本",
+    "install_guide": "安裝指南",
+    "install_steps": [
+      "從應用程式商店安裝：Chrome 應用程式商店 或 Edge 擴充功能商店",
+      "或下載原始碼套件進行手動安裝",
+      "開啟瀏覽器擴充功能管理頁面（Chrome: chrome://extensions/ 或 Edge: edge://extensions/）",
+      "如果是原始碼套件，開啟開發者模式並載入解壓縮的擴充程式",
+      "開始使用 Arclet Copier！"
+    ],
+    "install_now": "立即安裝",
+    "download_source": "下載原始碼"
+  },
+  "footer": {
+    "description": "Arclet Copier 是一款開源的 Chrome 擴充程式",
+    "quick_links": "快速連結",
+    "privacy_policy": "隱私權政策",
+    "terms_of_service": "使用條款",
+    "links": {
+      "github": "GitHub",
+      "website": "官方網站",
+      "developer": "開發者",
+      "feedback": "回饋建議",
+      "sitemap": "網站地圖"
+    },
+    "copyright": "由 @rokcso 開發"
+  }
+}

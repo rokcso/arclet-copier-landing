@@ -1,0 +1,145 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<Layout title="隱私權政策 - Arclet Copier" lang="zh-tw">
+    <Header lang="zh-tw" />
+
+    <main class="pt-24 pb-16">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
+                <h1
+                    class="text-4xl font-serif font-semibold text-secondary-900 mb-8"
+                >
+                    隱私權政策
+                </h1>
+
+                <div class="prose prose-lg max-w-none">
+                    <p class="text-secondary-600 mb-8">
+                        最後更新時間：2025年9月19日
+                    </p>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            1. 資訊收集
+                        </h2>
+                        <p class="text-secondary-700 mb-4">
+                            Arclet Copier
+                            是一個瀏覽器擴充程式，我們致力於保護您的隱私。我們不會收集、儲存或傳輸您的個人資訊。
+                        </p>
+                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                            <li>我們不會收集您的個人身分資訊</li>
+                            <li>我們不會追蹤您的瀏覽行為</li>
+                            <li>我們不會收集您複製的內容</li>
+                            <li>我們不會與第三方分享任何資料</li>
+                        </ul>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            2. 本地儲存
+                        </h2>
+                        <p class="text-secondary-700 mb-4">
+                            擴充程式可能會在您的裝置上本地儲存一些設定資訊，包括：
+                        </p>
+                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                            <li>使用者設定和偏好</li>
+                            <li>擴充程式設定</li>
+                            <li>複製歷史記錄（僅儲存在本地，不會上傳）</li>
+                        </ul>
+                        <p class="text-secondary-700 mt-4">
+                            這些資訊僅儲存在您的本地裝置上，不會傳送到我們的伺服器或任何第三方服務。
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            3. 權限使用
+                        </h2>
+                        <p class="text-secondary-700 mb-4">
+                            擴充程式需要一些瀏覽器權限來正常運行：
+                        </p>
+                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                            <li>
+                                <strong>activeTab</strong
+                                >：存取目前活動分頁以執行複製功能
+                            </li>
+                            <li>
+                                <strong>storage</strong>：在本地儲存使用者設定
+                            </li>
+                            <li>
+                                <strong>clipboardWrite</strong
+                                >：將內容寫入剪貼簿
+                            </li>
+                        </ul>
+                        <p class="text-secondary-700 mt-4">
+                            我們僅在必要時使用這些權限，不會濫用或超出功能需要的範圍。
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            4. 第三方服務
+                        </h2>
+                        <p class="text-secondary-700">
+                            我們不使用任何第三方分析服務、廣告服務或資料收集服務。擴充程式完全在本地運行，不會向外部伺服器傳送任何資料。
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            5. 資料安全
+                        </h2>
+                        <p class="text-secondary-700">
+                            由於我們不收集或儲存您的個人資料，因此不存在資料外洩的風險。所有功能都在您的本地裝置上運行，確保您的隱私得到最大程度的保護。
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            6. 政策更新
+                        </h2>
+                        <p class="text-secondary-700">
+                            我們可能會不時更新此隱私權政策。任何變更都會在此頁面上發佈，並在擴充程式更新時通知使用者。
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            7. 聯絡我們
+                        </h2>
+                        <p class="text-secondary-700">
+                            如果您對此隱私權政策有任何問題或疑慮，請透過 GitHub
+                            專案頁面與我們聯絡：
+                            <a
+                                href="https://github.com/rokcso/arclet-copier"
+                                class="text-primary-600 hover:text-primary-700 underline"
+                                target="_blank"
+                            >
+                                https://github.com/rokcso/arclet-copier
+                            </a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <Footer lang="zh-tw" />
+</Layout>
