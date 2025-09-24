@@ -6,6 +6,7 @@
   "nav": {
     "features": "Recursos",
     "download": "Download",
+    "faq": "FAQ",
     "github": "GitHub",
     "about": "Sobre"
   },
@@ -89,6 +90,40 @@
     ],
     "install_now": "Instalar Agora",
     "download_source": "Baixar Código Fonte"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Tudo que você precisa saber sobre o Arclet Copier",
+    "items": [
+      {
+        "question": "Como instalar o Arclet Copier?",
+        "answer": "Você pode instalar o Arclet Copier com um clique da Chrome Web Store ou Edge Add-ons Store. Alternativamente, baixe o pacote de código fonte do GitHub para instalação manual."
+      },
+      {
+        "question": "O que é filtragem inteligente de parâmetros?",
+        "answer": "A filtragem inteligente de parâmetros remove inteligentemente parâmetros de rastreamento (como UTM, Facebook, Google Analytics) preservando parâmetros funcionais necessários para o funcionamento adequado da página web."
+      },
+      {
+        "question": "Posso criar modelos de cópia personalizados?",
+        "answer": "Sim! O Arclet Copier suporta um sistema de modelos poderoso com 11 campos de variáveis como {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}}, e mais. Você pode criar formatos personalizados para diferentes casos de uso."
+      },
+      {
+        "question": "Como funciona a cópia em lote?",
+        "answer": "O recurso de lote permite que você selecione múltiplas abas do navegador e copie todas as suas URLs de uma vez. Você pode filtrar por escopo de janela, remover duplicatas e escolher entre múltiplos formatos de exportação."
+      },
+      {
+        "question": "O Arclet Copier é gratuito para usar?",
+        "answer": "Sim, o Arclet Copier é completamente gratuito e de código aberto. Você pode usar todas as funcionalidades sem nenhuma limitação ou assinatura."
+      },
+      {
+        "question": "Quais navegadores são suportados?",
+        "answer": "O Arclet Copier funciona no Google Chrome, Microsoft Edge e outros navegadores baseados em Chromium. Requer suporte ao Manifest V3."
+      },
+      {
+        "question": "Como usar atalhos de teclado?",
+        "answer": "Use Ctrl+Shift+C (Cmd+Shift+C no Mac) para cópia silenciosa de URL. Você também pode acessar recursos através do menu de contexto do clique direito ou do popup da extensão."
+      }
+    ]
   },
   "footer": {
     "description": "Arclet Copier é uma extensão Chrome de código aberto",

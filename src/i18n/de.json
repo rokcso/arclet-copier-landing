@@ -6,6 +6,7 @@
   "nav": {
     "features": "Funktionen",
     "download": "Herunterladen",
+    "faq": "FAQ",
     "github": "GitHub",
     "about": "Über"
   },
@@ -89,6 +90,40 @@
     ],
     "install_now": "Jetzt installieren",
     "download_source": "Quellcode herunterladen"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie über Arclet Copier wissen müssen",
+    "items": [
+      {
+        "question": "Wie installiere ich Arclet Copier?",
+        "answer": "Sie können Arclet Copier mit einem Klick aus dem Chrome Web Store oder Edge Add-ons Store installieren. Alternativ laden Sie das Quellpaket von GitHub für die manuelle Installation herunter."
+      },
+      {
+        "question": "Was ist intelligente Parameterfilterung?",
+        "answer": "Die intelligente Parameterfilterung entfernt intelligent Tracking-Parameter (wie UTM, Facebook, Google Analytics) und bewahrt dabei funktionale Parameter, die für das ordnungsgemäße Funktionieren der Webseite erforderlich sind."
+      },
+      {
+        "question": "Kann ich benutzerdefinierte Kopiervorlagen erstellen?",
+        "answer": "Ja! Arclet Copier unterstützt ein leistungsstarkes Vorlagensystem mit 11 Variablenfeldern wie {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}} und mehr. Sie können personalisierte Formate für verschiedene Anwendungsfälle erstellen."
+      },
+      {
+        "question": "Wie funktioniert das Batch-Kopieren?",
+        "answer": "Die Batch-Funktion ermöglicht es Ihnen, mehrere Browser-Tabs auszuwählen und alle ihre URLs auf einmal zu kopieren. Sie können nach Fensterbereich filtern, Duplikate entfernen und aus mehreren Exportformaten wählen."
+      },
+      {
+        "question": "Ist Arclet Copier kostenlos zu verwenden?",
+        "answer": "Ja, Arclet Copier ist vollständig kostenlos und Open Source. Sie können alle Funktionen ohne Einschränkungen oder Abonnements nutzen."
+      },
+      {
+        "question": "Welche Browser werden unterstützt?",
+        "answer": "Arclet Copier funktioniert mit Google Chrome, Microsoft Edge und anderen Chromium-basierten Browsern. Es erfordert Manifest V3-Unterstützung."
+      },
+      {
+        "question": "Wie verwende ich Tastenkürzel?",
+        "answer": "Verwenden Sie Strg+Umschalt+C (Cmd+Umschalt+C auf Mac) für stilles URL-Kopieren. Sie können auch über das Rechtsklick-Kontextmenü oder das Erweiterungs-Popup auf Funktionen zugreifen."
+      }
+    ]
   },
   "footer": {
     "description": "Arclet Copier ist eine Open-Source-Chrome-Erweiterung",

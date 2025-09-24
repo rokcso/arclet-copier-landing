@@ -6,6 +6,7 @@
   "nav": {
     "features": "Características",
     "download": "Descargar",
+    "faq": "Preguntas Frecuentes",
     "github": "GitHub",
     "about": "Acerca de"
   },
@@ -89,6 +90,40 @@
     ],
     "install_now": "Instalar Ahora",
     "download_source": "Descargar Código"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre Arclet Copier",
+    "items": [
+      {
+        "question": "¿Cómo instalo Arclet Copier?",
+        "answer": "Puedes instalar Arclet Copier con un clic desde Chrome Web Store o Edge Add-ons Store. Alternativamente, descarga el paquete de código fuente desde GitHub para instalación manual."
+      },
+      {
+        "question": "¿Qué es el filtrado inteligente de parámetros?",
+        "answer": "El filtrado inteligente de parámetros elimina inteligentemente parámetros de seguimiento (como UTM, Facebook, Google Analytics) mientras preserva parámetros funcionales necesarios para el funcionamiento adecuado de la página web."
+      },
+      {
+        "question": "¿Puedo crear plantillas de copia personalizadas?",
+        "answer": "¡Sí! Arclet Copier soporta un sistema de plantillas poderoso con 11 campos de variables como {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}}, y más. Puedes crear formatos personalizados para diferentes casos de uso."
+      },
+      {
+        "question": "¿Cómo funciona la copia por lotes?",
+        "answer": "La función de lotes te permite seleccionar múltiples pestañas del navegador y copiar todas sus URLs de una vez. Puedes filtrar por alcance de ventana, eliminar duplicados y elegir entre múltiples formatos de exportación."
+      },
+      {
+        "question": "¿Es Arclet Copier gratuito?",
+        "answer": "Sí, Arclet Copier es completamente gratuito y de código abierto. Puedes usar todas las funciones sin ninguna limitación o suscripción."
+      },
+      {
+        "question": "¿Qué navegadores son compatibles?",
+        "answer": "Arclet Copier funciona en Google Chrome, Microsoft Edge y otros navegadores basados en Chromium. Requiere soporte de Manifest V3."
+      },
+      {
+        "question": "¿Cómo uso los atajos de teclado?",
+        "answer": "Usa Ctrl+Shift+C (Cmd+Shift+C en Mac) para copia silenciosa de URL. También puedes acceder a las funciones a través del menú contextual del clic derecho o el popup de la extensión."
+      }
+    ]
   },
   "footer": {
     "description": "Arclet Copier es una extensión Chrome de código abierto",

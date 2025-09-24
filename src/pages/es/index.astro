@@ -1,44 +1,46 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Hero from '../../components/Hero.astro';
-import Features from '../../components/Features.astro';
-import Screenshots from '../../components/Screenshots.astro';
-import Download from '../../components/Download.astro';
-import Footer from '../../components/Footer.astro';
-import BackToTop from '../../components/BackToTop.astro';
-import { t } from '../../i18n/utils';
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Hero from "../../components/Hero.astro";
+import Features from "../../components/Features.astro";
+import Screenshots from "../../components/Screenshots.astro";
+import Download from "../../components/Download.astro";
+import FAQ from "../../components/FAQ.astro";
+import Footer from "../../components/Footer.astro";
+import BackToTop from "../../components/BackToTop.astro";
+import { t } from "../../i18n/utils";
 
-const lang = 'es';
+const lang = "es";
 const translate = t(lang);
-const title = translate('meta.title');
-const description = translate('meta.description');
+const title = translate("meta.title");
+const description = translate("meta.description");
 ---
 
 <Layout title={title} lang={lang} description={description}>
-  <Header lang={lang} />
-  <main>
-    <Hero lang={lang} />
-    <Features lang={lang} />
-    <Screenshots lang={lang} />
-    <Download lang={lang} />
-  </main>
-  <Footer lang={lang} />
-  <BackToTop />
+    <Header lang={lang} />
+    <main>
+        <Hero lang={lang} />
+        <Features lang={lang} />
+        <Screenshots lang={lang} />
+        <Download lang={lang} />
+        <FAQ lang={lang} />
+    </main>
+    <Footer lang={lang} />
+    <BackToTop />
 </Layout>
 
 <style>
-  main {
-    padding-top: 0;
-  }
+    main {
+        padding-top: 0;
+    }
 
-  /* Smooth scrolling for anchor links */
-  html {
-    scroll-behavior: smooth;
-  }
+    /* Smooth scrolling for anchor links */
+    html {
+        scroll-behavior: smooth;
+    }
 
-  /* Add offset for fixed header */
-  section[id] {
-    scroll-margin-top: 100px;
-  }
+    /* Add offset for fixed header */
+    section[id] {
+        scroll-margin-top: 100px;
+    }
 </style>

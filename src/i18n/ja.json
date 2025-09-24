@@ -6,6 +6,7 @@
   "nav": {
     "features": "機能",
     "download": "ダウンロード",
+    "faq": "よくある質問",
     "github": "GitHub",
     "about": "について"
   },
@@ -89,6 +90,40 @@
     ],
     "install_now": "今すぐインストール",
     "download_source": "コードをダウンロード"
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "Arclet Copierについて知っておくべきすべて",
+    "items": [
+      {
+        "question": "Arclet Copierをインストールする方法は？",
+        "answer": "Chrome ウェブストアまたはEdge アドオンストアからワンクリックでArclet Copierをインストールできます。または、GitHubからソースパッケージをダウンロードして手動インストールもできます。"
+      },
+      {
+        "question": "スマートパラメータフィルタリングとは何ですか？",
+        "answer": "スマートパラメータフィルタリングは、ウェブページの正常な動作に必要な機能的パラメータを保持しながら、トラッキングパラメータ（UTM、Facebook、Google Analyticsなど）を賢く除去します。"
+      },
+      {
+        "question": "カスタムコピーテンプレートを作成できますか？",
+        "answer": "はい！Arclet Copierは{{url}}、{{title}}、{{hostname}}、{{date}}、{{time}}などの11の変数フィールドを含む強力なテンプレートシステムをサポートしています。異なる用途に応じてパーソナライズされた形式を作成できます。"
+      },
+      {
+        "question": "バッチコピー機能はどのように使用しますか？",
+        "answer": "バッチ機能により、複数のブラウザタブを選択して一度にすべてのURLをコピーできます。ウィンドウスコープでフィルタリングし、重複を除去し、複数のエクスポート形式から選択できます。"
+      },
+      {
+        "question": "Arclet Copierは無料で使用できますか？",
+        "answer": "はい、Arclet Copierは完全に無料でオープンソースです。制限やサブスクリプションなしですべての機能を使用できます。"
+      },
+      {
+        "question": "対応しているブラウザは何ですか？",
+        "answer": "Arclet CopierはGoogle Chrome、Microsoft Edge、およびその他のChromiumベースのブラウザで動作します。Manifest V3のサポートが必要です。"
+      },
+      {
+        "question": "キーボードショートカットの使い方は？",
+        "answer": "Ctrl+Shift+C（MacではCmd+Shift+C）を使用してサイレントURL コピーができます。右クリックコンテキストメニューまたは拡張機能ポップアップから機能にアクセスすることもできます。"
+      }
+    ]
   },
   "footer": {
     "description": "Arclet CopierはオープンソースのChrome拡張機能です",

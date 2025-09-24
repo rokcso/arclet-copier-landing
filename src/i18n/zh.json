@@ -6,6 +6,7 @@
   "nav": {
     "features": "功能特色",
     "download": "立即下载",
+    "faq": "常见问题",
     "github": "GitHub",
     "about": "关于"
   },
@@ -89,6 +90,40 @@
     ],
     "install_now": "立即安装",
     "download_source": "下载源码"
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "关于 Arclet Copier 你需要知道的一切",
+    "items": [
+      {
+        "question": "如何安装 Arclet Copier？",
+        "answer": "您可以从 Chrome 应用商店或 Edge 扩展商店一键安装 Arclet Copier。或者，从 GitHub 下载源码包进行手动安装。"
+      },
+      {
+        "question": "什么是智能参数过滤？",
+        "answer": "智能参数过滤会智能地移除跟踪参数（如 UTM、Facebook、Google Analytics），同时保留网页正常工作所必需的功能性参数。"
+      },
+      {
+        "question": "能否创建自定义复制模板？",
+        "answer": "可以！Arclet Copier 支持强大的模板系统，包含11个变量字段如 {{url}}、{{title}}、{{hostname}}、{{date}}、{{time}} 等。您可以为不同用途创建个性化格式。"
+      },
+      {
+        "question": "批量复制功能如何使用？",
+        "answer": "批量功能允许您选择多个浏览器标签页并一次性复制所有URL。您可以按窗口范围过滤、去除重复项，并从多种导出格式中选择。"
+      },
+      {
+        "question": "Arclet Copier 是免费的吗？",
+        "answer": "是的，Arclet Copier 完全免费且开源。您可以使用所有功能，没有任何限制或订阅费用。"
+      },
+      {
+        "question": "支持哪些浏览器？",
+        "answer": "Arclet Copier 支持 Google Chrome、Microsoft Edge 和其他基于 Chromium 的浏览器。需要支持 Manifest V3。"
+      },
+      {
+        "question": "如何使用键盘快捷键？",
+        "answer": "使用 Ctrl+Shift+C（Mac 上为 Cmd+Shift+C）进行静默URL复制。您也可以通过右键菜单或扩展弹窗访问功能。"
+      }
+    ]
   },
   "footer": {
     "description": "Arclet Copier 是一款开源的 Chrome 扩展程序",

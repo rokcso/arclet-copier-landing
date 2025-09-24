@@ -6,6 +6,7 @@
   "nav": {
     "features": "기능",
     "download": "다운로드",
+    "faq": "자주 묻는 질문",
     "github": "GitHub",
     "about": "소개"
   },
@@ -89,6 +90,40 @@
     ],
     "install_now": "지금 설치",
     "download_source": "소스 코드 다운로드"
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "subtitle": "Arclet Copier에 대해 알아야 할 모든 것",
+    "items": [
+      {
+        "question": "Arclet Copier를 어떻게 설치하나요?",
+        "answer": "Chrome 웹 스토어 또는 Edge 확장 프로그램 스토어에서 한 번의 클릭으로 Arclet Copier를 설치할 수 있습니다. 또는 수동 설치를 위해 GitHub에서 소스 패키지를 다운로드할 수 있습니다."
+      },
+      {
+        "question": "스마트 매개변수 필터링이란 무엇인가요?",
+        "answer": "스마트 매개변수 필터링은 웹페이지가 제대로 작동하는 데 필요한 기능적 매개변수는 보존하면서 추적 매개변수(UTM, Facebook, Google Analytics 등)를 지능적으로 제거합니다."
+      },
+      {
+        "question": "사용자 정의 복사 템플릿을 만들 수 있나요?",
+        "answer": "네! Arclet Copier는 {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}} 등 11개의 변수 필드를 포함하는 강력한 템플릿 시스템을 지원합니다. 다양한 사용 사례에 맞는 개인화된 형식을 만들 수 있습니다."
+      },
+      {
+        "question": "일괄 복사 기능은 어떻게 작동하나요?",
+        "answer": "일괄 기능을 사용하면 여러 브라우저 탭을 선택하고 모든 URL을 한 번에 복사할 수 있습니다. 창 범위로 필터링하고, 중복을 제거하고, 여러 내보내기 형식 중에서 선택할 수 있습니다."
+      },
+      {
+        "question": "Arclet Copier를 무료로 사용할 수 있나요?",
+        "answer": "네, Arclet Copier는 완전히 무료이며 오픈 소스입니다. 어떤 제한이나 구독 없이 모든 기능을 사용할 수 있습니다."
+      },
+      {
+        "question": "지원되는 브라우저는 무엇인가요?",
+        "answer": "Arclet Copier는 Google Chrome, Microsoft Edge 및 기타 Chromium 기반 브라우저에서 작동합니다. Manifest V3 지원이 필요합니다."
+      },
+      {
+        "question": "키보드 단축키를 어떻게 사용하나요?",
+        "answer": "무음 URL 복사를 위해 Ctrl+Shift+C(Mac에서는 Cmd+Shift+C)를 사용하세요. 마우스 우클릭 상황 메뉴나 확장 프로그램 팝업을 통해 기능에 액세스할 수도 있습니다."
+      }
+    ]
   },
   "footer": {
     "description": "Arclet Copier는 오픈 소스 Chrome 확장 프로그램입니다",
