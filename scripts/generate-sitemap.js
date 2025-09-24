@@ -17,6 +17,36 @@ const pages = [
     changefreq: "weekly",
   },
   {
+    url: "/zh-tw/",
+    priority: "1.0",
+    changefreq: "weekly",
+  },
+  {
+    url: "/de/",
+    priority: "1.0",
+    changefreq: "weekly",
+  },
+  {
+    url: "/fr/",
+    priority: "1.0",
+    changefreq: "weekly",
+  },
+  {
+    url: "/pt/",
+    priority: "1.0",
+    changefreq: "weekly",
+  },
+  {
+    url: "/ru/",
+    priority: "1.0",
+    changefreq: "weekly",
+  },
+  {
+    url: "/ko/",
+    priority: "1.0",
+    changefreq: "weekly",
+  },
+  {
     url: "/ja/",
     priority: "1.0",
     changefreq: "weekly",
@@ -37,6 +67,36 @@ const pages = [
     changefreq: "monthly",
   },
   {
+    url: "/zh-tw/privacy/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/de/privacy/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/fr/privacy/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/pt/privacy/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/ru/privacy/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/ko/privacy/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
     url: "/ja/privacy/",
     priority: "0.5",
     changefreq: "monthly",
@@ -53,6 +113,36 @@ const pages = [
   },
   {
     url: "/zh/terms/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/zh-tw/terms/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/de/terms/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/fr/terms/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/pt/terms/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/ru/terms/",
+    priority: "0.5",
+    changefreq: "monthly",
+  },
+  {
+    url: "/ko/terms/",
     priority: "0.5",
     changefreq: "monthly",
   },
