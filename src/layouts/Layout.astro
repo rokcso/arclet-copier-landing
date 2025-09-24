@@ -24,11 +24,23 @@ const translate = t(lang);
             name="keywords"
             content={lang === "zh"
                 ? "Chrome扩展,URL复制,浏览器插件,自定义模板,批量复制,短链生成,二维码,参数清理"
-                : lang === "es"
-                  ? "Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros"
-                  : lang === "ja"
-                    ? "Chrome拡張機能,URLコピー,ブラウザプラグイン,カスタムテンプレート,バッチコピー,短縮URL,QRコード,パラメータクリーニング"
-                    : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning"}
+                : lang === "zh-tw"
+                  ? "Chrome擴充功能,URL複製,瀏覽器插件,自定義模板,批量複製,短網址生成,QR碼,參數清理"
+                  : lang === "de"
+                    ? "Chrome-Erweiterung,URL kopieren,Browser-Plugin,benutzerdefinierte Vorlagen,Batch-Kopieren,Kurz-URL,QR-Code,Parameter bereinigen"
+                    : lang === "fr"
+                      ? "Extension Chrome,copier URL,plugin navigateur,modèles personnalisés,copie par lot,URL courte,code QR,nettoyage paramètres"
+                      : lang === "pt"
+                        ? "Extensão Chrome,copiar URL,plugin navegador,modelos personalizados,cópia em lote,URL curta,código QR,limpeza parâmetros"
+                        : lang === "ru"
+                          ? "Расширение Chrome,копирование URL,плагин браузера,пользовательские шаблоны,пакетное копирование,короткий URL,QR-код,очистка параметров"
+                          : lang === "ko"
+                            ? "Chrome 확장프로그램,URL 복사,브라우저 플러그인,맞춤 템플릿,일괄 복사,단축 URL,QR 코드,매개변수 정리"
+                            : lang === "es"
+                              ? "Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros"
+                              : lang === "ja"
+                                ? "Chrome拡張機能,URLコピー,ブラウザプラグイン,カスタムテンプレート,バッチコピー,短縮URL,QRコード,パラメータクリーニング"
+                                : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning"}
         />
         <meta name="author" content="rokcso" />
         <meta
@@ -49,11 +61,7 @@ const translate = t(lang);
             property="og:url"
             content={lang === "en"
                 ? "https://arcletcopier.com/"
-                : lang === "zh"
-                  ? "https://arcletcopier.com/zh"
-                  : lang === "es"
-                    ? "https://arcletcopier.com/es"
-                    : "https://arcletcopier.com/ja"}
+                : `https://arcletcopier.com/${lang}`}
         />
         <meta property="og:title" content={title} />
         <meta
@@ -73,11 +81,7 @@ const translate = t(lang);
             property="twitter:url"
             content={lang === "en"
                 ? "https://arcletcopier.com/"
-                : lang === "zh"
-                  ? "https://arcletcopier.com/zh"
-                  : lang === "es"
-                    ? "https://arcletcopier.com/es"
-                    : "https://arcletcopier.com/ja"}
+                : `https://arcletcopier.com/${lang}`}
         />
         <meta property="twitter:title" content={title} />
         <meta
@@ -158,11 +162,7 @@ const translate = t(lang);
             rel="canonical"
             href={lang === "en"
                 ? "https://arcletcopier.com/"
-                : lang === "zh"
-                  ? "https://arcletcopier.com/zh"
-                  : lang === "es"
-                    ? "https://arcletcopier.com/es"
-                    : "https://arcletcopier.com/ja"}
+                : `https://arcletcopier.com/${lang}`}
         />
 
         <!-- Language alternates -->
@@ -174,7 +174,7 @@ const translate = t(lang);
         />
         <link
             rel="alternate"
-            hreflang="zh-TW"
+            hreflang="zh-tw"
             href="https://arcletcopier.com/zh-tw"
         />
         <link
@@ -233,11 +233,7 @@ const translate = t(lang);
                 url:
                     lang === "en"
                         ? "https://arcletcopier.com/"
-                        : lang === "zh"
-                          ? "https://arcletcopier.com/zh"
-                          : lang === "es"
-                            ? "https://arcletcopier.com/es"
-                            : "https://arcletcopier.com/ja",
+                        : `https://arcletcopier.com/${lang}`,
                 downloadUrl:
                     "https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil",
                 softwareVersion: "1.6.0",
@@ -282,11 +278,23 @@ const translate = t(lang);
                 keywords:
                     lang === "zh"
                         ? "Chrome扩展,URL复制,浏览器插件,自定义模板,批量复制,短链生成,二维码,参数清理"
-                        : lang === "es"
-                          ? "Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros"
-                          : lang === "ja"
-                            ? "Chrome拡張機能,URLコピー,ブラウザプラグイン,カスタムテンプレート,バッチコピー,短縮URL,QRコード,パラメータクリーニング"
-                            : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning",
+                        : lang === "zh-tw"
+                          ? "Chrome擴充功能,URL複製,瀏覽器插件,自定義模板,批量複製,短網址生成,QR碼,參數清理"
+                          : lang === "de"
+                            ? "Chrome-Erweiterung,URL kopieren,Browser-Plugin,benutzerdefinierte Vorlagen,Batch-Kopieren,Kurz-URL,QR-Code,Parameter bereinigen"
+                            : lang === "fr"
+                              ? "Extension Chrome,copier URL,plugin navigateur,modèles personnalisés,copie par lot,URL courte,code QR,nettoyage paramètres"
+                              : lang === "pt"
+                                ? "Extensão Chrome,copiar URL,plugin navegador,modelos personalizados,cópia em lote,URL curta,código QR,limpeza parâmetros"
+                                : lang === "ru"
+                                  ? "Расширение Chrome,копирование URL,плагин браузера,пользовательские шаблоны,пакетное копирование,короткий URL,QR-код,очистка параметров"
+                                  : lang === "ko"
+                                    ? "Chrome 확장프로그램,URL 복사,브라우저 플러그인,맞춤 템플릿,일괄 복사,단축 URL,QR 코드,매개변수 정리"
+                                    : lang === "es"
+                                      ? "Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros"
+                                      : lang === "ja"
+                                        ? "Chrome拡張機能,URLコピー,ブラウザプラグイン,カスタムテンプレート,バッチコピー,短縮URL,QRコード,パラメータクリーニング"
+                                        : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning",
             })}
         />
 
