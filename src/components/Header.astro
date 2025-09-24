@@ -22,6 +22,7 @@ const getLanguageUrls = (path: string) => {
             "zh-tw": "/zh-tw" + subPath,
             de: "/de" + subPath,
             fr: "/fr" + subPath,
+            pt: "/pt" + subPath,
             es: "/es" + subPath,
             ja: "/ja" + subPath,
         };
@@ -33,6 +34,7 @@ const getLanguageUrls = (path: string) => {
             "zh-tw": "/zh-tw",
             de: "/de",
             fr: "/fr",
+            pt: "/pt",
             es: "/es",
             ja: "/ja",
         };
@@ -45,6 +47,7 @@ const getLanguageUrls = (path: string) => {
             "zh-tw": path,
             de: "/de" + subPath,
             fr: "/fr" + subPath,
+            pt: "/pt" + subPath,
             es: "/es" + subPath,
             ja: "/ja" + subPath,
         };
@@ -56,6 +59,7 @@ const getLanguageUrls = (path: string) => {
             "zh-tw": "/zh-tw",
             de: "/de",
             fr: "/fr",
+            pt: "/pt",
             es: "/es",
             ja: "/ja",
         };
@@ -78,6 +82,7 @@ const getLanguageUrls = (path: string) => {
             "zh-tw": "/zh-tw",
             de: "/de",
             fr: "/fr",
+            pt: "/pt",
             es: "/es",
             ja: "/ja",
         };
@@ -101,6 +106,32 @@ const getLanguageUrls = (path: string) => {
             "zh-tw": "/zh-tw",
             de: "/de",
             fr: "/fr",
+            pt: "/pt",
+            es: "/es",
+            ja: "/ja",
+        };
+    } else if (path.startsWith("/pt/")) {
+        // 当前在葡萄牙语页面
+        const subPath = path.replace("/pt", "");
+        return {
+            en: subPath === "/" ? "/" : subPath,
+            zh: "/zh" + subPath,
+            "zh-tw": "/zh-tw" + subPath,
+            de: "/de" + subPath,
+            fr: "/fr" + subPath,
+            pt: path,
+            es: "/es" + subPath,
+            ja: "/ja" + subPath,
+        };
+    } else if (path === "/pt") {
+        // 葡萄牙语首页
+        return {
+            en: "/",
+            zh: "/zh",
+            "zh-tw": "/zh-tw",
+            de: "/de",
+            fr: "/fr",
+            pt: "/pt",
             es: "/es",
             ja: "/ja",
         };
@@ -123,6 +154,7 @@ const getLanguageUrls = (path: string) => {
             "zh-tw": "/zh-tw",
             de: "/de",
             fr: "/fr",
+            pt: "/pt",
             es: "/es",
             ja: "/ja",
         };
@@ -135,6 +167,7 @@ const getLanguageUrls = (path: string) => {
             "zh-tw": "/zh-tw" + subPath,
             de: "/de" + subPath,
             fr: "/fr" + subPath,
+            pt: "/pt" + subPath,
             es: "/es" + subPath,
             ja: path,
         };
@@ -167,6 +200,7 @@ const getLanguageUrls = (path: string) => {
             "zh-tw": "/zh-tw" + path,
             de: "/de" + path,
             fr: "/fr" + path,
+            pt: "/pt" + path,
             es: "/es" + path,
             ja: "/ja" + path,
         };
@@ -182,6 +216,7 @@ const languageOptions = [
     { code: "zh-tw", name: "繁體中文", flag: "🇨🇳", url: languageUrls["zh-tw"] },
     { code: "de", name: "Deutsch", flag: "🇩🇪", url: languageUrls.de },
     { code: "fr", name: "Français", flag: "🇫🇷", url: languageUrls.fr },
+    { code: "pt", name: "Português", flag: "🇵🇹", url: languageUrls.pt },
     { code: "es", name: "Español", flag: "🇪🇸", url: languageUrls.es },
     { code: "ja", name: "日本語", flag: "🇯🇵", url: languageUrls.ja },
 ];

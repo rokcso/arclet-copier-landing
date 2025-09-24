@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Arclet Copier - Extensão Chrome para Cópia Rápida de URLs",
+    "description": "Uma extensão Chrome poderosa para cópia rápida de URLs com filtragem inteligente de parâmetros, sistema de modelos personalizados, cópia em lote, geração de URLs curtas e geração de códigos QR."
+  },
+  "nav": {
+    "features": "Recursos",
+    "download": "Download",
+    "github": "GitHub",
+    "about": "Sobre"
+  },
+  "hero": {
+    "title": "Cópia Rápida de URL",
+    "subtitle": "Extensão Chrome Poderosa",
+    "description": "Copie a URL da página atual com um clique. Suporte a filtragem inteligente de parâmetros, modelos personalizados, cópia em lote, geração de URLs curtas e geração de códigos QR. Aumente sua produtividade.",
+    "download": "Download Gratuito",
+    "github": "Ver Código Fonte",
+    "version": "Versão Atual v1.6.0"
+  },
+  "features": {
+    "title": "Recursos",
+    "subtitle": "Projetado para experiência de navegação moderna",
+    "items": [
+      {
+        "title": "Cópia de URL com Um Clique",
+        "description": "Suporte a clique no popup, cópia silenciosa por atalho de teclado e acesso por menu de contexto"
+      },
+      {
+        "title": "Limpeza Inteligente de Parâmetros",
+        "description": "Três modos: Desativado, Inteligente, Agressivo. Remoção precisa de parâmetros de rastreamento UTM"
+      },
+      {
+        "title": "Sistema de Modelos Personalizados",
+        "description": "Motor de modelos poderoso com substituição de variáveis e formatos personalizados, visualização em tempo real"
+      },
+      {
+        "title": "Recurso de Cópia em Lote",
+        "description": "Cópia em lote de abas multi-janelas com filtros, desduplicação e múltiplos formatos de exportação"
+      },
+      {
+        "title": "Geração de URLs Curtas",
+        "description": "Suporte aos serviços is.gd e TinyURL com mecanismo de cache e limites concorrentes"
+      },
+      {
+        "title": "Geração de Códigos QR",
+        "description": "Gera códigos QR para URLs de páginas atuais, suporte a cópia de imagens de códigos QR para a área de transferência"
+      },
+      {
+        "title": "Tema Moderno",
+        "description": "Design estilo Arc com modos Auto/Claro/Escuro e múltiplas cores de tema"
+      },
+      {
+        "title": "Suporte a Atalhos de Teclado",
+        "description": "Ctrl+Shift+C cópia silenciosa, menu de contexto, operação rápida Ctrl+C no popup"
+      },
+      {
+        "title": "Suporte Multilíngue",
+        "description": "Suporte a 9 idiomas: chinês, inglês, japonês, alemão, francês, espanhol, português, etc."
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "Visualização da Interface",
+    "home1": "Interface Principal da Extensão",
+    "home1_desc": "Popup da extensão limpo e intuitivo com layout funcional claro",
+    "home2": "Suporte a Operações em Lote",
+    "home2_desc": "Suporte a operações em lote em múltiplas URLs para melhorar a eficiência do trabalho",
+    "home3": "Opções de Configuração Avançadas",
+    "home3_desc": "Personalização de serviços de links curtos, notificações, idioma da interface, temas e várias configurações",
+    "home4": "Modelos de Cópia Personalizados",
+    "home4_desc": "Crie e edite modelos de formato de cópia personalizados para vários casos de uso"
+  },
+  "download": {
+    "title": "Baixar Agora",
+    "subtitle": "Gratuito para usar, código aberto e confiável",
+    "chrome_store": "Chrome Web Store",
+    "chrome_store_desc": "Instalar da loja oficial, seguro e confiável",
+    "edge_store": "Edge Add-ons Store",
+    "edge_store_desc": "Para usuários do navegador Microsoft Edge",
+    "github_release": "GitHub Releases",
+    "github_release_desc": "Baixar pacote de código fonte, instalar manualmente a versão mais recente",
+    "install_guide": "Guia de Instalação",
+    "install_steps": [
+      "Instalar da loja: Chrome Web Store ou Edge Add-ons Store",
+      "Ou baixar pacote de código fonte para instalação manual",
+      "Abrir página de gerenciamento de extensões do navegador (Chrome: chrome://extensions/ ou Edge: edge://extensions/)",
+      "Se usar pacote de código fonte, ativar modo desenvolvedor e carregar extensão descompactada",
+      "Comece a usar o Arclet Copier!"
+    ],
+    "install_now": "Instalar Agora",
+    "download_source": "Baixar Código Fonte"
+  },
+  "footer": {
+    "description": "Arclet Copier é uma extensão Chrome de código aberto",
+    "quick_links": "Links Rápidos",
+    "privacy_policy": "Política de Privacidade",
+    "terms_of_service": "Termos de Uso",
+    "links": {
+      "github": "GitHub",
+      "website": "Site Oficial",
+      "developer": "Desenvolvedor",
+      "feedback": "Feedback",
+      "sitemap": "Mapa do Site"
+    },
+    "copyright": "Desenvolvido por @rokcso"
+  }
+}
