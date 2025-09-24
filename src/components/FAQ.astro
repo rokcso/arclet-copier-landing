@@ -1,0 +1,180 @@
+---
+import { t, type Language } from "../i18n/utils";
+
+export interface Props {
+    lang: Language;
+}
+
+const { lang } = Astro.props;
+const translate = t(lang);
+
+// Get the actual number of FAQ items from translations
+const faqItems = [];
+let index = 0;
+while (
+    translate(`faq.items.${index}.question`) !== `faq.items.${index}.question`
+) {
+    faqItems.push(index);
+    index++;
+}
+---
+
+<section id="faq" class="py-20 bg-secondary-50">
+    <div class="max-w-4xl mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <h2
+                class="text-4xl md:text-5xl font-serif font-semibold text-secondary-900 mb-4"
+            >
+                {translate("faq.title")}
+            </h2>
+            <p class="text-xl text-secondary-600 max-w-2xl mx-auto">
+                {translate("faq.subtitle")}
+            </p>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="space-y-4">
+            {
+                faqItems.map((index) => (
+                    <div class="bg-white rounded-2xl border border-secondary-200 overflow-hidden">
+                        <button
+                            class="faq-toggle w-full px-8 py-6 text-left flex items-center justify-between hover:bg-secondary-50 transition-colors duration-200"
+                            data-target={`faq-${index}`}
+                        >
+                            <h3 class="text-lg font-semibold text-secondary-900 pr-4">
+                                {translate(`faq.items.${index}.question`)}
+                            </h3>
+                            <div class="faq-icon flex-shrink-0 w-6 h-6 text-primary-600 transform transition-transform duration-200">
+                                <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 6v12m6-6H6"
+                                    />
+                                </svg>
+                            </div>
+                        </button>
+                        <div
+                            id={`faq-${index}`}
+                            class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                        >
+                            <div class="px-8 pb-6">
+                                <p class="text-secondary-600 leading-relaxed">
+                                    {translate(`faq.items.${index}.answer`)}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>
+
+<script>
+    // FAQ Toggle Functionality
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggles =
+            document.querySelectorAll<HTMLButtonElement>(".faq-toggle");
+
+        toggles.forEach((toggle) => {
+            toggle.addEventListener(
+                "click",
+                function (this: HTMLButtonElement) {
+                    const target = this.getAttribute("data-target");
+                    const content = target
+                        ? document.getElementById(target)
+                        : null;
+                    const icon =
+                        this.querySelector<HTMLDivElement>(".faq-icon");
+
+                    // Close all other FAQ items
+                    toggles.forEach((otherToggle) => {
+                        if (otherToggle !== this) {
+                            const otherTarget =
+                                otherToggle.getAttribute("data-target");
+                            const otherContent = otherTarget
+                                ? document.getElementById(otherTarget)
+                                : null;
+                            const otherIcon =
+                                otherToggle.querySelector<HTMLDivElement>(
+                                    ".faq-icon",
+                                );
+
+                            if (
+                                otherContent &&
+                                otherContent instanceof HTMLElement
+                            ) {
+                                otherContent.style.maxHeight = "0";
+                                otherContent.classList.remove("open");
+                            }
+                            if (otherIcon && otherIcon instanceof HTMLElement) {
+                                (otherIcon as HTMLElement).style.transform =
+                                    "rotate(0deg)";
+                            }
+                        }
+                    });
+
+                    // Toggle current FAQ item
+                    if (content && content instanceof HTMLElement) {
+                        if (content.classList.contains("open")) {
+                            // Close
+                            content.style.maxHeight = "0";
+                            content.classList.remove("open");
+                            if (icon && icon instanceof HTMLElement) {
+                                (icon as HTMLElement).style.transform =
+                                    "rotate(0deg)";
+                            }
+                        } else {
+                            // Open
+                            content.style.maxHeight =
+                                content.scrollHeight + "px";
+                            content.classList.add("open");
+                            if (icon && icon instanceof HTMLElement) {
+                                (icon as HTMLElement).style.transform =
+                                    "rotate(45deg)";
+                            }
+                        }
+                    }
+                },
+            );
+        });
+    });
+</script>
+
+<style>
+    .faq-content.open {
+        max-height: none !important;
+    }
+
+    .faq-toggle:focus {
+        outline: none;
+    }
+
+    .faq-toggle:focus-visible {
+        outline: 2px solid #16a34a;
+        outline-offset: 2px;
+    }
+
+    .faq-icon {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    /* Remove any default button styling that might cause green lines */
+    .faq-toggle {
+        border: none;
+        background: none;
+    }
+
+    /* Ensure no border appears on the content area */
+    .faq-content {
+        border: none;
+        outline: none;
+    }
+</style>
