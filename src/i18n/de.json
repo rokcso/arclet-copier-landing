@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Arclet Copier - Chrome-Erweiterung zum schnellen Kopieren von URLs",
+    "description": "Eine leistungsstarke Chrome-Erweiterung zum schnellen Kopieren von URLs mit intelligenter Parameterfilterung, benutzerdefiniertem Vorlagensystem, Batch-Kopieren, Kurz-URL-Generierung und QR-Code-Generierung."
+  },
+  "nav": {
+    "features": "Funktionen",
+    "download": "Herunterladen",
+    "github": "GitHub",
+    "about": "Über"
+  },
+  "hero": {
+    "title": "Schnelles URL-Kopieren",
+    "subtitle": "Leistungsstarke Chrome-Erweiterung",
+    "description": "Kopieren Sie die aktuelle Seiten-URL mit einem Klick. Unterstützt intelligente Parameterfilterung, benutzerdefinierte Vorlagen, Batch-Kopieren, Kurz-URL-Generierung und QR-Code-Generierung. Steigern Sie Ihre Produktivität.",
+    "download": "Kostenloser Download",
+    "github": "Quellcode anzeigen",
+    "version": "Aktuelle Version v1.6.0"
+  },
+  "features": {
+    "title": "Funktionen",
+    "subtitle": "Entwickelt für moderne Browser-Erfahrung",
+    "items": [
+      {
+        "title": "Ein-Klick-URL-Kopieren",
+        "description": "Unterstützt Popup-Klick, Tastenkürzel für stilles Kopieren und Rechtsklick-Menü-Zugriff"
+      },
+      {
+        "title": "Intelligente Parameterreinigung",
+        "description": "Drei Modi: Aus, Intelligent, Aggressiv. Präzises Entfernen von UTM-Tracking-Parametern"
+      },
+      {
+        "title": "Benutzerdefiniertes Vorlagensystem",
+        "description": "Leistungsstarke Vorlagen-Engine mit Variablenersetzung und benutzerdefinierten Formaten, Echtzeitvorschau"
+      },
+      {
+        "title": "Batch-Kopier-Funktion",
+        "description": "Multi-Fenster-Tab-Batch-Kopieren mit Filtern, Duplikaterkennung und mehreren Exportformaten"
+      },
+      {
+        "title": "Kurz-URL-Generierung",
+        "description": "Unterstützt is.gd und TinyURL-Dienste mit Caching-Mechanismus und gleichzeitigen Limits"
+      },
+      {
+        "title": "QR-Code-Generierung",
+        "description": "Generiert QR-Codes für aktuelle Seiten-URLs, unterstützt das Kopieren von QR-Code-Bildern in die Zwischenablage"
+      },
+      {
+        "title": "Modernes Design",
+        "description": "Arc-Stil-Design mit Auto/Hell/Dunkel-Modi und mehreren Themenfarben"
+      },
+      {
+        "title": "Tastenkürzel-Unterstützung",
+        "description": "Strg+Umschalt+C stilles Kopieren, Rechtsklick-Menü, Popup Strg+C Schnellbedienung"
+      },
+      {
+        "title": "Mehrsprachige Unterstützung",
+        "description": "Unterstützt 9 Sprachen: Chinesisch, Englisch, Japanisch, Deutsch, Französisch, Spanisch, etc."
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "Benutzeroberflächen-Vorschau",
+    "home1": "Haupt-Erweiterungsschnittstelle",
+    "home1_desc": "Sauberes und intuitives Erweiterungs-Popup mit klarem funktionalem Layout",
+    "home2": "Batch-Operationen-Unterstützung",
+    "home2_desc": "Unterstützt Batch-Operationen für mehrere URLs zur Verbesserung der Arbeitseffizienz",
+    "home3": "Umfangreiche Einstellungsoptionen",
+    "home3_desc": "Anpassung von Kurz-Link-Diensten, Benachrichtigungen, Oberflächensprache, Themen und verschiedene Konfigurationen",
+    "home4": "Benutzerdefinierte Kopiervorlagen",
+    "home4_desc": "Erstellen und bearbeiten Sie personalisierte Kopierformat-Vorlagen für verschiedene Anwendungsfälle"
+  },
+  "download": {
+    "title": "Jetzt herunterladen",
+    "subtitle": "Kostenlos zu verwenden, Open Source und vertrauenswürdig",
+    "chrome_store": "Chrome Web Store",
+    "chrome_store_desc": "Installation aus dem offiziellen Store, sicher und zuverlässig",
+    "edge_store": "Edge Add-ons Store",
+    "edge_store_desc": "Für Microsoft Edge Browser-Benutzer",
+    "github_release": "GitHub Releases",
+    "github_release_desc": "Quellpaket herunterladen, neueste Version manuell installieren",
+    "install_guide": "Installationsanleitung",
+    "install_steps": [
+      "Installation aus dem Store: Chrome Web Store oder Edge Add-ons Store",
+      "Oder Quellpaket für manuelle Installation herunterladen",
+      "Browser-Erweiterungsverwaltungsseite öffnen (Chrome: chrome://extensions/ oder Edge: edge://extensions/)",
+      "Bei Verwendung des Quellpakets, Entwicklermodus aktivieren und entpackte Erweiterung laden",
+      "Beginnen Sie mit Arclet Copier!"
+    ],
+    "install_now": "Jetzt installieren",
+    "download_source": "Quellcode herunterladen"
+  },
+  "footer": {
+    "description": "Arclet Copier ist eine Open-Source-Chrome-Erweiterung",
+    "quick_links": "Schnelle Links",
+    "privacy_policy": "Datenschutzrichtlinie",
+    "terms_of_service": "Nutzungsbedingungen",
+    "links": {
+      "github": "GitHub",
+      "website": "Offizielle Website",
+      "developer": "Entwickler",
+      "feedback": "Feedback",
+      "sitemap": "Sitemap"
+    },
+    "copyright": "Entwickelt von @rokcso"
+  }
+}

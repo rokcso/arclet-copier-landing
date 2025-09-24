@@ -1,0 +1,141 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<Layout title="Datenschutzrichtlinie - Arclet Copier" lang="de">
+    <Header lang="de" />
+
+    <main class="pt-24 pb-16">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
+                <h1
+                    class="text-4xl font-serif font-semibold text-secondary-900 mb-8"
+                >
+                    Datenschutzrichtlinie
+                </h1>
+
+                <div class="prose prose-lg max-w-none">
+                    <p class="text-secondary-600 mb-8">
+                        Zuletzt aktualisiert: 19. September 2025
+                    </p>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            1. Datenerfassung
+                        </h2>
+                        <p class="text-secondary-700 mb-4">
+                            Arclet Copier ist eine Browser-Erweiterung, und wir sind dem Schutz Ihrer Privatsphäre verpflichtet. Wir erfassen, speichern oder übertragen keine Ihrer persönlichen Daten.
+                        </p>
+                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                            <li>Wir erfassen keine persönlich identifizierbaren Informationen</li>
+                            <li>Wir verfolgen Ihr Browsing-Verhalten nicht</li>
+                            <li>Wir erfassen nicht die von Ihnen kopierten Inhalte</li>
+                            <li>Wir teilen keine Daten mit Dritten</li>
+                        </ul>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            2. Lokale Speicherung
+                        </h2>
+                        <p class="text-secondary-700 mb-4">
+                            Die Erweiterung kann einige Konfigurationsdaten lokal auf Ihrem Gerät speichern, einschließlich:
+                        </p>
+                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                            <li>Benutzereinstellungen und -präferenzen</li>
+                            <li>Erweiterungskonfiguration</li>
+                            <li>Kopier-Verlauf (nur lokal gespeichert, nicht hochgeladen)</li>
+                        </ul>
+                        <p class="text-secondary-700 mt-4">
+                            Diese Informationen werden nur auf Ihrem lokalen Gerät gespeichert und nicht an unsere Server oder Drittanbieterdienste gesendet.
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            3. Berechtigungsverwendung
+                        </h2>
+                        <p class="text-secondary-700 mb-4">
+                            Die Erweiterung benötigt einige Browser-Berechtigungen, um ordnungsgemäß zu funktionieren:
+                        </p>
+                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+                            <li>
+                                <strong>activeTab</strong>: Zugriff auf den aktiven Tab zur Ausführung der Kopierfunktion
+                            </li>
+                            <li>
+                                <strong>storage</strong>: Lokale Speicherung von Benutzereinstellungen
+                            </li>
+                            <li>
+                                <strong>clipboardWrite</strong>: Schreiben von Inhalten in die Zwischenablage
+                            </li>
+                        </ul>
+                        <p class="text-secondary-700 mt-4">
+                            Wir verwenden diese Berechtigungen nur bei Bedarf und missbrauchen sie nicht über den Funktionsumfang hinaus.
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            4. Drittanbieterdienste
+                        </h2>
+                        <p class="text-secondary-700">
+                            Wir verwenden keine Analyse-, Werbe- oder Datenerfassungsdienste von Drittanbietern. Die Erweiterung läuft vollständig lokal und sendet keine Daten an externe Server.
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            5. Datensicherheit
+                        </h2>
+                        <p class="text-secondary-700">
+                            Da wir keine persönlichen Daten erfassen oder speichern, besteht kein Risiko einer Datenschutzverletzung. Alle Funktionen laufen auf Ihrem lokalen Gerät und gewährleisten maximalen Schutz Ihrer Privatsphäre.
+                        </p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            6. Richtlinien-Updates
+                        </h2>
+                        <p class="text-secondary-700">
+                            Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Alle Änderungen werden auf dieser Seite veröffentlicht und die Benutzer bei Erweiterungs-Updates benachrichtigt.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2
+                            class="text-2xl font-semibold text-secondary-900 mb-4"
+                        >
+                            7. Kontakt
+                        </h2>
+                        <p class="text-secondary-700">
+                            Wenn Sie Fragen oder Bedenken zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns über die GitHub-Projektseite:
+                            <a
+                                href="https://github.com/rokcso/arclet-copier"
+                                class="text-primary-600 hover:text-primary-700 underline"
+                                target="_blank"
+                            >
+                                https://github.com/rokcso/arclet-copier
+                            </a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <Footer lang="de" />
+</Layout>
