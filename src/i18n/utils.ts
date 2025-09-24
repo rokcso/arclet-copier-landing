@@ -2,6 +2,7 @@ import zhTranslations from "./zh.json";
 import zhTwTranslations from "./zh-tw.json";
 import enTranslations from "./en.json";
 import deTranslations from "./de.json";
+import frTranslations from "./fr.json";
 import esTranslations from "./es.json";
 import jaTranslations from "./ja.json";
 
@@ -10,6 +11,7 @@ export const translations = {
   "zh-tw": zhTwTranslations,
   en: enTranslations,
   de: deTranslations,
+  fr: frTranslations,
   es: esTranslations,
   ja: jaTranslations,
 };
