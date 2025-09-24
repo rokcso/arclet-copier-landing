@@ -6,6 +6,7 @@
   "nav": {
     "features": "Features",
     "download": "Download",
+    "faq": "FAQ",
     "github": "GitHub",
     "about": "About"
   },
@@ -89,6 +90,40 @@
     ],
     "install_now": "Install Now",
     "download_source": "Download Source"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about Arclet Copier",
+    "items": [
+      {
+        "question": "How do I install Arclet Copier?",
+        "answer": "You can install Arclet Copier from the Chrome Web Store or Edge Add-ons Store with one click. Alternatively, download the source package from GitHub for manual installation."
+      },
+      {
+        "question": "What is smart parameter filtering?",
+        "answer": "Smart parameter filtering intelligently removes tracking parameters (like UTM, Facebook, Google Analytics) while preserving functional parameters that are necessary for the webpage to work properly."
+      },
+      {
+        "question": "Can I create custom copy templates?",
+        "answer": "Yes! Arclet Copier supports a powerful template system with 11 variable fields including {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}}, and more. You can create personalized formats for different use cases."
+      },
+      {
+        "question": "How does batch copying work?",
+        "answer": "The batch feature allows you to select multiple browser tabs and copy all their URLs at once. You can filter by window scope, remove duplicates, and choose from multiple export formats."
+      },
+      {
+        "question": "Is Arclet Copier free to use?",
+        "answer": "Yes, Arclet Copier is completely free and open source. You can use all features without any limitations or subscriptions."
+      },
+      {
+        "question": "Which browsers are supported?",
+        "answer": "Arclet Copier works on Google Chrome, Microsoft Edge, and other Chromium-based browsers. It requires Manifest V3 support."
+      },
+      {
+        "question": "How do I use keyboard shortcuts?",
+        "answer": "Use Ctrl+Shift+C (Cmd+Shift+C on Mac) for silent URL copying. You can also access features through right-click context menu or the extension popup."
+      }
+    ]
   },
   "footer": {
     "description": "Arclet Copier is an open source Chrome extension",
