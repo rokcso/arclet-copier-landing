@@ -25,10 +25,10 @@ const translate = t(lang);
             content={lang === "zh"
                 ? "Chrome扩展,URL复制,浏览器插件,自定义模板,批量复制,短链生成,二维码,参数清理"
                 : lang === "es"
-                ? "Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros"
-                : lang === "ja"
-                ? "Chrome拡張機能,URLコピー,ブラウザプラグイン,カスタムテンプレート,バッチコピー,短縮URL,QRコード,パラメータクリーニング"
-                : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning"}
+                  ? "Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros"
+                  : lang === "ja"
+                    ? "Chrome拡張機能,URLコピー,ブラウザプラグイン,カスタムテンプレート,バッチコピー,短縮URL,QRコード,パラメータクリーニング"
+                    : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning"}
         />
         <meta name="author" content="rokcso" />
         <meta
@@ -50,10 +50,10 @@ const translate = t(lang);
             content={lang === "en"
                 ? "https://arcletcopier.com/"
                 : lang === "zh"
-                ? "https://arcletcopier.com/zh"
-                : lang === "es"
-                ? "https://arcletcopier.com/es"
-                : "https://arcletcopier.com/ja"}
+                  ? "https://arcletcopier.com/zh"
+                  : lang === "es"
+                    ? "https://arcletcopier.com/es"
+                    : "https://arcletcopier.com/ja"}
         />
         <meta property="og:title" content={title} />
         <meta
@@ -74,10 +74,10 @@ const translate = t(lang);
             content={lang === "en"
                 ? "https://arcletcopier.com/"
                 : lang === "zh"
-                ? "https://arcletcopier.com/zh"
-                : lang === "es"
-                ? "https://arcletcopier.com/es"
-                : "https://arcletcopier.com/ja"}
+                  ? "https://arcletcopier.com/zh"
+                  : lang === "es"
+                    ? "https://arcletcopier.com/es"
+                    : "https://arcletcopier.com/ja"}
         />
         <meta property="twitter:title" content={title} />
         <meta
@@ -88,7 +88,10 @@ const translate = t(lang);
             property="twitter:image"
             content={`https://arcletcopier.com/img/preview/${lang}/home-1-${lang}.webp`}
         />
-        <meta property="twitter:image:alt" content={`${title} - Interface Preview`} />
+        <meta
+            property="twitter:image:alt"
+            content={`${title} - Interface Preview`}
+        />
 
         <!-- Favicons -->
         <!-- Modern SVG favicon for browsers that support it -->
@@ -156,10 +159,10 @@ const translate = t(lang);
             href={lang === "en"
                 ? "https://arcletcopier.com/"
                 : lang === "zh"
-                ? "https://arcletcopier.com/zh"
-                : lang === "es"
-                ? "https://arcletcopier.com/es"
-                : "https://arcletcopier.com/ja"}
+                  ? "https://arcletcopier.com/zh"
+                  : lang === "es"
+                    ? "https://arcletcopier.com/es"
+                    : "https://arcletcopier.com/ja"}
         />
 
         <!-- Language alternates -->
@@ -171,13 +174,43 @@ const translate = t(lang);
         />
         <link
             rel="alternate"
-            hreflang="es"
-            href="https://arcletcopier.com/es"
+            hreflang="zh-TW"
+            href="https://arcletcopier.com/zh-tw"
+        />
+        <link
+            rel="alternate"
+            hreflang="de"
+            href="https://arcletcopier.com/de"
+        />
+        <link
+            rel="alternate"
+            hreflang="fr"
+            href="https://arcletcopier.com/fr"
+        />
+        <link
+            rel="alternate"
+            hreflang="pt"
+            href="https://arcletcopier.com/pt"
+        />
+        <link
+            rel="alternate"
+            hreflang="ru"
+            href="https://arcletcopier.com/ru"
+        />
+        <link
+            rel="alternate"
+            hreflang="ko"
+            href="https://arcletcopier.com/ko"
         />
         <link
             rel="alternate"
             hreflang="ja"
             href="https://arcletcopier.com/ja"
+        />
+        <link
+            rel="alternate"
+            hreflang="es"
+            href="https://arcletcopier.com/es"
         />
         <link
             rel="alternate"
@@ -201,10 +234,10 @@ const translate = t(lang);
                     lang === "en"
                         ? "https://arcletcopier.com/"
                         : lang === "zh"
-                        ? "https://arcletcopier.com/zh"
-                        : lang === "es"
-                        ? "https://arcletcopier.com/es"
-                        : "https://arcletcopier.com/ja",
+                          ? "https://arcletcopier.com/zh"
+                          : lang === "es"
+                            ? "https://arcletcopier.com/es"
+                            : "https://arcletcopier.com/ja",
                 downloadUrl:
                     "https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil",
                 softwareVersion: "1.6.0",
@@ -250,10 +283,10 @@ const translate = t(lang);
                     lang === "zh"
                         ? "Chrome扩展,URL复制,浏览器插件,自定义模板,批量复制,短链生成,二维码,参数清理"
                         : lang === "es"
-                        ? "Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros"
-                        : lang === "ja"
-                        ? "Chrome拡張機能,URLコピー,ブラウザプラグイン,カスタムテンプレート,バッチコピー,短縮URL,QRコード,パラメータクリーニング"
-                        : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning",
+                          ? "Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros"
+                          : lang === "ja"
+                            ? "Chrome拡張機能,URLコピー,ブラウザプラグイン,カスタムテンプレート,バッチコピー,短縮URL,QRコード,パラメータクリーニング"
+                            : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning",
             })}
         />
 
