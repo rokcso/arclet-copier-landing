@@ -5,6 +5,7 @@ import deTranslations from "./de.json";
 import frTranslations from "./fr.json";
 import ptTranslations from "./pt.json";
 import ruTranslations from "./ru.json";
+import koTranslations from "./ko.json";
 import esTranslations from "./es.json";
 import jaTranslations from "./ja.json";
 
@@ -16,6 +17,7 @@ export const translations = {
   fr: frTranslations,
   pt: ptTranslations,
   ru: ruTranslations,
+  ko: koTranslations,
   es: esTranslations,
   ja: jaTranslations,
 };

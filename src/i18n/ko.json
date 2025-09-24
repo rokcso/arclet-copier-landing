@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Arclet Copier - URL 빠른 복사 Chrome 확장 프로그램",
+    "description": "스마트 매개변수 필터링, 사용자 정의 템플릿 시스템, 일괄 복사, 단축 URL 생성 및 QR 코드 생성을 제공하는 강력한 Chrome 확장 프로그램입니다."
+  },
+  "nav": {
+    "features": "기능",
+    "download": "다운로드",
+    "github": "GitHub",
+    "about": "소개"
+  },
+  "hero": {
+    "title": "URL 빠른 복사",
+    "subtitle": "강력한 Chrome 확장 프로그램",
+    "description": "한 번의 클릭으로 현재 페이지 URL을 복사하세요. 스마트 매개변수 필터링, 사용자 정의 템플릿, 일괄 복사, 단축 URL 생성 및 QR 코드 생성을 지원합니다. 생산성을 향상시키세요.",
+    "download": "무료 다운로드",
+    "github": "소스 코드 보기",
+    "version": "현재 버전 v1.6.0"
+  },
+  "features": {
+    "title": "기능",
+    "subtitle": "현대적인 브라우징 경험을 위해 설계됨",
+    "items": [
+      {
+        "title": "원클릭 URL 복사",
+        "description": "팝업 클릭, 단축키 무음 복사 및 우클릭 메뉴 액세스 지원"
+      },
+      {
+        "title": "스마트 매개변수 정리",
+        "description": "세 가지 모드: 끄기, 스마트, 강력. UTM 추적 매개변수 정확한 제거"
+      },
+      {
+        "title": "사용자 정의 템플릿 시스템",
+        "description": "변수 치환과 사용자 정의 형식을 지원하는 강력한 템플릿 엔진, 실시간 미리보기"
+      },
+      {
+        "title": "일괄 복사 기능",
+        "description": "필터, 중복 제거 및 여러 내보내기 형식을 제공하는 다중 창 탭 일괄 복사"
+      },
+      {
+        "title": "단축 URL 생성",
+        "description": "캐싱 메커니즘과 동시 제한이 있는 is.gd 및 TinyURL 서비스 지원"
+      },
+      {
+        "title": "QR 코드 생성",
+        "description": "현재 페이지 URL에 대한 QR 코드 생성, QR 코드 이미지를 클립보드에 복사 지원"
+      },
+      {
+        "title": "모던 테마",
+        "description": "자동/밝게/어둡게 모드와 여러 테마 색상을 제공하는 Arc 스타일 디자인"
+      },
+      {
+        "title": "단축키 지원",
+        "description": "Ctrl+Shift+C 무음 복사, 우클릭 메뉴, 팝업에서 Ctrl+C 빠른 작업"
+      },
+      {
+        "title": "다국어 지원",
+        "description": "중국어, 영어, 일본어, 독일어, 프랑스어, 스페인어, 포르투갈어, 러시아어, 한국어 등 9개 언어 지원"
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "인터페이스 미리보기",
+    "home1": "확장 프로그램 메인 인터페이스",
+    "home1_desc": "명확한 기능 레이아웃을 가진 깔끔하고 직관적인 확장 프로그램 팝업",
+    "home2": "일괄 작업 지원",
+    "home2_desc": "작업 효율성 향상을 위한 여러 URL에 대한 일괄 작업 지원",
+    "home3": "풍부한 설정 옵션",
+    "home3_desc": "단축 링크 서비스, 알림, 인터페이스 언어, 테마 및 다양한 구성 사용자 정의",
+    "home4": "사용자 정의 복사 템플릿",
+    "home4_desc": "다양한 사용 사례에 대한 개인화된 복사 형식 템플릿 생성 및 편집"
+  },
+  "download": {
+    "title": "지금 다운로드",
+    "subtitle": "무료 사용, 오픈 소스이며 신뢰할 수 있음",
+    "chrome_store": "Chrome 웹 스토어",
+    "chrome_store_desc": "공식 스토어에서 설치, 안전하고 신뢰할 수 있음",
+    "edge_store": "Edge 확장 프로그램 스토어",
+    "edge_store_desc": "Microsoft Edge 브라우저 사용자를 위한",
+    "github_release": "GitHub 릴리즈",
+    "github_release_desc": "소스 패키지 다운로드, 최신 버전 수동 설치",
+    "install_guide": "설치 가이드",
+    "install_steps": [
+      "스토어에서 설치: Chrome 웹 스토어 또는 Edge 확장 프로그램 스토어",
+      "또는 수동 설치를 위한 소스 패키지 다운로드",
+      "브라우저 확장 프로그램 관리 페이지 열기 (Chrome: chrome://extensions/ 또는 Edge: edge://extensions/)",
+      "소스 패키지를 사용하는 경우, 개발자 모드를 활성화하고 압축 해제된 확장 프로그램 로드",
+      "Arclet Copier 사용을 시작하세요!"
+    ],
+    "install_now": "지금 설치",
+    "download_source": "소스 코드 다운로드"
+  },
+  "footer": {
+    "description": "Arclet Copier는 오픈 소스 Chrome 확장 프로그램입니다",
+    "quick_links": "빠른 링크",
+    "privacy_policy": "개인정보 처리방침",
+    "terms_of_service": "이용 약관",
+    "links": {
+      "github": "GitHub",
+      "website": "공식 웹사이트",
+      "developer": "개발자",
+      "feedback": "피드백",
+      "sitemap": "사이트맵"
+    },
+    "copyright": "@rokcso에 의해 개발됨"
+  }
+}
