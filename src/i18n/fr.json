@@ -78,8 +78,6 @@
     "chrome_store_desc": "Installer depuis le store officiel, sûr et fiable",
     "edge_store": "Edge Add-ons Store",
     "edge_store_desc": "Pour les utilisateurs du navigateur Microsoft Edge",
-    "github_release": "GitHub Releases",
-    "github_release_desc": "Télécharger le package source, installer manuellement la dernière version",
     "install_guide": "Guide d'installation",
     "install_steps": [
       "Installer depuis le store : Chrome Web Store ou Edge Add-ons Store",

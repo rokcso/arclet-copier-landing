@@ -78,8 +78,6 @@
     "chrome_store_desc": "公式ストアからインストール、安全で信頼性",
     "edge_store": "Edge アドオンストア",
     "edge_store_desc": "Microsoft Edgeブラウザユーザー向け",
-    "github_release": "GitHub リリース",
-    "github_release_desc": "ソースパッケージをダウンロード、最新版を手動インストール",
     "install_guide": "インストールガイド",
     "install_steps": [
       "ストアからインストール：Chrome ウェブストアまたはEdge アドオンストア",

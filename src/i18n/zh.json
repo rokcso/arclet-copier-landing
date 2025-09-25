@@ -78,8 +78,6 @@
     "chrome_store_desc": "从官方应用商店安装，安全可靠",
     "edge_store": "Edge 扩展商店",
     "edge_store_desc": "适用于 Microsoft Edge 浏览器用户",
-    "github_release": "GitHub Releases",
-    "github_release_desc": "下载源码包，手动安装最新版本",
     "install_guide": "安装指南",
     "install_steps": [
       "从应用商店安装：Chrome 应用商店 或 Edge 扩展商店",
@@ -89,7 +87,10 @@
       "开始使用 Arclet Copier！"
     ],
     "install_now": "立即安装",
-    "download_source": "下载源码"
+    "download_source": "下载源码",
+    "feishu_guide": "飞书下载",
+    "feishu_guide_desc": "如果你不便访问浏览器官方应用商店，可以通过飞书下载",
+    "view_guide": "立即下载"
   },
   "faq": {
     "title": "常见问题",

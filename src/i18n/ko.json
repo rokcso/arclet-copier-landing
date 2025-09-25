@@ -78,8 +78,6 @@
     "chrome_store_desc": "공식 스토어에서 설치, 안전하고 신뢰할 수 있음",
     "edge_store": "Edge 확장 프로그램 스토어",
     "edge_store_desc": "Microsoft Edge 브라우저 사용자를 위한",
-    "github_release": "GitHub 릴리즈",
-    "github_release_desc": "소스 패키지 다운로드, 최신 버전 수동 설치",
     "install_guide": "설치 가이드",
     "install_steps": [
       "스토어에서 설치: Chrome 웹 스토어 또는 Edge 확장 프로그램 스토어",

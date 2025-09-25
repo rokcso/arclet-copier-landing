@@ -78,8 +78,6 @@
     "chrome_store_desc": "Установка из официального магазина, безопасно и надёжно",
     "edge_store": "Edge Add-ons Store",
     "edge_store_desc": "Для пользователей браузера Microsoft Edge",
-    "github_release": "GitHub Releases",
-    "github_release_desc": "Скачать пакет исходного кода, установить вручную последнюю версию",
     "install_guide": "Руководство по установке",
     "install_steps": [
       "Установить из магазина: Chrome Web Store или Edge Add-ons Store",
