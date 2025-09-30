@@ -1,45 +1,50 @@
 // 生成包含 hreflang 的 sitemap.xml 文件
-import fs from "fs";
-import path from "path";
+import fs from 'fs';
+import path from 'path';
 
-const SITE_URL = "https://arcletcopier.com";
+const SITE_URL = 'https://arcletcopier.com';
 
 // 支持的语言配置
 const languages = [
-  { code: "en", url: "" }, // 默认语言不带前缀
-  { code: "zh", url: "/zh" },
-  { code: "zh-tw", url: "/zh-tw" },
-  { code: "de", url: "/de" },
-  { code: "fr", url: "/fr" },
-  { code: "pt", url: "/pt" },
-  { code: "ru", url: "/ru" },
-  { code: "ko", url: "/ko" },
-  { code: "ja", url: "/ja" },
-  { code: "es", url: "/es" },
+  { code: 'en', url: '' }, // 默认语言不带前缀
+  { code: 'zh', url: '/zh' },
+  { code: 'zh-tw', url: '/zh-tw' },
+  { code: 'de', url: '/de' },
+  { code: 'fr', url: '/fr' },
+  { code: 'pt', url: '/pt' },
+  { code: 'ru', url: '/ru' },
+  { code: 'ko', url: '/ko' },
+  { code: 'ja', url: '/ja' },
+  { code: 'es', url: '/es' },
 ];
 
 // 页面配置
 const pages = [
   {
-    path: "",
-    priority: "1.0",
-    changefreq: "weekly",
+    path: '',
+    priority: '1.0',
+    changefreq: 'weekly',
   },
   {
-    path: "/privacy",
-    priority: "0.5",
-    changefreq: "monthly",
+    path: '/privacy',
+    priority: '0.5',
+    changefreq: 'monthly',
   },
   {
-    path: "/terms",
-    priority: "0.5",
-    changefreq: "monthly",
+    path: '/terms',
+    priority: '0.5',
+    changefreq: 'monthly',
+  },
+  {
+    path: '/changelog',
+    priority: '0.6',
+    changefreq: 'weekly',
   },
 ];
 
 function generateSitemapWithHreflang() {
   // 使用 YYYY-MM-DD 格式的日期
-  const lastmod = new Date().toISOString().split("T")[0];
+  const lastmod = new Date().toISOString().split('T')[0];
 
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -47,8 +52,8 @@ function generateSitemapWithHreflang() {
 `;
 
   // 为每个页面生成所有语言版本的 URL
-  pages.forEach((page) => {
-    languages.forEach((lang) => {
+  pages.forEach(page => {
+    languages.forEach(lang => {
       const url = `${SITE_URL}${lang.url}${page.path}`;
 
       xml += `  <url>
@@ -59,7 +64,7 @@ function generateSitemapWithHreflang() {
 `;
 
       // 添加 hreflang 标签
-      languages.forEach((hrefLang) => {
+      languages.forEach(hrefLang => {
         const hrefUrl = `${SITE_URL}${hrefLang.url}${page.path}`;
         xml += `    <xhtml:link rel="alternate" hreflang="${hrefLang.code}" href="${hrefUrl}" />
 `;
@@ -80,7 +85,7 @@ function generateSitemapWithHreflang() {
 
 // 生成并保存 sitemap.xml
 const sitemapXml = generateSitemapWithHreflang();
-const outputPath = path.join(process.cwd(), "dist", "sitemap.xml");
+const outputPath = path.join(process.cwd(), 'dist', 'sitemap.xml');
 
 // 确保目录存在
 const outputDir = path.dirname(outputPath);
@@ -89,21 +94,21 @@ if (!fs.existsSync(outputDir)) {
 }
 
 // 写入包含 hreflang 的 sitemap.xml
-fs.writeFileSync(outputPath, sitemapXml, "utf8");
+fs.writeFileSync(outputPath, sitemapXml, 'utf8');
 
 // 删除 Astro 生成的复杂格式文件
-const astroFiles = ["sitemap-index.xml", "sitemap-0.xml"];
-astroFiles.forEach((file) => {
+const astroFiles = ['sitemap-index.xml', 'sitemap-0.xml'];
+astroFiles.forEach(file => {
   const filePath = path.join(outputDir, file);
   if (fs.existsSync(filePath)) {
     fs.unlinkSync(filePath);
   }
 });
 
-console.log("✅ 成功生成包含 hreflang 的 sitemap.xml");
+console.log('✅ 成功生成包含 hreflang 的 sitemap.xml');
 console.log(`📍 路径: ${outputPath}`);
-console.log("🌐 包含功能:");
-console.log("  • 10种语言支持");
-console.log("  • hreflang 标签");
-console.log("  • x-default 标签");
-console.log("  • SEO 友好格式");
+console.log('🌐 包含功能:');
+console.log('  • 10种语言支持');
+console.log('  • hreflang 标签');
+console.log('  • x-default 标签');
+console.log('  • SEO 友好格式');

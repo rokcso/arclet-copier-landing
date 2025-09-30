@@ -7,6 +7,7 @@
     "features": "Funktionen",
     "download": "Herunterladen",
     "faq": "FAQ",
+    "changelog": "Änderungsprotokoll",
     "github": "GitHub",
     "about": "Über"
   },
@@ -123,11 +124,187 @@
       }
     ]
   },
+  "changelog": {
+    "title": "Änderungsprotokoll",
+    "subtitle": "Alle Updates und Verbesserungen",
+    "description": "Bleiben Sie über die neuesten Funktionen und Verbesserungen auf dem Laufenden",
+    "versions": {
+      "1.6.2": {
+        "title": "v1.6.2",
+        "date": "Neueste",
+        "changes": [
+          "UI/UX-Neugestaltung: Komplette Überarbeitung der Benutzeroberfläche, Entfernung von Schatten von Schaltflächen und UI-Elementen für eine flachere Designästhetik",
+          "Komponentenmodularisierung: Toggle-Komponenten und Theme-Variablen in gemeinsame Module extrahiert für bessere Code-Wiederverwendbarkeit und Wartbarkeit",
+          "Visuelle Optimierung: Vereinfachte Toggle-Switch- und Drei-Positionen-Switch-Stile für bessere visuelle Konsistenz",
+          "Fehlerbehebungen: Korrigierter Favicon-Fehlerbehandlungsmechanismus mit Event-Listenern anstelle von Inline-onerror-Handlern",
+          "Leistungsoptimierung: Entfernung ungenutzter CSS-Regeln und Übersetzungstexte zur Reduzierung der Bundle-Größe"
+        ]
+      },
+      "1.6.1": {
+        "title": "v1.6.1",
+        "date": "Vorherige",
+        "changes": [
+          "Template-System-Verbesserung: Umfassende Verbesserung der benutzerdefinierten Template-Funktionalität, neu gestaltete Template-Editor-Oberfläche für moderne UI-Erfahrung",
+          "Emoji-Selektor: Kategorisierter Emoji-Selektor für Template-Icons mit sanftem Scrollen und Kategoriennavigation hinzugefügt",
+          "Template-Engine-Optimierung: Verbesserte Template-Validierungslogik und erweiterte Template-Variablenverarbeitung mit besserer Fehlerbehandlung",
+          "Benachrichtigungssystem-Upgrade: Völlig neues Benachrichtigungssystem mit Arc-Style In-Page-Toast-Benachrichtigungen, unterstützt Anti-Duplikat-Anzeige und bessere visuelle Effekte",
+          "Benutzerverhalten-Analytik: Integriertes Umami-Analysesystem zur Verfolgung von Installationen, Updates und Kopiervorgängen mit Benutzer-ID-Tracking und Browser-Versionserkennung",
+          "Code-Struktur-Optimierung: Mehrere Komponenten in gemeinsame Module refaktoriert für bessere Modularität und Wartbarkeit",
+          "Lokalisierungsverbesserung: Traditionelle chinesische Unterstützung hinzugefügt und mehrsprachige Oberflächentexte verbessert"
+        ]
+      },
+      "1.6.0": {
+        "title": "v1.6.0",
+        "date": "Aktuell",
+        "changes": [
+          "Benutzerdefiniertes Template-System: Brandneue benutzerdefinierte Kopierformat-Template-Funktionalität unterstützt Erstellung, Bearbeitung und Löschung personalisierter Kopier-Templates",
+          "Reichhaltige Template-Variablen: Unterstützung für 11 Template-Variablen ({{url}}, {{originalUrl}}, {{title}}, {{hostname}}, {{domain}}, {{shortUrl}}, {{date}}, {{time}}, {{datetime}}, {{timestamp}}, {{iso}})",
+          "Template-Management-Oberfläche: Dedizierte Template-Management-Seite mit Emoji-Icon-Auswahl, Echtzeit-Vorschau und Template-Validierung"
+        ]
+      },
+      "1.5.0": {
+        "title": "v1.5.0",
+        "date": "Aktuell",
+        "changes": [
+          "Stapelkopie-Feature: Neue Stapelkopie-Seite unterstützt Auswahl mehrerer Tabs für Bulk-URL-Kopieren",
+          "Intelligente Filterung: Unterstützung für Filterung von Tabs nach Fensterbereich (aktuelles Fenster oder alle Fenster)",
+          "Vorschaufunktion: Inhaltsvorschau vor dem Kopieren um sicherzustellen, dass Ergebnisse den Erwartungen entsprechen",
+          "Stapeleinstellungen: Unabhängige Stapelvorgangseinstellungen unterstützen Webseitenfilterung, Deduplizierung und Kopierformat-Auswahl",
+          "Hohe Leistung: Unterstützung für effiziente Behandlung großer Anzahl von Tabs mit Echtzeit-Vorschau"
+        ]
+      },
+      "1.4.2": {
+        "title": "v1.4.2",
+        "date": "Vergangen",
+        "changes": [
+          "CSS-Prioritäts-Fix: Korrigierte Theme-Farb-Override-Probleme durch CSS-Selektor-Priorität, verbesserte Theme-System-Stabilität",
+          "Arclet Copier offizielle Website-Start: https://arcletcopier.com/"
+        ]
+      },
+      "1.4.1": {
+        "title": "v1.4.1",
+        "date": "Vergangen",
+        "changes": [
+          "Erweiterte mehrsprachige Unterstützung: Erweiterung von 2 Sprachen auf 9 Sprachen, Hinzufügung von Spanisch, Japanisch, Deutsch, Französisch, Portugiesisch, Russisch und Koreanisch",
+          "Oberflächenoptimierung: Neu gestalteter 'Unterstütze uns'-Bereich, Entfernung des verschachtelten Border-Designs für saubereres Listen-Styling und reduzierte visuelle Redundanz",
+          "Technische Verbesserungen: Korrigierte Drei-Positionen-Switch-Slider-Positionierungsberechnungsprobleme für bessere Oberflächenreaktionspräzision"
+        ]
+      },
+      "1.4.0": {
+        "title": "v1.4.0",
+        "date": "Vergangen",
+        "changes": [
+          "Kurz-URL-Generierung: Neue URL-Verkürzungsfunktion unterstützt Ein-Klick-Kurz-URL-Generierung und -Kopieren",
+          "Optionen-Seite: Neue dedizierte Einstellungs-Optionen-Seite bietet vollständigere Konfigurationserfahrung",
+          "Kurz-URL-Service-Auswahl: Unterstützung für Auswahl verschiedener Kurz-URL-Services (is.gd und TinyURL) um verschiedene Benutzerbedürfnisse zu erfüllen",
+          "Leistungsoptimierung: Kurz-URL-Generierung mit Anti-Shake- und Caching-Mechanismen um doppelte Anfragen zu vermeiden und Antwortgeschwindigkeit zu verbessern",
+          "Persistenter Cache: Kurz-URL-Cache mit Chrome-Speicher für Persistenz, nach Browser-Neustart immer noch schnell zugänglich",
+          "Animationseffekte: Hinzugefügte Rotationsanimationseffekt zu Header-Icons für verbesserte visuelle Erfahrung",
+          "URL-Validierung: Verbesserter URL-Validierungsmechanismus um Zuverlässigkeit und Genauigkeit der Kurz-URL-Generierung sicherzustellen",
+          "Oberflächenanpassung: Angepasstes Popup-Layout um Platz für Kurz-URL-Schaltflächen zu reservieren während saubere und schöne Oberfläche beibehalten wird"
+        ]
+      },
+      "1.3.5": {
+        "title": "v1.3.5",
+        "date": "Vergangen",
+        "changes": [
+          "Chrome-Benachrichtigungskontrolle: Chrome-Benachrichtigungs-Toggle-Einstellung hinzugefügt, ermöglicht Benutzern die Anpassung der Browser-Desktop-Benachrichtigungsanzeige",
+          "Moderne Oberflächenupgrade: Umfassend optimierte Toggle-Switch-Stile, einheitliche Annahme moderner Slider-Designs für bessere visuelle Konsistenz",
+          "QR-Popup-Oberflächenoptimierung: Verbesserte QR-Code-Popup-Layout, optimierte Elementabstände und Trennlinien-Anzeige für verbesserte Benutzererfahrung",
+          "Berechtigungsoptimierung: Entfernung unnötiger Skripting-Berechtigungen und vereinfachte Seitentitel-Erfassungslogik für verbesserte Erweiterungssicherheit",
+          "Interaktionsdetail-Verbesserung: Optimiertes URL-Vorschaubox-Scrollverhalten und korrigierte Layout-Abstandsprobleme für raffiniertere Oberfläche"
+        ]
+      },
+      "1.3.4": {
+        "title": "v1.3.4",
+        "date": "Vergangen",
+        "changes": [
+          "Multi-Theme-Farbsystem: 5 Theme-Farboptionen hinzugefügt (Orange, Gelb, Grün, Blau, Lila) mit einheitlichen Oberflächenelementen und Benachrichtigungsfarben entsprechend dem Theme",
+          "Seitenvorschau-Verbesserung: URL-Vorschaubereich aktualisiert um sowohl Seitentitel als auch URL-Dual-Informationen anzuzeigen",
+          "Visuelle Effekt-Verbesserung: Verbesserte Drei-Positionen-Slider-Lichteffekte mit subtilen Glüh- und Gradienteneffekten",
+          "Standard-Einstellungsanpassung: Neuordnung der Theme-Farboptionen (Orange, Gelb, Grün, Blau, Lila) mit Standard-Theme-Farbe auf Grün gesetzt"
+        ]
+      },
+      "1.3.3": {
+        "title": "v1.3.3",
+        "date": "Vergangen",
+        "changes": [
+          "QR-Code-Kopie-Verbesserung: QR-Code-Bild in Zwischenablage kopieren-Funktionalität hinzugefügt, unterstützt QR-Code-Speicherung als PNG-Format-Bilder",
+          "QR-Code-Oberflächenoptimierung: Neu gestaltetes QR-Code-Modal-Layout mit URL-Vorschau über QR-Code und Kopieren-Schaltfläche darunter",
+          "Interaktionserfahrung-Verbesserung: Sofortiges Schließen des Popups und Anzeige einer Erfolgsbenachrichtigung nach dem Kopieren des QR-Code-Bildes für flüssigere Bedienung",
+          "Rechtsklick-Menü-Unterstützung: Rechtsklick-Menü 'Aktuelle URL kopieren'-Funktionalität hinzugefügt, unterstützt schnelles Kopieren von jeder Webseitenposition",
+          "Offizielle Website-Informationsupdate: Entwicklerinformationen mit offiziellem Website-Link auf https://lunarye.com/arclet-copier aktualisiert"
+        ]
+      },
+      "1.3.2": {
+        "title": "v1.3.2",
+        "date": "Vergangen",
+        "changes": [
+          "Code-Architektur-Refaktor: Funktionsgetrennte modulare Architektur angenommen für bessere Code-Wartbarkeit und Erweiterbarkeit",
+          "ES6-Modularisierung: Vollständige ES6-Modul-Import/Export-Unterstützung reduziert Code-Duplikation",
+          "Build-System-Optimierung: Build-Skript aktualisiert um sich an neue Verzeichnisstruktur anzupassen",
+          "Testsystem-Verbesserung: Vollständige Testfall-Dokumentation (TESTING.md) mit 100+ Testfällen hinzugefügt",
+          "Benachrichtigungssystem-Fix: Korrigierte Benachrichtigungs-Icon-Ladeprobleme um normale Benachrichtigungsanzeige sicherzustellen"
+        ]
+      },
+      "1.3.1": {
+        "title": "v1.3.1",
+        "date": "Vergangen",
+        "changes": [
+          "Wichtige Fehlerbehebung: Kritisches Problem gelöst wo stilles Kopieren (Hotkey) URL-Parameter-Bereinigungseinstellungen nicht respektierte"
+        ]
+      },
+      "1.3.0": {
+        "title": "v1.3.0",
+        "date": "Vergangen",
+        "changes": [
+          "QR-Code-Generierung: QR-Code-Generierungsfunktionalität für aktuelle Seiten-URLs mit Theme-Anpassung hinzugefügt",
+          "Dunkles Theme-Unterstützung: Vollständige dunkle Theme-Anpassung unterstützt automatische Systemtheme-Erkennung und manuelle Umschaltung",
+          "Intelligente URL-Bereinigung: Aktualisierte URL-Parameter-Bereinigungsfunktion mit intelligentem Modus hinzugefügt (entfernt nur Tracking-Parameter während funktionale Parameter erhalten bleiben)",
+          "Adaptiver Drei-Positionen-Slider: Neue adaptive Slider-Komponente implementiert, unterstützt Breiten-Auto-Anpassung basierend auf Textlänge",
+          "Erscheinungsbild-Einstellungs-Slider: Erscheinungsbild-Einstellungen zu Drei-Positionen-Slider-Form geändert (System folgen/Lichtmodus/Dunkelmodus) ersetzt Dropdown-Menü",
+          "Animationsoptimierung: Verbesserte Benachrichtigungsanimationseffekte mit Skalierungsanimation anstelle von Slide für flüssigere Erfahrung"
+        ]
+      },
+      "1.2.0": {
+        "title": "v1.2.0",
+        "date": "Vergangen",
+        "changes": [
+          "Internationalisierungsunterstützung: Vereinfachte chinesische und englische zweisprachige Unterstützung mit dynamischer Sprachumschaltung hinzugefügt",
+          "Oberflächenoptimierung: Neu gestaltetes Oberflächenlayout mit Entwicklerinformationen und Versionsanzeige hinzugefügt",
+          "Benachrichtigungsverbesserung: Speichern-Erfolg-Benachrichtigungen für alle Einstellungen hinzugefügt, verbesserte Benutzerfeedback-Erfahrung"
+        ]
+      },
+      "1.1.0": {
+        "title": "v1.1.0",
+        "date": "Vergangen",
+        "changes": [
+          "Korrigiertes neues Tab stilles Kopieren-Problem: Problem mit Hotkey-Kopieren in neu geöffneten Tabs gelöst",
+          "Offscreen API angenommen: Chrome-Erweiterung Manifest V3 empfohlene Offscreen Documents verwendet, ersetzt Content-Script-Injektion",
+          "Verbesserte Kompatibilität: Nicht mehr abhängig von activeTab-Berechtigungsaktivierung, unterstützt stilles Kopieren in jedem Seitenzustand",
+          "Verbesserte Stabilität: Umgehung von Seiten-CSP-Beschränkungen und Ladezustandseffekten, ausführende Kopiervorgänge in unabhängiger Erweiterungsumgebung",
+          "Berechtigungsoptimierung: clipboardWrite-Berechtigung hinzugefügt, konform mit neuesten Browser-Sicherheitsanforderungen"
+        ]
+      },
+      "1.0.0": {
+        "title": "v1.0.0",
+        "date": "Initial",
+        "changes": [
+          "Grundlegende URL-Kopierfunktionalität",
+          "Parameter-Filterunterstützung",
+          "Markdown-Format-Kopieunterstützung",
+          "Hotkey-Unterstützung",
+          "Chrome-Systemseiten-Optimierung"
+        ]
+      }
+    }
+  },
   "footer": {
     "description": "Arclet Copier ist eine Open-Source-Chrome-Erweiterung",
     "quick_links": "Schnelle Links",
     "privacy_policy": "Datenschutzrichtlinie",
     "terms_of_service": "Nutzungsbedingungen",
+    "changelog": "Änderungsprotokoll",
     "links": {
       "github": "GitHub",
       "website": "Offizielle Website",

@@ -1,141 +1,112 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 ---
 
 <Layout title="개인정보 처리방침 - Arclet Copier" lang="ko">
-    <Header lang="ko" />
+  <Header lang="ko" />
 
-    <main class="pt-24 pb-16">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
-                <h1
-                    class="text-4xl font-serif font-semibold text-secondary-900 mb-8"
-                >
-                    개인정보 처리방침
-                </h1>
+  <main class="pt-24 pb-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
+        <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">개인정보 처리방침</h1>
 
-                <div class="prose prose-lg max-w-none">
-                    <p class="text-secondary-600 mb-8">
-                        최종 업데이트: 2025년 9월 19일
-                    </p>
+        <div class="prose prose-lg max-w-none">
+          <p class="text-secondary-600 mb-8">최종 업데이트: 2025년 9월 19일</p>
 
-                    <section class="mb-8">
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            1. 정보 수집
-                        </h2>
-                        <p class="text-secondary-700 mb-4">
-                            Arclet Copier는 브라우저 확장 프로그램이며, 저희는 귀하의 개인정보 보호를 위해 최선을 다하고 있습니다. 저희는 귀하의 개인정보를 수집, 저장 또는 전송하지 않습니다.
-                        </p>
-                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-                            <li>개인 식별 정보를 수집하지 않습니다</li>
-                            <li>브라우징 행동을 추적하지 않습니다</li>
-                            <li>복사하신 콘텐츠를 수집하지 않습니다</li>
-                            <li>제3자와 데이터를 공유하지 않습니다</li>
-                        </ul>
-                    </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">1. 정보 수집</h2>
+            <p class="text-secondary-700 mb-4">
+              Arclet Copier는 브라우저 확장 프로그램이며, 저희는 귀하의 개인정보 보호를 위해 최선을
+              다하고 있습니다. 저희는 귀하의 개인정보를 수집, 저장 또는 전송하지 않습니다.
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>개인 식별 정보를 수집하지 않습니다</li>
+              <li>브라우징 행동을 추적하지 않습니다</li>
+              <li>복사하신 콘텐츠를 수집하지 않습니다</li>
+              <li>제3자와 데이터를 공유하지 않습니다</li>
+            </ul>
+          </section>
 
-                    <section class="mb-8">
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            2. 로컬 저장
-                        </h2>
-                        <p class="text-secondary-700 mb-4">
-                            확장 프로그램은 귀하의 기기에 일부 구성 정보를 로컬로 저장할 수 있습니다:
-                        </p>
-                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-                            <li>사용자 설정 및 기본 설정</li>
-                            <li>확장 프로그램 구성</li>
-                            <li>복사 기록 (로컬에만 저장되며 업로드되지 않음)</li>
-                        </ul>
-                        <p class="text-secondary-700 mt-4">
-                            이 정보는 귀하의 로컬 기기에만 저장되며, 저희 서버나 제3자 서비스로 전송되지 않습니다.
-                        </p>
-                    </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">2. 로컬 저장</h2>
+            <p class="text-secondary-700 mb-4">
+              확장 프로그램은 귀하의 기기에 일부 구성 정보를 로컬로 저장할 수 있습니다:
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>사용자 설정 및 기본 설정</li>
+              <li>확장 프로그램 구성</li>
+              <li>복사 기록 (로컬에만 저장되며 업로드되지 않음)</li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              이 정보는 귀하의 로컬 기기에만 저장되며, 저희 서버나 제3자 서비스로 전송되지 않습니다.
+            </p>
+          </section>
 
-                    <section class="mb-8">
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            3. 권한 사용
-                        </h2>
-                        <p class="text-secondary-700 mb-4">
-                            확장 프로그램이 정상적으로 작동하기 위해 일부 브라우저 권한이 필요합니다:
-                        </p>
-                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-                            <li>
-                                <strong>activeTab</strong>: 복사 기능을 실행하기 위한 활성 탭 액세스
-                            </li>
-                            <li>
-                                <strong>storage</strong>: 사용자 설정의 로컬 저장
-                            </li>
-                            <li>
-                                <strong>clipboardWrite</strong>: 클립보드에 콘텐츠 쓰기
-                            </li>
-                        </ul>
-                        <p class="text-secondary-700 mt-4">
-                            저희는 필요한 경우에만 이러한 권한을 사용하며, 기능적 범위를 넘어서 남용하지 않습니다.
-                        </p>
-                    </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">3. 권한 사용</h2>
+            <p class="text-secondary-700 mb-4">
+              확장 프로그램이 정상적으로 작동하기 위해 일부 브라우저 권한이 필요합니다:
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>
+                <strong>activeTab</strong>: 복사 기능을 실행하기 위한 활성 탭 액세스
+              </li>
+              <li>
+                <strong>storage</strong>: 사용자 설정의 로컬 저장
+              </li>
+              <li>
+                <strong>clipboardWrite</strong>: 클립보드에 콘텐츠 쓰기
+              </li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              저희는 필요한 경우에만 이러한 권한을 사용하며, 기능적 범위를 넘어서 남용하지 않습니다.
+            </p>
+          </section>
 
-                    <section class="mb-8">
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            4. 제3자 서비스
-                        </h2>
-                        <p class="text-secondary-700">
-                            저희는 제3자 분석, 광고 또는 데이터 수집 서비스를 사용하지 않습니다. 확장 프로그램은 완전히 로컬에서 실행되며 외부 서버로 데이터를 전송하지 않습니다.
-                        </p>
-                    </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">4. 제3자 서비스</h2>
+            <p class="text-secondary-700">
+              저희는 제3자 분석, 광고 또는 데이터 수집 서비스를 사용하지 않습니다. 확장 프로그램은
+              완전히 로컬에서 실행되며 외부 서버로 데이터를 전송하지 않습니다.
+            </p>
+          </section>
 
-                    <section class="mb-8">
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            5. 데이터 보안
-                        </h2>
-                        <p class="text-secondary-700">
-                            저희는 귀하의 개인정보를 수집하거나 저장하지 않으므로 데이터 유출 위험이 없습니다. 모든 기능은 귀하의 로컬 기기에서 실행되어 개인정보 보호를 최대한 보장합니다.
-                        </p>
-                    </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">5. 데이터 보안</h2>
+            <p class="text-secondary-700">
+              저희는 귀하의 개인정보를 수집하거나 저장하지 않으므로 데이터 유출 위험이 없습니다.
+              모든 기능은 귀하의 로컬 기기에서 실행되어 개인정보 보호를 최대한 보장합니다.
+            </p>
+          </section>
 
-                    <section class="mb-8">
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            6. 정책 업데이트
-                        </h2>
-                        <p class="text-secondary-700">
-                            저희는 때때로 이 개인정보 처리방침을 업데이트할 수 있습니다. 모든 변경사항은 이 페이지에 게시되며, 확장 프로그램 업데이트 시 사용자에게 알려드립니다.
-                        </p>
-                    </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">6. 정책 업데이트</h2>
+            <p class="text-secondary-700">
+              저희는 때때로 이 개인정보 처리방침을 업데이트할 수 있습니다. 모든 변경사항은 이
+              페이지에 게시되며, 확장 프로그램 업데이트 시 사용자에게 알려드립니다.
+            </p>
+          </section>
 
-                    <section>
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            7. 문의하기
-                        </h2>
-                        <p class="text-secondary-700">
-                            이 개인정보 처리방침에 대한 질문이나 우려사항이 있으시면 GitHub 프로젝트 페이지를 통해 문의해 주세요:
-                            <a
-                                href="https://github.com/rokcso/arclet-copier"
-                                class="text-primary-600 hover:text-primary-700 underline"
-                                target="_blank"
-                            >
-                                https://github.com/rokcso/arclet-copier
-                            </a>
-                        </p>
-                    </section>
-                </div>
-            </div>
+          <section>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">7. 문의하기</h2>
+            <p class="text-secondary-700">
+              이 개인정보 처리방침에 대한 질문이나 우려사항이 있으시면 GitHub 프로젝트 페이지를 통해
+              문의해 주세요:
+              <a
+                href="https://github.com/rokcso/arclet-copier"
+                class="text-primary-600 hover:text-primary-700 underline"
+                target="_blank"
+              >
+                https://github.com/rokcso/arclet-copier
+              </a>
+            </p>
+          </section>
         </div>
-    </main>
+      </div>
+    </div>
+  </main>
 
-    <Footer lang="ko" />
+  <Footer lang="ko" />
 </Layout>

@@ -1,8 +1,8 @@
 ---
-import { t, type Language } from "../i18n/utils";
+import { t, type Language } from '../i18n/utils';
 
 export interface Props {
-    lang: Language;
+  lang: Language;
 }
 
 const { lang } = Astro.props;
@@ -13,528 +13,543 @@ const currentPath = Astro.url.pathname;
 
 // 定义语言路径映射
 const getLanguageUrls = (path: string) => {
-    if (path.startsWith("/zh/")) {
-        // 当前在简体中文页面
-        const subPath = path.replace("/zh", "");
-        return {
-            en: subPath === "/" ? "/" : subPath,
-            zh: path,
-            "zh-tw": "/zh-tw" + subPath,
-            de: "/de" + subPath,
-            fr: "/fr" + subPath,
-            pt: "/pt" + subPath,
-            ru: "/ru" + subPath,
-            ko: "/ko" + subPath,
-            es: "/es" + subPath,
-            ja: "/ja" + subPath,
-        };
-    } else if (path === "/zh") {
-        // 简体中文首页
-        return {
-            en: "/",
-            zh: "/zh",
-            "zh-tw": "/zh-tw",
-            de: "/de",
-            fr: "/fr",
-            pt: "/pt",
-            ru: "/ru",
-            ko: "/ko",
-            es: "/es",
-            ja: "/ja",
-        };
-    } else if (path.startsWith("/zh-tw/")) {
-        // 当前在繁体中文页面
-        const subPath = path.replace("/zh-tw", "");
-        return {
-            en: subPath === "/" ? "/" : subPath,
-            zh: "/zh" + subPath,
-            "zh-tw": path,
-            de: "/de" + subPath,
-            fr: "/fr" + subPath,
-            pt: "/pt" + subPath,
-            ru: "/ru" + subPath,
-            ko: "/ko" + subPath,
-            es: "/es" + subPath,
-            ja: "/ja" + subPath,
-        };
-    } else if (path === "/zh-tw") {
-        // 繁体中文首页
-        return {
-            en: "/",
-            zh: "/zh",
-            "zh-tw": "/zh-tw",
-            de: "/de",
-            fr: "/fr",
-            pt: "/pt",
-            ru: "/ru",
-            ko: "/ko",
-            es: "/es",
-            ja: "/ja",
-        };
-    } else if (path.startsWith("/de/")) {
-        // 当前在德语页面
-        const subPath = path.replace("/de", "");
-        return {
-            en: subPath === "/" ? "/" : subPath,
-            zh: "/zh" + subPath,
-            "zh-tw": "/zh-tw" + subPath,
-            de: path,
-            es: "/es" + subPath,
-            ja: "/ja" + subPath,
-        };
-    } else if (path === "/de") {
-        // 德语首页
-        return {
-            en: "/",
-            zh: "/zh",
-            "zh-tw": "/zh-tw",
-            de: "/de",
-            fr: "/fr",
-            pt: "/pt",
-            ru: "/ru",
-            ko: "/ko",
-            es: "/es",
-            ja: "/ja",
-        };
-    } else if (path.startsWith("/fr/")) {
-        // 当前在法语页面
-        const subPath = path.replace("/fr", "");
-        return {
-            en: subPath === "/" ? "/" : subPath,
-            zh: "/zh" + subPath,
-            "zh-tw": "/zh-tw" + subPath,
-            de: "/de" + subPath,
-            fr: path,
-            es: "/es" + subPath,
-            ja: "/ja" + subPath,
-        };
-    } else if (path === "/fr") {
-        // 法语首页
-        return {
-            en: "/",
-            zh: "/zh",
-            "zh-tw": "/zh-tw",
-            de: "/de",
-            fr: "/fr",
-            pt: "/pt",
-            ru: "/ru",
-            ko: "/ko",
-            es: "/es",
-            ja: "/ja",
-        };
-    } else if (path.startsWith("/pt/")) {
-        // 当前在葡萄牙语页面
-        const subPath = path.replace("/pt", "");
-        return {
-            en: subPath === "/" ? "/" : subPath,
-            zh: "/zh" + subPath,
-            "zh-tw": "/zh-tw" + subPath,
-            de: "/de" + subPath,
-            fr: "/fr" + subPath,
-            pt: path,
-            es: "/es" + subPath,
-            ja: "/ja" + subPath,
-        };
-    } else if (path === "/pt") {
-        // 葡萄牙语首页
-        return {
-            en: "/",
-            zh: "/zh",
-            "zh-tw": "/zh-tw",
-            de: "/de",
-            fr: "/fr",
-            pt: "/pt",
-            ru: "/ru",
-            ko: "/ko",
-            es: "/es",
-            ja: "/ja",
-        };
-    } else if (path.startsWith("/ru/")) {
-        // 当前在俄语页面
-        const subPath = path.replace("/ru", "");
-        return {
-            en: subPath === "/" ? "/" : subPath,
-            zh: "/zh" + subPath,
-            "zh-tw": "/zh-tw" + subPath,
-            de: "/de" + subPath,
-            fr: "/fr" + subPath,
-            pt: "/pt" + subPath,
-            ru: path,
-            es: "/es" + subPath,
-            ja: "/ja" + subPath,
-        };
-    } else if (path === "/ru") {
-        // 俄语首页
-        return {
-            en: "/",
-            zh: "/zh",
-            "zh-tw": "/zh-tw",
-            de: "/de",
-            fr: "/fr",
-            pt: "/pt",
-            ru: "/ru",
-            es: "/es",
-            ja: "/ja",
-        };
-    } else if (path.startsWith("/ko/")) {
-        // 当前在韩语页面
-        const subPath = path.replace("/ko", "");
-        return {
-            en: subPath === "/" ? "/" : subPath,
-            zh: "/zh" + subPath,
-            "zh-tw": "/zh-tw" + subPath,
-            de: "/de" + subPath,
-            fr: "/fr" + subPath,
-            pt: "/pt" + subPath,
-            ru: "/ru" + subPath,
-            ko: path,
-            es: "/es" + subPath,
-            ja: "/ja" + subPath,
-        };
-    } else if (path === "/ko") {
-        // 韩语首页
-        return {
-            en: "/",
-            zh: "/zh",
-            "zh-tw": "/zh-tw",
-            de: "/de",
-            fr: "/fr",
-            pt: "/pt",
-            ru: "/ru",
-            ko: "/ko",
-            es: "/es",
-            ja: "/ja",
-        };
-    } else if (path.startsWith("/es/")) {
-        // 当前在西班牙语页面
-        const subPath = path.replace("/es", "");
-        return {
-            en: subPath === "/" ? "/" : subPath,
-            zh: "/zh" + subPath,
-            "zh-tw": "/zh-tw" + subPath,
-            de: "/de" + subPath,
-            es: path,
-            ja: "/ja" + subPath,
-        };
-    } else if (path === "/es") {
-        // 西班牙语首页
-        return {
-            en: "/",
-            zh: "/zh",
-            "zh-tw": "/zh-tw",
-            de: "/de",
-            fr: "/fr",
-            pt: "/pt",
-            es: "/es",
-            ja: "/ja",
-        };
-    } else if (path.startsWith("/ja/")) {
-        // 当前在日语页面
-        const subPath = path.replace("/ja", "");
-        return {
-            en: subPath === "/" ? "/" : subPath,
-            zh: "/zh" + subPath,
-            "zh-tw": "/zh-tw" + subPath,
-            de: "/de" + subPath,
-            fr: "/fr" + subPath,
-            pt: "/pt" + subPath,
-            ru: "/ru" + subPath,
-            ko: "/ko" + subPath,
-            es: "/es" + subPath,
-            ja: path,
-        };
-    } else if (path === "/ja") {
-        // 日语首页
-        return {
-            en: "/",
-            zh: "/zh",
-            "zh-tw": "/zh-tw",
-            de: "/de",
-            fr: "/fr",
-            es: "/es",
-            ja: "/ja",
-        };
-    } else if (path === "/") {
-        // 英文首页
-        return {
-            en: "/",
-            zh: "/zh",
-            "zh-tw": "/zh-tw",
-            de: "/de",
-            es: "/es",
-            ja: "/ja",
-        };
-    } else {
-        // 其他英文页面
-        return {
-            en: path,
-            zh: "/zh" + path,
-            "zh-tw": "/zh-tw" + path,
-            de: "/de" + path,
-            fr: "/fr" + path,
-            pt: "/pt" + path,
-            ru: "/ru" + path,
-            ko: "/ko" + path,
-            es: "/es" + path,
-            ja: "/ja" + path,
-        };
-    }
+  if (path.startsWith('/zh/')) {
+    // 当前在简体中文页面
+    const subPath = path.replace('/zh', '');
+    return {
+      en: subPath === '/' ? '/' : subPath,
+      zh: path,
+      'zh-tw': '/zh-tw' + subPath,
+      de: '/de' + subPath,
+      fr: '/fr' + subPath,
+      pt: '/pt' + subPath,
+      ru: '/ru' + subPath,
+      ko: '/ko' + subPath,
+      es: '/es' + subPath,
+      ja: '/ja' + subPath,
+    };
+  } else if (path === '/zh') {
+    // 简体中文首页
+    return {
+      en: '/',
+      zh: '/zh',
+      'zh-tw': '/zh-tw',
+      de: '/de',
+      fr: '/fr',
+      pt: '/pt',
+      ru: '/ru',
+      ko: '/ko',
+      es: '/es',
+      ja: '/ja',
+    };
+  } else if (path.startsWith('/zh-tw/')) {
+    // 当前在繁体中文页面
+    const subPath = path.replace('/zh-tw', '');
+    return {
+      en: subPath === '/' ? '/' : subPath,
+      zh: '/zh' + subPath,
+      'zh-tw': path,
+      de: '/de' + subPath,
+      fr: '/fr' + subPath,
+      pt: '/pt' + subPath,
+      ru: '/ru' + subPath,
+      ko: '/ko' + subPath,
+      es: '/es' + subPath,
+      ja: '/ja' + subPath,
+    };
+  } else if (path === '/zh-tw') {
+    // 繁体中文首页
+    return {
+      en: '/',
+      zh: '/zh',
+      'zh-tw': '/zh-tw',
+      de: '/de',
+      fr: '/fr',
+      pt: '/pt',
+      ru: '/ru',
+      ko: '/ko',
+      es: '/es',
+      ja: '/ja',
+    };
+  } else if (path.startsWith('/de/')) {
+    // 当前在德语页面
+    const subPath = path.replace('/de', '');
+    return {
+      en: subPath === '/' ? '/' : subPath,
+      zh: '/zh' + subPath,
+      'zh-tw': '/zh-tw' + subPath,
+      de: path,
+      es: '/es' + subPath,
+      ja: '/ja' + subPath,
+    };
+  } else if (path === '/de') {
+    // 德语首页
+    return {
+      en: '/',
+      zh: '/zh',
+      'zh-tw': '/zh-tw',
+      de: '/de',
+      fr: '/fr',
+      pt: '/pt',
+      ru: '/ru',
+      ko: '/ko',
+      es: '/es',
+      ja: '/ja',
+    };
+  } else if (path.startsWith('/fr/')) {
+    // 当前在法语页面
+    const subPath = path.replace('/fr', '');
+    return {
+      en: subPath === '/' ? '/' : subPath,
+      zh: '/zh' + subPath,
+      'zh-tw': '/zh-tw' + subPath,
+      de: '/de' + subPath,
+      fr: path,
+      es: '/es' + subPath,
+      ja: '/ja' + subPath,
+    };
+  } else if (path === '/fr') {
+    // 法语首页
+    return {
+      en: '/',
+      zh: '/zh',
+      'zh-tw': '/zh-tw',
+      de: '/de',
+      fr: '/fr',
+      pt: '/pt',
+      ru: '/ru',
+      ko: '/ko',
+      es: '/es',
+      ja: '/ja',
+    };
+  } else if (path.startsWith('/pt/')) {
+    // 当前在葡萄牙语页面
+    const subPath = path.replace('/pt', '');
+    return {
+      en: subPath === '/' ? '/' : subPath,
+      zh: '/zh' + subPath,
+      'zh-tw': '/zh-tw' + subPath,
+      de: '/de' + subPath,
+      fr: '/fr' + subPath,
+      pt: path,
+      es: '/es' + subPath,
+      ja: '/ja' + subPath,
+    };
+  } else if (path === '/pt') {
+    // 葡萄牙语首页
+    return {
+      en: '/',
+      zh: '/zh',
+      'zh-tw': '/zh-tw',
+      de: '/de',
+      fr: '/fr',
+      pt: '/pt',
+      ru: '/ru',
+      ko: '/ko',
+      es: '/es',
+      ja: '/ja',
+    };
+  } else if (path.startsWith('/ru/')) {
+    // 当前在俄语页面
+    const subPath = path.replace('/ru', '');
+    return {
+      en: subPath === '/' ? '/' : subPath,
+      zh: '/zh' + subPath,
+      'zh-tw': '/zh-tw' + subPath,
+      de: '/de' + subPath,
+      fr: '/fr' + subPath,
+      pt: '/pt' + subPath,
+      ru: path,
+      es: '/es' + subPath,
+      ja: '/ja' + subPath,
+    };
+  } else if (path === '/ru') {
+    // 俄语首页
+    return {
+      en: '/',
+      zh: '/zh',
+      'zh-tw': '/zh-tw',
+      de: '/de',
+      fr: '/fr',
+      pt: '/pt',
+      ru: '/ru',
+      es: '/es',
+      ja: '/ja',
+    };
+  } else if (path.startsWith('/ko/')) {
+    // 当前在韩语页面
+    const subPath = path.replace('/ko', '');
+    return {
+      en: subPath === '/' ? '/' : subPath,
+      zh: '/zh' + subPath,
+      'zh-tw': '/zh-tw' + subPath,
+      de: '/de' + subPath,
+      fr: '/fr' + subPath,
+      pt: '/pt' + subPath,
+      ru: '/ru' + subPath,
+      ko: path,
+      es: '/es' + subPath,
+      ja: '/ja' + subPath,
+    };
+  } else if (path === '/ko') {
+    // 韩语首页
+    return {
+      en: '/',
+      zh: '/zh',
+      'zh-tw': '/zh-tw',
+      de: '/de',
+      fr: '/fr',
+      pt: '/pt',
+      ru: '/ru',
+      ko: '/ko',
+      es: '/es',
+      ja: '/ja',
+    };
+  } else if (path.startsWith('/es/')) {
+    // 当前在西班牙语页面
+    const subPath = path.replace('/es', '');
+    return {
+      en: subPath === '/' ? '/' : subPath,
+      zh: '/zh' + subPath,
+      'zh-tw': '/zh-tw' + subPath,
+      de: '/de' + subPath,
+      es: path,
+      ja: '/ja' + subPath,
+    };
+  } else if (path === '/es') {
+    // 西班牙语首页
+    return {
+      en: '/',
+      zh: '/zh',
+      'zh-tw': '/zh-tw',
+      de: '/de',
+      fr: '/fr',
+      pt: '/pt',
+      es: '/es',
+      ja: '/ja',
+    };
+  } else if (path.startsWith('/ja/')) {
+    // 当前在日语页面
+    const subPath = path.replace('/ja', '');
+    return {
+      en: subPath === '/' ? '/' : subPath,
+      zh: '/zh' + subPath,
+      'zh-tw': '/zh-tw' + subPath,
+      de: '/de' + subPath,
+      fr: '/fr' + subPath,
+      pt: '/pt' + subPath,
+      ru: '/ru' + subPath,
+      ko: '/ko' + subPath,
+      es: '/es' + subPath,
+      ja: path,
+    };
+  } else if (path === '/ja') {
+    // 日语首页
+    return {
+      en: '/',
+      zh: '/zh',
+      'zh-tw': '/zh-tw',
+      de: '/de',
+      fr: '/fr',
+      es: '/es',
+      ja: '/ja',
+    };
+  } else if (path === '/') {
+    // 英文首页
+    return {
+      en: '/',
+      zh: '/zh',
+      'zh-tw': '/zh-tw',
+      de: '/de',
+      es: '/es',
+      ja: '/ja',
+    };
+  } else {
+    // 其他英文页面
+    return {
+      en: path,
+      zh: '/zh' + path,
+      'zh-tw': '/zh-tw' + path,
+      de: '/de' + path,
+      fr: '/fr' + path,
+      pt: '/pt' + path,
+      ru: '/ru' + path,
+      ko: '/ko' + path,
+      es: '/es' + path,
+      ja: '/ja' + path,
+    };
+  }
 };
 
 const languageUrls = getLanguageUrls(currentPath);
 
 // 语言选项配置
 const languageOptions = [
-    { code: "en", name: "English", flag: "🇺🇸", url: languageUrls.en },
-    { code: "zh", name: "简体中文", flag: "🇨🇳", url: languageUrls.zh },
-    { code: "zh-tw", name: "繁體中文", flag: "🇨🇳", url: languageUrls["zh-tw"] },
-    { code: "es", name: "Español", flag: "🇪🇸", url: languageUrls.es },
-    { code: "ja", name: "日本語", flag: "🇯🇵", url: languageUrls.ja },
-    { code: "de", name: "Deutsch", flag: "🇩🇪", url: languageUrls.de },
-    { code: "fr", name: "Français", flag: "🇫🇷", url: languageUrls.fr },
-    { code: "pt", name: "Português", flag: "🇵🇹", url: languageUrls.pt },
-    { code: "ru", name: "Русский", flag: "🇷🇺", url: languageUrls.ru },
-    { code: "ko", name: "한국어", flag: "🇰🇷", url: languageUrls.ko },
+  { code: 'en', name: 'English', flag: '🇺🇸', url: languageUrls.en },
+  { code: 'zh', name: '简体中文', flag: '🇨🇳', url: languageUrls.zh },
+  { code: 'zh-tw', name: '繁體中文', flag: '🇨🇳', url: languageUrls['zh-tw'] },
+  { code: 'es', name: 'Español', flag: '🇪🇸', url: languageUrls.es },
+  { code: 'ja', name: '日本語', flag: '🇯🇵', url: languageUrls.ja },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪', url: languageUrls.de },
+  { code: 'fr', name: 'Français', flag: '🇫🇷', url: languageUrls.fr },
+  { code: 'pt', name: 'Português', flag: '🇵🇹', url: languageUrls.pt },
+  { code: 'ru', name: 'Русский', flag: '🇷🇺', url: languageUrls.ru },
+  { code: 'ko', name: '한국어', flag: '🇰🇷', url: languageUrls.ko },
 ];
 
-const currentLanguage =
-    languageOptions.find((option) => option.code === lang) ||
-    languageOptions[0];
+const currentLanguage = languageOptions.find(option => option.code === lang) || languageOptions[0];
 ---
 
 <style>
-    .logo-rotate:hover {
-        transform: rotate(-360deg);
-    }
+  .logo-rotate:hover {
+    transform: rotate(-360deg);
+  }
 
-    .language-dropdown {
-        position: relative;
-    }
+  .language-dropdown {
+    position: relative;
+  }
 
-    .language-dropdown-menu {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background: white;
-        border: 1px solid #e2e8f0;
-        border-radius: 0.5rem;
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        min-width: 140px;
-        z-index: 50;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-10px);
-        transition: all 0.2s ease;
-        overflow: hidden;
-    }
+  .language-dropdown button {
+    cursor: pointer;
+  }
 
-    .language-dropdown.active .language-dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
+  .language-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    min-width: 140px;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    overflow: hidden;
+  }
 
-    .language-option {
-        display: flex;
-        align-items: center;
-        padding: 0.5rem 0.75rem;
-        color: #64748b;
-        text-decoration: none;
-        transition: background-color 0.15s ease;
-        font-size: 0.875rem;
-    }
+  .language-dropdown.active .language-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 
-    .language-option:first-child {
-        border-radius: 0.5rem 0.5rem 0 0;
-    }
+  .language-option {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    color: #64748b;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
 
-    .language-option:last-child {
-        border-radius: 0 0 0.5rem 0.5rem;
-    }
+  .language-option:first-child {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
 
-    .language-option:only-child {
-        border-radius: 0.5rem;
-    }
+  .language-option:last-child {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
 
-    .language-option:hover {
-        background-color: #f1f5f9;
-    }
+  .language-option:only-child {
+    border-radius: 0.5rem;
+  }
 
-    .language-option.active {
-        background-color: #16a34a;
-        color: white;
-    }
+  .language-option:hover {
+    background-color: #f1f5f9;
+  }
 
-    .language-option .flag {
-        margin-right: 0.5rem;
-    }
+  .language-option.active {
+    background-color: #16a34a;
+    color: white;
+  }
+
+  .language-option .flag {
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+
+  .language-option span {
+    cursor: pointer;
+  }
+
+  /* 确保所有语言下拉框内的元素都使用pointer光标 */
+  .language-dropdown * {
+    cursor: pointer;
+  }
+
+  /* 但是文本输入框应该保持text光标 */
+  .language-dropdown input[type='text'] {
+    cursor: text;
+  }
 </style>
 
 <header
-    class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-secondary-200"
+  class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-secondary-200"
 >
-    <div class="max-w-6xl mx-auto px-6 py-4">
-        <nav class="flex items-center justify-between">
-            <!-- Logo -->
-            <a
-                href={lang === "en" ? "/" : `/${lang}`}
-                class="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200"
-            >
-                <img
-                    src="/img/logo.webp"
-                    alt="Arclet Copier"
-                    class="w-8 h-8 transition-transform duration-500 logo-rotate"
-                />
-                <span
-                    class="font-serif font-semibold text-xl text-secondary-900"
-                    >Arclet Copier</span
-                >
-            </a>
+  <div class="max-w-6xl mx-auto px-6 py-4">
+    <nav class="flex items-center justify-between">
+      <!-- Logo -->
+      <a
+        href={lang === 'en' ? '/' : `/${lang}`}
+        class="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200"
+      >
+        <img
+          src="/img/logo.webp"
+          alt="Arclet Copier"
+          class="w-8 h-8 transition-transform duration-500 logo-rotate"
+        />
+        <span class="font-serif font-semibold text-xl text-secondary-900">Arclet Copier</span>
+      </a>
 
-            <!-- Right Side: Navigation Links & Language Switcher -->
-            <div class="flex items-center space-x-6">
-                <!-- Navigation Links -->
-                <div class="hidden md:flex items-center space-x-6">
-                    <a
-                        href={lang === "en"
-                            ? "/#features"
-                            : `/${lang}#features`}
-                        class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
-                    >
-                        {translate("nav.features")}
-                    </a>
-                    <a
-                        href={lang === "en"
-                            ? "/#download"
-                            : `/${lang}#download`}
-                        class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
-                    >
-                        {translate("nav.download")}
-                    </a>
-                    <a
-                        href={lang === "en" ? "/#faq" : `/${lang}#faq`}
-                        class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
-                    >
-                        {translate("nav.faq")}
-                    </a>
-                </div>
-
-                <!-- Language Dropdown -->
-                <div class="language-dropdown">
-                    <button
-                        class="flex items-center space-x-2 px-3 py-2 bg-secondary-100 rounded-lg text-sm font-medium text-secondary-700 hover:bg-secondary-200 transition-all duration-200"
-                        id="language-toggle"
-                    >
-                        <span class="flag">{currentLanguage.flag}</span>
-                        <span>{currentLanguage.name}</span>
-                        <svg
-                            class="w-4 h-4 transition-transform duration-200"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-
-                    <div class="language-dropdown-menu">
-                        {
-                            languageOptions.map((option) => (
-                                <a
-                                    href={option.url}
-                                    class={`language-option ${option.code === lang ? "active" : ""}`}
-                                >
-                                    <span class="flag">{option.flag}</span>
-                                    <span>{option.name}</span>
-                                </a>
-                            ))
-                        }
-                    </div>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button
-                    class="md:hidden p-2 text-secondary-600 hover:text-secondary-800"
-                    id="mobile-menu-btn"
-                >
-                    <svg
-                        class="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </nav>
-
-        <!-- Mobile Menu -->
-        <div
-            class="md:hidden mt-4 pb-4 border-t border-secondary-200 hidden"
-            id="mobile-menu"
-        >
-            <div class="flex flex-col space-y-3 pt-4">
-                <a
-                    href="#features"
-                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
-                >
-                    {translate("nav.features")}
-                </a>
-                <a
-                    href="#download"
-                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
-                >
-                    {translate("nav.download")}
-                </a>
-                <a
-                    href="#faq"
-                    class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
-                >
-                    {translate("nav.faq")}
-                </a>
-            </div>
+      <!-- Right Side: Navigation Links & Language Switcher -->
+      <div class="flex items-center space-x-6">
+        <!-- Navigation Links -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a
+            href={lang === 'en' ? '/#features' : `/${lang}#features`}
+            class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+          >
+            {translate('nav.features')}
+          </a>
+          <a
+            href={lang === 'en' ? '/#download' : `/${lang}#download`}
+            class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+          >
+            {translate('nav.download')}
+          </a>
+          <a
+            href={lang === 'en' ? '/#faq' : `/${lang}#faq`}
+            class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+          >
+            {translate('nav.faq')}
+          </a>
+          <a
+            href={lang === 'en' ? '/changelog' : `/${lang}/changelog`}
+            class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+          >
+            {translate('nav.changelog')}
+          </a>
         </div>
+
+        <!-- Language Dropdown -->
+        <div class="language-dropdown">
+          <button
+            class="flex items-center space-x-2 px-3 py-2 bg-secondary-100 rounded-lg text-sm font-medium text-secondary-700 hover:bg-secondary-200 transition-all duration-200"
+            id="language-toggle"
+          >
+            <span class="flag">{currentLanguage.flag}</span>
+            <span>{currentLanguage.name}</span>
+            <svg
+              class="w-4 h-4 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+
+          <div class="language-dropdown-menu">
+            {
+              languageOptions.map(option => (
+                <a
+                  href={option.url}
+                  class:list={`language-option ${option.code === lang ? 'active' : ''}`}
+                >
+                  <span class="flag">{option.flag}</span>
+                  <span>{option.name}</span>
+                </a>
+              ))
+            }
+          </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="md:hidden p-2 text-secondary-600 hover:text-secondary-800"
+          id="mobile-menu-btn"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden mt-4 pb-4 border-t border-secondary-200 hidden" id="mobile-menu">
+      <div class="flex flex-col space-y-3 pt-4">
+        <a
+          href={lang === 'en' ? '/#features' : `/${lang}#features`}
+          class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+        >
+          {translate('nav.features')}
+        </a>
+        <a
+          href={lang === 'en' ? '/#download' : `/${lang}#download`}
+          class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+        >
+          {translate('nav.download')}
+        </a>
+        <a
+          href={lang === 'en' ? '/#faq' : `/${lang}#faq`}
+          class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+        >
+          {translate('nav.faq')}
+        </a>
+        <a
+          href={lang === 'en' ? '/changelog' : `/${lang}/changelog`}
+          class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+        >
+          {translate('nav.changelog')}
+        </a>
+      </div>
     </div>
+  </div>
 </header>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const languageToggle = document.getElementById("language-toggle");
-        const languageDropdown = document.querySelector(".language-dropdown");
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const languageToggle = document.getElementById('language-toggle');
+    const languageDropdown = document.querySelector('.language-dropdown');
 
-        // Mobile menu toggle
-        mobileMenuBtn?.addEventListener("click", () => {
-            mobileMenu?.classList.toggle("hidden");
-        });
-
-        // Language dropdown toggle
-        languageToggle?.addEventListener("click", () => {
-            languageDropdown?.classList.toggle("active");
-        });
-
-        // Close dropdown when clicking outside
-        document.addEventListener("click", (event) => {
-            if (!languageDropdown?.contains(event.target as Node)) {
-                languageDropdown?.classList.remove("active");
-            }
-        });
-
-        // Close dropdown on escape key
-        document.addEventListener("keydown", (event) => {
-            if (event.key === "Escape") {
-                languageDropdown?.classList.remove("active");
-            }
-        });
+    // Mobile menu toggle
+    mobileMenuBtn?.addEventListener('click', () => {
+      mobileMenu?.classList.toggle('hidden');
     });
+
+    // Language dropdown toggle
+    languageToggle?.addEventListener('click', () => {
+      languageDropdown?.classList.toggle('active');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', event => {
+      if (!languageDropdown?.contains(event.target as Node)) {
+        languageDropdown?.classList.remove('active');
+      }
+    });
+
+    // Close dropdown on escape key
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        languageDropdown?.classList.remove('active');
+      }
+    });
+  });
 </script>

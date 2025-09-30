@@ -1,141 +1,128 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 ---
 
 <Layout title="Politique de confidentialité - Arclet Copier" lang="fr">
-    <Header lang="fr" />
+  <Header lang="fr" />
 
-    <main class="pt-24 pb-16">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
-                <h1
-                    class="text-4xl font-serif font-semibold text-secondary-900 mb-8"
-                >
-                    Politique de confidentialité
-                </h1>
+  <main class="pt-24 pb-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
+        <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">
+          Politique de confidentialité
+        </h1>
 
-                <div class="prose prose-lg max-w-none">
-                    <p class="text-secondary-600 mb-8">
-                        Dernière mise à jour : 19 septembre 2025
-                    </p>
+        <div class="prose prose-lg max-w-none">
+          <p class="text-secondary-600 mb-8">Dernière mise à jour : 19 septembre 2025</p>
 
-                    <section class="mb-8">
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            1. Collecte d'informations
-                        </h2>
-                        <p class="text-secondary-700 mb-4">
-                            Arclet Copier est une extension de navigateur, et nous nous engageons à protéger votre vie privée. Nous ne collectons, ne stockons ni ne transmettons aucune de vos informations personnelles.
-                        </p>
-                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-                            <li>Nous ne collectons aucune information personnellement identifiable</li>
-                            <li>Nous ne suivons pas votre comportement de navigation</li>
-                            <li>Nous ne collectons pas le contenu que vous copiez</li>
-                            <li>Nous ne partageons aucune donnée avec des tiers</li>
-                        </ul>
-                    </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">
+              1. Collecte d'informations
+            </h2>
+            <p class="text-secondary-700 mb-4">
+              Arclet Copier est une extension de navigateur, et nous nous engageons à protéger votre
+              vie privée. Nous ne collectons, ne stockons ni ne transmettons aucune de vos
+              informations personnelles.
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>Nous ne collectons aucune information personnellement identifiable</li>
+              <li>Nous ne suivons pas votre comportement de navigation</li>
+              <li>Nous ne collectons pas le contenu que vous copiez</li>
+              <li>Nous ne partageons aucune donnée avec des tiers</li>
+            </ul>
+          </section>
 
-                    <section class="mb-8">
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            2. Stockage local
-                        </h2>
-                        <p class="text-secondary-700 mb-4">
-                            L'extension peut stocker localement certaines informations de configuration sur votre appareil, notamment :
-                        </p>
-                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-                            <li>Paramètres et préférences de l'utilisateur</li>
-                            <li>Configuration de l'extension</li>
-                            <li>Historique de copie (stocké uniquement localement, pas téléchargé)</li>
-                        </ul>
-                        <p class="text-secondary-700 mt-4">
-                            Ces informations ne sont stockées que sur votre appareil local et ne sont pas envoyées à nos serveurs ou à des services tiers.
-                        </p>
-                    </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">2. Stockage local</h2>
+            <p class="text-secondary-700 mb-4">
+              L'extension peut stocker localement certaines informations de configuration sur votre
+              appareil, notamment :
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>Paramètres et préférences de l'utilisateur</li>
+              <li>Configuration de l'extension</li>
+              <li>Historique de copie (stocké uniquement localement, pas téléchargé)</li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              Ces informations ne sont stockées que sur votre appareil local et ne sont pas envoyées
+              à nos serveurs ou à des services tiers.
+            </p>
+          </section>
 
-                    <section class="mb-8">
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            3. Utilisation des permissions
-                        </h2>
-                        <p class="text-secondary-700 mb-4">
-                            L'extension nécessite certaines permissions de navigateur pour fonctionner correctement :
-                        </p>
-                        <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-                            <li>
-                                <strong>activeTab</strong> : Accès à l'onglet actif pour exécuter la fonction de copie
-                            </li>
-                            <li>
-                                <strong>storage</strong> : Stockage local des paramètres utilisateur
-                            </li>
-                            <li>
-                                <strong>clipboardWrite</strong> : Écriture de contenu dans le presse-papiers
-                            </li>
-                        </ul>
-                        <p class="text-secondary-700 mt-4">
-                            Nous n'utilisons ces permissions que lorsque nécessaire et ne les utilisons pas abusivement au-delà de la portée fonctionnelle.
-                        </p>
-                    </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">
+              3. Utilisation des permissions
+            </h2>
+            <p class="text-secondary-700 mb-4">
+              L'extension nécessite certaines permissions de navigateur pour fonctionner
+              correctement :
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>
+                <strong>activeTab</strong> : Accès à l'onglet actif pour exécuter la fonction de copie
+              </li>
+              <li>
+                <strong>storage</strong> : Stockage local des paramètres utilisateur
+              </li>
+              <li>
+                <strong>clipboardWrite</strong> : Écriture de contenu dans le presse-papiers
+              </li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              Nous n'utilisons ces permissions que lorsque nécessaire et ne les utilisons pas
+              abusivement au-delà de la portée fonctionnelle.
+            </p>
+          </section>
 
-                    <section class="mb-8">
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            4. Services tiers
-                        </h2>
-                        <p class="text-secondary-700">
-                            Nous n'utilisons aucun service d'analyse, publicitaire ou de collecte de données tiers. L'extension fonctionne entièrement localement et n'envoie aucune donnée à des serveurs externes.
-                        </p>
-                    </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">4. Services tiers</h2>
+            <p class="text-secondary-700">
+              Nous n'utilisons aucun service d'analyse, publicitaire ou de collecte de données
+              tiers. L'extension fonctionne entièrement localement et n'envoie aucune donnée à des
+              serveurs externes.
+            </p>
+          </section>
 
-                    <section class="mb-8">
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            5. Sécurité des données
-                        </h2>
-                        <p class="text-secondary-700">
-                            Comme nous ne collectons ni ne stockons vos données personnelles, il n'y a aucun risque de violation de données. Toutes les fonctionnalités s'exécutent sur votre appareil local, garantissant une protection maximale de votre vie privée.
-                        </p>
-                    </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">5. Sécurité des données</h2>
+            <p class="text-secondary-700">
+              Comme nous ne collectons ni ne stockons vos données personnelles, il n'y a aucun
+              risque de violation de données. Toutes les fonctionnalités s'exécutent sur votre
+              appareil local, garantissant une protection maximale de votre vie privée.
+            </p>
+          </section>
 
-                    <section class="mb-8">
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            6. Mises à jour de la politique
-                        </h2>
-                        <p class="text-secondary-700">
-                            Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Tous les changements seront publiés sur cette page et les utilisateurs seront notifiés lors des mises à jour de l'extension.
-                        </p>
-                    </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">
+              6. Mises à jour de la politique
+            </h2>
+            <p class="text-secondary-700">
+              Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Tous
+              les changements seront publiés sur cette page et les utilisateurs seront notifiés lors
+              des mises à jour de l'extension.
+            </p>
+          </section>
 
-                    <section>
-                        <h2
-                            class="text-2xl font-semibold text-secondary-900 mb-4"
-                        >
-                            7. Nous contacter
-                        </h2>
-                        <p class="text-secondary-700">
-                            Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité, veuillez nous contacter via la page du projet GitHub :
-                            <a
-                                href="https://github.com/rokcso/arclet-copier"
-                                class="text-primary-600 hover:text-primary-700 underline"
-                                target="_blank"
-                            >
-                                https://github.com/rokcso/arclet-copier
-                            </a>
-                        </p>
-                    </section>
-                </div>
-            </div>
+          <section>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">7. Nous contacter</h2>
+            <p class="text-secondary-700">
+              Si vous avez des questions ou des préoccupations concernant cette politique de
+              confidentialité, veuillez nous contacter via la page du projet GitHub :
+              <a
+                href="https://github.com/rokcso/arclet-copier"
+                class="text-primary-600 hover:text-primary-700 underline"
+                target="_blank"
+              >
+                https://github.com/rokcso/arclet-copier
+              </a>
+            </p>
+          </section>
         </div>
-    </main>
+      </div>
+    </div>
+  </main>
 
-    <Footer lang="fr" />
+  <Footer lang="fr" />
 </Layout>

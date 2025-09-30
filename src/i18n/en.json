@@ -7,6 +7,7 @@
     "features": "Features",
     "download": "Download",
     "faq": "FAQ",
+    "changelog": "Changelog",
     "github": "GitHub",
     "about": "About"
   },
@@ -123,11 +124,187 @@
       }
     ]
   },
+  "changelog": {
+    "title": "Changelog",
+    "subtitle": "All updates and improvements",
+    "description": "Stay up to date with the latest features and improvements",
+    "versions": {
+      "1.6.2": {
+        "title": "v1.6.2",
+        "date": "Latest",
+        "changes": [
+          "UI/UX Redesign: Complete user interface overhaul, removing shadows from buttons and UI elements for a flatter design aesthetic",
+          "Component Modularization: Extracted toggle components and theme variables into shared modules for better code reusability and maintainability",
+          "Visual Optimization: Simplified toggle switch and three-position switch styles for better visual consistency",
+          "Bug Fixes: Fixed favicon error handling mechanism using event listeners instead of inline onerror handlers",
+          "Performance Optimization: Removed unused CSS rules and translation texts to reduce bundle size"
+        ]
+      },
+      "1.6.1": {
+        "title": "v1.6.1",
+        "date": "Previous",
+        "changes": [
+          "Template System Enhancement: Comprehensive improvement to custom template functionality, redesigned template editor interface for modern UI experience",
+          "Emoji Selector: Added categorized emoji selector for template icons with smooth scrolling and category navigation",
+          "Template Engine Optimization: Improved template validation logic and enhanced template variable processing with better error handling",
+          "Notification System Upgrade: All-new notification system with Arc-style in-page Toast notifications, supporting anti-duplicate display and better visual effects",
+          "User Behavior Analytics: Integrated Umami analytics system tracking installations, updates, and copy operations with user ID tracking and browser version detection",
+          "Code Structure Optimization: Refactored multiple components into shared modules for better modularity and maintainability",
+          "Localization Enhancement: Added Traditional Chinese support and improved multilingual interface text"
+        ]
+      },
+      "1.6.0": {
+        "title": "v1.6.0",
+        "date": "Recent",
+        "changes": [
+          "Custom Template System: Brand new custom copy format template functionality supporting creation, editing, and deletion of personalized copy templates",
+          "Rich Template Variables: Support for 11 template variables ({{url}}, {{originalUrl}}, {{title}}, {{hostname}}, {{domain}}, {{shortUrl}}, {{date}}, {{time}}, {{datetime}}, {{timestamp}}, {{iso}})",
+          "Template Management Interface: Dedicated template management page with emoji icon selection, real-time preview, and template validation"
+        ]
+      },
+      "1.5.0": {
+        "title": "v1.5.0",
+        "date": "Recent",
+        "changes": [
+          "Batch Copy Feature: New batch copy page supporting selection of multiple tabs for bulk URL copying",
+          "Smart Filtering: Support for filtering tabs by window scope (current window or all windows)",
+          "Preview Function: Preview content before copying to ensure results meet expectations",
+          "Batch Settings: Independent batch operation settings supporting web page filtering, deduplication, and copy format selection",
+          "High Performance: Support for efficient handling of large numbers of tabs with real-time preview"
+        ]
+      },
+      "1.4.2": {
+        "title": "v1.4.2",
+        "date": "Past",
+        "changes": [
+          "CSS Priority Fix: Fixed theme color override issues caused by CSS selector priority, improving theme system stability",
+          "Arclet Copier official website launch: https://arcletcopier.com/"
+        ]
+      },
+      "1.4.1": {
+        "title": "v1.4.1",
+        "date": "Past",
+        "changes": [
+          "Expanded Multilingual Support: Expanded from 2 languages to 9 languages, adding Spanish, Japanese, German, French, Portuguese, Russian, and Korean",
+          "Interface Optimization: Redesigned Support Us section, removing nested border design for cleaner list styling and reduced visual redundancy",
+          "Technical Improvements: Fixed three-position switch slider positioning calculation issues for better interface response precision"
+        ]
+      },
+      "1.4.0": {
+        "title": "v1.4.0",
+        "date": "Past",
+        "changes": [
+          "Short URL Generation: New URL shortening feature supporting one-click short URL generation and copying",
+          "Options Page: New dedicated settings options page providing more complete configuration experience",
+          "Short URL Service Selection: Support for choosing different short URL services (is.gd and TinyURL) to meet different user needs",
+          "Performance Optimization: Short URL generation with anti-shake and caching mechanisms to avoid duplicate requests and improve response speed",
+          "Persistent Caching: Short URL cache using Chrome storage for persistence, still quickly accessible after browser restart",
+          "Animation Effects: Added rotation animation effect to header icons for enhanced visual experience",
+          "URL Validation: Enhanced URL validation mechanism to ensure reliability and accuracy of short URL generation",
+          "Interface Adjustment: Adjusted popup layout to reserve space for short URL buttons while maintaining clean and beautiful interface"
+        ]
+      },
+      "1.3.5": {
+        "title": "v1.3.5",
+        "date": "Past",
+        "changes": [
+          "Chrome Notification Control: Added Chrome notification toggle setting allowing users to customize browser desktop notification display",
+          "Modern Interface Upgrade: Comprehensively optimized toggle switch styles, uniformly adopting modern slider design for better visual consistency",
+          "QR Popup Interface Optimization: Enhanced QR code popup layout, optimized element spacing and divider line display for improved user experience",
+          "Permission Optimization: Removed unnecessary scripting permissions and simplified page title acquisition logic for enhanced extension security",
+          "Interaction Detail Enhancement: Optimized URL preview box scrolling behavior and fixed layout spacing issues for more refined interface"
+        ]
+      },
+      "1.3.4": {
+        "title": "v1.3.4",
+        "date": "Past",
+        "changes": [
+          "Multi-Theme Color System: Added 5 theme color options (orange, yellow, green, blue, purple) with unified interface element and notification colors following theme",
+          "Page Preview Enhancement: URL preview area upgraded to display both page title and URL dual information",
+          "Visual Effect Enhancement: Enhanced three-position slider light effect with subtle glow and gradient effects",
+          "Default Setting Adjustment: Reordered theme color options (orange, yellow, green, blue, purple) with default theme color set to green"
+        ]
+      },
+      "1.3.3": {
+        "title": "v1.3.3",
+        "date": "Past",
+        "changes": [
+          "QR Code Copy Enhancement: Added copy QR code image to clipboard functionality supporting QR code saving as PNG format images",
+          "QR Code Interface Optimization: Redesigned QR code modal layout with URL preview above QR code and copy button below",
+          "Interaction Experience Enhancement: Immediately close popup and display success notification after copying QR code image for smoother operation",
+          "Right-Click Menu Support: Added right-click menu \"Copy Current URL\" functionality supporting quick copy from any web page location",
+          "Official Website Information Update: Updated developer information with official website link to https://lunarye.com/arclet-copier"
+        ]
+      },
+      "1.3.2": {
+        "title": "v1.3.2",
+        "date": "Past",
+        "changes": [
+          "Code Architecture Refactor: Adopted function-separated modular architecture for better code maintainability and extensibility",
+          "ES6 Modularization: Full ES6 module import/export support reducing code duplication",
+          "Build System Optimization: Updated build script to adapt to new directory structure",
+          "Testing System Enhancement: Added complete test case documentation (TESTING.md) with 100+ test cases",
+          "Notification System Fix: Fixed notification icon loading issues ensuring normal notification display"
+        ]
+      },
+      "1.3.1": {
+        "title": "v1.3.1",
+        "date": "Past",
+        "changes": [
+          "Important Bug Fix: Resolved critical issue where silent copy (hotkey) did not respect URL parameter cleanup settings"
+        ]
+      },
+      "1.3.0": {
+        "title": "v1.3.0",
+        "date": "Past",
+        "changes": [
+          "QR Code Generation: Added QR code generation functionality for current page URLs with theme adaptation",
+          "Dark Theme Support: Complete dark theme adaptation supporting system theme automatic detection and manual switching",
+          "Smart URL Cleanup: Upgraded URL parameter cleanup feature adding smart mode (removing only tracking parameters while preserving functional parameters)",
+          "Adaptive Three-Position Slider: Implemented new adaptive slider component supporting width auto-adjustment based on text length",
+          "Appearance Settings Slider: Changed appearance settings to three-position slider form (follow system/light mode/dark mode) replacing dropdown menu",
+          "Animation Optimization: Improved notification animation effects using scale animation instead of slide for smoother experience"
+        ]
+      },
+      "1.2.0": {
+        "title": "v1.2.0",
+        "date": "Past",
+        "changes": [
+          "Internationalization Support: Added simplified Chinese and English bilingual support with dynamic language switching",
+          "Interface Optimization: Redesigned interface layout adding developer information and version display",
+          "Notification Enhancement: Added save success notifications for all settings improving user feedback experience"
+        ]
+      },
+      "1.1.0": {
+        "title": "v1.1.0",
+        "date": "Past",
+        "changes": [
+          "Fixed new tab silent copy issue: Resolved issue with hotkey copy failing in newly opened tabs",
+          "Adopted Offscreen API: Using Chrome extension Manifest V3 recommended Offscreen Documents replacing content script injection",
+          "Improved Compatibility: No longer dependent on activeTab permission activation supporting silent copy in any page state",
+          "Enhanced Stability: Bypassing page CSP restrictions and loading state effects executing copy operations in independent extension environment",
+          "Permission Optimization: Added clipboardWrite permission compliant with latest browser security requirements"
+        ]
+      },
+      "1.0.0": {
+        "title": "v1.0.0",
+        "date": "Initial",
+        "changes": [
+          "Basic URL copy functionality",
+          "Parameter filtering support",
+          "Markdown format copy support",
+          "Hotkey support",
+          "Chrome system page optimization"
+        ]
+      }
+    }
+  },
   "footer": {
     "description": "Arclet Copier is an open source Chrome extension",
     "quick_links": "Quick Links",
     "privacy_policy": "Privacy Policy",
     "terms_of_service": "Terms of Service",
+    "changelog": "Changelog",
     "links": {
       "github": "GitHub",
       "website": "Official Website",

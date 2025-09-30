@@ -25,29 +25,34 @@ This is a multilingual landing page for the Arclet Copier Chrome extension built
 ### Key Architectural Components
 
 **Internationalization System:**
+
 - Custom i18n implementation in `src/i18n/utils.ts` with translation functions
 - Language files stored as JSON in `src/i18n/` directory
 - Astro's built-in i18n config handles routing (English as default without prefix)
 - Supported languages: en (default), zh, zh-tw, de, fr, pt, ru, ko, ja, es
 
 **Routing Structure:**
+
 - English pages: `/` (root)
 - Other languages: `/{lang}/` (e.g., `/zh/`, `/de/`)
 - Each language has: homepage, privacy policy, and terms of service
 - All pages exist as `.astro` files under `src/pages/`
 
 **Component Architecture:**
+
 - Layout system: Single `Layout.astro` with comprehensive SEO meta tags
 - Reusable components in `src/components/`: Header, Hero, Features, Screenshots, Download, Footer, FAQ, BackToTop, etc.
 - Each component accepts a `lang` prop for internationalization
 
 **Styling:**
+
 - Tailwind CSS with custom configuration in `tailwind.config.cjs`
 - Custom color scheme: Primary green (#22c55e) matching the extension
 - Typography: Inter (sans-serif) and Playfair Display (serif)
 - No gradients policy - clean, minimal design
 
 **SEO & Metadata:**
+
 - Comprehensive meta tags including Open Graph and Twitter Cards
 - Language-specific keywords for each supported locale
 - Custom sitemap generation with hreflang support via `scripts/generate-sitemap.js`
@@ -56,10 +61,12 @@ This is a multilingual landing page for the Arclet Copier Chrome extension built
 ### Build Process
 
 The build command runs two steps:
+
 1. `astro build` - Standard Astro build process
 2. `node scripts/generate-sitemap.js` - Generates custom sitemap.xml with hreflang tags
 
 The custom sitemap script:
+
 - Replaces Astro's default sitemap with a cleaner version
 - Adds proper hreflang attributes for all language versions
 - Includes x-default pointing to English version
@@ -68,10 +75,11 @@ The custom sitemap script:
 ### Language Translation System
 
 Use the translation utilities:
+
 ```typescript
-import { t, type Language } from "../i18n/utils";
+import { t, type Language } from '../i18n/utils';
 const translate = t(lang);
-const text = translate("key.nested.path");
+const text = translate('key.nested.path');
 ```
 
 Translation files follow nested JSON structure with dot notation access.

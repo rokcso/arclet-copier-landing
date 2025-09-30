@@ -1,0 +1,21 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ChangelogComponent from '../../components/Changelog.astro';
+import { t } from '../../i18n/utils';
+
+const translate = t('zh-tw');
+const title = translate('changelog.title') + ' - Arclet Copier';
+const description = translate('changelog.description');
+---
+
+<Layout title={title} lang="zh-tw" description={description}>
+  <Header lang="zh-tw" />
+
+  <main class="pt-24 pb-16">
+    <ChangelogComponent lang="zh-tw" />
+  </main>
+
+  <Footer lang="zh-tw" />
+</Layout>

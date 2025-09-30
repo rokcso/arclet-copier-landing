@@ -1,0 +1,21 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ChangelogComponent from '../../components/Changelog.astro';
+import { t } from '../../i18n/utils';
+
+const translate = t('ru');
+const title = translate('changelog.title') + ' - Arclet Copier';
+const description = translate('changelog.description');
+---
+
+<Layout title={title} lang="ru" description={description}>
+  <Header lang="ru" />
+
+  <main class="pt-24 pb-16">
+    <ChangelogComponent lang="ru" />
+  </main>
+
+  <Footer lang="ru" />
+</Layout>

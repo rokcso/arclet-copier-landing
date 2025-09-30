@@ -1,8 +1,8 @@
 ---
-import { t, type Language } from "../i18n/utils";
+import { t, type Language } from '../i18n/utils';
 
 export interface Props {
-    lang: Language;
+  lang: Language;
 }
 
 const { lang } = Astro.props;
@@ -10,188 +10,153 @@ const translate = t(lang);
 ---
 
 <section id="download" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-        <!-- Section Header -->
-        <div class="text-center mb-16">
-            <h2
-                class="text-4xl md:text-5xl font-serif font-semibold text-secondary-900 mb-4"
-            >
-                {translate("download.title")}
-            </h2>
-            <p class="text-xl text-secondary-600 max-w-2xl mx-auto">
-                {translate("download.subtitle")}
-            </p>
-        </div>
-
-        <!-- Download Options -->
-        <div
-            class={`grid grid-cols-1 md:grid-cols-2 ${lang === "zh" ? "lg:grid-cols-3" : "lg:grid-cols-2"} gap-8 mb-16`}
-        >
-            <!-- Chrome Web Store -->
-            <div
-                class="bg-secondary-50 rounded-2xl p-8 text-center hover:bg-white hover:shadow-soft-lg transition-all duration-300 border border-transparent hover:border-secondary-200 flex flex-col min-h-[380px]"
-            >
-                <div
-                    class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6"
-                >
-                    <img
-                        src="/img/chrome-logo.svg"
-                        alt="Google Chrome"
-                        class="w-16 h-16"
-                        width="64"
-                        height="64"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-                <h3 class="text-2xl font-semibold text-secondary-900 mb-3">
-                    {translate("download.chrome_store")}
-                </h3>
-                <p class="text-secondary-600 mb-6">
-                    {translate("download.chrome_store_desc")}
-                </p>
-                <a
-                    href="https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil"
-                    target="_blank"
-                    class="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-all duration-200 shadow-soft hover:shadow-soft-md mt-auto w-fit mx-auto"
-                >
-                    <svg
-                        class="w-5 h-5 mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                        ></path>
-                    </svg>
-                    {translate("download.install_now")}
-                </a>
-            </div>
-
-            <!-- Microsoft Edge Add-ons Store -->
-            <div
-                class="bg-secondary-50 rounded-2xl p-8 text-center hover:bg-white hover:shadow-soft-lg transition-all duration-300 border border-transparent hover:border-secondary-200 flex flex-col min-h-[380px]"
-            >
-                <div
-                    class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6"
-                >
-                    <img
-                        src="/img/edge-logo.svg"
-                        alt="Microsoft Edge"
-                        class="w-16 h-16"
-                        width="64"
-                        height="64"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-                <h3 class="text-2xl font-semibold text-secondary-900 mb-3">
-                    {translate("download.edge_store")}
-                </h3>
-                <p class="text-secondary-600 mb-6">
-                    {translate("download.edge_store_desc")}
-                </p>
-                <a
-                    href="https://microsoftedge.microsoft.com/addons/detail/flcemgbijffbmbgcmabmmjhankbegdgm"
-                    target="_blank"
-                    class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all duration-200 shadow-soft hover:shadow-soft-md mt-auto w-fit mx-auto"
-                >
-                    <svg
-                        class="w-5 h-5 mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                        ></path>
-                    </svg>
-                    {translate("download.install_now")}
-                </a>
-            </div>
-
-
-
-            {lang === 'zh' && (
-            <!-- Additional Download Option for Chinese -->
-            <div
-                class="bg-secondary-50 rounded-2xl p-8 text-center hover:bg-white hover:shadow-soft-lg transition-all duration-300 border border-transparent hover:border-secondary-200 flex flex-col min-h-[380px]"
-            >
-                <div
-                    class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-700 mx-auto mb-6"
-                >
-                    <svg
-                        class="w-8 h-8"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                        ></path>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-semibold text-secondary-900 mb-3">
-                    {translate("download.feishu_guide")}
-                </h3>
-                <p class="text-secondary-600 mb-6">
-                    {translate("download.feishu_guide_desc")}
-                </p>
-                <a
-                    href="https://lunaryestudio.feishu.cn/wiki/TLTIwdL0eiLfovkpWA7cZfIQnbc"
-                    target="_blank"
-                    class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all duration-200 shadow-soft hover:shadow-soft-md mt-auto w-fit mx-auto"
-                >
-                    <svg
-                        class="w-5 h-5 mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                        ></path>
-                    </svg>
-                    {translate("download.view_guide")}
-                </a>
-            </div>
-            )}
-        </div>
-
-        <!-- Installation Guide -->
-        <div class="bg-secondary-50 rounded-2xl p-8">
-            <h3
-                class="text-2xl font-semibold text-secondary-900 mb-6 text-center"
-            >
-                {translate("download.install_guide")}
-            </h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-                {
-                    [0, 1, 2, 3, 4].map((index) => (
-                        <div class="bg-white rounded-xl p-6 text-center">
-                            <div class="w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-semibold text-lg mx-auto mb-4">
-                                {index + 1}
-                            </div>
-                            <p class="text-secondary-700 text-sm leading-relaxed">
-                                {translate(`download.install_steps.${index}`)}
-                            </p>
-                        </div>
-                    ))
-                }
-            </div>
-        </div>
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-serif font-semibold text-secondary-900 mb-4">
+        {translate('download.title')}
+      </h2>
+      <p class="text-xl text-secondary-600 max-w-2xl mx-auto">
+        {translate('download.subtitle')}
+      </p>
     </div>
+
+    <!-- Download Options -->
+    <div
+      class:list={`grid grid-cols-1 md:grid-cols-2 ${lang === 'zh' ? 'lg:grid-cols-3' : 'lg:grid-cols-2'} gap-8 mb-16`}
+    >
+      <!-- Chrome Web Store -->
+      <div
+        class="bg-secondary-50 rounded-2xl p-8 text-center hover:bg-white hover:shadow-soft-lg transition-all duration-300 border border-transparent hover:border-secondary-200 flex flex-col min-h-[380px]"
+      >
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+          <img
+            src="/img/chrome-logo.svg"
+            alt="Google Chrome"
+            class="w-16 h-16"
+            width="64"
+            height="64"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <h3 class="text-2xl font-semibold text-secondary-900 mb-3">
+          {translate('download.chrome_store')}
+        </h3>
+        <p class="text-secondary-600 mb-6">
+          {translate('download.chrome_store_desc')}
+        </p>
+        <a
+          href="https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil"
+          target="_blank"
+          class="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-all duration-200 shadow-soft hover:shadow-soft-md mt-auto w-fit mx-auto"
+        >
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            ></path>
+          </svg>
+          {translate('download.install_now')}
+        </a>
+      </div>
+
+      <!-- Microsoft Edge Add-ons Store -->
+      <div
+        class="bg-secondary-50 rounded-2xl p-8 text-center hover:bg-white hover:shadow-soft-lg transition-all duration-300 border border-transparent hover:border-secondary-200 flex flex-col min-h-[380px]"
+      >
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+          <img
+            src="/img/edge-logo.svg"
+            alt="Microsoft Edge"
+            class="w-16 h-16"
+            width="64"
+            height="64"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <h3 class="text-2xl font-semibold text-secondary-900 mb-3">
+          {translate('download.edge_store')}
+        </h3>
+        <p class="text-secondary-600 mb-6">
+          {translate('download.edge_store_desc')}
+        </p>
+        <a
+          href="https://microsoftedge.microsoft.com/addons/detail/flcemgbijffbmbgcmabmmjhankbegdgm"
+          target="_blank"
+          class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all duration-200 shadow-soft hover:shadow-soft-md mt-auto w-fit mx-auto"
+        >
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            ></path>
+          </svg>
+          {translate('download.install_now')}
+        </a>
+      </div>
+
+      {
+        lang === 'zh' && (
+          <div class="bg-secondary-50 rounded-2xl p-8 text-center hover:bg-white hover:shadow-soft-lg transition-all duration-300 border border-transparent hover:border-secondary-200 flex flex-col min-h-[380px]">
+            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-700 mx-auto mb-6">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-secondary-900 mb-3">
+              {translate('download.feishu_guide')}
+            </h3>
+            <p class="text-secondary-600 mb-6">{translate('download.feishu_guide_desc')}</p>
+            <a
+              href="https://lunaryestudio.feishu.cn/wiki/TLTIwdL0eiLfovkpWA7cZfIQnbc"
+              target="_blank"
+              class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all duration-200 shadow-soft hover:shadow-soft-md mt-auto w-fit mx-auto"
+            >
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              {translate('download.view_guide')}
+            </a>
+          </div>
+        )
+      }
+    </div>
+
+    <!-- Installation Guide -->
+    <div class="bg-secondary-50 rounded-2xl p-8">
+      <h3 class="text-2xl font-semibold text-secondary-900 mb-6 text-center">
+        {translate('download.install_guide')}
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        {
+          [0, 1, 2, 3, 4].map(index => (
+            <div class="bg-white rounded-xl p-6 text-center">
+              <div class="w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-semibold text-lg mx-auto mb-4">
+                {index + 1}
+              </div>
+              <p class="text-secondary-700 text-sm leading-relaxed">
+                {translate(`download.install_steps.${index}`)}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
 </section>

@@ -1,8 +1,8 @@
 ---
-import { t, type Language } from "../i18n/utils";
+import { t, type Language } from '../i18n/utils';
 
 export interface Props {
-    lang: Language;
+  lang: Language;
 }
 
 const { lang } = Astro.props;
@@ -10,315 +10,340 @@ const translate = t(lang);
 ---
 
 <style>
-    .screenshot-container {
-        cursor: pointer;
-        transition: transform 0.2s ease;
-    }
+  .screenshot-container {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
 
-    .screenshot-container:hover {
-        transform: scale(1.02);
-    }
+  .screenshot-container:hover {
+    transform: scale(1.02);
+  }
 
-    .screenshot-modal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        padding: 2rem;
-    }
+  .screenshot-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    padding: 2rem;
+  }
 
-    .screenshot-modal.active {
-        opacity: 1;
-        visibility: visible;
-    }
+  .screenshot-modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
 
-    .screenshot-modal-content {
-        position: relative;
-        max-width: 90vw;
-        max-height: 90vh;
-        background: white;
-        border-radius: 1rem;
-        overflow: hidden;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        transform: scale(0.8);
-        transition: transform 0.3s ease;
-    }
+  .screenshot-modal-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+  }
 
-    .screenshot-modal.active .screenshot-modal-content {
-        transform: scale(1);
-    }
+  .screenshot-modal.active .screenshot-modal-content {
+    transform: scale(1);
+  }
 
-    .screenshot-modal-image {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        display: block;
-    }
+  .screenshot-modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
 
-    .screenshot-modal-close {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        width: 2.5rem;
-        height: 2.5rem;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        border: none;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-        z-index: 10;
-    }
+  .screenshot-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    z-index: 10;
+  }
 
-    .screenshot-modal-close:hover {
-        background: rgba(0, 0, 0, 0.9);
-    }
+  .screenshot-modal-close:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
 
-    .screenshot-modal-info {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-        color: white;
-        padding: 2rem 1.5rem 1.5rem;
-        text-align: center;
-    }
-
+  .screenshot-modal-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 2rem 1.5rem 1.5rem;
+    text-align: center;
+  }
 </style>
 
 <section class="py-20 bg-secondary-50">
-    <div class="max-w-6xl mx-auto px-6">
-        <!-- Section Header -->
-        <div class="text-center mb-16">
-            <h2
-                class="text-4xl md:text-5xl font-serif font-semibold text-secondary-900 mb-4"
-            >
-                {translate("screenshots.title")}
-            </h2>
-        </div>
-
-        <!-- Screenshots Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Screenshot 1 -->
-            <div class="space-y-4">
-                <div class="bg-white rounded-2xl p-4 shadow-soft-lg screenshot-container relative" data-screenshot="1">
-                    <img
-                        src={`/img/preview/${lang}/home-1-${lang}.webp`}
-                        alt={`${translate("screenshots.home1")} - Arclet Copier Extension`}
-                        class="w-full rounded-xl shadow-soft"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-                <div class="text-center">
-                    <h3 class="text-lg font-semibold text-secondary-900 mb-2">
-                        {translate("screenshots.home1")}
-                    </h3>
-                    <p class="text-secondary-600 text-sm">
-                        {translate("screenshots.home1_desc")}
-                    </p>
-                </div>
-            </div>
-
-            <!-- Screenshot 2 -->
-            <div class="space-y-4">
-                <div class="bg-white rounded-2xl p-4 shadow-soft-lg screenshot-container relative" data-screenshot="2">
-                    <img
-                        src={`/img/preview/${lang}/home-2-${lang}.webp`}
-                        alt={`${translate("screenshots.home2")} - Arclet Copier Extension`}
-                        class="w-full rounded-xl shadow-soft"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-                <div class="text-center">
-                    <h3 class="text-lg font-semibold text-secondary-900 mb-2">
-                        {translate("screenshots.home2")}
-                    </h3>
-                    <p class="text-secondary-600 text-sm">
-                        {translate("screenshots.home2_desc")}
-                    </p>
-                </div>
-            </div>
-
-            <!-- Screenshot 3 -->
-            <div class="space-y-4">
-                <div class="bg-white rounded-2xl p-4 shadow-soft-lg screenshot-container relative" data-screenshot="3">
-                    <img
-                        src={`/img/preview/${lang}/home-3-${lang}.webp`}
-                        alt={`${translate("screenshots.home3")} - Arclet Copier Extension`}
-                        class="w-full rounded-xl shadow-soft"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-                <div class="text-center">
-                    <h3 class="text-lg font-semibold text-secondary-900 mb-2">
-                        {translate("screenshots.home3")}
-                    </h3>
-                    <p class="text-secondary-600 text-sm">
-                        {translate("screenshots.home3_desc")}
-                    </p>
-                </div>
-            </div>
-
-            <!-- Screenshot 4 -->
-            <div class="space-y-4">
-                <div class="bg-white rounded-2xl p-4 shadow-soft-lg screenshot-container relative" data-screenshot="4">
-                    <img
-                        src={`/img/preview/${lang}/home-4-${lang}.webp`}
-                        alt={`${translate("screenshots.home4")} - Arclet Copier Extension`}
-                        class="w-full rounded-xl shadow-soft"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-                <div class="text-center">
-                    <h3 class="text-lg font-semibold text-secondary-900 mb-2">
-                        {translate("screenshots.home4")}
-                    </h3>
-                    <p class="text-secondary-600 text-sm">
-                        {translate("screenshots.home4_desc")}
-                    </p>
-                </div>
-            </div>
-        </div>
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-serif font-semibold text-secondary-900 mb-4">
+        {translate('screenshots.title')}
+      </h2>
     </div>
+
+    <!-- Screenshots Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Screenshot 1 -->
+      <div class="space-y-4">
+        <div
+          class="bg-white rounded-2xl p-4 shadow-soft-lg screenshot-container relative"
+          data-screenshot="1"
+        >
+          <img
+            src={`/img/preview/${lang}/home-1-${lang}.webp`}
+            alt={`${translate('screenshots.home1')} - Arclet Copier Extension`}
+            class="w-full rounded-xl shadow-soft"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="text-center">
+          <h3 class="text-lg font-semibold text-secondary-900 mb-2">
+            {translate('screenshots.home1')}
+          </h3>
+          <p class="text-secondary-600 text-sm">
+            {translate('screenshots.home1_desc')}
+          </p>
+        </div>
+      </div>
+
+      <!-- Screenshot 2 -->
+      <div class="space-y-4">
+        <div
+          class="bg-white rounded-2xl p-4 shadow-soft-lg screenshot-container relative"
+          data-screenshot="2"
+        >
+          <img
+            src={`/img/preview/${lang}/home-2-${lang}.webp`}
+            alt={`${translate('screenshots.home2')} - Arclet Copier Extension`}
+            class="w-full rounded-xl shadow-soft"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="text-center">
+          <h3 class="text-lg font-semibold text-secondary-900 mb-2">
+            {translate('screenshots.home2')}
+          </h3>
+          <p class="text-secondary-600 text-sm">
+            {translate('screenshots.home2_desc')}
+          </p>
+        </div>
+      </div>
+
+      <!-- Screenshot 3 -->
+      <div class="space-y-4">
+        <div
+          class="bg-white rounded-2xl p-4 shadow-soft-lg screenshot-container relative"
+          data-screenshot="3"
+        >
+          <img
+            src={`/img/preview/${lang}/home-3-${lang}.webp`}
+            alt={`${translate('screenshots.home3')} - Arclet Copier Extension`}
+            class="w-full rounded-xl shadow-soft"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="text-center">
+          <h3 class="text-lg font-semibold text-secondary-900 mb-2">
+            {translate('screenshots.home3')}
+          </h3>
+          <p class="text-secondary-600 text-sm">
+            {translate('screenshots.home3_desc')}
+          </p>
+        </div>
+      </div>
+
+      <!-- Screenshot 4 -->
+      <div class="space-y-4">
+        <div
+          class="bg-white rounded-2xl p-4 shadow-soft-lg screenshot-container relative"
+          data-screenshot="4"
+        >
+          <img
+            src={`/img/preview/${lang}/home-4-${lang}.webp`}
+            alt={`${translate('screenshots.home4')} - Arclet Copier Extension`}
+            class="w-full rounded-xl shadow-soft"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="text-center">
+          <h3 class="text-lg font-semibold text-secondary-900 mb-2">
+            {translate('screenshots.home4')}
+          </h3>
+          <p class="text-secondary-600 text-sm">
+            {translate('screenshots.home4_desc')}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Screenshot Modal -->
 <div class="screenshot-modal" id="screenshot-modal">
-    <div class="screenshot-modal-content">
-        <button class="screenshot-modal-close" id="modal-close">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-        </button>
-        <img class="screenshot-modal-image" id="modal-image" src="" alt="" />
-        <div class="screenshot-modal-info">
-            <h3 id="modal-title" class="text-xl font-semibold mb-2"></h3>
-            <p id="modal-description" class="text-sm opacity-90"></p>
-        </div>
+  <div class="screenshot-modal-content">
+    <button class="screenshot-modal-close" id="modal-close">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    <img class="screenshot-modal-image" id="modal-image" src="" alt="" />
+    <div class="screenshot-modal-info">
+      <h3 id="modal-title" class="text-xl font-semibold mb-2"></h3>
+      <p id="modal-description" class="text-sm opacity-90"></p>
     </div>
+  </div>
 </div>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const modal = document.getElementById("screenshot-modal");
-        const modalImage = document.getElementById("modal-image");
-        const modalTitle = document.getElementById("modal-title");
-        const modalDescription = document.getElementById("modal-description");
-        const modalClose = document.getElementById("modal-close");
-        const screenshotContainers = document.querySelectorAll(".screenshot-container");
+  document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('screenshot-modal');
+    const modalImage = document.getElementById('modal-image');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
+    const modalClose = document.getElementById('modal-close');
+    const screenshotContainers = document.querySelectorAll('.screenshot-container');
 
-        // Screenshot data mapping
-        const screenshotData = {
-            "1": {
-                titleKey: "screenshots.home1",
-                descKey: "screenshots.home1_desc"
-            },
-            "2": {
-                titleKey: "screenshots.home2",
-                descKey: "screenshots.home2_desc"
-            },
-            "3": {
-                titleKey: "screenshots.home3",
-                descKey: "screenshots.home3_desc"
-            },
-            "4": {
-                titleKey: "screenshots.home4",
-                descKey: "screenshots.home4_desc"
-            }
-        };
+    // Screenshot data mapping
+    const screenshotData = {
+      '1': {
+        titleKey: 'screenshots.home1',
+        descKey: 'screenshots.home1_desc',
+      },
+      '2': {
+        titleKey: 'screenshots.home2',
+        descKey: 'screenshots.home2_desc',
+      },
+      '3': {
+        titleKey: 'screenshots.home3',
+        descKey: 'screenshots.home3_desc',
+      },
+      '4': {
+        titleKey: 'screenshots.home4',
+        descKey: 'screenshots.home4_desc',
+      },
+    };
 
-        // Get current language from HTML lang attribute
-        const currentLang = document.documentElement.lang || 'en';
+    // Get current language from HTML lang attribute
+    const currentLang = document.documentElement.lang || 'en';
 
-        // Translation function (simplified for client-side)
-        const getTranslation = (key) => {
-            // Get text content from existing elements to avoid duplicating translations
-            const existingElement = document.querySelector(`[data-translation="${key}"]`);
-            if (existingElement) {
-                return existingElement.textContent.trim();
-            }
+    // Translation function (simplified for client-side)
+    const getTranslation = (key: string): string => {
+      // Get text content from existing elements to avoid duplicating translations
+      const existingElement = document.querySelector(`[data-translation="${key}"]`);
+      if (existingElement) {
+        return existingElement.textContent?.trim() || '';
+      }
 
-            // Fallback to finding the text in existing screenshot sections
-            const screenshotNum = key.includes('home1') ? '1' :
-                                 key.includes('home2') ? '2' :
-                                 key.includes('home3') ? '3' : '4';
+      // Fallback to finding the text in existing screenshot sections
+      const screenshotNum = key.includes('home1')
+        ? '1'
+        : key.includes('home2')
+          ? '2'
+          : key.includes('home3')
+            ? '3'
+            : '4';
 
-            if (key.includes('_desc')) {
-                const descElement = document.querySelector(`[data-screenshot="${screenshotNum}"]`)
-                    ?.closest('.space-y-4')
-                    ?.querySelector('p');
-                return descElement?.textContent.trim() || '';
-            } else {
-                const titleElement = document.querySelector(`[data-screenshot="${screenshotNum}"]`)
-                    ?.closest('.space-y-4')
-                    ?.querySelector('h3');
-                return titleElement?.textContent.trim() || '';
-            }
-        };
+      if (key.includes('_desc')) {
+        const descElement = document
+          .querySelector(`[data-screenshot="${screenshotNum}"]`)
+          ?.closest('.space-y-4')
+          ?.querySelector('p');
+        return descElement?.textContent.trim() || '';
+      } else {
+        const titleElement = document
+          .querySelector(`[data-screenshot="${screenshotNum}"]`)
+          ?.closest('.space-y-4')
+          ?.querySelector('h3');
+        return titleElement?.textContent.trim() || '';
+      }
+    };
 
-        // Open modal function
-        const openModal = (screenshotNum) => {
-            const data = screenshotData[screenshotNum];
-            if (!data) return;
+    // Open modal function
+    const openModal = (screenshotNum: string) => {
+      const data = screenshotData[screenshotNum as keyof typeof screenshotData];
+      if (!data) return;
 
-            const imageSrc = `/img/preview/${currentLang}/home-${screenshotNum}-${currentLang}.webp`;
-            const imageAlt = `${getTranslation(data.titleKey)} - Arclet Copier Extension`;
+      const imageSrc = `/img/preview/${currentLang}/home-${screenshotNum}-${currentLang}.webp`;
+      const imageAlt = `${getTranslation(data.titleKey)} - Arclet Copier Extension`;
 
-            modalImage.src = imageSrc;
-            modalImage.alt = imageAlt;
-            modalTitle.textContent = getTranslation(data.titleKey);
-            modalDescription.textContent = getTranslation(data.descKey);
+      if (modalImage) {
+        (modalImage as HTMLImageElement).src = imageSrc;
+        (modalImage as HTMLImageElement).alt = imageAlt;
+      }
+      if (modalTitle) {
+        modalTitle.textContent = getTranslation(data.titleKey);
+      }
+      if (modalDescription) {
+        modalDescription.textContent = getTranslation(data.descKey);
+      }
 
-            modal.classList.add("active");
-            document.body.style.overflow = "hidden";
-        };
+      modal?.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    };
 
-        // Close modal function
-        const closeModal = () => {
-            modal.classList.remove("active");
-            document.body.style.overflow = "";
-        };
+    // Close modal function
+    const closeModal = () => {
+      modal?.classList.remove('active');
+      document.body.style.overflow = '';
+    };
 
-        // Add click listeners to screenshot containers
-        screenshotContainers.forEach(container => {
-            const screenshotNum = container.getAttribute("data-screenshot");
-            if (screenshotNum) {
-                container.addEventListener("click", () => openModal(screenshotNum));
-                container.style.cursor = "pointer";
-            }
-        });
-
-        // Close modal listeners
-        modalClose?.addEventListener("click", closeModal);
-
-        modal?.addEventListener("click", (e) => {
-            if (e.target === modal) {
-                closeModal();
-            }
-        });
-
-        // Keyboard listeners
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape" && modal?.classList.contains("active")) {
-                closeModal();
-            }
-        });
+    // Add click listeners to screenshot containers
+    screenshotContainers.forEach(container => {
+      const screenshotNum = container.getAttribute('data-screenshot');
+      if (screenshotNum) {
+        container.addEventListener('click', () => openModal(screenshotNum));
+        (container as HTMLElement).style.cursor = 'pointer';
+      }
     });
+
+    // Close modal listeners
+    modalClose?.addEventListener('click', closeModal);
+
+    modal?.addEventListener('click', e => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Keyboard listeners
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && modal?.classList.contains('active')) {
+        closeModal();
+      }
+    });
+  });
 </script>

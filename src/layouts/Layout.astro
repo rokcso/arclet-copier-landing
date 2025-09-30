@@ -1,10 +1,10 @@
 ---
-import { t, type Language } from "../i18n/utils";
+import { t, type Language } from '../i18n/utils';
 
 export interface Props {
-    title: string;
-    lang: Language;
-    description?: string;
+  title: string;
+  lang: Language;
+  description?: string;
 }
 
 const { title, lang, description } = Astro.props;
@@ -13,370 +13,290 @@ const translate = t(lang);
 
 <!doctype html>
 <html lang={lang}>
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="description"
-            content={description || translate("meta.description")}
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="keywords"
-            content={lang === "zh"
-                ? "Chrome扩展,URL复制,浏览器插件,自定义模板,批量复制,短链生成,二维码,参数清理"
-                : lang === "zh-tw"
-                  ? "Chrome擴充功能,URL複製,瀏覽器插件,自定義模板,批量複製,短網址生成,QR碼,參數清理"
-                  : lang === "de"
-                    ? "Chrome-Erweiterung,URL kopieren,Browser-Plugin,benutzerdefinierte Vorlagen,Batch-Kopieren,Kurz-URL,QR-Code,Parameter bereinigen"
-                    : lang === "fr"
-                      ? "Extension Chrome,copier URL,plugin navigateur,modèles personnalisés,copie par lot,URL courte,code QR,nettoyage paramètres"
-                      : lang === "pt"
-                        ? "Extensão Chrome,copiar URL,plugin navegador,modelos personalizados,cópia em lote,URL curta,código QR,limpeza parâmetros"
-                        : lang === "ru"
-                          ? "Расширение Chrome,копирование URL,плагин браузера,пользовательские шаблоны,пакетное копирование,короткий URL,QR-код,очистка параметров"
-                          : lang === "ko"
-                            ? "Chrome 확장프로그램,URL 복사,브라우저 플러그인,맞춤 템플릿,일괄 복사,단축 URL,QR 코드,매개변수 정리"
-                            : lang === "es"
-                              ? "Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros"
-                              : lang === "ja"
-                                ? "Chrome拡張機能,URLコピー,ブラウザプラグイン,カスタムテンプレート,バッチコピー,短縮URL,QRコード,パラメータクリーニング"
-                                : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning"}
-        />
-        <meta name="author" content="rokcso" />
-        <meta
-            name="robots"
-            content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-        />
-        <meta
-            name="googlebot"
-            content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
-        />
-        <meta name="theme-color" content="#16a34a" />
-        <meta name="msapplication-TileColor" content="#16a34a" />
-        <meta name="application-name" content="Arclet Copier" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description || translate('meta.description')} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content={lang === 'zh'
+        ? 'Chrome扩展,URL复制,浏览器插件,自定义模板,批量复制,短链生成,二维码,参数清理'
+        : lang === 'zh-tw'
+          ? 'Chrome擴充功能,URL複製,瀏覽器插件,自定義模板,批量複製,短網址生成,QR碼,參數清理'
+          : lang === 'de'
+            ? 'Chrome-Erweiterung,URL kopieren,Browser-Plugin,benutzerdefinierte Vorlagen,Batch-Kopieren,Kurz-URL,QR-Code,Parameter bereinigen'
+            : lang === 'fr'
+              ? 'Extension Chrome,copier URL,plugin navigateur,modèles personnalisés,copie par lot,URL courte,code QR,nettoyage paramètres'
+              : lang === 'pt'
+                ? 'Extensão Chrome,copiar URL,plugin navegador,modelos personalizados,cópia em lote,URL curta,código QR,limpeza parâmetros'
+                : lang === 'ru'
+                  ? 'Расширение Chrome,копирование URL,плагин браузера,пользовательские шаблоны,пакетное копирование,короткий URL,QR-код,очистка параметров'
+                  : lang === 'ko'
+                    ? 'Chrome 확장프로그램,URL 복사,브라우저 플러그인,맞춤 템플릿,일괄 복사,단축 URL,QR 코드,매개변수 정리'
+                    : lang === 'es'
+                      ? 'Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros'
+                      : lang === 'ja'
+                        ? 'Chrome拡張機能,URLコピー,ブラウザプラグイン,カスタムテンプレート,バッチコピー,短縮URL,QRコード,パラメータクリーニング'
+                        : 'Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning'}
+    />
+    <meta name="author" content="rokcso" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+    />
+    <meta name="theme-color" content="#16a34a" />
+    <meta name="msapplication-TileColor" content="#16a34a" />
+    <meta name="application-name" content="Arclet Copier" />
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:url"
-            content={lang === "en"
-                ? "https://arcletcopier.com/"
-                : `https://arcletcopier.com/${lang}`}
-        />
-        <meta property="og:title" content={title} />
-        <meta
-            property="og:description"
-            content={description || translate("meta.description")}
-        />
-        <meta
-            property="og:image"
-            content={`https://arcletcopier.com/img/preview/${lang}/home-1-${lang}.webp`}
-        />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content={lang === 'en' ? 'https://arcletcopier.com/' : `https://arcletcopier.com/${lang}`}
+    />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description || translate('meta.description')} />
+    <meta
+      property="og:image"
+      content={`https://arcletcopier.com/img/preview/${lang}/home-1-${lang}.webp`}
+    />
 
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:site" content="@rokcso" />
-        <meta property="twitter:creator" content="@rokcso" />
-        <meta
-            property="twitter:url"
-            content={lang === "en"
-                ? "https://arcletcopier.com/"
-                : `https://arcletcopier.com/${lang}`}
-        />
-        <meta property="twitter:title" content={title} />
-        <meta
-            property="twitter:description"
-            content={description || translate("meta.description")}
-        />
-        <meta
-            property="twitter:image"
-            content={`https://arcletcopier.com/img/preview/${lang}/home-1-${lang}.webp`}
-        />
-        <meta
-            property="twitter:image:alt"
-            content={`${title} - Interface Preview`}
-        />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@rokcso" />
+    <meta property="twitter:creator" content="@rokcso" />
+    <meta
+      property="twitter:url"
+      content={lang === 'en' ? 'https://arcletcopier.com/' : `https://arcletcopier.com/${lang}`}
+    />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description || translate('meta.description')} />
+    <meta
+      property="twitter:image"
+      content={`https://arcletcopier.com/img/preview/${lang}/home-1-${lang}.webp`}
+    />
+    <meta property="twitter:image:alt" content={`${title} - Interface Preview`} />
 
-        <!-- Favicons -->
-        <!-- Modern SVG favicon for browsers that support it -->
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- Favicons -->
+    <!-- Modern SVG favicon for browsers that support it -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-        <!-- PNG fallback for browsers that don't support SVG favicons -->
-        <link rel="icon" href="/favicon.png" type="image/png" />
+    <!-- PNG fallback for browsers that don't support SVG favicons -->
+    <link rel="icon" href="/favicon.png" type="image/png" />
 
-        <!-- ICO fallback for older browsers -->
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- ICO fallback for older browsers -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-        <!-- Specific sizes for different use cases -->
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/img/icon16.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/img/icon32.png"
-        />
+    <!-- Specific sizes for different use cases -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icon16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icon32.png" />
 
-        <!-- Apple touch icon for iOS -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/icon256.png" />
+    <!-- Apple touch icon for iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icon256.png" />
 
-        <!-- Microsoft application tiles -->
-        <meta name="msapplication-TileImage" content="/img/icon256.png" />
+    <!-- Microsoft application tiles -->
+    <meta name="msapplication-TileImage" content="/img/icon256.png" />
 
-        <!-- Preload critical resources -->
-        <link
-            rel="preload"
-            href="/img/logo.webp"
-            as="image"
-            type="image/webp"
-        />
-        <link
-            rel="preload"
-            href="/img/icon256.png"
-            as="image"
-            type="image/png"
-        />
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/img/logo.webp" as="image" type="image/webp" />
+    <link rel="preload" href="/img/icon256.png" as="image" type="image/png" />
 
-        <!-- Fonts - Optimized for performance -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
-            rel="preload"
-            as="style"
-            onload="this.onload=null;this.rel='stylesheet'"
-        />
-        <noscript>
-            <link
-                href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
-                rel="stylesheet"
-            />
-        </noscript>
+    <!-- Fonts - Optimized for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
-        <!-- Canonical URL -->
-        <link
-            rel="canonical"
-            href={lang === "en"
-                ? "https://arcletcopier.com/"
-                : `https://arcletcopier.com/${lang}`}
-        />
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href={lang === 'en' ? 'https://arcletcopier.com/' : `https://arcletcopier.com/${lang}`}
+    />
 
-        <!-- Language alternates -->
-        <link rel="alternate" hreflang="en" href="https://arcletcopier.com/" />
-        <link
-            rel="alternate"
-            hreflang="zh"
-            href="https://arcletcopier.com/zh"
-        />
-        <link
-            rel="alternate"
-            hreflang="zh-tw"
-            href="https://arcletcopier.com/zh-tw"
-        />
-        <link
-            rel="alternate"
-            hreflang="de"
-            href="https://arcletcopier.com/de"
-        />
-        <link
-            rel="alternate"
-            hreflang="fr"
-            href="https://arcletcopier.com/fr"
-        />
-        <link
-            rel="alternate"
-            hreflang="pt"
-            href="https://arcletcopier.com/pt"
-        />
-        <link
-            rel="alternate"
-            hreflang="ru"
-            href="https://arcletcopier.com/ru"
-        />
-        <link
-            rel="alternate"
-            hreflang="ko"
-            href="https://arcletcopier.com/ko"
-        />
-        <link
-            rel="alternate"
-            hreflang="ja"
-            href="https://arcletcopier.com/ja"
-        />
-        <link
-            rel="alternate"
-            hreflang="es"
-            href="https://arcletcopier.com/es"
-        />
-        <link
-            rel="alternate"
-            hreflang="x-default"
-            href="https://arcletcopier.com/"
-        />
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="https://arcletcopier.com/" />
+    <link rel="alternate" hreflang="zh" href="https://arcletcopier.com/zh" />
+    <link rel="alternate" hreflang="zh-tw" href="https://arcletcopier.com/zh-tw" />
+    <link rel="alternate" hreflang="de" href="https://arcletcopier.com/de" />
+    <link rel="alternate" hreflang="fr" href="https://arcletcopier.com/fr" />
+    <link rel="alternate" hreflang="pt" href="https://arcletcopier.com/pt" />
+    <link rel="alternate" hreflang="ru" href="https://arcletcopier.com/ru" />
+    <link rel="alternate" hreflang="ko" href="https://arcletcopier.com/ko" />
+    <link rel="alternate" hreflang="ja" href="https://arcletcopier.com/ja" />
+    <link rel="alternate" hreflang="es" href="https://arcletcopier.com/es" />
+    <link rel="alternate" hreflang="x-default" href="https://arcletcopier.com/" />
 
-        <title>{title}</title>
+    <title>{title}</title>
 
-        <!-- Enhanced Structured Data -->
-        <script
-            type="application/ld+json"
-            set:html={JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "SoftwareApplication",
-                name: "Arclet Copier",
-                description: description || translate("meta.description"),
-                applicationCategory: "BrowserApplication",
-                operatingSystem: "Chrome",
-                url:
-                    lang === "en"
-                        ? "https://arcletcopier.com/"
-                        : `https://arcletcopier.com/${lang}`,
-                downloadUrl:
-                    "https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil",
-                softwareVersion: "1.6.0",
-                releaseNotes:
-                    "Latest version with custom template system, batch copying, and enhanced UI",
-                aggregateRating: {
-                    "@type": "AggregateRating",
-                    ratingValue: "4.8",
-                    ratingCount: "50",
-                },
-                offers: {
-                    "@type": "Offer",
-                    price: "0",
-                    priceCurrency: "USD",
-                    availability: "https://schema.org/InStock",
-                },
-                author: {
-                    "@type": "Person",
-                    name: "rokcso",
-                    url: "https://github.com/rokcso",
-                },
-                publisher: {
-                    "@type": "Organization",
-                    name: "rokcso",
-                    url: "https://github.com/rokcso",
-                },
-                screenshot: [
-                    "https://arcletcopier.com/img/popup.webp",
-                    "https://arcletcopier.com/img/options.webp",
-                ],
-                featureList: [
-                    "One-click URL copying",
-                    "Smart parameter cleaning with 3 modes",
-                    "Custom template system with variables",
-                    "Batch copying with filters",
-                    "Short URL generation (is.gd, TinyURL)",
-                    "QR code generation and copying",
-                    "Modern Arc-style theme system",
-                    "Multi-language support (9 languages)",
-                    "Hotkey and right-click menu support",
-                ],
-                keywords:
-                    lang === "zh"
-                        ? "Chrome扩展,URL复制,浏览器插件,自定义模板,批量复制,短链生成,二维码,参数清理"
-                        : lang === "zh-tw"
-                          ? "Chrome擴充功能,URL複製,瀏覽器插件,自定義模板,批量複製,短網址生成,QR碼,參數清理"
-                          : lang === "de"
-                            ? "Chrome-Erweiterung,URL kopieren,Browser-Plugin,benutzerdefinierte Vorlagen,Batch-Kopieren,Kurz-URL,QR-Code,Parameter bereinigen"
-                            : lang === "fr"
-                              ? "Extension Chrome,copier URL,plugin navigateur,modèles personnalisés,copie par lot,URL courte,code QR,nettoyage paramètres"
-                              : lang === "pt"
-                                ? "Extensão Chrome,copiar URL,plugin navegador,modelos personalizados,cópia em lote,URL curta,código QR,limpeza parâmetros"
-                                : lang === "ru"
-                                  ? "Расширение Chrome,копирование URL,плагин браузера,пользовательские шаблоны,пакетное копирование,короткий URL,QR-код,очистка параметров"
-                                  : lang === "ko"
-                                    ? "Chrome 확장프로그램,URL 복사,브라우저 플러그인,맞춤 템플릿,일괄 복사,단축 URL,QR 코드,매개변수 정리"
-                                    : lang === "es"
-                                      ? "Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros"
-                                      : lang === "ja"
-                                        ? "Chrome拡張機能,URLコピー,ブラウザプラグイン,カスタムテンプレート,バッチコピー,短縮URL,QRコード,パラメータクリーニング"
-                                        : "Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning",
-            })}
-        />
+    <!-- Enhanced Structured Data -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'Arclet Copier',
+        description: description || translate('meta.description'),
+        applicationCategory: 'BrowserApplication',
+        operatingSystem: 'Chrome',
+        url: lang === 'en' ? 'https://arcletcopier.com/' : `https://arcletcopier.com/${lang}`,
+        downloadUrl: 'https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil',
+        softwareVersion: '1.6.0',
+        releaseNotes: 'Latest version with custom template system, batch copying, and enhanced UI',
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.8',
+          ratingCount: '50',
+        },
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
+        },
+        author: {
+          '@type': 'Person',
+          name: 'rokcso',
+          url: 'https://github.com/rokcso',
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'rokcso',
+          url: 'https://github.com/rokcso',
+        },
+        screenshot: [
+          'https://arcletcopier.com/img/popup.webp',
+          'https://arcletcopier.com/img/options.webp',
+        ],
+        featureList: [
+          'One-click URL copying',
+          'Smart parameter cleaning with 3 modes',
+          'Custom template system with variables',
+          'Batch copying with filters',
+          'Short URL generation (is.gd, TinyURL)',
+          'QR code generation and copying',
+          'Modern Arc-style theme system',
+          'Multi-language support (9 languages)',
+          'Hotkey and right-click menu support',
+        ],
+        keywords:
+          lang === 'zh'
+            ? 'Chrome扩展,URL复制,浏览器插件,自定义模板,批量复制,短链生成,二维码,参数清理'
+            : lang === 'zh-tw'
+              ? 'Chrome擴充功能,URL複製,瀏覽器插件,自定義模板,批量複製,短網址生成,QR碼,參數清理'
+              : lang === 'de'
+                ? 'Chrome-Erweiterung,URL kopieren,Browser-Plugin,benutzerdefinierte Vorlagen,Batch-Kopieren,Kurz-URL,QR-Code,Parameter bereinigen'
+                : lang === 'fr'
+                  ? 'Extension Chrome,copier URL,plugin navigateur,modèles personnalisés,copie par lot,URL courte,code QR,nettoyage paramètres'
+                  : lang === 'pt'
+                    ? 'Extensão Chrome,copiar URL,plugin navegador,modelos personalizados,cópia em lote,URL curta,código QR,limpeza parâmetros'
+                    : lang === 'ru'
+                      ? 'Расширение Chrome,копирование URL,плагин браузера,пользовательские шаблоны,пакетное копирование,короткий URL,QR-код,очистка параметров'
+                      : lang === 'ko'
+                        ? 'Chrome 확장프로그램,URL 복사,브라우저 플러그인,맞춤 템플릿,일괄 복사,단축 URL,QR 코드,매개변수 정리'
+                        : lang === 'es'
+                          ? 'Extensión Chrome,copiar URL,plugin navegador,plantillas personalizadas,copia lotes,URL corta,código QR,limpieza parámetros'
+                          : lang === 'ja'
+                            ? 'Chrome拡張機能,URLコピー,ブラウザプラグイン,カスタムテンプレート,バッチコピー,短縮URL,QRコード,パラメータクリーニング'
+                            : 'Chrome extension,URL copy,browser plugin,custom templates,batch copy,short URL,QR code,parameter cleaning',
+      })}
+    />
 
-        <!-- Organization Schema -->
-        <script
-            type="application/ld+json"
-            set:html={JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                name: "Arclet Copier",
-                url: "https://arcletcopier.com",
-                logo: "https://arcletcopier.com/img/logo.webp",
-                sameAs: [
-                    "https://github.com/rokcso/arclet-copier",
-                    "https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil",
-                ],
-                contactPoint: {
-                    "@type": "ContactPoint",
-                    contactType: "customer service",
-                    url: "https://github.com/rokcso/arclet-copier/issues",
-                },
-            })}
-        />
+    <!-- Organization Schema -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Arclet Copier',
+        url: 'https://arcletcopier.com',
+        logo: 'https://arcletcopier.com/img/logo.webp',
+        sameAs: [
+          'https://github.com/rokcso/arclet-copier',
+          'https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil',
+        ],
+        contactPoint: {
+          '@type': 'ContactPoint',
+          contactType: 'customer service',
+          url: 'https://github.com/rokcso/arclet-copier/issues',
+        },
+      })}
+    />
 
-        <!-- Website Schema -->
-        <script
-            type="application/ld+json"
-            set:html={JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "WebSite",
-                name: "Arclet Copier",
-                url: "https://arcletcopier.com",
-                description: description || translate("meta.description"),
-                inLanguage: [lang],
-                potentialAction: {
-                    "@type": "SearchAction",
-                    target: "https://arcletcopier.com/?q={search_term_string}",
-                    "query-input": "required name=search_term_string",
-                },
-            })}
-        />
+    <!-- Website Schema -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Arclet Copier',
+        url: 'https://arcletcopier.com',
+        description: description || translate('meta.description'),
+        inLanguage: [lang],
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: 'https://arcletcopier.com/?q={search_term_string}',
+          'query-input': 'required name=search_term_string',
+        },
+      })}
+    />
 
-        <!-- Umami Analytics -->
-        <script defer src="https://umami.lunarye.com/script.js" data-website-id="25459ea6-809b-4bb9-b891-36a81faa09ae"></script>
-    </head>
+    <!-- Umami Analytics -->
+    <script
+      defer
+      src="https://umami.lunarye.com/script.js"
+      data-website-id="25459ea6-809b-4bb9-b891-36a81faa09ae"></script>
+  </head>
 </html>
 <body class="bg-white text-secondary-800 font-sans">
-    <slot />
+  <slot />
 </body>
 
 <style is:global>
-    html {
-        scroll-behavior: smooth;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
 
-    body {
-        font-family:
-            "Inter",
-            system-ui,
-            -apple-system,
-            sans-serif;
-    }
+  body {
+    font-family:
+      'Inter',
+      system-ui,
+      -apple-system,
+      sans-serif;
+  }
 
-    .font-serif {
-        font-family: "Playfair Display", serif;
-    }
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
 
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-        width: 6px;
-    }
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
 
-    ::-webkit-scrollbar-track {
-        background: #f1f5f9;
-    }
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
 
-    ::-webkit-scrollbar-thumb {
-        background: #cbd5e1;
-        border-radius: 3px;
-    }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+  }
 
-    ::-webkit-scrollbar-thumb:hover {
-        background: #94a3b8;
-    }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
 </style>
