@@ -7,6 +7,7 @@
     "features": "機能",
     "download": "ダウンロード",
     "faq": "よくある質問",
+    "changelog": "変更履歴",
     "github": "GitHub",
     "about": "について"
   },
@@ -303,6 +304,8 @@
     "quick_links": "クイックリンク",
     "privacy_policy": "プライバシーポリシー",
     "terms_of_service": "利用規約",
+    "documents": "ドキュメント",
+    "changelog": "変更履歴",
     "links": {
       "github": "GitHub",
       "website": "公式サイト",

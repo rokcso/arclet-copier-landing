@@ -7,6 +7,7 @@
     "features": "Fonctionnalités",
     "download": "Télécharger",
     "faq": "FAQ",
+    "changelog": "Journal des modifications",
     "github": "GitHub",
     "about": "À propos"
   },
@@ -303,6 +304,8 @@
     "quick_links": "Liens rapides",
     "privacy_policy": "Politique de confidentialité",
     "terms_of_service": "Conditions d'utilisation",
+    "documents": "Documents",
+    "changelog": "Journal des modifications",
     "links": {
       "github": "GitHub",
       "website": "Site officiel",

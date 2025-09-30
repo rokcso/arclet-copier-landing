@@ -253,9 +253,7 @@
       "1.3.1": {
         "title": "v1.3.1",
         "date": "过去",
-        "changes": [
-          "重要Bug修复：解决静默复制（快捷键）不尊重URL参数清理设置的关键问题"
-        ]
+        "changes": ["重要Bug修复：解决静默复制（快捷键）不尊重URL参数清理设置的关键问题"]
       },
       "1.3.0": {
         "title": "v1.3.0",
@@ -307,6 +305,7 @@
     "quick_links": "快速链接",
     "privacy_policy": "隐私政策",
     "terms_of_service": "使用条款",
+    "documents": "文档",
     "changelog": "更新日志",
     "links": {
       "github": "GitHub",
