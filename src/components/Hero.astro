@@ -83,7 +83,9 @@ const translate = t(lang);
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const heroDownloadBtn = document.getElementById('hero-download-btn');
+    const heroDownloadBtn = document.getElementById(
+      'hero-download-btn'
+    ) as HTMLAnchorElement | null;
 
     // Smart download button - detect browser and set correct download link
     if (heroDownloadBtn) {
