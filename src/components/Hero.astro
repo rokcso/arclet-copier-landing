@@ -48,8 +48,10 @@ const translate = t(lang);
       <!-- CTA Buttons -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
         <a
-          href="#download"
+          href="#"
+          id="hero-download-btn"
           class="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-all duration-200 shadow-soft-md hover:shadow-soft-lg transform hover:-translate-y-0.5"
+          target="_blank"
         >
           <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
@@ -78,3 +80,37 @@ const translate = t(lang);
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const heroDownloadBtn = document.getElementById('hero-download-btn');
+
+    // Smart download button - detect browser and set correct download link
+    if (heroDownloadBtn) {
+      const userAgent = navigator.userAgent.toLowerCase();
+      const isEdge = userAgent.includes('edg/');
+      const isChrome = userAgent.includes('chrome') && !isEdge;
+
+      if (isEdge) {
+        // Microsoft Edge - redirect to Edge Add-ons
+        heroDownloadBtn.href =
+          'https://microsoftedge.microsoft.com/addons/detail/flcemgbijffbmbgcmabmmjhankbegdgm';
+        heroDownloadBtn.addEventListener('click', () => {
+          if (typeof umami !== 'undefined') {
+            umami.track('hero_download_click', { browser: 'edge' });
+          }
+        });
+      } else {
+        // Chrome and all other browsers (default to Chrome Web Store)
+        heroDownloadBtn.href =
+          'https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil';
+        heroDownloadBtn.addEventListener('click', () => {
+          if (typeof umami !== 'undefined') {
+            const browserType = isChrome ? 'chrome' : 'other';
+            umami.track('hero_download_click', { browser: browserType });
+          }
+        });
+      }
+    }
+  });
+</script>
