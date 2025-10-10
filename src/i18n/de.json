@@ -17,7 +17,7 @@
     "description": "Kopieren Sie die aktuelle Seiten-URL mit einem Klick. Unterstützt intelligente Parameterfilterung, benutzerdefinierte Vorlagen, Batch-Kopieren, Kurz-URL-Generierung und QR-Code-Generierung. Steigern Sie Ihre Produktivität.",
     "download": "Jetzt herunterladen",
     "github": "Quellcode anzeigen",
-    "version": "Aktuelle Version v1.6.0"
+    "version": "Aktuelle Version v1.6.4"
   },
   "features": {
     "title": "Funktionen",
@@ -29,11 +29,15 @@
       },
       {
         "title": "Intelligente Parameterreinigung",
-        "description": "Drei Modi: Aus, Intelligent, Aggressiv. Präzises Entfernen von UTM-Tracking-Parametern"
+        "description": "Intelligenter Modus entfernt nur Tracking-Parameter"
+      },
+      {
+        "title": "Benutzerdefinierte Parameterregeln",
+        "description": "Unterstützt benutzerdefinierte Tracking- und Funktionsparameterlisten mit Hinzufügen, Löschen und Bearbeitungsfunktionen"
       },
       {
         "title": "Benutzerdefiniertes Vorlagensystem",
-        "description": "Leistungsstarke Vorlagen-Engine mit Variablenersetzung und benutzerdefinierten Formaten, Echtzeitvorschau"
+        "description": "Erstellen Sie personalisierte Kopierformat-Vorlagen mit 11 Variablenfeldern, Echtzeitvorschau und Validierung"
       },
       {
         "title": "Batch-Kopier-Funktion",
@@ -129,9 +133,26 @@
     "subtitle": "Alle Updates und Verbesserungen",
     "description": "Bleiben Sie über die neuesten Funktionen und Verbesserungen auf dem Laufenden",
     "versions": {
+      "1.6.4": {
+        "title": "v1.6.4",
+        "changes": [
+          "Benutzerdefinierte Parameterregeln: Völlig neue URL-Parameterkonfigurationsfunktion mit Unterstützung für benutzerdefinierte Tracking- und Funktionsparameterlisten",
+          "Build-System-Upgrade: Einführung des modernen Build-Tools esbuild mit 10x+ schnelleren Build-Geschwindigkeiten (< 10ms), automatischer Code-Minimierung, Tree Shaking und Code-Splitting in Produktions-Builds",
+          "Entwicklungserfahrung-Verbesserung: Watch-Modus mit Dateiüberwachung und automatischer Neuerstellung hinzugefügt"
+        ]
+      },
+      "1.6.3": {
+        "title": "v1.6.3",
+        "changes": [
+          "Kurz-URL-Cache-Optimierung: Korrigierte Kurz-URL-Caching-Logik zur Sicherstellung der Konsistenz mit bereinigten URLs, Verbesserung der Cache-Trefferrate",
+          "Stabilitätsverbesserung: Gesundheitschecks und Nebenläufigkeitssperren für Offscreen-Dokumente hinzugefügt, um doppelte Erstellung und Ressourcenkonflikte zu verhindern",
+          "Leistungsoptimierung: Verbesserte Kurz-URL-Drosselung und Verwaltung gleichzeitiger Anfragen",
+          "Benachrichtigungssystem-Optimierung: Benachrichtigungshelfer refaktoriert mit verbesserter Content-Script-Erkennung für bessere Benachrichtigungszuverlässigkeit",
+          "Template-System-Verbesserung: Optimierte Template-Fallback-Protokollierung mit getaggter Konsolenausgabe für einfacheres Debugging"
+        ]
+      },
       "1.6.2": {
         "title": "v1.6.2",
-        "date": "Neueste",
         "changes": [
           "UI/UX-Neugestaltung: Komplette Überarbeitung der Benutzeroberfläche, Entfernung von Schatten von Schaltflächen und UI-Elementen für eine flachere Designästhetik",
           "Komponentenmodularisierung: Toggle-Komponenten und Theme-Variablen in gemeinsame Module extrahiert für bessere Code-Wiederverwendbarkeit und Wartbarkeit",
@@ -142,7 +163,6 @@
       },
       "1.6.1": {
         "title": "v1.6.1",
-        "date": "Vorherige",
         "changes": [
           "Template-System-Verbesserung: Umfassende Verbesserung der benutzerdefinierten Template-Funktionalität, neu gestaltete Template-Editor-Oberfläche für moderne UI-Erfahrung",
           "Emoji-Selektor: Kategorisierter Emoji-Selektor für Template-Icons mit sanftem Scrollen und Kategoriennavigation hinzugefügt",
@@ -155,7 +175,6 @@
       },
       "1.6.0": {
         "title": "v1.6.0",
-        "date": "Aktuell",
         "changes": [
           "Benutzerdefiniertes Template-System: Brandneue benutzerdefinierte Kopierformat-Template-Funktionalität unterstützt Erstellung, Bearbeitung und Löschung personalisierter Kopier-Templates",
           "Reichhaltige Template-Variablen: Unterstützung für 11 Template-Variablen ({{url}}, {{originalUrl}}, {{title}}, {{hostname}}, {{domain}}, {{shortUrl}}, {{date}}, {{time}}, {{datetime}}, {{timestamp}}, {{iso}})",
@@ -164,7 +183,6 @@
       },
       "1.5.0": {
         "title": "v1.5.0",
-        "date": "Aktuell",
         "changes": [
           "Stapelkopie-Feature: Neue Stapelkopie-Seite unterstützt Auswahl mehrerer Tabs für Bulk-URL-Kopieren",
           "Intelligente Filterung: Unterstützung für Filterung von Tabs nach Fensterbereich (aktuelles Fenster oder alle Fenster)",
@@ -175,7 +193,6 @@
       },
       "1.4.2": {
         "title": "v1.4.2",
-        "date": "Vergangen",
         "changes": [
           "CSS-Prioritäts-Fix: Korrigierte Theme-Farb-Override-Probleme durch CSS-Selektor-Priorität, verbesserte Theme-System-Stabilität",
           "Arclet Copier offizielle Website-Start: https://arcletcopier.com/"
@@ -183,7 +200,6 @@
       },
       "1.4.1": {
         "title": "v1.4.1",
-        "date": "Vergangen",
         "changes": [
           "Erweiterte mehrsprachige Unterstützung: Erweiterung von 2 Sprachen auf 9 Sprachen, Hinzufügung von Spanisch, Japanisch, Deutsch, Französisch, Portugiesisch, Russisch und Koreanisch",
           "Oberflächenoptimierung: Neu gestalteter 'Unterstütze uns'-Bereich, Entfernung des verschachtelten Border-Designs für saubereres Listen-Styling und reduzierte visuelle Redundanz",
@@ -192,7 +208,6 @@
       },
       "1.4.0": {
         "title": "v1.4.0",
-        "date": "Vergangen",
         "changes": [
           "Kurz-URL-Generierung: Neue URL-Verkürzungsfunktion unterstützt Ein-Klick-Kurz-URL-Generierung und -Kopieren",
           "Optionen-Seite: Neue dedizierte Einstellungs-Optionen-Seite bietet vollständigere Konfigurationserfahrung",
@@ -206,7 +221,6 @@
       },
       "1.3.5": {
         "title": "v1.3.5",
-        "date": "Vergangen",
         "changes": [
           "Chrome-Benachrichtigungskontrolle: Chrome-Benachrichtigungs-Toggle-Einstellung hinzugefügt, ermöglicht Benutzern die Anpassung der Browser-Desktop-Benachrichtigungsanzeige",
           "Moderne Oberflächenupgrade: Umfassend optimierte Toggle-Switch-Stile, einheitliche Annahme moderner Slider-Designs für bessere visuelle Konsistenz",
@@ -217,7 +231,6 @@
       },
       "1.3.4": {
         "title": "v1.3.4",
-        "date": "Vergangen",
         "changes": [
           "Multi-Theme-Farbsystem: 5 Theme-Farboptionen hinzugefügt (Orange, Gelb, Grün, Blau, Lila) mit einheitlichen Oberflächenelementen und Benachrichtigungsfarben entsprechend dem Theme",
           "Seitenvorschau-Verbesserung: URL-Vorschaubereich aktualisiert um sowohl Seitentitel als auch URL-Dual-Informationen anzuzeigen",
@@ -227,7 +240,6 @@
       },
       "1.3.3": {
         "title": "v1.3.3",
-        "date": "Vergangen",
         "changes": [
           "QR-Code-Kopie-Verbesserung: QR-Code-Bild in Zwischenablage kopieren-Funktionalität hinzugefügt, unterstützt QR-Code-Speicherung als PNG-Format-Bilder",
           "QR-Code-Oberflächenoptimierung: Neu gestaltetes QR-Code-Modal-Layout mit URL-Vorschau über QR-Code und Kopieren-Schaltfläche darunter",
@@ -238,7 +250,6 @@
       },
       "1.3.2": {
         "title": "v1.3.2",
-        "date": "Vergangen",
         "changes": [
           "Code-Architektur-Refaktor: Funktionsgetrennte modulare Architektur angenommen für bessere Code-Wartbarkeit und Erweiterbarkeit",
           "ES6-Modularisierung: Vollständige ES6-Modul-Import/Export-Unterstützung reduziert Code-Duplikation",
@@ -249,14 +260,12 @@
       },
       "1.3.1": {
         "title": "v1.3.1",
-        "date": "Vergangen",
         "changes": [
           "Wichtige Fehlerbehebung: Kritisches Problem gelöst wo stilles Kopieren (Hotkey) URL-Parameter-Bereinigungseinstellungen nicht respektierte"
         ]
       },
       "1.3.0": {
         "title": "v1.3.0",
-        "date": "Vergangen",
         "changes": [
           "QR-Code-Generierung: QR-Code-Generierungsfunktionalität für aktuelle Seiten-URLs mit Theme-Anpassung hinzugefügt",
           "Dunkles Theme-Unterstützung: Vollständige dunkle Theme-Anpassung unterstützt automatische Systemtheme-Erkennung und manuelle Umschaltung",
@@ -268,7 +277,6 @@
       },
       "1.2.0": {
         "title": "v1.2.0",
-        "date": "Vergangen",
         "changes": [
           "Internationalisierungsunterstützung: Vereinfachte chinesische und englische zweisprachige Unterstützung mit dynamischer Sprachumschaltung hinzugefügt",
           "Oberflächenoptimierung: Neu gestaltetes Oberflächenlayout mit Entwicklerinformationen und Versionsanzeige hinzugefügt",
@@ -277,7 +285,6 @@
       },
       "1.1.0": {
         "title": "v1.1.0",
-        "date": "Vergangen",
         "changes": [
           "Korrigiertes neues Tab stilles Kopieren-Problem: Problem mit Hotkey-Kopieren in neu geöffneten Tabs gelöst",
           "Offscreen API angenommen: Chrome-Erweiterung Manifest V3 empfohlene Offscreen Documents verwendet, ersetzt Content-Script-Injektion",
@@ -288,7 +295,6 @@
       },
       "1.0.0": {
         "title": "v1.0.0",
-        "date": "Initial",
         "changes": [
           "Grundlegende URL-Kopierfunktionalität",
           "Parameter-Filterunterstützung",

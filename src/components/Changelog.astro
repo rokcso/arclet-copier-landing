@@ -11,25 +11,46 @@ const translate = t(lang);
 // Direct access to translation data for complex objects
 const translationData = translations[lang];
 
-// Get the versions from translations
-const versions = [
-  '1.6.2',
-  '1.6.1',
-  '1.6.0',
-  '1.5.0',
-  '1.4.2',
-  '1.4.1',
-  '1.4.0',
-  '1.3.5',
-  '1.3.4',
-  '1.3.3',
-  '1.3.2',
-  '1.3.1',
-  '1.3.0',
-  '1.2.0',
-  '1.1.0',
-  '1.0.0',
-];
+// Dynamically get versions from translation data and sort by version number (descending)
+const versions = Object.keys(translationData?.changelog?.versions || {}).sort((a, b) => {
+  // Convert version strings to comparable numbers (e.g., "1.6.4" -> [1, 6, 4])
+  const parseVersion = (v: string) => v.split('.').map(Number);
+  const [aMajor, aMinor, aPatch] = parseVersion(a);
+  const [bMajor, bMinor, bPatch] = parseVersion(b);
+
+  // Compare major, minor, patch in order (descending)
+  if (aMajor !== bMajor) return bMajor - aMajor;
+  if (aMinor !== bMinor) return bMinor - aMinor;
+  return bPatch - aPatch;
+});
+
+// Function to get version date label based on position
+const getVersionLabel = (index: number): string => {
+  const labels: Record<Language, { latest: string; recent: string; past: string }> = {
+    en: { latest: 'Latest', recent: 'Recent', past: 'Past' },
+    zh: { latest: '最新', recent: '近期', past: '过去' },
+    'zh-tw': { latest: '最新', recent: '近期', past: '過去' },
+    de: { latest: 'Neueste', recent: 'Aktuell', past: 'Vergangen' },
+    fr: { latest: 'Dernière', recent: 'Récente', past: 'Passée' },
+    pt: { latest: 'Mais Recente', recent: 'Recente', past: 'Passado' },
+    ru: { latest: 'Последняя', recent: 'Недавняя', past: 'Прошлая' },
+    ko: { latest: '최신', recent: '최근', past: '과거' },
+    ja: { latest: '最新', recent: '最近', past: '過去' },
+    es: { latest: 'Última', recent: 'Reciente', past: 'Pasado' },
+  };
+
+  const langLabels = labels[lang];
+  if (index === 0) return langLabels.latest;
+  if (index === 1) return langLabels.recent;
+  return langLabels.past;
+};
+
+// Function to get badge color classes based on position
+const getBadgeClasses = (index: number): string => {
+  if (index === 0) return 'bg-primary-100 text-primary-700'; // Latest - green
+  if (index === 1) return 'bg-primary-100 text-primary-700'; // Recent - green
+  return 'bg-secondary-100 text-secondary-500'; // Past - gray
+};
 ---
 
 <section id="changelog" class="py-20 bg-white">
@@ -48,7 +69,7 @@ const versions = [
     <div class="space-y-8">
       {
         versions
-          .map(version => {
+          .map((version, index) => {
             // Direct access to version data
             const versionData =
               translationData?.changelog?.versions?.[
@@ -73,8 +94,10 @@ const versions = [
                 >
                   <div class="flex items-center space-x-4">
                     <h3 class="text-xl font-semibold text-secondary-900">{versionData.title}</h3>
-                    <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">
-                      {versionData.date}
+                    <span
+                      class={`px-3 py-1 rounded-full text-sm font-medium ${getBadgeClasses(index)}`}
+                    >
+                      {getVersionLabel(index)}
                     </span>
                   </div>
                   <div class="changelog-icon flex-shrink-0 w-6 h-6 text-primary-600 transform transition-transform duration-200">

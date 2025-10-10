@@ -17,7 +17,7 @@
     "description": "Copie a URL da página atual com um clique. Suporte a filtragem inteligente de parâmetros, modelos personalizados, cópia em lote, geração de URLs curtas e geração de códigos QR. Aumente sua produtividade.",
     "download": "Baixar agora",
     "github": "Ver Código Fonte",
-    "version": "Versão Atual v1.6.0"
+    "version": "Versão Atual v1.6.4"
   },
   "features": {
     "title": "Recursos",
@@ -29,11 +29,15 @@
       },
       {
         "title": "Limpeza Inteligente de Parâmetros",
-        "description": "Três modos: Desativado, Inteligente, Agressivo. Remoção precisa de parâmetros de rastreamento UTM"
+        "description": "Modo inteligente remove apenas parâmetros de rastreamento"
+      },
+      {
+        "title": "Regras de Parâmetros Personalizadas",
+        "description": "Suporta listas personalizadas de parâmetros de rastreamento e funcionais com capacidades de adicionar, excluir e editar"
       },
       {
         "title": "Sistema de Modelos Personalizados",
-        "description": "Motor de modelos poderoso com substituição de variáveis e formatos personalizados, visualização em tempo real"
+        "description": "Crie modelos de formato de cópia personalizados com 11 campos de variáveis, visualização e validação em tempo real"
       },
       {
         "title": "Recurso de Cópia em Lote",
@@ -129,9 +133,26 @@
     "subtitle": "Todas as atualizações e melhorias",
     "description": "Mantenha-se atualizado com os recursos e melhorias mais recentes",
     "versions": {
+      "1.6.4": {
+        "title": "v1.6.4",
+        "changes": [
+          "Regras de Parâmetros Personalizados: Novo recurso de configuração de parâmetros de URL suportando listas personalizadas de parâmetros de rastreamento e funcionais",
+          "Atualização do Sistema de Build: Introduzida ferramenta de build moderna esbuild com velocidades de build 10x+ mais rápidas (< 10ms), minificação automática de código, tree shaking e divisão de código em builds de produção",
+          "Melhoria da Experiência de Desenvolvimento: Adicionado modo watch com monitoramento de arquivos e reconstrução automática"
+        ]
+      },
+      "1.6.3": {
+        "title": "v1.6.3",
+        "changes": [
+          "Otimização de Cache de URL Curta: Corrigida lógica de cache de URL curta para garantir consistência usando URLs limpas, melhorando taxa de acerto do cache",
+          "Melhoria de Estabilidade: Adicionadas verificações de saúde e bloqueios de concorrência para documentos Offscreen para evitar criação duplicada e conflitos de recursos",
+          "Otimização de Performance: Melhorada limitação de URL curta e gerenciamento de requisições concorrentes",
+          "Otimização do Sistema de Notificação: Sistema de notificação refatorado com detecção aprimorada de content script para melhor confiabilidade de notificação",
+          "Melhoria do Sistema de Modelos: Log de fallback de modelos otimizado com saída de console marcada para depuração mais fácil"
+        ]
+      },
       "1.6.2": {
         "title": "v1.6.2",
-        "date": "Mais Recente",
         "changes": [
           "Redesign UI/UX: Reforma completa da interface do usuário, removendo sombras de botões e elementos UI para uma estética de design mais plana",
           "Modularização de Componentes: Extraídos componentes toggle e variáveis de tema em módulos compartilhados para melhor reutilização e manutenibilidade do código",
@@ -142,7 +163,6 @@
       },
       "1.6.1": {
         "title": "v1.6.1",
-        "date": "Anterior",
         "changes": [
           "Melhoria do Sistema de Modelos: Melhoria abrangente da funcionalidade de modelos personalizados, interface do editor de modelos redesenhada para experiência UI moderna",
           "Seletor de Emojis: Adicionado seletor de emojis categorizado para ícones de modelos com rolagem suave e navegação por categoria",
@@ -155,7 +175,6 @@
       },
       "1.6.0": {
         "title": "v1.6.0",
-        "date": "Recente",
         "changes": [
           "Sistema de Modelos Personalizados: Nova funcionalidade de modelos de formato de cópia personalizada suportando criação, edição e exclusão de modelos de cópia personalizados",
           "Variáveis de Modelo Ricas: Suporte para 11 variáveis de modelo ({{url}}, {{originalUrl}}, {{title}}, {{hostname}}, {{domain}}, {{shortUrl}}, {{date}}, {{time}}, {{datetime}}, {{timestamp}}, {{iso}})",
@@ -164,7 +183,6 @@
       },
       "1.5.0": {
         "title": "v1.5.0",
-        "date": "Recente",
         "changes": [
           "Recurso de Cópia em Lote: Nova página de cópia em lote suportando seleção de múltiplas abas para cópia em massa de URLs",
           "Filtragem Inteligente: Suporte para filtrar abas por escopo de janela (janela atual ou todas as janelas)",
@@ -175,7 +193,6 @@
       },
       "1.4.2": {
         "title": "v1.4.2",
-        "date": "Passado",
         "changes": [
           "Correção de Prioridade CSS: Corrigidos problemas de sobreposição de cor de tema causados por prioridade de seletor CSS, melhorando estabilidade do sistema de temas",
           "Lançamento do site oficial Arclet Copier: https://arcletcopier.com/"
@@ -183,7 +200,6 @@
       },
       "1.4.1": {
         "title": "v1.4.1",
-        "date": "Passado",
         "changes": [
           "Suporte Multilíngue Expandido: Expandido de 2 idiomas para 9 idiomas, adicionando espanhol, japonês, alemão, francês, português, russo e coreano",
           "Otimização de Interface: Redesenhada seção Apoie-nos, removendo design de borda aninhada para estilo de lista mais limpo e reduzida redundância visual",
@@ -192,7 +208,6 @@
       },
       "1.4.0": {
         "title": "v1.4.0",
-        "date": "Passado",
         "changes": [
           "Geração de URLs Curtas: Nova funcionalidade de encurtamento de URL suportando geração e cópia de URL curta com um clique",
           "Página de Opções: Nova página dedicada de opções de configurações fornecendo experiência de configuração mais completa",
@@ -206,7 +221,6 @@
       },
       "1.3.5": {
         "title": "v1.3.5",
-        "date": "Passado",
         "changes": [
           "Controle de Notificação Chrome: Adicionada configuração toggle de notificação Chrome permitindo usuários personalizar exibição de notificação de desktop do navegador",
           "Atualização de Interface Moderna: Otimizados integralmente estilos de interruptor toggle, adotando uniformemente design de slider moderno para melhor consistência visual",
@@ -217,7 +231,6 @@
       },
       "1.3.4": {
         "title": "v1.3.4",
-        "date": "Passado",
         "changes": [
           "Sistema de Cor Multi-Tema: Adicionadas 5 opções de cor de tema (laranja, amarelo, verde, azul, roxo) com elemento de interface unificado e cores de notificação seguindo o tema",
           "Melhoria de Visualização de Página: Área de visualização de URL atualizada para exibir tanto título da página quanto informações duplas de URL",
@@ -227,7 +240,6 @@
       },
       "1.3.3": {
         "title": "v1.3.3",
-        "date": "Passado",
         "changes": [
           "Melhoria de Cópia de Código QR: Adicionada funcionalidade de copiar imagem de código QR para área de transferência suportando salvamento de código QR como imagens em formato PNG",
           "Otimização de Interface de Código QR: Redesenhado layout modal de código QR com visualização de URL acima do código QR e botão de cópia abaixo",
@@ -238,7 +250,6 @@
       },
       "1.3.2": {
         "title": "v1.3.2",
-        "date": "Passado",
         "changes": [
           "Refatoração de Arquitetura de Código: Adotada arquitetura modular separada por função para melhor manutenibilidade e extensibilidade do código",
           "Modularização ES6: Suporte completo de importação/exportação de módulos ES6 reduzindo duplicação de código",
@@ -249,14 +260,12 @@
       },
       "1.3.1": {
         "title": "v1.3.1",
-        "date": "Passado",
         "changes": [
           "Correção de Bug Importante: Resolvido problema crítico onde cópia silenciosa (atalho) não respeitava configurações de limpeza de parâmetros de URL"
         ]
       },
       "1.3.0": {
         "title": "v1.3.0",
-        "date": "Passado",
         "changes": [
           "Geração de Código QR: Adicionada funcionalidade de geração de código QR para URLs de página atual com adaptação de tema",
           "Suporte a Tema Escuro: Adaptação completa de tema escuro suportando detecção automática de tema do sistema e alternância manual",
@@ -268,7 +277,6 @@
       },
       "1.2.0": {
         "title": "v1.2.0",
-        "date": "Passado",
         "changes": [
           "Suporte de Internacionalização: Adicionado suporte bilíngue chinês simplificado e inglês com alternância dinâmica de idioma",
           "Otimização de Interface: Redesenhado layout de interface adicionando informações do desenvolvedor e exibição de versão",
@@ -277,7 +285,6 @@
       },
       "1.1.0": {
         "title": "v1.1.0",
-        "date": "Passado",
         "changes": [
           "Corrigido problema de cópia silenciosa em nova aba: Resolvido problema com falha de cópia por atalho em abas recém-abertas",
           "Adotada API Offscreen: Usando documentos Offscreen recomendados por Chrome extension Manifest V3 substituindo injeção de content script",
@@ -288,7 +295,6 @@
       },
       "1.0.0": {
         "title": "v1.0.0",
-        "date": "Inicial",
         "changes": [
           "Funcionalidade básica de cópia de URL",
           "Suporte a filtragem de parâmetros",

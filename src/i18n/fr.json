@@ -17,7 +17,7 @@
     "description": "Copiez l'URL de la page actuelle en un clic. Prend en charge le filtrage intelligent des paramètres, les modèles personnalisés, la copie par lots, la génération d'URL courtes et la génération de codes QR. Boostez votre productivité.",
     "download": "Télécharger maintenant",
     "github": "Voir le code source",
-    "version": "Version actuelle v1.6.0"
+    "version": "Version actuelle v1.6.4"
   },
   "features": {
     "title": "Fonctionnalités",
@@ -29,11 +29,15 @@
       },
       {
         "title": "Nettoyage intelligent des paramètres",
-        "description": "Trois modes : Désactivé, Intelligent, Agressif. Suppression précise des paramètres de suivi UTM"
+        "description": "Le mode intelligent supprime uniquement les paramètres de suivi"
+      },
+      {
+        "title": "Règles de paramètres personnalisées",
+        "description": "Supporte les listes personnalisées de paramètres de suivi et fonctionnels avec capacités d'ajout, suppression et édition"
       },
       {
         "title": "Système de modèles personnalisés",
-        "description": "Moteur de modèles puissant avec substitution de variables et formats personnalisés, prévisualisation en temps réel"
+        "description": "Créez des modèles de format de copie personnalisés avec 11 champs de variables, prévisualisation et validation en temps réel"
       },
       {
         "title": "Fonction de copie par lots",
@@ -129,9 +133,26 @@
     "subtitle": "Toutes les mises à jour et améliorations",
     "description": "Restez à jour avec les dernières fonctionnalités et améliorations",
     "versions": {
+      "1.6.4": {
+        "title": "v1.6.4",
+        "changes": [
+          "Règles de paramètres personnalisés : Nouvelle fonction de configuration de paramètres URL avec support pour les listes de paramètres de suivi et fonctionnels personnalisés",
+          "Mise à niveau du système de build : Introduction de l'outil de build moderne esbuild avec des vitesses de build 10x+ plus rapides (< 10ms), minification automatique du code, tree shaking et code splitting dans les builds de production",
+          "Amélioration de l'expérience de développement : Ajout du mode watch avec surveillance de fichiers et reconstruction automatique"
+        ]
+      },
+      "1.6.3": {
+        "title": "v1.6.3",
+        "changes": [
+          "Optimisation du cache d'URL courte : Correction de la logique de mise en cache d'URL courte pour assurer la cohérence en utilisant des URLs nettoyées, amélioration du taux de réussite du cache",
+          "Amélioration de la stabilité : Ajout de vérifications de santé et de verrous de concurrence pour les documents Offscreen afin d'éviter la création en double et les conflits de ressources",
+          "Optimisation des performances : Amélioration de la limitation d'URL courte et de la gestion des requêtes concurrentes",
+          "Optimisation du système de notification : Refactorisation de l'assistant de notification avec détection améliorée de script de contenu pour une meilleure fiabilité des notifications",
+          "Amélioration du système de modèles : Optimisation de la journalisation de secours des modèles avec sortie de console étiquetée pour un débogage plus facile"
+        ]
+      },
       "1.6.2": {
         "title": "v1.6.2",
-        "date": "Dernière",
         "changes": [
           "Refonte UI/UX : Révision complète de l'interface utilisateur, suppression des ombres des boutons et éléments UI pour une esthétique de design plus plate",
           "Modularisation des composants : Extraction des composants toggle et variables de thème dans des modules partagés pour une meilleure réutilisabilité et maintenabilité du code",
@@ -142,7 +163,6 @@
       },
       "1.6.1": {
         "title": "v1.6.1",
-        "date": "Précédente",
         "changes": [
           "Amélioration du système de modèles : Amélioration complète de la fonctionnalité de modèles personnalisés, interface d'éditeur de modèles redessinée pour une expérience UI moderne",
           "Sélecteur d'emojis : Ajout d'un sélecteur d'emojis catégorisé pour les icônes de modèles avec défilement fluide et navigation par catégorie",
@@ -155,7 +175,6 @@
       },
       "1.6.0": {
         "title": "v1.6.0",
-        "date": "Récente",
         "changes": [
           "Système de modèles personnalisés : Nouvelle fonctionnalité de modèles de format de copie personnalisée supportant la création, édition et suppression de modèles de copie personnalisés",
           "Variables de modèle riches : Support pour 11 variables de modèle ({{url}}, {{originalUrl}}, {{title}}, {{hostname}}, {{domain}}, {{shortUrl}}, {{date}}, {{time}}, {{datetime}}, {{timestamp}}, {{iso}})",
@@ -164,7 +183,6 @@
       },
       "1.5.0": {
         "title": "v1.5.0",
-        "date": "Récente",
         "changes": [
           "Fonction de copie par lots : Nouvelle page de copie par lots supportant la sélection de multiples onglets pour la copie en masse d'URLs",
           "Filtrage intelligent : Support pour filtrer les onglets par portée de fenêtre (fenêtre actuelle ou toutes les fenêtres)",
@@ -175,7 +193,6 @@
       },
       "1.4.2": {
         "title": "v1.4.2",
-        "date": "Passée",
         "changes": [
           "Correction de priorité CSS : Correction des problèmes de surcharge de couleur de thème causés par la priorité de sélecteur CSS, amélioration de la stabilité du système de thème",
           "Lancement du site web officiel Arclet Copier : https://arcletcopier.com/"
@@ -183,7 +200,6 @@
       },
       "1.4.1": {
         "title": "v1.4.1",
-        "date": "Passée",
         "changes": [
           "Support multilingue étendu : Extension de 2 langues à 9 langues, ajout de l'espagnol, japonais, allemand, français, portugais, russe et coréen",
           "Optimisation d'interface : Refonte de la section Soutenez-nous, suppression du design de bordure imbriquée pour un style de liste plus propre et réduction de la redondance visuelle",
@@ -192,7 +208,6 @@
       },
       "1.4.0": {
         "title": "v1.4.0",
-        "date": "Passée",
         "changes": [
           "Génération d'URL courtes : Nouvelle fonction de raccourcissement d'URL supportant la génération et copie d'URL courte en un clic",
           "Page d'options : Nouvelle page d'options de paramètres dédiée fournissant une expérience de configuration plus complète",
@@ -206,7 +221,6 @@
       },
       "1.3.5": {
         "title": "v1.3.5",
-        "date": "Passée",
         "changes": [
           "Contrôle de notification Chrome : Ajout du paramètre toggle de notification Chrome permettant aux utilisateurs de personnaliser l'affichage de notification de bureau du navigateur",
           "Mise à niveau d'interface moderne : Optimisation complète des styles d'interrupteur toggle, adoption uniforme du design de slider moderne pour une meilleure cohérence visuelle",
@@ -217,7 +231,6 @@
       },
       "1.3.4": {
         "title": "v1.3.4",
-        "date": "Passée",
         "changes": [
           "Système de couleur multi-thème : Ajout de 5 options de couleur de thème (orange, jaune, vert, bleu, violet) avec élément d'interface unifié et couleurs de notification suivant le thème",
           "Amélioration d'aperçu de page : Zone d'aperçu URL mise à jour pour afficher à la fois le titre de page et les informations duales d'URL",
@@ -227,7 +240,6 @@
       },
       "1.3.3": {
         "title": "v1.3.3",
-        "date": "Passée",
         "changes": [
           "Amélioration de copie de code QR : Ajout de la fonctionnalité de copie d'image de code QR dans le presse-papiers supportant la sauvegarde de code QR comme images au format PNG",
           "Optimisation d'interface de code QR : Refonte de la mise en page modale de code QR avec aperçu URL au-dessus du code QR et bouton de copie en dessous",
@@ -238,7 +250,6 @@
       },
       "1.3.2": {
         "title": "v1.3.2",
-        "date": "Passée",
         "changes": [
           "Refactorisation d'architecture de code : Adoption d'architecture modulaire séparée par fonction pour une meilleure maintenabilité et extensibilité du code",
           "Modularisation ES6 : Support complet d'import/export de modules ES6 réduisant la duplication de code",
@@ -249,14 +260,12 @@
       },
       "1.3.1": {
         "title": "v1.3.1",
-        "date": "Passée",
         "changes": [
           "Correction de bogue importante : Résolution du problème critique où la copie silencieuse (raccourci) ne respectait pas les paramètres de nettoyage de paramètres URL"
         ]
       },
       "1.3.0": {
         "title": "v1.3.0",
-        "date": "Passée",
         "changes": [
           "Génération de code QR : Ajout de la fonctionnalité de génération de code QR pour les URL de page actuelle avec adaptation de thème",
           "Support de thème sombre : Adaptation complète de thème sombre supportant la détection automatique de thème système et le basculement manuel",
@@ -268,7 +277,6 @@
       },
       "1.2.0": {
         "title": "v1.2.0",
-        "date": "Passée",
         "changes": [
           "Support d'internationalisation : Ajout du support bilingue chinois simplifié et anglais avec basculement dynamique de langue",
           "Optimisation d'interface : Refonte de la mise en page d'interface ajoutant les informations développeur et affichage de version",
@@ -277,7 +285,6 @@
       },
       "1.1.0": {
         "title": "v1.1.0",
-        "date": "Passée",
         "changes": [
           "Correction du problème de copie silencieuse nouvel onglet : Résolution du problème d'échec de copie par raccourci dans les onglets nouvellement ouverts",
           "Adoption de l'API Offscreen : Utilisation des documents Offscreen recommandés par Chrome extension Manifest V3 remplaçant l'injection de script de contenu",
@@ -288,7 +295,6 @@
       },
       "1.0.0": {
         "title": "v1.0.0",
-        "date": "Initial",
         "changes": [
           "Fonctionnalité de copie d'URL de base",
           "Support de filtrage de paramètres",
