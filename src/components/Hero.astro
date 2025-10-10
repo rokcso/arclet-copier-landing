@@ -81,7 +81,7 @@ const translate = t(lang);
   </div>
 </section>
 
-<script>
+<script define:vars={{ lang }}>
   document.addEventListener('DOMContentLoaded', () => {
     const heroDownloadBtn = document.getElementById(
       'hero-download-btn'
@@ -99,7 +99,7 @@ const translate = t(lang);
           'https://microsoftedge.microsoft.com/addons/detail/flcemgbijffbmbgcmabmmjhankbegdgm';
         heroDownloadBtn.addEventListener('click', () => {
           if (typeof umami !== 'undefined') {
-            umami.track('hero_download_click', { browser: 'edge' });
+            umami.track('download_click', { store: 'edge', language: lang, source: 'hero' });
           }
         });
       } else {
@@ -108,8 +108,8 @@ const translate = t(lang);
           'https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil';
         heroDownloadBtn.addEventListener('click', () => {
           if (typeof umami !== 'undefined') {
-            const browserType = isChrome ? 'chrome' : 'other';
-            umami.track('hero_download_click', { browser: browserType });
+            const storeType = isChrome ? 'chrome' : 'other';
+            umami.track('download_click', { store: storeType, language: lang, source: 'hero' });
           }
         });
       }
