@@ -136,40 +136,31 @@
       "1.6.4": {
         "title": "v1.6.4",
         "changes": [
-          "Custom Parameter Rules: All-new URL parameter configuration feature supporting custom tracking and functional parameter lists",
-          "Build System Upgrade: Introduced esbuild modern build tool with 10x+ faster build speeds (< 10ms), automatic code minification, tree shaking, and code splitting in production builds",
-          "Development Experience Enhancement: Added watch mode with file monitoring and automatic rebuilding"
+          "Custom Parameter Rules: All-new URL parameter configuration feature supporting custom tracking and functional parameter lists"
         ]
       },
       "1.6.3": {
         "title": "v1.6.3",
         "changes": [
           "Short URL Cache Optimization: Fixed short URL caching logic to ensure consistency using cleaned URLs, improving cache hit rate",
-          "Stability Enhancement: Added health checks and concurrency locks for Offscreen documents to prevent duplicate creation and resource conflicts",
           "Performance Optimization: Improved short URL throttling and concurrent request management",
-          "Notification System Optimization: Refactored notification helper with enhanced content script detection for improved notification reliability",
-          "Template System Improvement: Optimized template fallback logging with tagged console output for easier debugging"
+          "Stability Enhancement: Added health checks and concurrency locks for Offscreen documents to prevent duplicate creation and resource conflicts"
         ]
       },
       "1.6.2": {
         "title": "v1.6.2",
         "changes": [
-          "UI/UX Redesign: Complete user interface overhaul, removing shadows from buttons and UI elements for a flatter design aesthetic",
-          "Component Modularization: Extracted toggle components and theme variables into shared modules for better code reusability and maintainability",
           "Visual Optimization: Simplified toggle switch and three-position switch styles for better visual consistency",
-          "Bug Fixes: Fixed favicon error handling mechanism using event listeners instead of inline onerror handlers",
           "Performance Optimization: Removed unused CSS rules and translation texts to reduce bundle size"
         ]
       },
       "1.6.1": {
         "title": "v1.6.1",
         "changes": [
-          "Template System Enhancement: Comprehensive improvement to custom template functionality, redesigned template editor interface for modern UI experience",
-          "Emoji Selector: Added categorized emoji selector for template icons with smooth scrolling and category navigation",
-          "Template Engine Optimization: Improved template validation logic and enhanced template variable processing with better error handling",
           "Notification System Upgrade: All-new notification system with Arc-style in-page Toast notifications, supporting anti-duplicate display and better visual effects",
-          "User Behavior Analytics: Integrated Umami analytics system tracking installations, updates, and copy operations with user ID tracking and browser version detection",
-          "Code Structure Optimization: Refactored multiple components into shared modules for better modularity and maintainability",
+          "Template System Enhancement: Comprehensive improvement to custom template functionality, redesigned template editor interface for modern UI experience",
+          "Template Engine Optimization: Improved template validation logic and enhanced template variable processing with better error handling",
+          "Emoji Selector: Added categorized emoji selector for template icons with smooth scrolling and category navigation",
           "Localization Enhancement: Added Traditional Chinese support and improved multilingual interface text"
         ]
       },

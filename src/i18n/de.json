@@ -136,40 +136,31 @@
       "1.6.4": {
         "title": "v1.6.4",
         "changes": [
-          "Benutzerdefinierte Parameterregeln: Völlig neue URL-Parameterkonfigurationsfunktion mit Unterstützung für benutzerdefinierte Tracking- und Funktionsparameterlisten",
-          "Build-System-Upgrade: Einführung des modernen Build-Tools esbuild mit 10x+ schnelleren Build-Geschwindigkeiten (< 10ms), automatischer Code-Minimierung, Tree Shaking und Code-Splitting in Produktions-Builds",
-          "Entwicklungserfahrung-Verbesserung: Watch-Modus mit Dateiüberwachung und automatischer Neuerstellung hinzugefügt"
+          "Benutzerdefinierte Parameterregeln: Völlig neue URL-Parameterkonfigurationsfunktion mit Unterstützung für benutzerdefinierte Tracking- und Funktionsparameterlisten"
         ]
       },
       "1.6.3": {
         "title": "v1.6.3",
         "changes": [
           "Kurz-URL-Cache-Optimierung: Korrigierte Kurz-URL-Caching-Logik zur Sicherstellung der Konsistenz mit bereinigten URLs, Verbesserung der Cache-Trefferrate",
-          "Stabilitätsverbesserung: Gesundheitschecks und Nebenläufigkeitssperren für Offscreen-Dokumente hinzugefügt, um doppelte Erstellung und Ressourcenkonflikte zu verhindern",
           "Leistungsoptimierung: Verbesserte Kurz-URL-Drosselung und Verwaltung gleichzeitiger Anfragen",
-          "Benachrichtigungssystem-Optimierung: Benachrichtigungshelfer refaktoriert mit verbesserter Content-Script-Erkennung für bessere Benachrichtigungszuverlässigkeit",
-          "Template-System-Verbesserung: Optimierte Template-Fallback-Protokollierung mit getaggter Konsolenausgabe für einfacheres Debugging"
+          "Stabilitätsverbesserung: Gesundheitschecks und Nebenläufigkeitssperren für Offscreen-Dokumente hinzugefügt, um doppelte Erstellung und Ressourcenkonflikte zu verhindern"
         ]
       },
       "1.6.2": {
         "title": "v1.6.2",
         "changes": [
-          "UI/UX-Neugestaltung: Komplette Überarbeitung der Benutzeroberfläche, Entfernung von Schatten von Schaltflächen und UI-Elementen für eine flachere Designästhetik",
-          "Komponentenmodularisierung: Toggle-Komponenten und Theme-Variablen in gemeinsame Module extrahiert für bessere Code-Wiederverwendbarkeit und Wartbarkeit",
           "Visuelle Optimierung: Vereinfachte Toggle-Switch- und Drei-Positionen-Switch-Stile für bessere visuelle Konsistenz",
-          "Fehlerbehebungen: Korrigierter Favicon-Fehlerbehandlungsmechanismus mit Event-Listenern anstelle von Inline-onerror-Handlern",
           "Leistungsoptimierung: Entfernung ungenutzter CSS-Regeln und Übersetzungstexte zur Reduzierung der Bundle-Größe"
         ]
       },
       "1.6.1": {
         "title": "v1.6.1",
         "changes": [
-          "Template-System-Verbesserung: Umfassende Verbesserung der benutzerdefinierten Template-Funktionalität, neu gestaltete Template-Editor-Oberfläche für moderne UI-Erfahrung",
-          "Emoji-Selektor: Kategorisierter Emoji-Selektor für Template-Icons mit sanftem Scrollen und Kategoriennavigation hinzugefügt",
-          "Template-Engine-Optimierung: Verbesserte Template-Validierungslogik und erweiterte Template-Variablenverarbeitung mit besserer Fehlerbehandlung",
           "Benachrichtigungssystem-Upgrade: Völlig neues Benachrichtigungssystem mit Arc-Style In-Page-Toast-Benachrichtigungen, unterstützt Anti-Duplikat-Anzeige und bessere visuelle Effekte",
-          "Benutzerverhalten-Analytik: Integriertes Umami-Analysesystem zur Verfolgung von Installationen, Updates und Kopiervorgängen mit Benutzer-ID-Tracking und Browser-Versionserkennung",
-          "Code-Struktur-Optimierung: Mehrere Komponenten in gemeinsame Module refaktoriert für bessere Modularität und Wartbarkeit",
+          "Template-System-Verbesserung: Umfassende Verbesserung der benutzerdefinierten Template-Funktionalität, neu gestaltete Template-Editor-Oberfläche für moderne UI-Erfahrung",
+          "Template-Engine-Optimierung: Verbesserte Template-Validierungslogik und erweiterte Template-Variablenverarbeitung mit besserer Fehlerbehandlung",
+          "Emoji-Selektor: Kategorisierter Emoji-Selektor für Template-Icons mit sanftem Scrollen und Kategoriennavigation hinzugefügt",
           "Lokalisierungsverbesserung: Traditionelle chinesische Unterstützung hinzugefügt und mehrsprachige Oberflächentexte verbessert"
         ]
       },

@@ -136,40 +136,31 @@
       "1.6.4": {
         "title": "v1.6.4",
         "changes": [
-          "Règles de paramètres personnalisés : Nouvelle fonction de configuration de paramètres URL avec support pour les listes de paramètres de suivi et fonctionnels personnalisés",
-          "Mise à niveau du système de build : Introduction de l'outil de build moderne esbuild avec des vitesses de build 10x+ plus rapides (< 10ms), minification automatique du code, tree shaking et code splitting dans les builds de production",
-          "Amélioration de l'expérience de développement : Ajout du mode watch avec surveillance de fichiers et reconstruction automatique"
+          "Règles de paramètres personnalisés : Nouvelle fonction de configuration de paramètres URL avec support pour les listes de paramètres de suivi et fonctionnels personnalisés"
         ]
       },
       "1.6.3": {
         "title": "v1.6.3",
         "changes": [
           "Optimisation du cache d'URL courte : Correction de la logique de mise en cache d'URL courte pour assurer la cohérence en utilisant des URLs nettoyées, amélioration du taux de réussite du cache",
-          "Amélioration de la stabilité : Ajout de vérifications de santé et de verrous de concurrence pour les documents Offscreen afin d'éviter la création en double et les conflits de ressources",
           "Optimisation des performances : Amélioration de la limitation d'URL courte et de la gestion des requêtes concurrentes",
-          "Optimisation du système de notification : Refactorisation de l'assistant de notification avec détection améliorée de script de contenu pour une meilleure fiabilité des notifications",
-          "Amélioration du système de modèles : Optimisation de la journalisation de secours des modèles avec sortie de console étiquetée pour un débogage plus facile"
+          "Amélioration de la stabilité : Ajout de vérifications de santé et de verrous de concurrence pour les documents Offscreen afin d'éviter la création en double et les conflits de ressources"
         ]
       },
       "1.6.2": {
         "title": "v1.6.2",
         "changes": [
-          "Refonte UI/UX : Révision complète de l'interface utilisateur, suppression des ombres des boutons et éléments UI pour une esthétique de design plus plate",
-          "Modularisation des composants : Extraction des composants toggle et variables de thème dans des modules partagés pour une meilleure réutilisabilité et maintenabilité du code",
           "Optimisation visuelle : Simplification des styles d'interrupteurs toggle et à trois positions pour une meilleure cohérence visuelle",
-          "Corrections de bogues : Correction du mécanisme de gestion d'erreurs favicon utilisant des event listeners au lieu de gestionnaires onerror inline",
           "Optimisation des performances : Suppression des règles CSS inutilisées et textes de traduction pour réduire la taille du bundle"
         ]
       },
       "1.6.1": {
         "title": "v1.6.1",
         "changes": [
-          "Amélioration du système de modèles : Amélioration complète de la fonctionnalité de modèles personnalisés, interface d'éditeur de modèles redessinée pour une expérience UI moderne",
-          "Sélecteur d'emojis : Ajout d'un sélecteur d'emojis catégorisé pour les icônes de modèles avec défilement fluide et navigation par catégorie",
-          "Optimisation du moteur de modèles : Amélioration de la logique de validation des modèles et traitement amélioré des variables de modèle avec une meilleure gestion d'erreurs",
           "Mise à niveau du système de notification : Système de notification entièrement nouveau avec notifications Toast en page style Arc, supportant l'affichage anti-doublons et de meilleurs effets visuels",
-          "Analyse du comportement utilisateur : Système d'analyse Umami intégré suivant les installations, mises à jour et opérations de copie avec suivi d'ID utilisateur et détection de version de navigateur",
-          "Optimisation de structure de code : Refactorisation de multiples composants en modules partagés pour une meilleure modularité et maintenabilité",
+          "Amélioration du système de modèles : Amélioration complète de la fonctionnalité de modèles personnalisés, interface d'éditeur de modèles redessinée pour une expérience UI moderne",
+          "Optimisation du moteur de modèles : Amélioration de la logique de validation des modèles et traitement amélioré des variables de modèle avec une meilleure gestion d'erreurs",
+          "Sélecteur d'emojis : Ajout d'un sélecteur d'emojis catégorisé pour les icônes de modèles avec défilement fluide et navigation par catégorie",
           "Amélioration de localisation : Ajout du support chinois traditionnel et amélioration du texte d'interface multilingue"
         ]
       },

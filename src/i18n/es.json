@@ -136,40 +136,31 @@
       "1.6.4": {
         "title": "v1.6.4",
         "changes": [
-          "Reglas de Parámetros Personalizados: Nueva función de configuración de parámetros URL que soporta listas personalizadas de parámetros de seguimiento y funcionales",
-          "Actualización del Sistema de Build: Introducida herramienta de build moderna esbuild con velocidades de build 10x+ más rápidas (< 10ms), minificación automática de código, tree shaking y división de código en builds de producción",
-          "Mejora de Experiencia de Desarrollo: Agregado modo watch con monitoreo de archivos y reconstrucción automática"
+          "Reglas de Parámetros Personalizados: Nueva función de configuración de parámetros URL que soporta listas personalizadas de parámetros de seguimiento y funcionales"
         ]
       },
       "1.6.3": {
         "title": "v1.6.3",
         "changes": [
           "Optimización de Caché de URL Corta: Corregida lógica de caché de URL corta para asegurar consistencia usando URLs limpias, mejorando tasa de acierto del caché",
-          "Mejora de Estabilidad: Agregadas verificaciones de salud y bloqueos de concurrencia para documentos Offscreen para prevenir creación duplicada y conflictos de recursos",
           "Optimización de Rendimiento: Mejorada limitación de URL corta y gestión de solicitudes concurrentes",
-          "Optimización del Sistema de Notificaciones: Refactorizado ayudante de notificaciones con detección mejorada de content script para mejor fiabilidad de notificaciones",
-          "Mejora del Sistema de Plantillas: Optimizado registro de fallback de plantillas con salida de consola etiquetada para depuración más fácil"
+          "Mejora de Estabilidad: Agregadas verificaciones de salud y bloqueos de concurrencia para documentos Offscreen para prevenir creación duplicada y conflictos de recursos"
         ]
       },
       "1.6.2": {
         "title": "v1.6.2",
         "changes": [
-          "Rediseño UI/UX: Renovación completa de la interfaz de usuario, eliminando sombras de botones y elementos UI para una estética de diseño más plana",
-          "Modularización de Componentes: Extraído componentes toggle y variables de tema en módulos compartidos para mejor reutilización y mantenimiento del código",
           "Optimización Visual: Simplificados estilos de interruptores toggle y de tres posiciones para mejor consistencia visual",
-          "Correcciones de Errores: Corregido mecanismo de manejo de errores de favicon usando event listeners en lugar de manejadores onerror inline",
           "Optimización de Rendimiento: Eliminadas reglas CSS no utilizadas y textos de traducción para reducir el tamaño del bundle"
         ]
       },
       "1.6.1": {
         "title": "v1.6.1",
         "changes": [
-          "Mejora del Sistema de Plantillas: Mejora integral de la funcionalidad de plantillas personalizadas, rediseñada interfaz del editor de plantillas para experiencia UI moderna",
-          "Selector de Emojis: Agregado selector de emojis categorizado para iconos de plantillas con desplazamiento suave y navegación por categorías",
-          "Optimización del Motor de Plantillas: Mejorada lógica de validación de plantillas y procesamiento mejorado de variables de plantilla con mejor manejo de errores",
           "Actualización del Sistema de Notificaciones: Sistema de notificaciones completamente nuevo con notificaciones Toast en página estilo Arc, soportando pantalla anti-duplicados y mejores efectos visuales",
-          "Analíticas de Comportamiento de Usuario: Sistema de analíticas Umami integrado rastreando instalaciones, actualizaciones y operaciones de copia con seguimiento de ID de usuario y detección de versión del navegador",
-          "Optimización de Estructura de Código: Refactorizados múltiples componentes en módulos compartidos para mejor modularidad y mantenimiento",
+          "Mejora del Sistema de Plantillas: Mejora integral de la funcionalidad de plantillas personalizadas, rediseñada interfaz del editor de plantillas para experiencia UI moderna",
+          "Optimización del Motor de Plantillas: Mejorada lógica de validación de plantillas y procesamiento mejorado de variables de plantilla con mejor manejo de errores",
+          "Selector de Emojis: Agregado selector de emojis categorizado para iconos de plantillas con desplazamiento suave y navegación por categorías",
           "Mejora de Localización: Agregado soporte de Chino Tradicional y mejorado texto de interfaz multiidioma"
         ]
       },
