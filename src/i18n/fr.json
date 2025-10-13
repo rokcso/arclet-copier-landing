@@ -73,8 +73,8 @@
     "home2_desc": "Prend en charge les opérations par lots sur plusieurs URL pour améliorer l'efficacité du travail",
     "home3": "Options de paramètres riches",
     "home3_desc": "Personnalisation des services de liens courts, notifications, langue d'interface, thèmes et diverses configurations",
-    "home4": "Modèles de copie personnalisés",
-    "home4_desc": "Créez et modifiez des modèles de format de copie personnalisés pour divers cas d'usage"
+    "home4": "Modèles & Paramètres URL Personnalisés",
+    "home4_desc": "Créez des modèles de format de copie personnalisés et configurez des règles de paramètres URL pour une gestion intelligente"
   },
   "download": {
     "title": "Télécharger maintenant",

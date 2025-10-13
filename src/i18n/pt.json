@@ -73,8 +73,8 @@
     "home2_desc": "Suporte a operações em lote em múltiplas URLs para melhorar a eficiência do trabalho",
     "home3": "Opções de Configuração Avançadas",
     "home3_desc": "Personalização de serviços de links curtos, notificações, idioma da interface, temas e várias configurações",
-    "home4": "Modelos de Cópia Personalizados",
-    "home4_desc": "Crie e edite modelos de formato de cópia personalizados para vários casos de uso"
+    "home4": "Modelos e Parâmetros URL Personalizados",
+    "home4_desc": "Crie modelos de formato de cópia personalizados e configure regras de parâmetros URL para gerenciamento inteligente"
   },
   "download": {
     "title": "Baixar Agora",

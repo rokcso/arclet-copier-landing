@@ -73,8 +73,8 @@
     "home2_desc": "Support batch operations on multiple URLs to improve work efficiency",
     "home3": "Rich Settings Options",
     "home3_desc": "Customize short link services, notifications, interface language, themes and various configurations",
-    "home4": "Custom Copy Templates",
-    "home4_desc": "Create and edit personalized copy format templates for various use cases"
+    "home4": "Custom Templates & URL Parameters",
+    "home4_desc": "Create personalized copy format templates and configure custom URL parameter rules for intelligent management"
   },
   "download": {
     "title": "Download Now",

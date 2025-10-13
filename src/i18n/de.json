@@ -73,8 +73,8 @@
     "home2_desc": "Unterstützt Batch-Operationen für mehrere URLs zur Verbesserung der Arbeitseffizienz",
     "home3": "Umfangreiche Einstellungsoptionen",
     "home3_desc": "Anpassung von Kurz-Link-Diensten, Benachrichtigungen, Oberflächensprache, Themen und verschiedene Konfigurationen",
-    "home4": "Benutzerdefinierte Kopiervorlagen",
-    "home4_desc": "Erstellen und bearbeiten Sie personalisierte Kopierformat-Vorlagen für verschiedene Anwendungsfälle"
+    "home4": "Benutzerdefinierte Vorlagen & URL-Parameter",
+    "home4_desc": "Erstellen Sie personalisierte Kopierformat-Vorlagen und konfigurieren Sie benutzerdefinierte URL-Parameterregeln für intelligentes Management"
   },
   "download": {
     "title": "Jetzt herunterladen",

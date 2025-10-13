@@ -73,8 +73,8 @@
     "home2_desc": "Soporta operaciones por lotes en múltiples URLs para mejorar la eficiencia del trabajo",
     "home3": "Opciones de Configuración Ricas",
     "home3_desc": "Personaliza servicios de enlaces cortos, notificaciones, idioma de interfaz, temas y varias configuraciones",
-    "home4": "Plantillas de Copia Personalizadas",
-    "home4_desc": "Crea y edita plantillas de formato de copia personalizadas para varios casos de uso"
+    "home4": "Plantillas y Parámetros URL Personalizados",
+    "home4_desc": "Crea plantillas de formato de copia personalizadas y configura reglas de parámetros URL para gestión inteligente"
   },
   "download": {
     "title": "Descargar Ahora",
