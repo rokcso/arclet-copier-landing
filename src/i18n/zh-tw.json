@@ -19,6 +19,10 @@
     "github": "檢視原始碼",
     "version": "目前版本 v1.6.4"
   },
+  "video": {
+    "title": "實際演示",
+    "description": "觀看這個快速演示，了解 Arclet Copier 如何簡化您的工作流程"
+  },
   "features": {
     "title": "功能特色",
     "subtitle": "為現代瀏覽體驗而設計",

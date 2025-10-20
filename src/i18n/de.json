@@ -19,6 +19,10 @@
     "github": "Quellcode anzeigen",
     "version": "Aktuelle Version v1.6.4"
   },
+  "video": {
+    "title": "In Aktion sehen",
+    "description": "Sehen Sie sich diese kurze Demo an, um zu erfahren, wie Arclet Copier Ihren Workflow optimieren kann"
+  },
   "features": {
     "title": "Funktionen",
     "subtitle": "Entwickelt für moderne Browser-Erfahrung",

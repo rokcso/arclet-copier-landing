@@ -1,0 +1,37 @@
+---
+import { t, type Language } from '../i18n/utils';
+
+export interface Props {
+  lang: Language;
+}
+
+const { lang } = Astro.props;
+const translate = t(lang);
+---
+
+<section id="video" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-serif font-semibold text-secondary-900 mb-4">
+        {translate('video.title')}
+      </h2>
+      <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+        {translate('video.description')}
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <div class="relative w-full rounded-2xl overflow-hidden shadow-soft-lg" style="padding-bottom: 56.25%;">
+        <iframe
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/7HA-OTeR5fI"
+          title="Arclet Copier Demo Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>

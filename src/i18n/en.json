@@ -19,6 +19,10 @@
     "github": "View Source",
     "version": "Current Version v1.6.4"
   },
+  "video": {
+    "title": "See It In Action",
+    "description": "Watch this quick demo to learn how Arclet Copier can streamline your workflow"
+  },
   "features": {
     "title": "Features",
     "subtitle": "Designed for modern browsing experience",

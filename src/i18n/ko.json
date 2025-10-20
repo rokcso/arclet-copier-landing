@@ -19,6 +19,10 @@
     "github": "소스 코드 보기",
     "version": "현재 버전 v1.6.4"
   },
+  "video": {
+    "title": "실제로 보기",
+    "description": "Arclet Copier가 워크플로우를 어떻게 간소화할 수 있는지 이 빠른 데모를 시청하세요"
+  },
   "features": {
     "title": "기능",
     "subtitle": "현대적인 브라우징 경험을 위해 설계됨",
