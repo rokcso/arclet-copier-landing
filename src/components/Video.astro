@@ -21,16 +21,33 @@ const translate = t(lang);
     </div>
 
     <div class="max-w-4xl mx-auto">
-      <div class="relative w-full rounded-2xl overflow-hidden shadow-soft-lg" style="padding-bottom: 56.25%;">
-        <iframe
-          class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/7HA-OTeR5fI"
-          title="Arclet Copier Demo Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
+      <div
+        class="relative w-full rounded-2xl overflow-hidden shadow-soft-lg"
+        style="padding-bottom: 56.25%;"
+      >
+        {
+          lang === 'zh' ? (
+            <iframe
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://player.bilibili.com/player.html?bvid=BV1q5suzwEcW&autoplay=0"
+              title="Arclet Copier 演示视频"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            />
+          ) : (
+            <iframe
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/D5_8GtbdNXk"
+              title="Arclet Copier Demo Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            />
+          )
+        }
       </div>
     </div>
   </div>
