@@ -240,7 +240,7 @@
           "Optimisation d'interface de code QR : Refonte de la mise en page modale de code QR avec aperçu URL au-dessus du code QR et bouton de copie en dessous",
           "Amélioration d'expérience d'interaction : Fermeture immédiate du popup et affichage de notification de succès après copie d'image de code QR pour une opération plus fluide",
           "Support de menu clic droit : Ajout de la fonctionnalité de menu clic droit \"Copier URL actuelle\" supportant la copie rapide depuis n'importe quel emplacement de page web",
-          "Mise à jour d'information de site web officiel : Mise à jour des informations développeur avec lien de site web officiel vers https://lunarye.com/arclet-copier"
+          "Mise à jour d'information de site web officiel : Mise à jour des informations développeur avec lien de site web officiel vers https://arcletcopier.com"
         ]
       },
       "1.3.2": {

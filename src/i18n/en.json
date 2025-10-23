@@ -240,7 +240,7 @@
           "QR Code Interface Optimization: Redesigned QR code modal layout with URL preview above QR code and copy button below",
           "Interaction Experience Enhancement: Immediately close popup and display success notification after copying QR code image for smoother operation",
           "Right-Click Menu Support: Added right-click menu \"Copy Current URL\" functionality supporting quick copy from any web page location",
-          "Official Website Information Update: Updated developer information with official website link to https://lunarye.com/arclet-copier"
+          "Official Website Information Update: Updated developer information with official website link to https://arcletcopier.com"
         ]
       },
       "1.3.2": {
