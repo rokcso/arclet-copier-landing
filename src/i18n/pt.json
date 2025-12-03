@@ -142,7 +142,7 @@
       },
       {
         "question": "Como configurar atalhos de teclado?",
-        "answer": "Após instalar a extensão, visite chrome://extensions/shortcuts, encontre Arclet Copier e atribua um atalho para cópia silenciosa, como Cmd+Shift+C (Ctrl+Shift+C no Windows)."
+        "answer": "Após instalar a extensão, digite <code class=\"px-2 py-1 bg-secondary-100 text-primary-600 rounded text-sm font-mono\">chrome://extensions/shortcuts</code> na barra de endereços, encontre Arclet Copier e atribua um atalho para cópia silenciosa, como Cmd+Shift+C (Ctrl+Shift+C no Windows)."
       }
     ]
   },

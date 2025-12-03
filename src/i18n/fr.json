@@ -142,7 +142,7 @@
       },
       {
         "question": "Comment configurer les raccourcis clavier ?",
-        "answer": "Après avoir installé l'extension, visitez chrome://extensions/shortcuts, trouvez Arclet Copier et attribuez un raccourci pour la copie silencieuse, tel que Cmd+Shift+C (Ctrl+Shift+C sous Windows)."
+        "answer": "Après avoir installé l'extension, tapez <code class=\"px-2 py-1 bg-secondary-100 text-primary-600 rounded text-sm font-mono\">chrome://extensions/shortcuts</code> dans votre barre d'adresse, trouvez Arclet Copier et attribuez un raccourci pour la copie silencieuse, tel que Cmd+Shift+C (Ctrl+Shift+C sous Windows)."
       }
     ]
   },

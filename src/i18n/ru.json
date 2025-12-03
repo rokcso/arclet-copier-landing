@@ -142,7 +142,7 @@
       },
       {
         "question": "Как настроить горячие клавиши?",
-        "answer": "После установки расширения перейдите на chrome://extensions/shortcuts, найдите Arclet Copier и назначьте сочетание клавиш для тихого копирования, например Cmd+Shift+C (Ctrl+Shift+C в Windows)."
+        "answer": "После установки расширения введите <code class=\"px-2 py-1 bg-secondary-100 text-primary-600 rounded text-sm font-mono\">chrome://extensions/shortcuts</code> в адресную строку, найдите Arclet Copier и назначьте сочетание клавиш для тихого копирования, например Cmd+Shift+C (Ctrl+Shift+C в Windows)."
       }
     ]
   },

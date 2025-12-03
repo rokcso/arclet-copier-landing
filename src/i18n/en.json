@@ -142,7 +142,7 @@
       },
       {
         "question": "How do I configure keyboard shortcuts?",
-        "answer": "After installing the extension, visit chrome://extensions/shortcuts, find Arclet Copier, and assign a shortcut for silent copying, such as Cmd+Shift+C (Ctrl+Shift+C on Windows)."
+        "answer": "After installing the extension, type <code class=\"px-2 py-1 bg-secondary-100 text-primary-600 rounded text-sm font-mono\">chrome://extensions/shortcuts</code> in your address bar, find Arclet Copier, and assign a shortcut for silent copying, such as Cmd+Shift+C (Ctrl+Shift+C on Windows)."
       }
     ]
   },

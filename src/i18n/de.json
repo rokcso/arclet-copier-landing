@@ -142,7 +142,7 @@
       },
       {
         "question": "Wie konfiguriere ich Tastenkürzel?",
-        "answer": "Nach der Installation besuchen Sie chrome://extensions/shortcuts, finden Sie Arclet Copier und weisen Sie eine Tastenkombination für stilles Kopieren zu, z.B. Cmd+Shift+C (Strg+Shift+C unter Windows)."
+        "answer": "Nach der Installation geben Sie <code class=\"px-2 py-1 bg-secondary-100 text-primary-600 rounded text-sm font-mono\">chrome://extensions/shortcuts</code> in die Adressleiste ein, finden Sie Arclet Copier und weisen Sie eine Tastenkombination für stilles Kopieren zu, z.B. Cmd+Shift+C (Strg+Shift+C unter Windows)."
       }
     ]
   },

@@ -142,7 +142,7 @@
       },
       {
         "question": "如何配置快捷鍵？",
-        "answer": "安裝擴充功能後，造訪 chrome://extensions/shortcuts，找到 Arclet Copier，為靜默複製分配一個快捷鍵，比如 Cmd+Shift+C（Windows 上是 Ctrl+Shift+C）。"
+        "answer": "安裝擴充功能後，在網址列輸入 <code class=\"px-2 py-1 bg-secondary-100 text-primary-600 rounded text-sm font-mono\">chrome://extensions/shortcuts</code>，找到 Arclet Copier，為靜默複製分配一個快捷鍵，比如 Cmd+Shift+C（Windows 上是 Ctrl+Shift+C）。"
       }
     ]
   },

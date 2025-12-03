@@ -142,7 +142,7 @@
       },
       {
         "question": "키보드 단축키를 어떻게 설정하나요?",
-        "answer": "확장 프로그램 설치 후 chrome://extensions/shortcuts를 방문하고 Arclet Copier를 찾아 무음 복사용 단축키를 할당하세요. 예를 들어 Cmd+Shift+C (Windows에서는 Ctrl+Shift+C)."
+        "answer": "확장 프로그램 설치 후 주소창에 <code class=\"px-2 py-1 bg-secondary-100 text-primary-600 rounded text-sm font-mono\">chrome://extensions/shortcuts</code>를 입력하고 Arclet Copier를 찾아 무음 복사용 단축키를 할당하세요. 예를 들어 Cmd+Shift+C (Windows에서는 Ctrl+Shift+C)."
       }
     ]
   },

@@ -57,9 +57,7 @@ while (translate(`faq.items.${index}.question`) !== `faq.items.${index}.question
               class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
             >
               <div class="px-8 pb-6">
-                <p class="text-secondary-600 leading-relaxed">
-                  {translate(`faq.items.${index}.answer`)}
-                </p>
+                <p class="text-secondary-600 leading-relaxed" set:html={translate(`faq.items.${index}.answer`)} />
               </div>
             </div>
           </div>
