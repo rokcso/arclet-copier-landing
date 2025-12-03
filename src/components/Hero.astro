@@ -9,31 +9,12 @@ const { lang } = Astro.props;
 const translate = t(lang);
 ---
 
-<style>
-  .logo-rotate:hover {
-    transform: rotate(-360deg);
-  }
-</style>
-
-<section class="pt-24 pb-16 bg-gradient-to-b from-secondary-50 to-white">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="text-center max-w-4xl mx-auto">
-      <!-- Icon -->
-      <div class="mb-8">
-        <img
-          src="/img/logo.webp"
-          alt="Arclet Copier - Quick URL Copy Chrome Extension"
-          class="w-20 h-20 mx-auto transition-transform duration-500 logo-rotate"
-          width="80"
-          height="80"
-          loading="eager"
-          decoding="async"
-        />
-      </div>
-
+<section class="pt-32 pb-20 bg-gradient-to-b from-secondary-50 to-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center">
       <!-- Title -->
       <h1
-        class="text-5xl md:text-6xl font-serif font-semibold text-secondary-900 mb-6 leading-tight"
+        class="text-4xl md:text-5xl font-serif font-bold text-secondary-900 mb-6 leading-tight"
       >
         {translate('hero.title')}
         <br />
@@ -41,31 +22,9 @@ const translate = t(lang);
       </h1>
 
       <!-- Description -->
-      <p class="text-xl text-secondary-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+      <p class="text-lg md:text-xl text-secondary-600 mb-10 max-w-3xl mx-auto">
         {translate('hero.description')}
       </p>
-
-      <!-- Key Features -->
-      <div class="flex flex-wrap items-center justify-center gap-6 mb-10 text-sm">
-        <div class="flex items-center gap-2 text-secondary-600">
-          <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-          </svg>
-          <span class="font-medium">{translate('hero.feature_1')}</span>
-        </div>
-        <div class="flex items-center gap-2 text-secondary-600">
-          <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
-          </svg>
-          <span class="font-medium">{translate('hero.feature_2')}</span>
-        </div>
-        <div class="flex items-center gap-2 text-secondary-600">
-          <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-          </svg>
-          <span class="font-medium">{translate('hero.feature_3')}</span>
-        </div>
-      </div>
 
       <!-- CTA Button -->
       <div class="flex items-center justify-center">
@@ -74,10 +33,10 @@ const translate = t(lang);
           id="hero-download-btn"
           data-text-chrome={translate('hero.add_to_chrome')}
           data-text-edge={translate('hero.add_to_edge')}
-          class="inline-flex items-center gap-2 px-8 py-3.5 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors duration-200"
+          class="inline-flex items-center gap-3 px-10 py-4 bg-primary-600 text-white text-lg font-semibold rounded-xl hover:bg-primary-700 hover:shadow-lg transition-all duration-200"
           target="_blank"
         >
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.84 4.67h1.68v8.36h3.62L12 17.75l-4.46-4.72h3.62V4.67z"></path>
           </svg>
           <span id="hero-download-text">{translate('hero.add_to_chrome')}</span>

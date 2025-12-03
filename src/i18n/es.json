@@ -34,7 +34,7 @@
       },
       {
         "title": "Limpieza Inteligente de Parámetros",
-        "description": "El modo inteligente elimina solo parámetros de seguimiento"
+        "description": "Tres modos: Desactivado (mantener todo), Inteligente (elimina solo parámetros de seguimiento como utm_*, fbclid, gclid, conserva parámetros funcionales), Agresivo (elimina todo)"
       },
       {
         "title": "Reglas de Parámetros Personalizadas",
@@ -42,11 +42,11 @@
       },
       {
         "title": "Sistema de Plantillas Personalizadas",
-        "description": "Cree plantillas de formato de copia personalizadas con 11 campos de variables, vista previa y validación en tiempo real"
+        "description": "Cree plantillas de formato de copia personalizadas con 11 campos de variables (url, title, hostname, domain, shortUrl, author, description, date, time, timestamp, originalUrl), vista previa y validación en tiempo real"
       },
       {
         "title": "Función de Copia por Lotes",
-        "description": "Copia por lotes de pestañas de múltiples ventanas con filtros, deduplicación y múltiples formatos de exportación"
+        "description": "Selección de pestañas de múltiples ventanas con filtro de alcance de ventana, opción solo páginas web, deduplicación, vista previa antes de copiar y múltiples formatos de exportación"
       },
       {
         "title": "Generación de URLs Cortas",

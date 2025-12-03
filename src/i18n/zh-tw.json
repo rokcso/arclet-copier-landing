@@ -34,7 +34,7 @@
       },
       {
         "title": "智慧參數清理",
-        "description": "智慧模式僅移除追蹤參數"
+        "description": "三種模式：關閉(保留全部)、智慧(僅移除 utm_*、fbclid、gclid 等追蹤參數，保留功能參數)、激進(移除全部)"
       },
       {
         "title": "自訂參數規則",
@@ -42,11 +42,11 @@
       },
       {
         "title": "自訂範本系統",
-        "description": "建立個人化複製格式範本，支援11個變數欄位，即時預覽和驗證"
+        "description": "建立個人化複製格式範本，支援11個變數欄位(url、title、hostname、domain、shortUrl、author、description、date、time、timestamp、originalUrl)，即時預覽和驗證"
       },
       {
         "title": "批量複製功能",
-        "description": "多視窗分頁批量複製，支援篩選器、去重和多種匯出格式"
+        "description": "多視窗分頁選擇，支援視窗範圍篩選、僅網頁選項、去重、複製前預覽和多種匯出格式"
       },
       {
         "title": "短鏈生成",

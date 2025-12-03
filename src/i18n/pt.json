@@ -34,7 +34,7 @@
       },
       {
         "title": "Limpeza Inteligente de Parâmetros",
-        "description": "Modo inteligente remove apenas parâmetros de rastreamento"
+        "description": "Três modos: Desativado (manter tudo), Inteligente (remove apenas parâmetros de rastreamento como utm_*, fbclid, gclid, preserva parâmetros funcionais), Agressivo (remove tudo)"
       },
       {
         "title": "Regras de Parâmetros Personalizadas",
@@ -42,11 +42,11 @@
       },
       {
         "title": "Sistema de Modelos Personalizados",
-        "description": "Crie modelos de formato de cópia personalizados com 11 campos de variáveis, visualização e validação em tempo real"
+        "description": "Crie modelos de formato de cópia personalizados com 11 campos de variáveis (url, title, hostname, domain, shortUrl, author, description, date, time, timestamp, originalUrl), visualização e validação em tempo real"
       },
       {
         "title": "Recurso de Cópia em Lote",
-        "description": "Cópia em lote de abas multi-janelas com filtros, desduplicação e múltiplos formatos de exportação"
+        "description": "Seleção de abas multi-janelas com filtro de escopo de janela, opção apenas páginas web, desduplicação, visualização antes de copiar e múltiplos formatos de exportação"
       },
       {
         "title": "Geração de URLs Curtas",

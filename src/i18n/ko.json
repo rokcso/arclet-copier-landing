@@ -34,7 +34,7 @@
       },
       {
         "title": "스마트 매개변수 정리",
-        "description": "스마트 모드는 추적 매개변수만 제거합니다"
+        "description": "세 가지 모드: 끄기(모두 유지), 스마트(utm_*, fbclid, gclid 등 추적 매개변수만 제거, 기능 매개변수는 유지), 공격적(모두 제거)"
       },
       {
         "title": "사용자 정의 매개변수 규칙",
@@ -42,11 +42,11 @@
       },
       {
         "title": "사용자 정의 템플릿 시스템",
-        "description": "11개의 변수 필드, 실시간 미리보기 및 검증 기능을 갖춘 개인화된 복사 형식 템플릿 생성"
+        "description": "11개의 변수 필드(url, title, hostname, domain, shortUrl, author, description, date, time, timestamp, originalUrl), 실시간 미리보기 및 검증 기능을 갖춘 개인화된 복사 형식 템플릿 생성"
       },
       {
         "title": "일괄 복사 기능",
-        "description": "필터, 중복 제거 및 여러 내보내기 형식을 제공하는 다중 창 탭 일괄 복사"
+        "description": "다중 창 탭 선택, 창 범위 필터, 웹 페이지만 옵션, 중복 제거, 복사 전 미리보기 및 여러 내보내기 형식 지원"
       },
       {
         "title": "단축 URL 생성",

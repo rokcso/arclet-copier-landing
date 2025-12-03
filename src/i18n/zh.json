@@ -34,7 +34,7 @@
       },
       {
         "title": "智能参数清理",
-        "description": "三级清理模式：关闭、智能、激进，智能模式仅移除跟踪参数"
+        "description": "三种模式：关闭(保留全部)、智能(仅移除 utm_*、fbclid、gclid 等跟踪参数，保留功能参数)、激进(移除全部)"
       },
       {
         "title": "自定义参数规则",
@@ -42,11 +42,11 @@
       },
       {
         "title": "自定义模板系统",
-        "description": "创建个性化复制格式模板，支持11种变量字段，实时预览和模板验证"
+        "description": "创建个性化复制格式模板，支持11种变量字段(url、title、hostname、domain、shortUrl、author、description、date、time、timestamp、originalUrl)，实时预览和模板验证"
       },
       {
         "title": "批量复制功能",
-        "description": "多窗口标签页批量复制，支持过滤器、去重和多种导出格式"
+        "description": "多窗口标签页选择，支持窗口范围过滤、仅网页选项、去重、复制前预览和多种导出格式"
       },
       {
         "title": "短链生成",

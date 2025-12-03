@@ -34,7 +34,7 @@
       },
       {
         "title": "Intelligente Parameterreinigung",
-        "description": "Intelligenter Modus entfernt nur Tracking-Parameter"
+        "description": "Drei Modi: Aus (alles behalten), Intelligent (entfernt nur Tracking-Parameter wie utm_*, fbclid, gclid, behält funktionale Parameter), Aggressiv (entfernt alles)"
       },
       {
         "title": "Benutzerdefinierte Parameterregeln",
@@ -42,11 +42,11 @@
       },
       {
         "title": "Benutzerdefiniertes Vorlagensystem",
-        "description": "Erstellen Sie personalisierte Kopierformat-Vorlagen mit 11 Variablenfeldern, Echtzeitvorschau und Validierung"
+        "description": "Erstellen Sie personalisierte Kopierformat-Vorlagen mit 11 Variablenfeldern (url, title, hostname, domain, shortUrl, author, description, date, time, timestamp, originalUrl), Echtzeitvorschau und Validierung"
       },
       {
         "title": "Batch-Kopier-Funktion",
-        "description": "Multi-Fenster-Tab-Batch-Kopieren mit Filtern, Duplikaterkennung und mehreren Exportformaten"
+        "description": "Multi-Fenster-Tab-Auswahl mit Fensterbereichsfilter, Nur-Webseiten-Option, Duplikaterkennung, Vorschau vor dem Kopieren und mehreren Exportformaten"
       },
       {
         "title": "Kurz-URL-Generierung",

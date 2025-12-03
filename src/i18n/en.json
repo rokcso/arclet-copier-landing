@@ -34,7 +34,7 @@
       },
       {
         "title": "Smart Parameter Cleaning",
-        "description": "Three-level modes: Off, Smart, Aggressive. Smart mode removes only tracking parameters"
+        "description": "Three modes: Off (keep all), Smart (removes tracking params like utm_*, fbclid, gclid while preserving functional params), Aggressive (removes all)"
       },
       {
         "title": "Custom Parameter Rules",
@@ -42,11 +42,11 @@
       },
       {
         "title": "Custom Template System",
-        "description": "Create personalized copy format templates with 11 variable fields, real-time preview and validation"
+        "description": "Create personalized copy format templates with 11 variable fields (url, title, hostname, domain, shortUrl, author, description, date, time, timestamp, originalUrl), real-time preview and validation"
       },
       {
         "title": "Batch Copy Feature",
-        "description": "Multi-window tab batch copying with filters, deduplication, and multiple export formats"
+        "description": "Multi-window tab selection with window scope filter, web pages only option, deduplication, preview before copying, and multiple export formats"
       },
       {
         "title": "Short URL Generation",

@@ -34,7 +34,7 @@
       },
       {
         "title": "Nettoyage intelligent des paramètres",
-        "description": "Le mode intelligent supprime uniquement les paramètres de suivi"
+        "description": "Trois modes : Désactivé (tout garder), Intelligent (supprime uniquement les paramètres de suivi comme utm_*, fbclid, gclid, conserve les paramètres fonctionnels), Agressif (supprime tout)"
       },
       {
         "title": "Règles de paramètres personnalisées",
@@ -42,11 +42,11 @@
       },
       {
         "title": "Système de modèles personnalisés",
-        "description": "Créez des modèles de format de copie personnalisés avec 11 champs de variables, prévisualisation et validation en temps réel"
+        "description": "Créez des modèles de format de copie personnalisés avec 11 champs de variables (url, title, hostname, domain, shortUrl, author, description, date, time, timestamp, originalUrl), prévisualisation et validation en temps réel"
       },
       {
         "title": "Fonction de copie par lots",
-        "description": "Copie par lots d'onglets multi-fenêtres avec filtres, déduplication et multiples formats d'exportation"
+        "description": "Sélection d'onglets multi-fenêtres avec filtre de portée de fenêtre, option pages web uniquement, déduplication, prévisualisation avant copie et multiples formats d'exportation"
       },
       {
         "title": "Génération d'URL courtes",
