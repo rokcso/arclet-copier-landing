@@ -38,6 +38,10 @@
         "description": "Strips tracking junk. Keeps what matters. Automatically."
       },
       {
+        "title": "Works Everywhere",
+        "description": "Even on Chrome system pages. No limitations, no exceptions."
+      },
+      {
         "title": "Your Rules",
         "description": "Define exactly which parameters stay and which go."
       },
@@ -56,6 +60,10 @@
       {
         "title": "QR Codes",
         "description": "Generate scannable codes for seamless mobile sharing."
+      },
+      {
+        "title": "Quiet Notifications",
+        "description": "Inspired by Arc. Beautiful, brief, never in your way."
       },
       {
         "title": "Thoughtful Design",
