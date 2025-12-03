@@ -38,6 +38,10 @@
         "description": "Remove lixo de rastreamento. Mantém o que importa. Automaticamente."
       },
       {
+        "title": "Funciona em Todo Lugar",
+        "description": "Mesmo em páginas do sistema Chrome. Sem limitações, sem exceções."
+      },
+      {
         "title": "Suas Regras",
         "description": "Defina exatamente quais parâmetros ficam e quais saem."
       },
@@ -56,6 +60,10 @@
       {
         "title": "Códigos QR",
         "description": "Gere códigos escaneáveis para compartilhamento móvel perfeito."
+      },
+      {
+        "title": "Notificações Silenciosas",
+        "description": "Inspirado no Arc. Bonitas, breves, nunca no caminho."
       },
       {
         "title": "Design Pensado",

@@ -38,6 +38,10 @@
         "description": "Entfernt Tracking-Müll. Behält das Wesentliche. Automatisch."
       },
       {
+        "title": "Funktioniert überall",
+        "description": "Sogar auf Chrome-Systemseiten. Keine Einschränkungen, keine Ausnahmen."
+      },
+      {
         "title": "Ihre Regeln",
         "description": "Definieren Sie genau, welche Parameter bleiben und welche gehen."
       },
@@ -56,6 +60,10 @@
       {
         "title": "QR-Codes",
         "description": "Scannbare Codes für nahtloses mobiles Teilen generieren."
+      },
+      {
+        "title": "Stille Benachrichtigungen",
+        "description": "Von Arc inspiriert. Schön, kurz, nie im Weg."
       },
       {
         "title": "Durchdachtes Design",
