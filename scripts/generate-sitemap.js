@@ -19,28 +19,28 @@ const languages = [
 ];
 
 // 页面配置
+// lastmod 说明：
+// - 首页：使用构建日期（内容经常更新）
+// - Privacy/Terms：使用固定日期（仅在内容修改时需手动更新此日期）
 const pages = [
   {
     path: '',
     priority: '1.0',
-    changefreq: 'weekly',
+    lastmod: new Date().toISOString().split('T')[0], // 使用构建日期
   },
   {
     path: '/privacy',
-    priority: '0.5',
-    changefreq: 'monthly',
+    priority: '0.3', // 法律文档，较低优先级
+    lastmod: '2024-09-23', // 固定日期，内容修改时需手动更新
   },
   {
     path: '/terms',
-    priority: '0.5',
-    changefreq: 'monthly',
+    priority: '0.3', // 法律文档，较低优先级
+    lastmod: '2024-09-23', // 固定日期，内容修改时需手动更新
   },
 ];
 
 function generateSitemapWithHreflang() {
-  // 使用 YYYY-MM-DD 格式的日期
-  const lastmod = new Date().toISOString().split('T')[0];
-
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -53,8 +53,7 @@ function generateSitemapWithHreflang() {
 
       xml += `  <url>
     <loc>${url}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <changefreq>${page.changefreq}</changefreq>
+    <lastmod>${page.lastmod}</lastmod>
     <priority>${page.priority}</priority>
 `;
 
