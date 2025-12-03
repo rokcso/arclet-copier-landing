@@ -97,7 +97,7 @@ const features = [
 ];
 ---
 
-<section id="features" class="py-20 bg-white">
+<section id="features" class="py-20 bg-secondary-50">
   <div class="max-w-6xl mx-auto px-6">
     <!-- Section Header -->
     <div class="text-center mb-16">
@@ -112,7 +112,7 @@ const features = [
     <!-- Features Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {features.map((feature) => (
-        <div class="bg-secondary-50 rounded-2xl p-8 border border-transparent">
+        <div class="bg-white rounded-2xl p-8 border border-secondary-200 shadow-soft">
           <!-- Icon -->
           <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 mb-6">
             <Fragment set:html={feature.icon} />
