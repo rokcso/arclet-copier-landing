@@ -2,72 +2,152 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import { t } from '../../i18n/utils';
-
-const lang = 'ja';
-const translate = t(lang);
 ---
 
-<Layout title={`プライバシーポリシー - ${translate('meta.title')}`} lang={lang}>
-  <Header lang={lang} />
-  <main class="pt-20">
-    <div class="max-w-4xl mx-auto px-6 py-16">
-      <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">
-        プライバシーポリシー
-      </h1>
+<Layout title="プライバシーポリシー - Arclet Copier" lang="ja">
+  <Header lang="ja" />
 
-      <div class="prose prose-lg max-w-none">
-        <p class="text-secondary-600 mb-8">最終更新日：2025年1月15日</p>
+  <main class="pt-24 pb-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
+        <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">プライバシーポリシー</h1>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-secondary-900 mb-4">1. 情報の収集</h2>
-          <p class="text-secondary-700 leading-relaxed mb-4">
-            Arclet Copierは、機能の提供に必要最小限のデータのみを収集します：
-          </p>
-          <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-            <li>現在のページのURL（コピー機能のため）</li>
-            <li>ユーザー設定とカスタムテンプレート（ローカルストレージに保存）</li>
-            <li>使用統計（匿名化され、機能改善のため）</li>
-          </ul>
-        </section>
+        <div class="prose prose-lg max-w-none">
+          <p class="text-secondary-600 mb-8">最終更新日：2025年9月19日</p>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-secondary-900 mb-4">2. データの使用</h2>
-          <p class="text-secondary-700 leading-relaxed mb-4">
-            収集したデータは以下の目的でのみ使用されます：
-          </p>
-          <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-            <li>拡張機能の基本機能の提供</li>
-            <li>ユーザー体験の向上</li>
-            <li>バグの修正と機能改善</li>
-          </ul>
-        </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">
+              あなたのプライバシーは重要です
+            </h2>
+            <p class="text-secondary-700 mb-4">
+              私たちはあなたのデータを収集しません。以上です。
+            </p>
+            <p class="text-secondary-700 mb-4">
+              個人情報なし。閲覧履歴なし。コピーした内容の追跡なし。何もどこにも送信されません。
+            </p>
+            <p class="text-secondary-700">
+              あなたのデータはあなたのものです。常に。
+            </p>
+          </section>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-secondary-900 mb-4">3. データの共有</h2>
-          <p class="text-secondary-700 leading-relaxed">
-            私たちはあなたの個人データを第三者と共有、販売、レンタルすることはありません。短縮URL機能を使用する場合、選択したサービス（is.gd、TinyURL）にURLが送信されますが、これらのサービスは独自のプライバシーポリシーに従って運営されています。
-          </p>
-        </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">デバイスに保存されるもの</h2>
+            <p class="text-secondary-700 mb-4">
+              Arclet Copierが希望通りに動作するように、コンピュータにいくつかの項目が保存されます：
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>設定と環境設定</li>
+              <li>カスタムテンプレートとルール</li>
+              <li>コピー履歴—ローカルに保存され、アップロードされません</li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              これはデバイスに保存されます。私たちには見えません。他の誰にも見えません。
+            </p>
+          </section>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-secondary-900 mb-4">4. データセキュリティ</h2>
-          <p class="text-secondary-700 leading-relaxed">
-            すべてのユーザーデータはローカルに保存され、適切なセキュリティ対策を講じてデータを保護しています。
-          </p>
-        </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">許可が必要な理由</h2>
+            <p class="text-secondary-700 mb-4">
+              ブラウザが許可を求めます。必要な理由は次のとおりです：
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>
+                <strong>activeTab</strong>—現在のページからURLをコピーするため
+              </li>
+              <li>
+                <strong>tabs</strong>—バッチ操作で複数のタブを処理するため
+              </li>
+              <li>
+                <strong>storage</strong>—設定を記憶するため
+              </li>
+              <li>
+                <strong>notifications</strong>—コピーが完了したときに通知するため
+              </li>
+              <li>
+                <strong>offscreen</strong>—バックグラウンドでQRコードを生成するため
+              </li>
+              <li>
+                <strong>clipboardWrite</strong>—クリーンなURLをクリップボードに入れるため
+              </li>
+              <li>
+                <strong>contextMenus</strong>—右クリックメニューオプションを追加するため
+              </li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              それ以上でも以下でもありません。必要なものだけを使用します。
+            </p>
+          </section>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-secondary-900 mb-4">5. お問い合わせ</h2>
-          <p class="text-secondary-700 leading-relaxed">
-            このプライバシーポリシーについてご質問がある場合は、
-            <a href="mailto:hi@rokcso.com" class="text-primary-600 hover:text-primary-700"
-              >hi@rokcso.com</a
-            > までお問い合わせください。
-          </p>
-        </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">短縮リンクサービス</h2>
+            <p class="text-secondary-700">
+              短縮リンクを生成すると、URLが選択したサービス（is.gdまたはTinyURL）に送信されます。彼らは独自のプライバシーポリシーを持っています。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              私たちは彼らが何をするかを制御できません。信頼できるものを選択してください。
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">分析</h2>
+            <p class="text-secondary-700">
+              使用パターン、バグ、パフォーマンスを追跡するために、セルフホストのUmamiを使用する場合があります。これにより、改善に役立ちます。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              個人データなし。サイト間の追跡なし。ツールを改善するための基本的な統計のみです。
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">あなたのデータは安全です</h2>
+            <p class="text-secondary-700">
+              私たちが持っていないものは漏洩しません。あなたのデータはデバイスを離れないため、漏洩するものはありません。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              設計によるプライバシー。デフォルトでセキュリティ。
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">変更がある場合</h2>
+            <p class="text-secondary-700">
+              変更があった場合、このページを更新します。個別に通知しません—気になる場合はここを確認してください。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              私たちはあなたの時間を尊重します。軽々しく変更することはありません。
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">質問がありますか？</h2>
+            <p class="text-secondary-700 mb-4">
+              メールまたはDiscordでお問い合わせください。お手伝いします。
+            </p>
+            <p class="text-secondary-700">
+              Email:
+              <a
+                href="mailto:hi@coryso.com"
+                class="text-primary-600 underline hover:text-primary-700"
+              >
+                hi@coryso.com
+              </a>
+            </p>
+            <p class="text-secondary-700 mt-2">
+              Discord:
+              <a
+                href="https://discord.gg/NpRnQ5zp5q"
+                class="text-primary-600 underline hover:text-primary-700"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                コミュニティに参加する
+              </a>
+            </p>
+          </section>
+        </div>
       </div>
     </div>
   </main>
-  <Footer lang={lang} />
+
+  <Footer lang="ja" />
 </Layout>

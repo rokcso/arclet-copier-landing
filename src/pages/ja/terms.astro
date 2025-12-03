@@ -2,78 +2,164 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import { t } from '../../i18n/utils';
-
-const lang = 'ja';
-const translate = t(lang);
 ---
 
-<Layout title={`利用規約 - ${translate('meta.title')}`} lang={lang}>
-  <Header lang={lang} />
-  <main class="pt-20">
-    <div class="max-w-4xl mx-auto px-6 py-16">
-      <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">利用規約</h1>
+<Layout title="利用規約 - Arclet Copier" lang="ja">
+  <Header lang="ja" />
 
-      <div class="prose prose-lg max-w-none">
-        <p class="text-secondary-600 mb-8">最終更新日：2025年1月15日</p>
+  <main class="pt-24 pb-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
+        <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">利用規約</h1>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-secondary-900 mb-4">1. 利用規約の同意</h2>
-          <p class="text-secondary-700 leading-relaxed">
-            Arclet
-            Copier拡張機能を使用することにより、これらの利用規約に同意したものとみなされます。これらの規約に同意できない場合は、拡張機能を使用しないでください。
-          </p>
-        </section>
+        <div class="prose prose-lg max-w-none">
+          <p class="text-secondary-600 mb-8">最終更新日：2025年9月19日</p>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-secondary-900 mb-4">2. 使用許可</h2>
-          <p class="text-secondary-700 leading-relaxed mb-4">
-            Arclet Copierは無料のオープンソースソフトウェアです。以下の条件下で使用できます：
-          </p>
-          <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-            <li>個人的および商業的目的での使用</li>
-            <li>ソフトウェアの修正と配布（オープンソースライセンスに従って）</li>
-            <li>適用される法律と規制の遵守</li>
-          </ul>
-        </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">基本事項</h2>
+            <p class="text-secondary-700">
+              Arclet Copierを使用することは、これらの規約に同意することを意味します。簡単です。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              ここに同意できない部分がある場合、問題ありません。拡張機能を使用しないでください。
+            </p>
+          </section>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-secondary-900 mb-4">3. 使用制限</h2>
-          <p class="text-secondary-700 leading-relaxed mb-4">以下の行為は禁止されています：</p>
-          <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-            <li>拡張機能を違法な目的で使用すること</li>
-            <li>他者の知的財産権を侵害すること</li>
-            <li>システムやネットワークの正常な動作を妨害すること</li>
-            <li>第三者に損害を与える行為</li>
-          </ul>
-        </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">無料でオープン</h2>
+            <p class="text-secondary-700 mb-4">
+              Arclet CopierはGPL-3.0ライセンスの下でオープンソースです。次のことができます：
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>永久に無料で使用</li>
+              <li>ソースコードの閲覧と変更</li>
+              <li>他の人と共有</li>
+              <li>仕事または個人的なプロジェクトで使用</li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              <strong>1つのルール：</strong> コードを変更して共有する場合、変更もオープンソースにしてください。良いものが広がる方法です。
+            </p>
+          </section>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-secondary-900 mb-4">4. 免責事項</h2>
-          <p class="text-secondary-700 leading-relaxed">
-            Arclet
-            Copierは「現状のまま」提供されます。使用によって生じた直接的または間接的な損害について、開発者は一切の責任を負いません。
-          </p>
-        </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">敬意を払う</h2>
+            <p class="text-secondary-700 mb-4">この拡張機能を次の用途で使用しないでください：</p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>法律を破ったり、人々を傷つけたりすること</li>
+              <li>他人の作品を盗んだり、不正使用したりすること</li>
+              <li>有害なコンテンツを広めること</li>
+              <li>拡張機能の動作を妨害すること</li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              常識的に考えてください。扱われたいように他人を扱ってください。
+            </p>
+          </section>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-secondary-900 mb-4">5. 規約の変更</h2>
-          <p class="text-secondary-700 leading-relaxed">
-            これらの利用規約は予告なく変更される場合があります。継続的な使用は変更された規約への同意を意味します。
-          </p>
-        </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">あなたの責任</h2>
+            <p class="text-secondary-700 mb-4">Arclet Copierでコンテンツをコピーするとき：</p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>コピーするものを使用する権利があることを確認してください</li>
+              <li>著作権と他人の権利を尊重してください</li>
+              <li>ツールの使用方法について責任を持ってください</li>
+              <li>デバイスとデータを安全に保ってください</li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              私たちはツールを作りました。それで何をするかはあなた次第です。
+            </p>
+          </section>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-secondary-900 mb-4">6. お問い合わせ</h2>
-          <p class="text-secondary-700 leading-relaxed">
-            利用規約についてご質問がある場合は、
-            <a href="mailto:hi@rokcso.com" class="text-primary-600 hover:text-primary-700"
-              >hi@rokcso.com</a
-            > までお問い合わせください。
-          </p>
-        </section>
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">
+              約束なし
+            </h2>
+            <p class="text-secondary-700 mb-4">
+              Arclet Copierは「現状のまま」提供されます。次の��とを約束できません：
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>あなたのニーズに完璧に機能すること</li>
+              <li>バグが決してないこと</li>
+              <li>常に利用可能であること</li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              私たちは良いものにするために一生懸命働いています。しかし、私たちは人間です。時々問題が発生します。
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">
+              責任を負いません
+            </h2>
+            <p class="text-secondary-700">
+              何か問題が発生した場合、データ損失、仕事の遅れ、その他何でも責任を負いません。この拡張機能は自己責任で使用してください。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              個人的なことではありません。無料ツールがどのように機能するかということです。
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">
+              著作権を尊重する
+            </h2>
+            <p class="text-secondary-700">
+              私たちのコードはGPL-3.0ライセンスの下でオープンソースです。ウェブコンテンツをコピーするときは、元の作成者の権利を尊重してください。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              良いツールは良い仕事を可能にします。賢く使用してください。
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">規約が変更された場合</h2>
+            <p class="text-secondary-700">
+              規約が変更されたときにこのページを更新します。個別に通知しません—気になる場合はここを確認してください。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              拡張機能を使い続けると、新しい規約に同意したことになります。正当な理由なしに変更することはありません。
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">いつでも退出できます</h2>
+            <p class="text-secondary-700">
+              気に入らないですか？アンインストールしてください。質問はしません。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              これらの規約に違反した場合、使用を停止するように求める場合があります。公平です。
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">質問がありますか？</h2>
+            <p class="text-secondary-700 mb-4">
+              メールまたはDiscordでお問い合わせください。お手伝いします。
+            </p>
+            <p class="text-secondary-700">
+              Email:
+              <a
+                href="mailto:hi@coryso.com"
+                class="text-primary-600 underline hover:text-primary-700"
+              >
+                hi@coryso.com
+              </a>
+            </p>
+            <p class="text-secondary-700 mt-2">
+              Discord:
+              <a
+                href="https://discord.gg/NpRnQ5zp5q"
+                class="text-primary-600 underline hover:text-primary-700"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                コミュニティに参加する
+              </a>
+            </p>
+          </section>
+        </div>
       </div>
     </div>
   </main>
-  <Footer lang={lang} />
+
+  <Footer lang="ja" />
 </Layout>

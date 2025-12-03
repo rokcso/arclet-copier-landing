@@ -16,84 +16,131 @@ import Footer from '../../components/Footer.astro';
           <p class="text-secondary-600 mb-8">最后更新时间：2025年9月19日</p>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">1. 信息收集</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">
+              你的隐私很重要
+            </h2>
             <p class="text-secondary-700 mb-4">
-              Arclet Copier
-              是一个浏览器扩展程序，我们致力于保护您的隐私。我们不会收集、存储或传输您的个人信息。
+              我们不收集你的数据。就这么简单。
             </p>
-            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-              <li>我们不会收集您的个人身份信息</li>
-              <li>我们不会跟踪您的浏览行为</li>
-              <li>我们不会收集您复制的内容</li>
-              <li>我们不会与第三方分享任何数据</li>
-            </ul>
+            <p class="text-secondary-700 mb-4">
+              没有个人信息。没有浏览历史。不跟踪你复制了什么。什么都不会发送到别处。
+            </p>
+            <p class="text-secondary-700">
+              你的数据永远属于你。
+            </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">2. 本地存储</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">存在你设备上的东西</h2>
             <p class="text-secondary-700 mb-4">
-              扩展程序可能会在您的设备上本地存储一些配置信息，包括：
+              有些东西会保存在你电脑上，让 Arclet Copier 按你的方式工作：
             </p>
             <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-              <li>用户设置和偏好</li>
-              <li>扩展程序配置</li>
-              <li>复制历史记录（仅存储在本地，不会上传）</li>
+              <li>你的设置和偏好</li>
+              <li>你的自定义模板和规则</li>
+              <li>你的复制历史——只存本地，不上传</li>
             </ul>
             <p class="text-secondary-700 mt-4">
-              这些信息仅存储在您的本地设备上，不会发送到我们的服务器或任何第三方服务。
+              这些都留在你的设备上。我们看不到。别人也看不到。
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">3. 权限使用</h2>
-            <p class="text-secondary-700 mb-4">扩展程序需要一些浏览器权限来正常运行：</p>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">为什么需要权限</h2>
+            <p class="text-secondary-700 mb-4">
+              浏览器会询问权限。我们需要它们的原因：
+            </p>
             <ul class="list-disc pl-6 text-secondary-700 space-y-2">
               <li>
-                <strong>activeTab</strong>：访问当前活动标签页以执行复制功能
+                <strong>activeTab</strong>——复制你正在看的页面上的 URL
               </li>
               <li>
-                <strong>storage</strong>：在本地存储用户设置
+                <strong>tabs</strong>——在批量操作中处理多个标签页
               </li>
               <li>
-                <strong>clipboardWrite</strong>：将内容写入剪贴板
+                <strong>storage</strong>——记住你的设置
+              </li>
+              <li>
+                <strong>notifications</strong>——复制完成时通知你
+              </li>
+              <li>
+                <strong>offscreen</strong>——在后台生成二维码
+              </li>
+              <li>
+                <strong>clipboardWrite</strong>——把干净的 URL 放到剪贴板
+              </li>
+              <li>
+                <strong>contextMenus</strong>——添加右键菜单选项
               </li>
             </ul>
             <p class="text-secondary-700 mt-4">
-              我们仅在必要时使用这些权限，不会滥用或超出功能需要的范围。
+              仅此而已。只用需要的。
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">4. 第三方服务</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">短链接服务</h2>
             <p class="text-secondary-700">
-              我们不使用任何第三方分析服务、广告服务或数据收集服务。扩展程序完全在本地运行，不会向外部服务器发送任何数据。
+              当你生成短链接时，你的 URL 会被发送到你选择的服务——is.gd 或 TinyURL。它们有自己的隐私政策。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              我们无法控制它们做什么。选择你信任的服务。
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">5. 数据安全</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">分析统计</h2>
             <p class="text-secondary-700">
-              由于我们不收集或存储您的个人数据，因此不存在数据泄露的风险。所有功能都在您的本地设备上运行，确保您的隐私得到最大程度的保护。
+              我们可能使用自建的 Umami 来跟踪使用模式、bug 和性能。这帮助我们改进工具。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              没有个人数据。不跨站跟踪。只是基本统计来改进工具。
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">6. 政策更新</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">你的数据很安全</h2>
             <p class="text-secondary-700">
-              我们可能会不时更新此隐私政策。任何更改都会在此页面上发布，并在扩展程序更新时通知用户。
+              没有的东西不会泄露。你的数据从不离开设备，就没什么好泄露的。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              设计上的隐私。默认的安全。
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">如果有变化</h2>
+            <p class="text-secondary-700">
+              有变化时我们会更新这个页面。不会另外通知——如果好奇就回来看看。
+            </p>
+            <p class="text-secondary-700 mt-4">
+              我们尊重你的时间。不会轻易改变。
             </p>
           </section>
 
           <section>
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">7. 联系我们</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">有问题？</h2>
+            <p class="text-secondary-700 mb-4">
+              通过邮件或 Discord 联系我们。我们在这里帮忙。
+            </p>
             <p class="text-secondary-700">
-              如果您对此隐私政策有任何问题或疑虑，请通过 GitHub 项目页面与我们联系：
+              邮箱：
               <a
-                href="https://github.com/rokcso/arclet-copier"
+                href="mailto:hi@coryso.com"
+                class="text-primary-600 underline hover:text-primary-700"
+              >
+                hi@coryso.com
+              </a>
+            </p>
+            <p class="text-secondary-700 mt-2">
+              Discord：
+              <a
+                href="https://discord.gg/NpRnQ5zp5q"
                 class="text-primary-600 underline hover:text-primary-700"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                https://github.com/rokcso/arclet-copier
+                加入我们的社区
               </a>
             </p>
           </section>

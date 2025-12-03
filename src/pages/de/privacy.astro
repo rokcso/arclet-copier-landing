@@ -10,107 +10,137 @@ import Footer from '../../components/Footer.astro';
   <main class="pt-24 pb-16">
     <div class="max-w-4xl mx-auto px-6">
       <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
-        <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">
-          Datenschutzrichtlinie
-        </h1>
+        <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">Datenschutzrichtlinie</h1>
 
         <div class="prose prose-lg max-w-none">
           <p class="text-secondary-600 mb-8">Zuletzt aktualisiert: 19. September 2025</p>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">1. Datenerfassung</h2>
-            <p class="text-secondary-700 mb-4">
-              Arclet Copier ist eine Browser-Erweiterung, und wir sind dem Schutz Ihrer Privatsphäre
-              verpflichtet. Wir erfassen, speichern oder übertragen keine Ihrer persönlichen Daten.
-            </p>
-            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-              <li>Wir erfassen keine persönlich identifizierbaren Informationen</li>
-              <li>Wir verfolgen Ihr Browsing-Verhalten nicht</li>
-              <li>Wir erfassen nicht die von Ihnen kopierten Inhalte</li>
-              <li>Wir teilen keine Daten mit Dritten</li>
-            </ul>
-          </section>
-
-          <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">2. Lokale Speicherung</h2>
-            <p class="text-secondary-700 mb-4">
-              Die Erweiterung kann einige Konfigurationsdaten lokal auf Ihrem Gerät speichern,
-              einschließlich:
-            </p>
-            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-              <li>Benutzereinstellungen und -präferenzen</li>
-              <li>Erweiterungskonfiguration</li>
-              <li>Kopier-Verlauf (nur lokal gespeichert, nicht hochgeladen)</li>
-            </ul>
-            <p class="text-secondary-700 mt-4">
-              Diese Informationen werden nur auf Ihrem lokalen Gerät gespeichert und nicht an unsere
-              Server oder Drittanbieterdienste gesendet.
-            </p>
-          </section>
-
-          <section class="mb-8">
             <h2 class="text-2xl font-semibold text-secondary-900 mb-4">
-              3. Berechtigungsverwendung
+              Ihre Privatsphäre ist wichtig
             </h2>
             <p class="text-secondary-700 mb-4">
-              Die Erweiterung benötigt einige Browser-Berechtigungen, um ordnungsgemäß zu
-              funktionieren:
+              Wir sammeln Ihre Daten nicht. Punkt.
+            </p>
+            <p class="text-secondary-700 mb-4">
+              Keine persönlichen Informationen. Keinen Browserverlauf. Keine Verfolgung dessen, was Sie kopieren. Nichts wird irgendwohin gesendet.
+            </p>
+            <p class="text-secondary-700">
+              Ihre Daten bleiben Ihre. Immer.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Was auf Ihrem Gerät bleibt</h2>
+            <p class="text-secondary-700 mb-4">
+              Einige Dinge bleiben auf Ihrem Computer, damit Arclet Copier so funktioniert, wie Sie es möchten:
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>Ihre Einstellungen und Präferenzen</li>
+              <li>Ihre benutzerdefinierten Vorlagen und Regeln</li>
+              <li>Ihr Kopierverlauf—lokal gespeichert, nie hochgeladen</li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              Dies bleibt auf Ihrem Gerät. Wir sehen es nicht. Niemand sonst auch.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Warum wir Berechtigungen brauchen</h2>
+            <p class="text-secondary-700 mb-4">
+              Der Browser fragt nach Berechtigungen. Hier ist, warum wir sie brauchen:
             </p>
             <ul class="list-disc pl-6 text-secondary-700 space-y-2">
               <li>
-                <strong>activeTab</strong>: Zugriff auf den aktiven Tab zur Ausführung der
-                Kopierfunktion
+                <strong>activeTab</strong>—Um URLs von der Seite zu kopieren, auf der Sie sich befinden
               </li>
               <li>
-                <strong>storage</strong>: Lokale Speicherung von Benutzereinstellungen
+                <strong>tabs</strong>—Um mehrere Tabs in Stapeloperationen zu verarbeiten
               </li>
               <li>
-                <strong>clipboardWrite</strong>: Schreiben von Inhalten in die Zwischenablage
+                <strong>storage</strong>—Um Ihre Einstellungen zu speichern
+              </li>
+              <li>
+                <strong>notifications</strong>—Um Sie zu benachrichtigen, wenn das Kopieren abgeschlossen ist
+              </li>
+              <li>
+                <strong>offscreen</strong>—Um QR-Codes im Hintergrund zu generieren
+              </li>
+              <li>
+                <strong>clipboardWrite</strong>—Um bereinigte URLs in Ihre Zwischenablage zu kopieren
+              </li>
+              <li>
+                <strong>contextMenus</strong>—Um Optionen zum Rechtsklick-Menü hinzuzufügen
               </li>
             </ul>
             <p class="text-secondary-700 mt-4">
-              Wir verwenden diese Berechtigungen nur bei Bedarf und missbrauchen sie nicht über den
-              Funktionsumfang hinaus.
+              Nicht mehr, nicht weniger. Wir verwenden nur das Nötigste.
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">4. Drittanbieterdienste</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Kurzlink-Dienste</h2>
             <p class="text-secondary-700">
-              Wir verwenden keine Analyse-, Werbe- oder Datenerfassungsdienste von Drittanbietern.
-              Die Erweiterung läuft vollständig lokal und sendet keine Daten an externe Server.
+              Wenn Sie Kurzlinks generieren, wird Ihre URL an den von Ihnen gewählten Dienst gesendet—is.gd oder TinyURL. Diese haben ihre eigenen Datenschutzrichtlinien.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              Wir können nicht kontrollieren, was sie tun. Wählen Sie, was Sie vertrauen.
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">5. Datensicherheit</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Analysen</h2>
             <p class="text-secondary-700">
-              Da wir keine persönlichen Daten erfassen oder speichern, besteht kein Risiko einer
-              Datenschutzverletzung. Alle Funktionen laufen auf Ihrem lokalen Gerät und
-              gewährleisten maximalen Schutz Ihrer Privatsphäre.
+              Wir können selbst gehostetes Umami verwenden, um Nutzungsmuster, Fehler und Leistung zu verfolgen. Dies hilft uns, die Dinge besser zu machen.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              Keine persönlichen Daten. Keine Verfolgung über Websites hinweg. Nur grundlegende Statistiken zur Verbesserung des Tools.
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">6. Richtlinien-Updates</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Ihre Daten sind sicher</h2>
             <p class="text-secondary-700">
-              Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Alle Änderungen
-              werden auf dieser Seite veröffentlicht und die Benutzer bei Erweiterungs-Updates
-              benachrichtigt.
+              Man kann nicht brechen, was wir nicht haben. Ihre Daten verlassen nie Ihr Gerät, also gibt es nichts zu lecken.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              Datenschutz durch Design. Sicherheit standardmäßig.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Wenn sich dies ändert</h2>
+            <p class="text-secondary-700">
+              Wir werden diese Seite aktualisieren, wenn sich Dinge ändern. Wir werden Sie nicht separat benachrichtigen—schauen Sie hier vorbei, wenn Sie neugierig sind.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              Wir respektieren Ihre Zeit. Wir werden Dinge nicht leichtfertig ändern.
             </p>
           </section>
 
           <section>
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">7. Kontakt</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Fragen?</h2>
+            <p class="text-secondary-700 mb-4">
+              Kontaktieren Sie uns per E-Mail oder Discord. Wir sind hier, um zu helfen.
+            </p>
             <p class="text-secondary-700">
-              Wenn Sie Fragen oder Bedenken zu dieser Datenschutzrichtlinie haben, kontaktieren Sie
-              uns über die GitHub-Projektseite:
+              E-Mail:
               <a
-                href="https://github.com/rokcso/arclet-copier"
+                href="mailto:hi@coryso.com"
+                class="text-primary-600 underline hover:text-primary-700"
+              >
+                hi@coryso.com
+              </a>
+            </p>
+            <p class="text-secondary-700 mt-2">
+              Discord:
+              <a
+                href="https://discord.gg/NpRnQ5zp5q"
                 class="text-primary-600 underline hover:text-primary-700"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                https://github.com/rokcso/arclet-copier
+                Treten Sie unserer Community bei
               </a>
             </p>
           </section>

@@ -10,107 +10,137 @@ import Footer from '../../components/Footer.astro';
   <main class="pt-24 pb-16">
     <div class="max-w-4xl mx-auto px-6">
       <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
-        <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">
-          Политика конфиденциальности
-        </h1>
+        <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">Политика конфиденциальности</h1>
 
         <div class="prose prose-lg max-w-none">
           <p class="text-secondary-600 mb-8">Последнее обновление: 19 сентября 2025 года</p>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">1. Сбор информации</h2>
-            <p class="text-secondary-700 mb-4">
-              Arclet Copier - это расширение для браузера, и мы привержены защите вашей
-              конфиденциальности. Мы не собираем, не храним и не передаём никакой вашей личной
-              информации.
-            </p>
-            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-              <li>Мы не собираем персонально идентифицируемую информацию</li>
-              <li>Мы не отслеживаем ваше поведение в браузере</li>
-              <li>Мы не собираем контент, который вы копируете</li>
-              <li>Мы не делимся данными с третьими сторонами</li>
-            </ul>
-          </section>
-
-          <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">2. Локальное хранение</h2>
-            <p class="text-secondary-700 mb-4">
-              Расширение может локально хранить некоторую конфигурационную информацию на вашем
-              устройстве, включая:
-            </p>
-            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-              <li>Пользовательские настройки и предпочтения</li>
-              <li>Конфигурация расширения</li>
-              <li>История копирования (хранится только локально, не загружается)</li>
-            </ul>
-            <p class="text-secondary-700 mt-4">
-              Эта информация хранится только на вашем локальном устройстве и не отправляется на наши
-              серверы или сторонние сервисы.
-            </p>
-          </section>
-
-          <section class="mb-8">
             <h2 class="text-2xl font-semibold text-secondary-900 mb-4">
-              3. Использование разрешений
+              Ваша конфиденциальность важна
             </h2>
             <p class="text-secondary-700 mb-4">
-              Расширение требует некоторых разрешений браузера для правильной работы:
+              Мы не собираем ваши данные. Точка.
+            </p>
+            <p class="text-secondary-700 mb-4">
+              Никакой личной информации. Никакой истории браузера. Не отслеживаем, что вы копируете. Ничего никуда не отправляется.
+            </p>
+            <p class="text-secondary-700">
+              Ваши данные остаются вашими. Всегда.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Что остаётся на вашем устройстве</h2>
+            <p class="text-secondary-700 mb-4">
+              Некоторые вещи остаются на вашем компьютере, чтобы Arclet Copier работал так, как вы хотите:
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>Ваши настройки и предпочтения</li>
+              <li>Ваши пользовательские шаблоны и правила</li>
+              <li>Ваша история копирования—хранится локально, никогда не загружается</li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              Это остаётся на вашем устройстве. Мы не видим это. Никто другой тоже.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Почему нам нужны разрешения</h2>
+            <p class="text-secondary-700 mb-4">
+              Браузер запрашивает разрешения. Вот почему они нам нужны:
             </p>
             <ul class="list-disc pl-6 text-secondary-700 space-y-2">
               <li>
-                <strong>activeTab</strong>: Доступ к активной вкладке для выполнения функции
-                копирования
+                <strong>activeTab</strong>—Для копирования URL со страницы, на которой вы находитесь
               </li>
               <li>
-                <strong>storage</strong>: Локальное хранение пользовательских настроек
+                <strong>tabs</strong>—Для обработки нескольких вкладок в пакетных операциях
               </li>
               <li>
-                <strong>clipboardWrite</strong>: Запись содержимого в буфер обмена
+                <strong>storage</strong>—Чтобы запомнить ваши настройки
+              </li>
+              <li>
+                <strong>notifications</strong>—Чтобы уведомлять вас, когда копирование завершено
+              </li>
+              <li>
+                <strong>offscreen</strong>—Для генерации QR-кодов в фоновом режиме
+              </li>
+              <li>
+                <strong>clipboardWrite</strong>—Для помещения очищенных URL в буфер обмена
+              </li>
+              <li>
+                <strong>contextMenus</strong>—Для добавления опций в контекстное меню
               </li>
             </ul>
             <p class="text-secondary-700 mt-4">
-              Мы используем эти разрешения только при необходимости и не злоупотребляем ими за
-              пределами функционального назначения.
+              Ни больше, ни меньше. Мы используем только необходимое.
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">4. Сторонние сервисы</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Сервисы коротких ссылок</h2>
             <p class="text-secondary-700">
-              Мы не используем никаких сторонних аналитических, рекламных или сервисов сбора данных.
-              Расширение работает полностью локально и не отправляет данные на внешние серверы.
+              Когда вы генерируете короткие ссылки, ваш URL отправляется в выбранный вами сервис—is.gd или TinyURL. У них есть собственные политики конфиденциальности.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              Мы не контролируем, что они делают. Выбирайте то, чему доверяете.
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">5. Безопасность данных</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Аналитика</h2>
             <p class="text-secondary-700">
-              Поскольку мы не собираем и не храним ваши личные данные, нет риска утечки данных. Все
-              функции выполняются на вашем локальном устройстве, обеспечивая максимальную защиту
-              вашей конфиденциальности.
+              Мы можем использовать самостоятельно размещённый Umami для отслеживания моделей использования, ошибок и производительности. Это помогает нам улучшать инструмент.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              Никаких личных данных. Никакого отслеживания между сайтами. Только основная статистика для улучшения инструмента.
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">6. Обновления политики</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Ваши данные в безопасности</h2>
             <p class="text-secondary-700">
-              Мы можем время от времени обновлять эту политику конфиденциальности. Все изменения
-              будут опубликованы на этой странице, и пользователи будут уведомлены при обновлении
-              расширения.
+              Нельзя взломать то, чего у нас нет. Ваши данные никогда не покидают ваше устройство, поэтому нечему утекать.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              Конфиденциальность по дизайну. Безопасность по умолчанию.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Если это изменится</h2>
+            <p class="text-secondary-700">
+              Мы обновим эту страницу, когда что-то изменится. Мы не будем уведомлять вас отдельно—загляните сюда, если вам любопытно.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              Мы уважаем ваше время. Мы не будем менять вещи легкомысленно.
             </p>
           </section>
 
           <section>
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">7. Свяжитесь с нами</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Вопросы?</h2>
+            <p class="text-secondary-700 mb-4">
+              Свяжитесь с нами по электронной почте или Discord. Мы здесь, чтобы помочь.
+            </p>
             <p class="text-secondary-700">
-              Если у вас есть вопросы или беспокойства по поводу этой политики конфиденциальности,
-              пожалуйста, свяжитесь с нами через страницу проекта на GitHub:
+              Email:
               <a
-                href="https://github.com/rokcso/arclet-copier"
+                href="mailto:hi@coryso.com"
+                class="text-primary-600 underline hover:text-primary-700"
+              >
+                hi@coryso.com
+              </a>
+            </p>
+            <p class="text-secondary-700 mt-2">
+              Discord:
+              <a
+                href="https://discord.gg/NpRnQ5zp5q"
                 class="text-primary-600 underline hover:text-primary-700"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                https://github.com/rokcso/arclet-copier
+                Присоединяйтесь к нашему сообществу
               </a>
             </p>
           </section>

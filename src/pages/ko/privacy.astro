@@ -16,90 +16,131 @@ import Footer from '../../components/Footer.astro';
           <p class="text-secondary-600 mb-8">최종 업데이트: 2025년 9월 19일</p>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">1. 정보 수집</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">
+              귀하의 개인정보가 중요합니다
+            </h2>
             <p class="text-secondary-700 mb-4">
-              Arclet Copier는 브라우저 확장 프로그램이며, 저희는 귀하의 개인정보 보호를 위해 최선을
-              다하고 있습니다. 저희는 귀하의 개인정보를 수집, 저장 또는 전송하지 않습니다.
+              우리는 귀하의 데이터를 수집하지 않습니다. 명확합니다.
             </p>
-            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-              <li>개인 식별 정보를 수집하지 않습니다</li>
-              <li>브라우징 행동을 추적하지 않습니다</li>
-              <li>복사하신 콘텐츠를 수집하지 않습니다</li>
-              <li>제3자와 데이터를 공유하지 않습니다</li>
-            </ul>
-          </section>
-
-          <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">2. 로컬 저장</h2>
             <p class="text-secondary-700 mb-4">
-              확장 프로그램은 귀하의 기기에 일부 구성 정보를 로컬로 저장할 수 있습니다:
+              개인정보 없음. 브라우징 기록 없음. 복사한 내용 추적 없음. 아무것도 어디에도 전송되지 않습니다.
             </p>
-            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-              <li>사용자 설정 및 기본 설정</li>
-              <li>확장 프로그램 구성</li>
-              <li>복사 기록 (로컬에만 저장되며 업로드되지 않음)</li>
-            </ul>
-            <p class="text-secondary-700 mt-4">
-              이 정보는 귀하의 로컬 기기에만 저장되며, 저희 서버나 제3자 서비스로 전송되지 않습니다.
+            <p class="text-secondary-700">
+              귀하의 데이터는 귀하의 것입니다. 항상.
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">3. 권한 사용</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">기기에 저장되는 것</h2>
             <p class="text-secondary-700 mb-4">
-              확장 프로그램이 정상적으로 작동하기 위해 일부 브라우저 권한이 필요합니다:
+              Arclet Copier가 원하는 방식으로 작동하도록 컴퓨터에 일부 항목이 저장됩니다:
             </p>
             <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-              <li>
-                <strong>activeTab</strong>: 복사 기능을 실행하기 위한 활성 탭 액세스
-              </li>
-              <li>
-                <strong>storage</strong>: 사용자 설정의 로컬 저장
-              </li>
-              <li>
-                <strong>clipboardWrite</strong>: 클립보드에 콘텐츠 쓰기
-              </li>
+              <li>설정 및 기본 설정</li>
+              <li>사용자 정의 템플릿 및 규칙</li>
+              <li>복사 기록—로컬에 저장되며, 업로드되지 않음</li>
             </ul>
             <p class="text-secondary-700 mt-4">
-              저희는 필요한 경우에만 이러한 권한을 사용하며, 기능적 범위를 넘어서 남용하지 않습니다.
+              이것은 기기에 저장됩니다. 우리는 볼 수 없습니다. 다른 누구도 볼 수 없습니다.
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">4. 제3자 서비스</h2>
-            <p class="text-secondary-700">
-              저희는 제3자 분석, 광고 또는 데이터 수집 서비스를 사용하지 않습니다. 확장 프로그램은
-              완전히 로컬에서 실행되며 외부 서버로 데이터를 전송하지 않습니다.
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">권한이 필요한 이유</h2>
+            <p class="text-secondary-700 mb-4">
+              브라우저가 권한을 요청합니다. 필요한 이유는 다음과 같습니다:
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>
+                <strong>activeTab</strong>—현재 페이지에서 URL을 복사하기 위해
+              </li>
+              <li>
+                <strong>tabs</strong>—일괄 작업에서 여러 탭을 처리하기 위해
+              </li>
+              <li>
+                <strong>storage</strong>—설정을 기억하기 위해
+              </li>
+              <li>
+                <strong>notifications</strong>—복사가 완료되면 알려주기 위해
+              </li>
+              <li>
+                <strong>offscreen</strong>—백그라운드에서 QR 코드를 생성하기 위해
+              </li>
+              <li>
+                <strong>clipboardWrite</strong>—깨끗한 URL을 클립보드에 넣기 위해
+              </li>
+              <li>
+                <strong>contextMenus</strong>—마우스 오른쪽 버튼 메뉴 옵션을 추가하기 위해
+              </li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              그 이상도 이하도 아닙니다. 필요한 것만 사용합니다.
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">5. 데이터 보안</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">단축 링크 서비스</h2>
             <p class="text-secondary-700">
-              저희는 귀하의 개인정보를 수집하거나 저장하지 않으므로 데이터 유출 위험이 없습니다.
-              모든 기능은 귀하의 로컬 기기에서 실행되어 개인정보 보호를 최대한 보장합니다.
+              단축 링크를 생성하면 URL이 선택한 서비스(is.gd 또는 TinyURL)로 전송됩니다. 그들은 자체 개인정보 처리방침을 가지고 있습니다.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              우리는 그들이 무엇을 하는지 제어할 수 없습니다. 신뢰할 수 있는 것을 선택하세요.
             </p>
           </section>
 
           <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">6. 정책 업데이트</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">분석</h2>
             <p class="text-secondary-700">
-              저희는 때때로 이 개인정보 처리방침을 업데이트할 수 있습니다. 모든 변경사항은 이
-              페이지에 게시되며, 확장 프로그램 업데이트 시 사용자에게 알려드립니다.
+              우리는 사용 패턴, 버그 및 성능을 추적하기 위해 자체 호스팅 Umami를 사용할 수 있습니다. 이는 개선하는 데 도움이 됩니다.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              개인 데이터 없음. 사이트 간 추적 없음. 도구를 개선하기 위한 기본 통계만 있습니다.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">귀하의 데이터는 안전합니다</h2>
+            <p class="text-secondary-700">
+              우리가 가지고 있지 않은 것은 유출될 수 없습니다. 귀하의 데이터는 기기를 벗어나지 않으므로 유출될 것이 없습니다.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              설계상 개인정보 보호. 기본적으로 보안.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">변경 사항이 있는 경우</h2>
+            <p class="text-secondary-700">
+              변경 사항이 있을 때 이 페이지를 업데이트합니다. 별도로 알리지 않습니다—궁금하시면 여기를 다시 확인하세요.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              우리는 귀하의 시간을 존중합니다. 가볍게 변경하지 않습니다.
             </p>
           </section>
 
           <section>
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">7. 문의하기</h2>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">질문이 있으신가요?</h2>
+            <p class="text-secondary-700 mb-4">
+              이메일 또는 Discord를 통해 연락하세요. 도와드리겠습니다.
+            </p>
             <p class="text-secondary-700">
-              이 개인정보 처리방침에 대한 질문이나 우려사항이 있으시면 GitHub 프로젝트 페이지를 통해
-              문의해 주세요:
+              Email:
               <a
-                href="https://github.com/rokcso/arclet-copier"
+                href="mailto:hi@coryso.com"
+                class="text-primary-600 underline hover:text-primary-700"
+              >
+                hi@coryso.com
+              </a>
+            </p>
+            <p class="text-secondary-700 mt-2">
+              Discord:
+              <a
+                href="https://discord.gg/NpRnQ5zp5q"
                 class="text-primary-600 underline hover:text-primary-700"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                https://github.com/rokcso/arclet-copier
+                커뮤니티에 참여하기
               </a>
             </p>
           </section>

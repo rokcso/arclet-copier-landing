@@ -10,91 +10,137 @@ import Footer from '../../components/Footer.astro';
   <main class="pt-24 pb-16">
     <div class="max-w-4xl mx-auto px-6">
       <div class="bg-white rounded-2xl shadow-soft-lg p-8 md:p-12">
-        <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">
-          Política de Privacidad
-        </h1>
+        <h1 class="text-4xl font-serif font-semibold text-secondary-900 mb-8">Política de Privacidad</h1>
 
         <div class="prose prose-lg max-w-none">
-          <p class="text-secondary-600 mb-8">Última actualización: 19 de septiembre, 2025</p>
+          <p class="text-secondary-600 mb-8">Última actualización: 19 de septiembre de 2025</p>
 
           <section class="mb-8">
             <h2 class="text-2xl font-semibold text-secondary-900 mb-4">
-              1. Recopilación de Información
+              Tu privacidad es importante
             </h2>
             <p class="text-secondary-700 mb-4">
-              Arclet Copier es una extensión de navegador, y estamos comprometidos a proteger su
-              privacidad. No recopilamos, almacenamos ni transmitimos su información personal.
+              No recopilamos tus datos. Punto.
             </p>
-            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-              <li>No recopilamos su información de identificación personal</li>
-              <li>No rastreamos su comportamiento de navegación</li>
-              <li>No recopilamos el contenido que copia</li>
-              <li>No compartimos ningún dato con terceros</li>
-            </ul>
-          </section>
-
-          <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">2. Almacenamiento Local</h2>
             <p class="text-secondary-700 mb-4">
-              La extensión almacena configuraciones en el almacenamiento local de su navegador:
-            </p>
-            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-              <li>Configuraciones de plantillas personalizadas</li>
-              <li>Preferencias de tema e idioma</li>
-              <li>Configuraciones de servicios de enlaces cortos</li>
-            </ul>
-            <p class="text-secondary-700 mt-4">
-              Estos datos se almacenan localmente en su dispositivo y no se transmiten a nuestros
-              servidores.
-            </p>
-          </section>
-
-          <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">3. Servicios de Terceros</h2>
-            <p class="text-secondary-700 mb-4">
-              Cuando utiliza funciones de generación de enlaces cortos, su URL puede ser procesada
-              por:
-            </p>
-            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
-              <li>is.gd - Servicio de acortamiento de URLs</li>
-              <li>TinyURL - Servicio de acortamiento de URLs</li>
-            </ul>
-            <p class="text-secondary-700 mt-4">
-              Estos servicios tienen sus propias políticas de privacidad.
-            </p>
-          </section>
-
-          <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">4. Código Abierto</h2>
-            <p class="text-secondary-700 mb-4">
-              Arclet Copier es un proyecto de código abierto. Puede revisar nuestro código fuente
-              en:
+              Sin información personal. Sin historial de navegación. Sin rastrear lo que copias. Nada se envía a ninguna parte.
             </p>
             <p class="text-secondary-700">
+              Tus datos son tuyos. Siempre.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Lo que se queda en tu dispositivo</h2>
+            <p class="text-secondary-700 mb-4">
+              Algunas cosas se almacenan en tu computadora para que Arclet Copier funcione como deseas:
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>Tus configuraciones y preferencias</li>
+              <li>Tus plantillas y reglas personalizadas</li>
+              <li>Tu historial de copias—almacenado localmente, nunca subido</li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              Esto se queda en tu dispositivo. No lo vemos. Nadie más tampoco.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Por qué necesitamos permisos</h2>
+            <p class="text-secondary-700 mb-4">
+              El navegador solicita permisos. Aquí está por qué los necesitamos:
+            </p>
+            <ul class="list-disc pl-6 text-secondary-700 space-y-2">
+              <li>
+                <strong>activeTab</strong>—Para copiar URLs de la página en la que estás
+              </li>
+              <li>
+                <strong>tabs</strong>—Para manejar múltiples pestañas en operaciones por lotes
+              </li>
+              <li>
+                <strong>storage</strong>—Para recordar tus configuraciones
+              </li>
+              <li>
+                <strong>notifications</strong>—Para avisarte cuando se complete la copia
+              </li>
+              <li>
+                <strong>offscreen</strong>—Para generar códigos QR en segundo plano
+              </li>
+              <li>
+                <strong>clipboardWrite</strong>—Para poner URLs limpias en tu portapapeles
+              </li>
+              <li>
+                <strong>contextMenus</strong>—Para agregar opciones del menú de clic derecho
+              </li>
+            </ul>
+            <p class="text-secondary-700 mt-4">
+              Ni más ni menos. Solo usamos lo necesario.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Servicios de enlaces cortos</h2>
+            <p class="text-secondary-700">
+              Cuando generas enlaces cortos, tu URL se envía al servicio que elijas—is.gd o TinyURL. Tienen sus propias políticas de privacidad.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              No controlamos lo que hacen. Elige en qué confías.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Analíticas</h2>
+            <p class="text-secondary-700">
+              Podemos usar Umami auto-alojado para rastrear patrones de uso, errores y rendimiento. Esto nos ayuda a mejorar.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              Sin datos personales. Sin rastreo entre sitios. Solo estadísticas básicas para mejorar la herramienta.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Tus datos están seguros</h2>
+            <p class="text-secondary-700">
+              No se puede violar lo que no tenemos. Tus datos nunca salen de tu dispositivo, así que no hay nada que filtrar.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              Privacidad por diseño. Seguridad por defecto.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">Si esto cambia</h2>
+            <p class="text-secondary-700">
+              Actualizaremos esta página cuando haya cambios. No te notificaremos por separado—consulta aquí si tienes curiosidad.
+            </p>
+            <p class="text-secondary-700 mt-4">
+              Respetamos tu tiempo. No cambiaremos las cosas a la ligera.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">¿Preguntas?</h2>
+            <p class="text-secondary-700 mb-4">
+              Contáctanos por correo electrónico o Discord. Estamos aquí para ayudar.
+            </p>
+            <p class="text-secondary-700">
+              Email:
               <a
-                href="https://github.com/rokcso/arclet-copier"
+                href="mailto:hi@coryso.com"
                 class="text-primary-600 underline hover:text-primary-700"
-                target="_blank"
-                rel="noopener noreferrer"
               >
-                GitHub - Arclet Copier
+                hi@coryso.com
               </a>
             </p>
-          </section>
-
-          <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-secondary-900 mb-4">5. Contacto</h2>
-            <p class="text-secondary-700">
-              Si tiene preguntas sobre esta política de privacidad, puede contactarnos a través de:
-            </p>
-            <p class="text-secondary-700 mt-4">
+            <p class="text-secondary-700 mt-2">
+              Discord:
               <a
-                href="https://github.com/rokcso/arclet-copier"
+                href="https://discord.gg/NpRnQ5zp5q"
                 class="text-primary-600 underline hover:text-primary-700"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub Issues
+                Únete a nuestra comunidad
               </a>
             </p>
           </section>
