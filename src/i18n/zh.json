@@ -137,17 +137,15 @@
   "footer": {
     "description": "Arclet Copier 是一款开源的 Chrome 扩展程序",
     "quick_links": "快速链接",
+    "contact_us": "联系我们",
     "privacy_policy": "隐私政策",
     "terms_of_service": "使用条款",
-    "documents": "文档",
     "links": {
       "github": "GitHub",
       "website": "官方网站",
-      "developer": "开发者",
-      "feedback": "反馈建议",
       "sitemap": "网站地图"
     },
-    "copyright": "由 @rokcso 开发",
+    "developed_by": "由",
     "partners": "合作伙伴"
   }
 }

@@ -134,17 +134,15 @@
   "footer": {
     "description": "Arclet Copier es una extensión Chrome de código abierto",
     "quick_links": "Enlaces Rápidos",
+    "contact_us": "Contáctenos",
     "privacy_policy": "Política de Privacidad",
     "terms_of_service": "Términos de Servicio",
-    "documents": "Documentos",
     "links": {
       "github": "GitHub",
       "website": "Sitio Web Oficial",
-      "developer": "Desarrollador",
-      "feedback": "Comentarios",
       "sitemap": "Mapa del Sitio"
     },
-    "copyright": "Desarrollado por @rokcso",
+    "developed_by": "Desarrollado por",
     "partners": "Socios"
   }
 }

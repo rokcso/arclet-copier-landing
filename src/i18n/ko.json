@@ -134,17 +134,15 @@
   "footer": {
     "description": "Arclet Copier는 오픈 소스 Chrome 확장 프로그램입니다",
     "quick_links": "빠른 링크",
+    "contact_us": "문의하기",
     "privacy_policy": "개인정보 처리방침",
     "terms_of_service": "이용 약관",
-    "documents": "문서",
     "links": {
       "github": "GitHub",
       "website": "공식 웹사이트",
-      "developer": "개발자",
-      "feedback": "피드백",
       "sitemap": "사이트맵"
     },
-    "copyright": "@rokcso에 의해 개발됨",
+    "developed_by": "개발:",
     "partners": "파트너"
   }
 }
