@@ -7,7 +7,6 @@
     "features": "Características",
     "download": "Descargar",
     "faq": "Preguntas Frecuentes",
-    "changelog": "Registro de cambios",
     "github": "GitHub",
     "about": "Acerca de"
   },
@@ -132,181 +131,12 @@
       }
     ]
   },
-  "changelog": {
-    "title": "Historial de Cambios",
-    "subtitle": "Todas las actualizaciones y mejoras",
-    "description": "Mantente al día con las últimas características y mejoras",
-    "versions": {
-      "1.6.4": {
-        "title": "v1.6.4",
-        "changes": [
-          "Reglas de Parámetros Personalizados: Nueva función de configuración de parámetros URL que soporta listas personalizadas de parámetros de seguimiento y funcionales"
-        ]
-      },
-      "1.6.3": {
-        "title": "v1.6.3",
-        "changes": [
-          "Optimización de Caché de URL Corta: Corregida lógica de caché de URL corta para asegurar consistencia usando URLs limpias, mejorando tasa de acierto del caché",
-          "Optimización de Rendimiento: Mejorada limitación de URL corta y gestión de solicitudes concurrentes",
-          "Mejora de Estabilidad: Agregadas verificaciones de salud y bloqueos de concurrencia para documentos Offscreen para prevenir creación duplicada y conflictos de recursos"
-        ]
-      },
-      "1.6.2": {
-        "title": "v1.6.2",
-        "changes": [
-          "Optimización Visual: Simplificados estilos de interruptores toggle y de tres posiciones para mejor consistencia visual",
-          "Optimización de Rendimiento: Eliminadas reglas CSS no utilizadas y textos de traducción para reducir el tamaño del bundle"
-        ]
-      },
-      "1.6.1": {
-        "title": "v1.6.1",
-        "changes": [
-          "Actualización del Sistema de Notificaciones: Sistema de notificaciones completamente nuevo con notificaciones Toast en página estilo Arc, soportando pantalla anti-duplicados y mejores efectos visuales",
-          "Mejora del Sistema de Plantillas: Mejora integral de la funcionalidad de plantillas personalizadas, rediseñada interfaz del editor de plantillas para experiencia UI moderna",
-          "Optimización del Motor de Plantillas: Mejorada lógica de validación de plantillas y procesamiento mejorado de variables de plantilla con mejor manejo de errores",
-          "Selector de Emojis: Agregado selector de emojis categorizado para iconos de plantillas con desplazamiento suave y navegación por categorías",
-          "Mejora de Localización: Agregado soporte de Chino Tradicional y mejorado texto de interfaz multiidioma"
-        ]
-      },
-      "1.6.0": {
-        "title": "v1.6.0",
-        "changes": [
-          "Sistema de Plantillas Personalizadas: Nueva funcionalidad de plantillas de formato de copia personalizada soportando creación, edición y eliminación de plantillas de copia personalizadas",
-          "Variables de Plantilla Ricas: Soporte para 11 variables de plantilla ({{url}}, {{originalUrl}}, {{title}}, {{hostname}}, {{domain}}, {{shortUrl}}, {{date}}, {{time}}, {{datetime}}, {{timestamp}}, {{iso}})",
-          "Interfaz de Gestión de Plantillas: Página dedicada de gestión de plantillas con selección de iconos emoji, vista previa en tiempo real y validación de plantillas"
-        ]
-      },
-      "1.5.0": {
-        "title": "v1.5.0",
-        "changes": [
-          "Función de Copia por Lotes: Nueva página de copia por lotes soportando selección de múltiples pestañas para copia masiva de URLs",
-          "Filtrado Inteligente: Soporte para filtrar pestañas por alcance de ventana (ventana actual o todas las ventanas)",
-          "Función de Vista Previa: Vista previa del contenido antes de copiar para asegurar que los resultados cumplan las expectativas",
-          "Configuraciones de Lotes: Configuraciones independientes de operaciones por lotes soportando filtrado de páginas web, deduplicación y selección de formato de copia",
-          "Alto Rendimiento: Soporte para manejo eficiente de gran número de pestañas con vista previa en tiempo real"
-        ]
-      },
-      "1.4.2": {
-        "title": "v1.4.2",
-        "changes": [
-          "Corrección de Prioridad CSS: Corregidos problemas de anulación de color de tema causados por prioridad de selector CSS, mejorando estabilidad del sistema de temas",
-          "Lanzamiento del sitio web oficial de Arclet Copier: https://arcletcopier.com/"
-        ]
-      },
-      "1.4.1": {
-        "title": "v1.4.1",
-        "changes": [
-          "Soporte Multiidioma Expandido: Expandido de 2 idiomas a 9 idiomas, agregando español, japonés, alemán, francés, portugués, ruso y coreano",
-          "Optimización de Interfaz: Rediseñada sección Apóyanos, removiendo diseño de borde anidado para estilo de lista más limpio y redundancia visual reducida",
-          "Mejoras Técnicas: Corregidos problemas de cálculo de posicionamiento de slider de interruptor de tres posiciones para mejor precisión de respuesta de interfaz"
-        ]
-      },
-      "1.4.0": {
-        "title": "v1.4.0",
-        "changes": [
-          "Generación de URLs Cortas: Nueva función de acortamiento de URL soportando generación y copia de URL corta con un clic",
-          "Página de Opciones: Nueva página dedicada de opciones de configuración proporcionando experiencia de configuración más completa",
-          "Selección de Servicio de URL Corta: Soporte para elegir diferentes servicios de URL corta (is.gd y TinyURL) para satisfacer diferentes necesidades de usuario",
-          "Optimización de Rendimiento: Generación de URL corta con mecanismos anti-rebote y caché para evitar solicitudes duplicadas y mejorar velocidad de respuesta",
-          "Caché Persistente: Caché de URL corta usando almacenamiento de Chrome para persistencia, aún accesible rápidamente después de reinicio del navegador",
-          "Efectos de Animación: Agregado efecto de animación de rotación a iconos de encabezado para experiencia visual mejorada",
-          "Validación de URL: Mecanismo de validación de URL mejorado para asegurar confiabilidad y precisión de generación de URL corta",
-          "Ajuste de Interfaz: Ajustado diseño de popup para reservar espacio para botones de URL corta mientras mantiene interfaz limpia y hermosa"
-        ]
-      },
-      "1.3.5": {
-        "title": "v1.3.5",
-        "changes": [
-          "Control de Notificación de Chrome: Agregada configuración toggle de notificación de Chrome permitiendo a usuarios personalizar pantalla de notificación de escritorio del navegador",
-          "Actualización de Interfaz Moderna: Optimizados integralmente estilos de interruptor toggle, adoptando uniformemente diseño de slider moderno para mejor consistencia visual",
-          "Optimización de Interfaz de Popup QR: Mejorado diseño de popup de código QR, optimizado espaciado de elementos y pantalla de línea divisoria para experiencia de usuario mejorada",
-          "Optimización de Permisos: Removidos permisos de scripting innecesarios y simplificada lógica de adquisición de título de página para seguridad de extensión mejorada",
-          "Mejora de Detalle de Interacción: Optimizado comportamiento de desplazamiento de caja de vista previa de URL y corregidos problemas de espaciado de diseño para interfaz más refinada"
-        ]
-      },
-      "1.3.4": {
-        "title": "v1.3.4",
-        "changes": [
-          "Sistema de Color Multi-Tema: Agregadas 5 opciones de color de tema (naranja, amarillo, verde, azul, púrpura) con elemento de interfaz unificado y colores de notificación siguiendo el tema",
-          "Mejora de Vista Previa de Página: Área de vista previa de URL actualizada para mostrar tanto título de página como información dual de URL",
-          "Mejora de Efecto Visual: Mejorado efecto de luz de slider de tres posiciones con efectos sutiles de brillo y gradiente",
-          "Ajuste de Configuración Predeterminada: Reordenadas opciones de color de tema (naranja, amarillo, verde, azul, púrpura) con color de tema predeterminado establecido en verde"
-        ]
-      },
-      "1.3.3": {
-        "title": "v1.3.3",
-        "changes": [
-          "Mejora de Copia de Código QR: Agregada funcionalidad de copiar imagen de código QR al portapapeles soportando guardado de código QR como imágenes en formato PNG",
-          "Optimización de Interfaz de Código QR: Rediseñado diseño de modal de código QR con vista previa de URL sobre código QR y botón de copia debajo",
-          "Mejora de Experiencia de Interacción: Cerrar inmediatamente popup y mostrar notificación de éxito después de copiar imagen de código QR para operación más fluida",
-          "Soporte de Menú de Clic Derecho: Agregada funcionalidad de menú de clic derecho \"Copiar URL Actual\" soportando copia rápida desde cualquier ubicación de página web",
-          "Actualización de Información de Sitio Web Oficial: Actualizada información de desarrollador con enlace de sitio web oficial a https://arcletcopier.com"
-        ]
-      },
-      "1.3.2": {
-        "title": "v1.3.2",
-        "changes": [
-          "Refactor de Arquitectura de Código: Adoptada arquitectura modular separada por funciones para mejor mantenimiento y extensibilidad del código",
-          "Modularización ES6: Soporte completo de importación/exportación de módulos ES6 reduciendo duplicación de código",
-          "Optimización de Sistema de Build: Actualizado script de build para adaptarse a nueva estructura de directorio",
-          "Mejora de Sistema de Pruebas: Agregada documentación completa de casos de prueba (TESTING.md) con más de 100 casos de prueba",
-          "Corrección de Sistema de Notificación: Corregidos problemas de carga de icono de notificación asegurando pantalla normal de notificación"
-        ]
-      },
-      "1.3.1": {
-        "title": "v1.3.1",
-        "changes": [
-          "Corrección de Error Importante: Resuelto problema crítico donde copia silenciosa (tecla rápida) no respetaba configuraciones de limpieza de parámetros de URL"
-        ]
-      },
-      "1.3.0": {
-        "title": "v1.3.0",
-        "changes": [
-          "Generación de Código QR: Agregada funcionalidad de generación de código QR para URLs de página actual con adaptación de tema",
-          "Soporte de Tema Oscuro: Adaptación completa de tema oscuro soportando detección automática de tema del sistema y cambio manual",
-          "Limpieza Inteligente de URL: Actualizada función de limpieza de parámetros de URL agregando modo inteligente (removiendo solo parámetros de seguimiento mientras preserva parámetros funcionales)",
-          "Slider Adaptativo de Tres Posiciones: Implementado nuevo componente de slider adaptativo soportando auto-ajuste de ancho basado en longitud de texto",
-          "Slider de Configuraciones de Apariencia: Cambiadas configuraciones de apariencia a forma de slider de tres posiciones (seguir sistema/modo claro/modo oscuro) reemplazando menú desplegable",
-          "Optimización de Animación: Mejorados efectos de animación de notificación usando animación de escala en lugar de slide para experiencia más suave"
-        ]
-      },
-      "1.2.0": {
-        "title": "v1.2.0",
-        "changes": [
-          "Soporte de Internacionalización: Agregado soporte bilingüe chino simplificado e inglés con cambio dinámico de idioma",
-          "Optimización de Interfaz: Rediseñado diseño de interfaz agregando información de desarrollador y pantalla de versión",
-          "Mejora de Notificación: Agregadas notificaciones de éxito de guardado para todas las configuraciones mejorando experiencia de retroalimentación de usuario"
-        ]
-      },
-      "1.1.0": {
-        "title": "v1.1.0",
-        "changes": [
-          "Corregido problema de copia silenciosa en nueva pestaña: Resuelto problema con falla de copia por tecla rápida en pestañas recién abiertas",
-          "Adoptada API Offscreen: Usando documentos Offscreen recomendados por Chrome extension Manifest V3 reemplazando inyección de content script",
-          "Compatibilidad Mejorada: Ya no dependiente de activación de permiso activeTab soportando copia silenciosa en cualquier estado de página",
-          "Estabilidad Mejorada: Evitando restricciones CSP de página y efectos de estado de carga ejecutando operaciones de copia en entorno de extensión independiente",
-          "Optimización de Permisos: Agregado permiso clipboardWrite cumpliendo con últimos requisitos de seguridad del navegador"
-        ]
-      },
-      "1.0.0": {
-        "title": "v1.0.0",
-        "changes": [
-          "Funcionalidad básica de copia de URL",
-          "Soporte de filtrado de parámetros",
-          "Soporte de copia en formato Markdown",
-          "Soporte de teclas rápidas",
-          "Optimización de páginas del sistema Chrome"
-        ]
-      }
-    }
-  },
   "footer": {
     "description": "Arclet Copier es una extensión Chrome de código abierto",
     "quick_links": "Enlaces Rápidos",
     "privacy_policy": "Política de Privacidad",
     "terms_of_service": "Términos de Servicio",
     "documents": "Documentos",
-    "changelog": "Registro de cambios",
     "links": {
       "github": "GitHub",
       "website": "Sitio Web Oficial",

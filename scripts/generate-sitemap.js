@@ -35,11 +35,6 @@ const pages = [
     priority: '0.5',
     changefreq: 'monthly',
   },
-  {
-    path: '/changelog',
-    priority: '0.6',
-    changefreq: 'weekly',
-  },
 ];
 
 function generateSitemapWithHreflang() {

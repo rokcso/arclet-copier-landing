@@ -449,12 +449,6 @@ const currentLanguage = languageOptions.find(option => option.code === lang) || 
           >
             {translate('nav.faq')}
           </a>
-          <a
-            href={lang === 'en' ? '/changelog' : `/${lang}/changelog`}
-            class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
-          >
-            {translate('nav.changelog')}
-          </a>
         </div>
 
         <!-- Language Dropdown -->
@@ -530,12 +524,6 @@ const currentLanguage = languageOptions.find(option => option.code === lang) || 
           class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
         >
           {translate('nav.faq')}
-        </a>
-        <a
-          href={lang === 'en' ? '/changelog' : `/${lang}/changelog`}
-          class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
-        >
-          {translate('nav.changelog')}
         </a>
       </div>
     </div>
