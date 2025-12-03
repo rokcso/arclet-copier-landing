@@ -16,9 +16,10 @@
     "description": "좋은 도구는 생각하게 만들지 않습니다. 조용히 문제를 해결할 뿐. 스마트 필터링으로 잡음을 제거하고, 일괄 처리로 시간을 아낍니다. 모든 URL이 완벽하게 깨끗하게.",
     "add_to_chrome": "Chrome에 추가",
     "add_to_edge": "Edge에 추가",
-    "feature_1": "자동으로 정리",
-    "feature_2": "일괄 처리 가능",
-    "feature_3": "무료 & 오픈소스"
+    "feature_1": "초고속",
+    "feature_2": "프라이버시 우선",
+    "feature_3": "맞춤 형식",
+    "feature_4": "무료 오픈소스"
   },
   "video": {
     "title": "실제 작동 모습",

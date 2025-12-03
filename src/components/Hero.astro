@@ -10,7 +10,7 @@ const translate = t(lang);
 ---
 
 <section class="pt-32 pb-20 bg-gradient-to-b from-secondary-50 to-white">
-  <div class="max-w-5xl mx-auto px-6">
+  <div class="max-w-6xl mx-auto px-6">
     <div class="text-center">
       <!-- Title -->
       <h1
@@ -22,18 +22,18 @@ const translate = t(lang);
       </h1>
 
       <!-- Description -->
-      <p class="text-lg md:text-xl text-secondary-600 mb-10 max-w-3xl mx-auto">
+      <p class="text-lg md:text-xl text-secondary-600 mb-10 max-w-4xl mx-auto">
         {translate('hero.description')}
       </p>
 
       <!-- CTA Button -->
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center mb-12">
         <a
           href="#"
           id="hero-download-btn"
           data-text-chrome={translate('hero.add_to_chrome')}
           data-text-edge={translate('hero.add_to_edge')}
-          class="inline-flex items-center gap-3 px-10 py-4 bg-primary-600 text-white text-lg font-semibold rounded-xl hover:bg-primary-700"
+          class="inline-flex items-center gap-3 px-10 py-4 bg-primary-600 text-white text-lg font-semibold rounded-xl hover:bg-primary-700 transition-colors"
           target="_blank"
         >
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -41,6 +41,34 @@ const translate = t(lang);
           </svg>
           <span id="hero-download-text">{translate('hero.add_to_chrome')}</span>
         </a>
+      </div>
+
+      <!-- Feature Tags -->
+      <div class="flex flex-wrap md:flex-nowrap items-center justify-center gap-3 max-w-3xl mx-auto">
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-secondary-200 rounded-full text-sm font-medium text-secondary-700 shadow-sm">
+          <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+          {translate('hero.feature_1')}
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-secondary-200 rounded-full text-sm font-medium text-secondary-700 shadow-sm">
+          <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+          </svg>
+          {translate('hero.feature_2')}
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-secondary-200 rounded-full text-sm font-medium text-secondary-700 shadow-sm">
+          <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+          </svg>
+          {translate('hero.feature_3')}
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-secondary-200 rounded-full text-sm font-medium text-secondary-700 shadow-sm">
+          <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+          </svg>
+          {translate('hero.feature_4')}
+        </span>
       </div>
     </div>
   </div>
