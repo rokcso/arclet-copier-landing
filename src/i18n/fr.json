@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Arclet Copier - Extension Chrome pour copie rapide d'URL",
-    "description": "Une extension Chrome puissante pour la copie rapide d'URL avec filtrage intelligent des paramètres, système de modèles personnalisés, copie par lots, génération d'URL courtes et génération de codes QR."
+    "title": "Arclet Copier - Les URLs réinventées",
+    "description": "Copiez les URLs comme elles devraient l'être – propres, intelligentes et sans effort. Sans pollution tracking, sans travail manuel. Juste une gestion élégante des URLs pour vos workflows modernes."
   },
   "nav": {
     "features": "Fonctionnalités",
@@ -11,140 +11,140 @@
     "about": "À propos"
   },
   "hero": {
-    "title": "Dites adieu à la complexité",
-    "subtitle": "Rendez le partage d'URL élégant et efficace",
-    "description": "Pas besoin de nettoyer manuellement les paramètres de suivi, pas de souci pour les URL longues. Filtrage intelligent, traitement par lots et génération d'URL courtes rendent chaque partage propre et professionnel.",
+    "title": "Les URLs devraient être propres",
+    "subtitle": "Sans tracking. Sans pollution. Juste le lien que vous vouliez partager.",
+    "description": "Les grands outils ne vous font pas réfléchir – ils résolvent les problèmes en silence. Le filtrage intelligent élimine le bruit. Le traitement par lots économise votre temps. Chaque URL, parfaitement propre.",
     "add_to_chrome": "Ajouter à Chrome",
     "add_to_edge": "Ajouter à Edge",
-    "feature_1": "Nettoyage intelligent des paramètres",
+    "feature_1": "Nettoyage automatique",
     "feature_2": "Traitement par lots",
     "feature_3": "Gratuit & Open Source"
   },
   "video": {
-    "title": "Voir en action",
-    "description": "Regardez cette démo rapide pour découvrir comment Arclet Copier peut optimiser votre flux de travail"
+    "title": "Voyez par vous-même",
+    "description": "Découvrez comment Arclet Copier simplifie votre workflow"
   },
   "features": {
-    "title": "Fonctionnalités",
-    "subtitle": "Conçu pour une expérience de navigation moderne",
+    "title": "Conçu pour votre façon de travailler",
+    "subtitle": "Chaque fonctionnalité a un but. Ni plus, ni moins.",
     "items": [
       {
-        "title": "Copie d'URL en un clic",
-        "description": "Copiez rapidement les URL via popup, raccourcis clavier ou menu contextuel"
+        "title": "Copie en un clic",
+        "description": "Popup, raccourci ou clic droit. Choisissez ce qui vous semble naturel."
       },
       {
-        "title": "Nettoyage intelligent des paramètres",
-        "description": "Supprime automatiquement les paramètres de suivi tout en préservant les paramètres fonctionnels"
+        "title": "Nettoyage intelligent",
+        "description": "Supprime les déchets de tracking. Garde l'essentiel. Automatiquement."
       },
       {
-        "title": "Règles de paramètres personnalisées",
-        "description": "Définissez vos propres règles pour les paramètres à conserver ou supprimer"
+        "title": "Vos règles",
+        "description": "Définissez exactement quels paramètres restent et lesquels partent."
       },
       {
-        "title": "Système de modèles personnalisés",
-        "description": "Créez des formats de copie personnalisés avec des champs de variables flexibles"
+        "title": "Modèles personnalisés",
+        "description": "Formatez vos URLs à votre manière avec des variables flexibles."
       },
       {
-        "title": "Fonction de copie par lots",
-        "description": "Copiez plusieurs URL à la fois avec filtrage et déduplication"
+        "title": "Opérations par lots",
+        "description": "Gérez des dizaines d'URLs d'un coup. Filtrez, dédupliquez, terminé."
       },
       {
-        "title": "Génération d'URL courtes",
-        "description": "Générez des URL raccourcies pour un partage facile"
+        "title": "Liens courts",
+        "description": "Transformez les URLs longues en liens courts instantanément."
       },
       {
-        "title": "Génération de codes QR",
-        "description": "Créez des codes QR pour un accès mobile facile"
+        "title": "QR Codes",
+        "description": "Générez des codes scannables pour un partage mobile fluide."
       },
       {
-        "title": "Thème moderne",
-        "description": "Interface élégante avec modes clair, sombre et automatique"
+        "title": "Design pensé",
+        "description": "Clair, sombre ou auto. La beauté qui s'adapte à vous."
       },
       {
-        "title": "Support des raccourcis clavier",
-        "description": "Accès rapide via des raccourcis clavier personnalisables"
+        "title": "Clavier d'abord",
+        "description": "Des raccourcis qui correspondent à votre mémoire musculaire."
       },
       {
-        "title": "Support multilingue",
-        "description": "Disponible en 9 langues pour les utilisateurs du monde entier"
+        "title": "Parle votre langue",
+        "description": "Neuf langues. La même expérience réfléchie partout."
       }
     ]
   },
   "screenshots": {
-    "title": "Aperçu de l'interface",
-    "home1": "Interface principale de l'extension",
-    "home1_desc": "Popup d'extension propre et intuitif avec une mise en page fonctionnelle claire",
-    "home2": "Support des opérations par lots",
-    "home2_desc": "Prend en charge les opérations par lots sur plusieurs URL pour améliorer l'efficacité du travail",
-    "home3": "Options de paramètres riches",
-    "home3_desc": "Personnalisation des services de liens courts, notifications, langue d'interface, thèmes et diverses configurations",
-    "home4": "Modèles & Paramètres URL Personnalisés",
-    "home4_desc": "Créez des modèles de format de copie personnalisés et configurez des règles de paramètres URL pour une gestion intelligente"
+    "title": "Voyez par vous-même",
+    "home1": "Interface principale",
+    "home1_desc": "Clair, évident, prêt. Tout ce qu'il vous faut, rien de superflu.",
+    "home2": "Opérations par lots",
+    "home2_desc": "Gérez plusieurs URLs à la fois. Parce que le travail répétitif ne devrait pas sembler répétitif.",
+    "home3": "Paramètres qui comptent",
+    "home3_desc": "Personnalisez liens courts, thèmes, langues. Faites-le vôtre sans trop réfléchir.",
+    "home4": "Modèles & Règles",
+    "home4_desc": "Créez votre format d'URL parfait. Définissez vos règles de filtrage. Puis oubliez-les."
   },
   "download": {
-    "title": "Télécharger maintenant",
-    "subtitle": "Gratuit à utiliser, open source et fiable",
+    "title": "Commencer",
+    "subtitle": "Gratuit, open source, construit avec soin.",
     "chrome_store": "Chrome Web Store",
-    "chrome_store_desc": "Installer depuis le store officiel, sûr et fiable",
-    "edge_store": "Edge Add-ons Store",
-    "edge_store_desc": "Pour les utilisateurs du navigateur Microsoft Edge",
-    "install_guide": "Guide d'installation",
+    "chrome_store_desc": "Installation en un clic. Sûr et vérifié.",
+    "edge_store": "Edge Add-ons",
+    "edge_store_desc": "Même expérience sur Microsoft Edge.",
+    "install_guide": "Installation",
     "install_steps": [
-      "Installer depuis le store : Chrome Web Store ou Edge Add-ons Store",
-      "Ou télécharger le package source pour installation manuelle",
-      "Ouvrir la page de gestion des extensions du navigateur (Chrome: chrome://extensions/ ou Edge: edge://extensions/)",
-      "Si vous utilisez le package source, activer le mode développeur et charger l'extension décompressée",
-      "Commencez à utiliser Arclet Copier !"
+      "Visitez Chrome Web Store ou Edge Add-ons Store",
+      "Ou téléchargez le code source pour installation manuelle",
+      "Ouvrez votre page d'extensions (chrome://extensions/ ou edge://extensions/)",
+      "Pour installation source : activez le mode développeur, chargez décompressé",
+      "Vous êtes prêt. Commencez à copier des URLs propres."
     ],
     "install_now": "Installer maintenant",
-    "download_source": "Télécharger le source"
+    "download_source": "Obtenir le code"
   },
   "faq": {
-    "title": "Questions fréquemment posées",
-    "subtitle": "Tout ce que vous devez savoir sur Arclet Copier",
+    "title": "Questions ?",
+    "subtitle": "Voici ce qu'on demande habituellement.",
     "items": [
       {
-        "question": "Comment installer Arclet Copier ?",
-        "answer": "Vous pouvez installer Arclet Copier en un clic depuis le Chrome Web Store ou Edge Add-ons Store. Alternativement, téléchargez le package source depuis GitHub pour une installation manuelle."
+        "question": "Comment installer ceci ?",
+        "answer": "Un clic depuis Chrome Web Store ou Edge Add-ons. Ou téléchargez le code depuis GitHub si vous préférez l'installation manuelle. 30 secondes dans les deux cas."
       },
       {
-        "question": "Qu'est-ce que le filtrage intelligent des paramètres ?",
-        "answer": "Le filtrage intelligent des paramètres supprime intelligemment les paramètres de suivi (comme UTM, Facebook, Google Analytics) tout en préservant les paramètres fonctionnels nécessaires au bon fonctionnement de la page web."
+        "question": "Que fait vraiment le 'nettoyage intelligent' ?",
+        "answer": "Il supprime les déchets de tracking – balises UTM, trackers Facebook, paramètres Google Analytics. Garde les paramètres nécessaires au fonctionnement de la page. Automatiquement."
       },
       {
-        "question": "Puis-je créer des modèles de copie personnalisés ?",
-        "answer": "Oui ! Arclet Copier prend en charge un système de modèles puissant avec 11 champs de variables comme {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}}, et plus. Vous pouvez créer des formats personnalisés pour différents cas d'usage."
+        "question": "Puis-je personnaliser le format de copie ?",
+        "answer": "Absolument. Utilisez 11 champs variables comme {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}} pour créer votre modèle parfait. Pour Markdown, texte brut, ce dont vous avez besoin."
       },
       {
         "question": "Comment fonctionne la copie par lots ?",
-        "answer": "La fonction de lot vous permet de sélectionner plusieurs onglets de navigateur et de copier toutes leurs URL en une fois. Vous pouvez filtrer par portée de fenêtre, supprimer les doublons et choisir parmi plusieurs formats d'exportation."
+        "answer": "Sélectionnez plusieurs onglets. Cliquez une fois. Toutes les URLs copiées, filtrées et dédupliquées. Choisissez votre format d'export. Terminé."
       },
       {
-        "question": "Arclet Copier est-il gratuit à utiliser ?",
-        "answer": "Oui, Arclet Copier est complètement gratuit et open source. Vous pouvez utiliser toutes les fonctionnalités sans aucune limitation ou abonnement."
+        "question": "Est-ce gratuit ?",
+        "answer": "Oui. Gratuit pour toujours, open source, sans limites, sans abonnements. Utilisez tout."
       },
       {
-        "question": "Quels navigateurs sont supportés ?",
-        "answer": "Arclet Copier fonctionne sur Google Chrome, Microsoft Edge et d'autres navigateurs basés sur Chromium. Il nécessite le support de Manifest V3."
+        "question": "Quels navigateurs fonctionnent ?",
+        "answer": "Chrome, Edge et tout navigateur basé sur Chromium avec support Manifest V3. Si vous lisez ceci sur l'un d'eux, c'est bon."
       },
       {
-        "question": "Comment utiliser les raccourcis clavier ?",
-        "answer": "Utilisez Ctrl+Shift+C (Cmd+Shift+C sur Mac) pour la copie silencieuse d'URL. Vous pouvez également accéder aux fonctionnalités via le menu contextuel du clic droit ou le popup de l'extension."
+        "question": "Puis-je utiliser des raccourcis clavier ?",
+        "answer": "Ctrl+Shift+C (Cmd+Shift+C sur Mac) pour copie silencieuse. Ou clic droit, ou le popup. Ce qui correspond à votre flux."
       }
     ]
   },
   "footer": {
-    "description": "Arclet Copier est une extension Chrome open source",
+    "description": "Open source. Construit avec soin.",
     "quick_links": "Liens rapides",
-    "contact_us": "Contactez-nous",
-    "privacy_policy": "Politique de confidentialité",
-    "terms_of_service": "Conditions d'utilisation",
+    "contact_us": "Contact",
+    "privacy_policy": "Confidentialité",
+    "terms_of_service": "Conditions",
     "links": {
       "github": "GitHub",
-      "website": "Site officiel",
+      "website": "Site web",
       "sitemap": "Plan du site"
     },
-    "developed_by": "Développé par",
+    "developed_by": "Fait par",
     "partners": "Partenaires"
   }
 }

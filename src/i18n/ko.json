@@ -1,150 +1,150 @@
 {
   "meta": {
-    "title": "Arclet Copier - URL 빠른 복사 Chrome 확장 프로그램",
-    "description": "스마트 매개변수 필터링, 사용자 정의 템플릿 시스템, 일괄 복사, 단축 URL 생성 및 QR 코드 생성을 제공하는 강력한 Chrome 확장 프로그램입니다."
+    "title": "Arclet Copier - URL 복사의 재발견",
+    "description": "깨끗하고, 똑똑하고, 자연스럽게. 추적 코드도, 수작업도 없이. 현대적 워크플로우를 위한 우아한 URL 관리."
   },
   "nav": {
     "features": "기능",
     "download": "다운로드",
-    "faq": "자주 묻는 질문",
+    "faq": "FAQ",
     "github": "GitHub",
     "about": "소개"
   },
   "hero": {
-    "title": "복잡함에 작별을",
-    "subtitle": "URL 공유를 우아하고 효율적으로",
-    "description": "추적 매개변수를 수동으로 정리할 필요 없고, 긴 URL에 대해 걱정할 필요 없습니다. 스마트 필터링, 일괄 처리 및 단축 URL 생성으로 모든 공유를 깔끔하고 전문적으로 만듭니다.",
+    "title": "URL은 깨끗해야 합니다",
+    "subtitle": "추적도, 잡음도 없이. 당신이 공유하려던 바로 그 링크.",
+    "description": "좋은 도구는 생각하게 만들지 않습니다. 조용히 문제를 해결할 뿐. 스마트 필터링으로 잡음을 제거하고, 일괄 처리로 시간을 아낍니다. 모든 URL이 완벽하게 깨끗하게.",
     "add_to_chrome": "Chrome에 추가",
     "add_to_edge": "Edge에 추가",
-    "feature_1": "스마트 매개변수 정리",
-    "feature_2": "일괄 처리",
-    "feature_3": "무료 및 오픈소스"
+    "feature_1": "자동으로 정리",
+    "feature_2": "일괄 처리 가능",
+    "feature_3": "무료 & 오픈소스"
   },
   "video": {
-    "title": "실제로 보기",
-    "description": "Arclet Copier가 워크플로우를 어떻게 간소화할 수 있는지 이 빠른 데모를 시청하세요"
+    "title": "실제 작동 모습",
+    "description": "Arclet Copier가 워크플로우를 어떻게 간소화하는지 빠른 데모로 확인하세요"
   },
   "features": {
-    "title": "기능",
-    "subtitle": "현대적인 브라우징 경험을 위해 설계됨",
+    "title": "당신의 작업 방식을 위해",
+    "subtitle": "모든 기능에는 목적이 있습니다. 그 이상도, 그 이하도 아닙니다.",
     "items": [
       {
-        "title": "원클릭 URL 복사",
-        "description": "팝업, 단축키 또는 컨텍스트 메뉴를 통해 빠르게 복사"
+        "title": "원클릭 복사",
+        "description": "팝업, 단축키, 우클릭. 자연스러운 방법을 선택하세요."
       },
       {
-        "title": "스마트 매개변수 정리",
-        "description": "추적 매개변수를 자동으로 제거하고 기능 매개변수는 유지"
+        "title": "스마트 정리",
+        "description": "추적 잡음을 제거하고 중요한 것만 남깁니다. 자동으로."
       },
       {
-        "title": "사용자 정의 매개변수 규칙",
-        "description": "유지하거나 제거할 매개변수 규칙 정의"
+        "title": "당신만의 규칙",
+        "description": "어떤 파라미터를 남기고 지울지 정확히 정의하세요."
       },
       {
-        "title": "사용자 정의 템플릿 시스템",
-        "description": "유연한 변수 필드로 맞춤 복사 형식 생성"
+        "title": "커스텀 템플릿",
+        "description": "유연한 변수와 패턴으로 당신만의 방식으로 포맷하세요."
       },
       {
-        "title": "일괄 복사 기능",
-        "description": "필터링 및 중복 제거로 여러 URL을 한 번에 복사"
+        "title": "일괄 작업",
+        "description": "수십 개의 URL을 한 번에. 필터링하고, 중복 제거하고, 완료."
       },
       {
-        "title": "단축 URL 생성",
-        "description": "쉬운 공유를 위한 단축 URL 생성"
+        "title": "단축 링크",
+        "description": "긴 URL을 깔끔한 짧은 링크로 즉시 변환."
       },
       {
-        "title": "QR 코드 생성",
-        "description": "모바일 액세스를 위한 QR 코드 생성"
+        "title": "QR 코드",
+        "description": "모바일 공유를 위한 스캔 가능한 코드를 생성."
       },
       {
-        "title": "모던 테마",
-        "description": "밝게, 어둡게, 자동 모드를 갖춘 아름다운 인터페이스"
+        "title": "사려 깊은 디자인",
+        "description": "라이트, 다크, 자동 테마. 당신에게 맞춰지는 아름다움."
       },
       {
-        "title": "단축키 지원",
-        "description": "사용자 정의 가능한 키보드 단축키로 빠른 액세스"
+        "title": "키보드 우선",
+        "description": "당신의 손가락 기억에 맞는 단축키를 설정하세요."
       },
       {
-        "title": "다국어 지원",
-        "description": "전 세계 사용자를 위한 9개 언어 지원"
+        "title": "당신의 언어로",
+        "description": "9개 언어. 어디서나 같은 사려 깊은 경험."
       }
     ]
   },
   "screenshots": {
-    "title": "인터페이스 미리보기",
-    "home1": "확장 프로그램 메인 인터페이스",
-    "home1_desc": "명확한 기능 레이아웃을 가진 깔끔하고 직관적인 확장 프로그램 팝업",
-    "home2": "일괄 작업 지원",
-    "home2_desc": "작업 효율성 향상을 위한 여러 URL에 대한 일괄 작업 지원",
-    "home3": "풍부한 설정 옵션",
-    "home3_desc": "단축 링크 서비스, 알림, 인터페이스 언어, 테마 및 다양한 구성 사용자 정의",
-    "home4": "사용자 정의 템플릿 및 URL 매개변수",
-    "home4_desc": "개인화된 복사 형식 템플릿 생성 및 사용자 정의 URL 매개변수 규칙 설정으로 지능적 관리"
+    "title": "직접 확인하세요",
+    "home1": "메인 인터페이스",
+    "home1_desc": "깨끗하고, 명확하고, 준비된. 필요한 모든 것, 불필요한 것은 없이.",
+    "home2": "일괄 작업",
+    "home2_desc": "여러 URL을 한 번에 처리. 반복 작업이 반복처럼 느껴지지 않도록.",
+    "home3": "중요한 설정들",
+    "home3_desc": "단축 링크, 테마, 언어를 커스터마이즈. 고민 없이 당신만의 것으로.",
+    "home4": "템플릿 & 규칙",
+    "home4_desc": "완벽한 URL 포맷을 만드세요. 필터링 규칙을 설정하세요. 그리고 잊으세요."
   },
   "download": {
-    "title": "지금 다운로드",
-    "subtitle": "무료 사용, 오픈 소스이며 신뢰할 수 있음",
+    "title": "시작하기",
+    "subtitle": "무료, 오픈소스, 그리고 정성껏 만들어졌습니다.",
     "chrome_store": "Chrome 웹 스토어",
-    "chrome_store_desc": "공식 스토어에서 설치, 안전하고 신뢰할 수 있음",
-    "edge_store": "Edge 확장 프로그램 스토어",
-    "edge_store_desc": "Microsoft Edge 브라우저 사용자를 위한",
-    "install_guide": "설치 가이드",
+    "chrome_store_desc": "원클릭 설치. 안전하고 검증됨.",
+    "edge_store": "Edge 확장 프로그램",
+    "edge_store_desc": "Microsoft Edge에서도 동일한 경험.",
+    "install_guide": "설치 방법",
     "install_steps": [
-      "스토어에서 설치: Chrome 웹 스토어 또는 Edge 확장 프로그램 스토어",
-      "또는 수동 설치를 위한 소스 패키지 다운로드",
-      "브라우저 확장 프로그램 관리 페이지 열기 (Chrome: chrome://extensions/ 또는 Edge: edge://extensions/)",
-      "소스 패키지를 사용하는 경우, 개발자 모드를 활성화하고 압축 해제된 확장 프로그램 로드",
-      "Arclet Copier 사용을 시작하세요!"
+      "Chrome 웹 스토어 또는 Edge 확장 프로그램 스토어 방문",
+      "또는 수동 설치를 위한 소스 코드 받기",
+      "브라우저 확장 프로그램 페이지 열기 (chrome://extensions/ 또는 edge://extensions/)",
+      "소스 설치의 경우: 개발자 모드 활성화, 압축해제된 확장 프로그램 로드",
+      "준비 완료. 깨끗한 URL 복사를 시작하세요."
     ],
     "install_now": "지금 설치",
-    "download_source": "소스 코드 다운로드"
+    "download_source": "소스 코드 받기"
   },
   "faq": {
-    "title": "자주 묻는 질문",
-    "subtitle": "Arclet Copier에 대해 알아야 할 모든 것",
+    "title": "궁금하신가요?",
+    "subtitle": "사람들이 주로 묻는 것들입니다.",
     "items": [
       {
-        "question": "Arclet Copier를 어떻게 설치하나요?",
-        "answer": "Chrome 웹 스토어 또는 Edge 확장 프로그램 스토어에서 한 번의 클릭으로 Arclet Copier를 설치할 수 있습니다. 또는 수동 설치를 위해 GitHub에서 소스 패키지를 다운로드할 수 있습니다."
+        "question": "어떻게 설치하나요?",
+        "answer": "Chrome 웹 스토어나 Edge 확장 프로그램에서 원클릭. 또는 수동 설치를 원하면 GitHub에서 소스를 다운로드하세요. 어느 쪽이든 30초면 됩니다."
       },
       {
-        "question": "스마트 매개변수 필터링이란 무엇인가요?",
-        "answer": "스마트 매개변수 필터링은 웹페이지가 제대로 작동하는 데 필요한 기능적 매개변수는 보존하면서 추적 매개변수(UTM, Facebook, Google Analytics 등)를 지능적으로 제거합니다."
+        "question": "'스마트 정리'는 실제로 무엇을 하나요?",
+        "answer": "UTM 태그, Facebook 추적기, Google Analytics 파라미터 같은 ���적 잡음을 제거합니다. 페이지가 작동하는 데 중요한 파라미터는 유지하고요. 자동으로."
       },
       {
-        "question": "사용자 정의 복사 템플릿을 만들 수 있나요?",
-        "answer": "네! Arclet Copier는 {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}} 등 11개의 변수 필드를 포함하는 강력한 템플릿 시스템을 지원합니다. 다양한 사용 사례에 맞는 개인화된 형식을 만들 수 있습니다."
+        "question": "복사 포맷을 커스터마이즈할 수 있나요?",
+        "answer": "물론입니다. {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}} 같은 11개의 변수 필드로 완벽한 템플릿을 만드세요. Markdown이든, 일반 텍스트든, 필요한 무엇이든."
       },
       {
-        "question": "일괄 복사 기능은 어떻게 작동하나요?",
-        "answer": "일괄 기능을 사용하면 여러 브라우저 탭을 선택하고 모든 URL을 한 번에 복사할 수 있습니다. 창 범위로 필터링하고, 중복을 제거하고, 여러 내보내기 형식 중에서 선택할 수 있습니다."
+        "question": "일괄 복사는 어떻게 작동하나요?",
+        "answer": "여러 탭을 선택하세요. 한 번 클릭. 모든 URL이 복사되고, 필터링되고, 중복 제거됩니다. 내보내기 포맷을 선택하세요. 완료."
       },
       {
-        "question": "Arclet Copier를 무료로 사용할 수 있나요?",
-        "answer": "네, Arclet Copier는 완전히 무료이며 오픈 소스입니다. 어떤 제한이나 구독 없이 모든 기능을 사용할 수 있습니다."
+        "question": "무료인가요?",
+        "answer": "네. 영원히 무료, 오픈소스, 제한 없음, 구독 없음. 모든 것을 사용하세요."
       },
       {
-        "question": "지원되는 브라우저는 무엇인가요?",
-        "answer": "Arclet Copier는 Google Chrome, Microsoft Edge 및 기타 Chromium 기반 브라우저에서 작동합니다. Manifest V3 지원이 필요합니다."
+        "question": "어떤 브라우저에서 작동하나요?",
+        "answer": "Chrome, Edge, 그리고 Manifest V3을 지원하는 모든 Chromium 기반 브라우저. 그 중 하나로 이 글을 읽고 있다면, 사용 가능합니다."
       },
       {
-        "question": "키보드 단축키를 어떻게 사용하나요?",
-        "answer": "무음 URL 복사를 위해 Ctrl+Shift+C(Mac에서는 Cmd+Shift+C)를 사용하세요. 마우스 우클릭 상황 메뉴나 확장 프로그램 팝업을 통해 기능에 액세스할 수도 있습니다."
+        "question": "키보드 단축키를 사용할 수 있나요?",
+        "answer": "Ctrl+Shift+C (Mac에서는 Cmd+Shift+C)로 무음 복사. 또는 우클릭이나 팝업 사용. 당신의 흐름에 맞는 걸로."
       }
     ]
   },
   "footer": {
-    "description": "Arclet Copier는 오픈 소스 Chrome 확장 프로그램입니다",
+    "description": "오픈소스. 정성껏 만들어졌습니다.",
     "quick_links": "빠른 링크",
-    "contact_us": "문의하기",
-    "privacy_policy": "개인정보 처리방침",
-    "terms_of_service": "이용 약관",
+    "contact_us": "문의",
+    "privacy_policy": "개인정보처리방침",
+    "terms_of_service": "이용약관",
     "links": {
       "github": "GitHub",
-      "website": "공식 웹사이트",
+      "website": "웹사이트",
       "sitemap": "사이트맵"
     },
-    "developed_by": "개발:",
+    "developed_by": "만든 사람",
     "partners": "파트너"
   }
 }

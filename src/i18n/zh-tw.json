@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Arclet Copier - 快速複製 URL 的 Chrome 擴充功能",
-    "description": "一款功能強大的 Chrome 擴充程式，支援快速複製頁面 URL、智慧參數清理、自訂範本系統、批量複製、短鏈生成和 QR Code 生成。"
+    "title": "Arclet Copier - 重新定義 URL 複製",
+    "description": "URL 本該如此——乾淨、智慧、優雅。沒有追蹤參數的雜亂，沒有手動清理的繁瑣。為現代工作流而生的 URL 管理工具。"
   },
   "nav": {
     "features": "功能特色",
@@ -11,137 +11,137 @@
     "about": "關於"
   },
   "hero": {
-    "title": "告別繁瑣，一鍵複製",
-    "subtitle": "讓 URL 分享變得優雅而高效",
-    "description": "無需手動清理追蹤參數，無需擔心連結太長。智慧過濾、批次處理、短網址生成，讓每次分享都乾淨俐落。",
+    "title": "URL 本該乾淨",
+    "subtitle": "沒有追蹤，沒有雜亂，只有你想分享的連結。",
+    "description": "好工具不會讓你思考——它們靜靜地解決問題。智慧過濾清除噪音，批次處理節省時間。每一個 URL，都完美乾淨。",
     "add_to_chrome": "加到 Chrome",
     "add_to_edge": "加到 Edge",
-    "feature_1": "智慧清理參數",
-    "feature_2": "批次快速處理",
-    "feature_3": "完全免費開源"
+    "feature_1": "自動清理",
+    "feature_2": "批次處理",
+    "feature_3": "免費開源"
   },
   "video": {
     "title": "實際演示",
     "description": "觀看這個快速演示，了解 Arclet Copier 如何簡化您的工作流程"
   },
   "features": {
-    "title": "功能特色",
-    "subtitle": "為現代瀏覽體驗而設計",
+    "title": "為你的工作方式而設計",
+    "subtitle": "每個功能都有其意義，不多不少。",
     "items": [
       {
-        "title": "一鍵複製 URL",
-        "description": "透過彈窗、快捷鍵或右鍵選單快速複製連結"
+        "title": "一鍵複製",
+        "description": "彈窗、快捷鍵或右鍵。選擇最自然的方式。"
       },
       {
-        "title": "智慧參數清理",
-        "description": "自動移除追蹤參數，同時保留功能性參數"
+        "title": "智慧清理",
+        "description": "清除追蹤垃圾，保留重要內容。自動完成。"
       },
       {
-        "title": "自訂參數規則",
-        "description": "自訂參數保留和過濾規則"
+        "title": "你的規則",
+        "description": "精確定義哪些參數保留，哪些清除。"
       },
       {
-        "title": "自訂範本系統",
-        "description": "建立個人化的複製格式範本"
+        "title": "自訂範本",
+        "description": "用靈活的變數和模式，按你的方式格式化 URL。"
       },
       {
-        "title": "批量複製功能",
-        "description": "一次性複製多個連結，支援過濾和去重"
+        "title": "批量操作",
+        "description": "一次處理幾十個 URL。過濾、去重，完成。"
       },
       {
         "title": "短鏈生成",
-        "description": "生成短連結，便於分享傳播"
+        "description": "瞬間將長 URL 變成整潔的短連結。"
       },
       {
-        "title": "QR Code 生成",
-        "description": "生成 QR Code，方便行動裝置存取"
+        "title": "QR Code",
+        "description": "生成可掃描的 QR Code，無縫行動分享。"
       },
       {
-        "title": "現代化主題",
-        "description": "精美介面，支援明亮、深色和自動模式"
+        "title": "用心設計",
+        "description": "明亮、深色或自動主題。美感會適應你。"
       },
       {
-        "title": "快捷鍵支援",
-        "description": "透過自訂快捷鍵快速存取功能"
+        "title": "鍵盤優先",
+        "description": "設定符合你肌肉記憶的快捷鍵。"
       },
       {
-        "title": "多語言支援",
-        "description": "支援9種語言，服務全球使用者"
+        "title": "你的語言",
+        "description": "九種語言。無論哪裡，同樣用心的體驗。"
       }
     ]
   },
   "screenshots": {
-    "title": "介面預覽",
-    "home1": "擴充功能主介面",
-    "home1_desc": "簡潔直觀的擴充功能彈出視窗，一目了然的功能佈局",
-    "home2": "批量操作支援",
-    "home2_desc": "支援批量操作多個 URLs，提升工作效率",
-    "home3": "豐富的設定選項",
-    "home3_desc": "自訂短鏈服務、通知提醒、介面語言、主題外觀等多樣化設定",
-    "home4": "自訂範本與 URL 參數",
-    "home4_desc": "建立個人化複製格式範本，設定自訂 URL 參數規則，智慧管理各種情境"
+    "title": "親眼看看",
+    "home1": "主介面",
+    "home1_desc": "簡潔、明確、就緒。你需要的一切，不多不少。",
+    "home2": "批量操作",
+    "home2_desc": "一次處理多個 URL。因為重複工作不該有重複感。",
+    "home3": "重要的設定",
+    "home3_desc": "自訂短鏈、主題、語言。讓它屬於你，無需過度思考。",
+    "home4": "範本與規則",
+    "home4_desc": "構建你的完美 URL 格式。設定過濾規則。然後忘掉它們。"
   },
   "download": {
-    "title": "立即下載",
-    "subtitle": "免費使用，開源可信",
+    "title": "開始使用",
+    "subtitle": "免費、開源、用心打造。",
     "chrome_store": "Chrome 應用程式商店",
-    "chrome_store_desc": "從官方應用程式商店安裝，安全可靠",
-    "edge_store": "Edge 擴充功能商店",
-    "edge_store_desc": "適用於 Microsoft Edge 瀏覽器使用者",
-    "install_guide": "安裝指南",
+    "chrome_store_desc": "一鍵安裝，安全驗證。",
+    "edge_store": "Edge 擴充功能",
+    "edge_store_desc": "Microsoft Edge 上同樣的體驗。",
+    "install_guide": "如何安裝",
     "install_steps": [
-      "從應用程式商店安裝：Chrome 應用程式商店 或 Edge 擴充功能商店",
-      "或下載原始碼套件進行手動安裝",
-      "開啟瀏覽器擴充功能管理頁面（Chrome: chrome://extensions/ 或 Edge: edge://extensions/）",
-      "如果是原始碼套件，開啟開發者模式並載入解壓縮的擴充程式",
-      "開始使用 Arclet Copier！"
+      "造訪 Chrome 應用程式商店或 Edge 擴充功能商店",
+      "或從 GitHub 獲取原始碼手動安裝",
+      "開啟瀏覽器擴充功能頁面（chrome://extensions/ 或 edge://extensions/）",
+      "原始碼安裝：啟用開發者模式，載入已解壓縮擴充功能",
+      "準備就緒。開始複製乾淨的 URL。"
     ],
     "install_now": "立即安裝",
-    "download_source": "下載原始碼"
+    "download_source": "獲取原始碼"
   },
   "faq": {
-    "title": "常見問題",
-    "subtitle": "關於 Arclet Copier 你需要知道的一切",
+    "title": "有疑問？",
+    "subtitle": "大家通常會問這些。",
     "items": [
       {
-        "question": "如何安裝 Arclet Copier？",
-        "answer": "您可以從 Chrome 應用程式商店或 Edge 擴充功能商店一鍵安裝 Arclet Copier。或者，從 GitHub 下載原始碼套件進行手動安裝。"
+        "question": "如何安裝？",
+        "answer": "從 Chrome 應用程式商店或 Edge 擴充功能一鍵安裝。或者從 GitHub 下載原始碼手動安裝。兩種方式都只需 30 秒。"
       },
       {
-        "question": "什麼是智慧參數過濾？",
-        "answer": "智慧參數過濾會智慧地移除追蹤參數（如 UTM、Facebook、Google Analytics），同時保留網頁正常運作所必需的功能性參數。"
+        "question": "「智慧清理」具體做什麼？",
+        "answer": "清除追蹤垃圾——UTM 標籤、Facebook 追蹤器、Google Analytics 參數。保留讓頁面正常運作的參數。自動完成。"
       },
       {
-        "question": "能否建立自訂複製範本？",
-        "answer": "可以！Arclet Copier 支援強大的範本系統，包含11個變數欄位如 {{url}}、{{title}}、{{hostname}}、{{date}}、{{time}} 等。您可以為不同用途建立個人化格式。"
+        "question": "可以自訂複製格式嗎？",
+        "answer": "當然。用 11 個變數欄位如 {{url}}、{{title}}、{{hostname}}、{{date}}、{{time}} 構建你的完美範本。Markdown、純文字，隨你需要。"
       },
       {
-        "question": "批量複製功能如何使用？",
-        "answer": "批量功能允許您選擇多個瀏覽器分頁並一次性複製所有 URL。您可以按視窗範圍篩選、去除重複項，並從多種匯出格式中選擇。"
+        "question": "批量複製如何運作？",
+        "answer": "選擇多個分頁。點一次。所有 URL 複製、過濾、去重完成。選擇匯出格式。搞定。"
       },
       {
-        "question": "Arclet Copier 是免費的嗎？",
-        "answer": "是的，Arclet Copier 完全免費且開源。您可以使用所有功能，沒有任何限制或訂閱費用。"
+        "question": "免費嗎？",
+        "answer": "是的。永久免費、開源、無限制、無訂閱。使用所有功能。"
       },
       {
         "question": "支援哪些瀏覽器？",
-        "answer": "Arclet Copier 支援 Google Chrome、Microsoft Edge 和其他基於 Chromium 的瀏覽器。需要支援 Manifest V3。"
+        "answer": "Chrome、Edge，以及任何支援 Manifest V3 的 Chromium 瀏覽器。如果你正在用其中一個閱讀此頁，就沒問題。"
       },
       {
-        "question": "如何使用鍵盤快捷鍵？",
-        "answer": "使用 Ctrl+Shift+C（Mac 上為 Cmd+Shift+C）進行靜默 URL 複製。您也可以透過右鍵選單或擴充功能彈出視窗存取功能。"
+        "question": "可以用鍵盤快捷鍵嗎？",
+        "answer": "Ctrl+Shift+C（Mac 上 Cmd+Shift+C）靜默複製。或右鍵，或用彈窗。適配你的習慣。"
       }
     ]
   },
   "footer": {
-    "description": "Arclet Copier 是一款開源的 Chrome 擴充程式",
+    "description": "開源。用心打造。",
     "quick_links": "快速連結",
-    "contact_us": "聯絡我們",
-    "privacy_policy": "隱私權政策",
-    "terms_of_service": "使用條款",
+    "contact_us": "聯絡",
+    "privacy_policy": "隱私",
+    "terms_of_service": "條款",
     "links": {
       "github": "GitHub",
-      "website": "官方網站",
+      "website": "官網",
       "sitemap": "網站地圖"
     },
     "developed_by": "由",

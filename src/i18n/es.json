@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Arclet Copier - Extensión Chrome para Copiar URLs Rápidamente",
-    "description": "Una potente extensión de Chrome para copiar URLs rápidamente con filtrado inteligente de parámetros, sistema de plantillas personalizadas, copia por lotes, generación de URLs cortas y códigos QR."
+    "title": "Arclet Copier - URLs Reimaginados",
+    "description": "Copia URLs como deben ser—limpias, inteligentes, sin esfuerzo. Sin rastros de seguimiento, sin trabajo manual. Solo gestión elegante de URLs para flujos modernos."
   },
   "nav": {
     "features": "Características",
@@ -11,140 +11,140 @@
     "about": "Acerca de"
   },
   "hero": {
-    "title": "Diga adiós a la complejidad",
-    "subtitle": "Haga que compartir URLs sea elegante y eficiente",
-    "description": "No necesita limpiar manualmente los parámetros de seguimiento, no se preocupe por las URLs largas. Filtrado inteligente, procesamiento por lotes y generación de URLs cortas hacen que cada intercambio sea limpio y profesional.",
+    "title": "Las URLs Deben Ser Limpias",
+    "subtitle": "Sin rastreo. Sin desorden. Solo el enlace que querías compartir.",
+    "description": "Las buenas herramientas no te hacen pensar—resuelven problemas silenciosamente. Filtrado inteligente elimina el ruido. Procesamiento por lotes ahorra tu tiempo. Cada URL, perfectamente limpia.",
     "add_to_chrome": "Añadir a Chrome",
     "add_to_edge": "Añadir a Edge",
-    "feature_1": "Limpieza inteligente de parámetros",
-    "feature_2": "Procesamiento por lotes",
+    "feature_1": "Limpia Automáticamente",
+    "feature_2": "Trabaja en Lote",
     "feature_3": "Gratis y Código Abierto"
   },
   "video": {
-    "title": "Ver en acción",
-    "description": "Mira esta demostración rápida para aprender cómo Arclet Copier puede optimizar tu flujo de trabajo"
+    "title": "Míralo en Acción",
+    "description": "Mira esta demo rápida para aprender cómo Arclet Copier puede simplificar tu flujo de trabajo"
   },
   "features": {
-    "title": "Características",
-    "subtitle": "Diseñado para la experiencia de navegación moderna",
+    "title": "Hecho Para Cómo Trabajas",
+    "subtitle": "Cada función sirve un propósito. Nada más, nada menos.",
     "items": [
       {
-        "title": "Copia de URL con Un Clic",
-        "description": "Copia URLs rápidamente mediante popup, atajos de teclado o menú contextual"
+        "title": "Copia con Un Clic",
+        "description": "Popup, atajo o clic derecho. Elige lo que te resulte natural."
       },
       {
-        "title": "Limpieza Inteligente de Parámetros",
-        "description": "Elimina automáticamente parámetros de seguimiento preservando los funcionales"
+        "title": "Limpieza Inteligente",
+        "description": "Elimina basura de rastreo. Mantiene lo que importa. Automáticamente."
       },
       {
-        "title": "Reglas de Parámetros Personalizadas",
-        "description": "Define tus propias reglas de parámetros a mantener o eliminar"
+        "title": "Tus Reglas",
+        "description": "Define exactamente qué parámetros quedan y cuáles salen."
       },
       {
-        "title": "Sistema de Plantillas Personalizadas",
-        "description": "Crea formatos de copia personalizados con campos variables flexibles"
+        "title": "Plantillas Personalizadas",
+        "description": "Formatea URLs a tu manera con variables y patrones flexibles."
       },
       {
-        "title": "Función de Copia por Lotes",
-        "description": "Copia múltiples URLs a la vez con filtrado y deduplicación"
+        "title": "Operaciones por Lotes",
+        "description": "Procesa docenas de URLs de una vez. Filtra, deduplica, listo."
       },
       {
-        "title": "Generación de URLs Cortas",
-        "description": "Genera URLs acortadas para compartir fácilmente"
+        "title": "Enlaces Cortos",
+        "description": "Convierte URLs largas en enlaces cortos al instante."
       },
       {
-        "title": "Generación de Códigos QR",
-        "description": "Crea códigos QR para fácil acceso móvil"
+        "title": "Códigos QR",
+        "description": "Genera códigos escaneables para compartir móvil perfecto."
       },
       {
-        "title": "Tema Moderno",
-        "description": "Interfaz elegante con modos claro, oscuro y automático"
+        "title": "Diseño Pensado",
+        "description": "Temas claro, oscuro o automático. Belleza que se adapta a ti."
       },
       {
-        "title": "Soporte de Teclas Rápidas",
-        "description": "Acceso rápido mediante atajos de teclado personalizables"
+        "title": "Teclado Primero",
+        "description": "Configura atajos que coincidan con tu memoria muscular."
       },
       {
-        "title": "Soporte Multi-idioma",
-        "description": "Disponible en 9 idiomas para usuarios globales"
+        "title": "Habla Tu Idioma",
+        "description": "Nueve idiomas. Misma experiencia cuidadosa en todos."
       }
     ]
   },
   "screenshots": {
-    "title": "Vista Previa de la Interfaz",
-    "home1": "Interfaz Principal de la Extensión",
-    "home1_desc": "Popup de extensión limpio e intuitivo con diseño funcional claro",
-    "home2": "Soporte de Operaciones por Lotes",
-    "home2_desc": "Soporta operaciones por lotes en múltiples URLs para mejorar la eficiencia del trabajo",
-    "home3": "Opciones de Configuración Ricas",
-    "home3_desc": "Personaliza servicios de enlaces cortos, notificaciones, idioma de interfaz, temas y varias configuraciones",
-    "home4": "Plantillas y Parámetros URL Personalizados",
-    "home4_desc": "Crea plantillas de formato de copia personalizadas y configura reglas de parámetros URL para gestión inteligente"
+    "title": "Ve Por Ti Mismo",
+    "home1": "Interfaz Principal",
+    "home1_desc": "Limpia, obvia, lista. Todo lo que necesitas, nada que no necesites.",
+    "home2": "Operaciones por Lotes",
+    "home2_desc": "Procesa múltiples URLs de una vez. Porque el trabajo repetitivo no debe sentirse repetitivo.",
+    "home3": "Configuraciones Que Importan",
+    "home3_desc": "Personaliza enlaces cortos, temas, idiomas. Hazlo tuyo sin pensar demasiado.",
+    "home4": "Plantillas y Reglas",
+    "home4_desc": "Construye tu formato perfecto de URL. Define tus reglas de filtrado. Luego olvídalas."
   },
   "download": {
-    "title": "Descargar Ahora",
-    "subtitle": "Gratuito, código abierto y confiable",
+    "title": "Comienza Ahora",
+    "subtitle": "Gratis, código abierto y hecho con cuidado.",
     "chrome_store": "Chrome Web Store",
-    "chrome_store_desc": "Instalar desde la tienda oficial, seguro y confiable",
-    "edge_store": "Edge Add-ons Store",
-    "edge_store_desc": "Para usuarios del navegador Microsoft Edge",
-    "install_guide": "Guía de Instalación",
+    "chrome_store_desc": "Instalación con un clic. Seguro y verificado.",
+    "edge_store": "Edge Add-ons",
+    "edge_store_desc": "Misma experiencia en Microsoft Edge.",
+    "install_guide": "Cómo Instalar",
     "install_steps": [
-      "Instalar desde la tienda: Chrome Web Store o Edge Add-ons Store",
-      "O descargar paquete fuente para instalación manual",
-      "Abrir página de gestión de extensiones del navegador (Chrome: chrome://extensions/ o Edge: edge://extensions/)",
-      "Si usas paquete fuente, habilitar modo desarrollador y cargar extensión desempaquetada",
-      "¡Comenzar a usar Arclet Copier!"
+      "Visita Chrome Web Store o Edge Add-ons Store",
+      "O toma el código fuente para instalación manual",
+      "Abre la página de extensiones del navegador (chrome://extensions/ o edge://extensions/)",
+      "Para instalación de código: activa modo desarrollador, carga desempaquetado",
+      "Listo. Empieza a copiar URLs limpias."
     ],
     "install_now": "Instalar Ahora",
-    "download_source": "Descargar Código"
+    "download_source": "Obtener Código Fuente"
   },
   "faq": {
-    "title": "Preguntas Frecuentes",
-    "subtitle": "Todo lo que necesitas saber sobre Arclet Copier",
+    "title": "¿Preguntas?",
+    "subtitle": "Esto es lo que la gente suele preguntar.",
     "items": [
       {
-        "question": "¿Cómo instalo Arclet Copier?",
-        "answer": "Puedes instalar Arclet Copier con un clic desde Chrome Web Store o Edge Add-ons Store. Alternativamente, descarga el paquete de código fuente desde GitHub para instalación manual."
+        "question": "¿Cómo instalo esto?",
+        "answer": "Un clic en Chrome Web Store o Edge Add-ons. O descarga el código de GitHub si prefieres instalación manual. Toma 30 segundos de cualquier forma."
       },
       {
-        "question": "¿Qué es el filtrado inteligente de parámetros?",
-        "answer": "El filtrado inteligente de parámetros elimina inteligentemente parámetros de seguimiento (como UTM, Facebook, Google Analytics) mientras preserva parámetros funcionales necesarios para el funcionamiento adecuado de la página web."
+        "question": "¿Qué hace realmente la 'limpieza inteligente'?",
+        "answer": "Elimina basura de rastreo—etiquetas UTM, rastreadores de Facebook, parámetros de Google Analytics. Mantiene los parámetros que importan para que la página funcione. Automáticamente."
       },
       {
-        "question": "¿Puedo crear plantillas de copia personalizadas?",
-        "answer": "¡Sí! Arclet Copier soporta un sistema de plantillas poderoso con 11 campos de variables como {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}}, y más. Puedes crear formatos personalizados para diferentes casos de uso."
+        "question": "¿Puedo personalizar el formato de copia?",
+        "answer": "Absolutamente. Usa 11 campos de variables como {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}} para construir tu plantilla perfecta. Para Markdown, texto plano, lo que necesites."
       },
       {
         "question": "¿Cómo funciona la copia por lotes?",
-        "answer": "La función de lotes te permite seleccionar múltiples pestañas del navegador y copiar todas sus URLs de una vez. Puedes filtrar por alcance de ventana, eliminar duplicados y elegir entre múltiples formatos de exportación."
+        "answer": "Selecciona múltiples pestañas. Haz clic una vez. Recibe todas las URLs copiadas, filtradas y deduplicadas. Elige tu formato de exportación. Listo."
       },
       {
-        "question": "¿Es Arclet Copier gratuito?",
-        "answer": "Sí, Arclet Copier es completamente gratuito y de código abierto. Puedes usar todas las funciones sin ninguna limitación o suscripción."
+        "question": "¿Es gratis?",
+        "answer": "Sí. Gratis para siempre, código abierto, sin límites, sin suscripciones. Usa todo."
       },
       {
-        "question": "¿Qué navegadores son compatibles?",
-        "answer": "Arclet Copier funciona en Google Chrome, Microsoft Edge y otros navegadores basados en Chromium. Requiere soporte de Manifest V3."
+        "question": "¿Qué navegadores funcionan?",
+        "answer": "Chrome, Edge y cualquier navegador basado en Chromium con soporte Manifest V3. Si estás leyendo esto en uno de ellos, estás listo."
       },
       {
-        "question": "¿Cómo uso los atajos de teclado?",
-        "answer": "Usa Ctrl+Shift+C (Cmd+Shift+C en Mac) para copia silenciosa de URL. También puedes acceder a las funciones a través del menú contextual del clic derecho o el popup de la extensión."
+        "question": "¿Puedo usar atajos de teclado?",
+        "answer": "Ctrl+Shift+C (Cmd+Shift+C en Mac) para copia silenciosa. O clic derecho, o usa el popup. Lo que se ajuste a tu flujo."
       }
     ]
   },
   "footer": {
-    "description": "Arclet Copier es una extensión Chrome de código abierto",
+    "description": "Código abierto. Hecho con cuidado.",
     "quick_links": "Enlaces Rápidos",
-    "contact_us": "Contáctenos",
-    "privacy_policy": "Política de Privacidad",
-    "terms_of_service": "Términos de Servicio",
+    "contact_us": "Contacto",
+    "privacy_policy": "Privacidad",
+    "terms_of_service": "Términos",
     "links": {
       "github": "GitHub",
-      "website": "Sitio Web Oficial",
+      "website": "Website",
       "sitemap": "Mapa del Sitio"
     },
-    "developed_by": "Desarrollado por",
+    "developed_by": "Hecho por",
     "partners": "Socios"
   }
 }

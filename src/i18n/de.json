@@ -1,150 +1,150 @@
 {
   "meta": {
-    "title": "Arclet Copier - Chrome-Erweiterung zum schnellen Kopieren von URLs",
-    "description": "Eine leistungsstarke Chrome-Erweiterung zum schnellen Kopieren von URLs mit intelligenter Parameterfilterung, benutzerdefiniertem Vorlagensystem, Batch-Kopieren, Kurz-URL-Generierung und QR-Code-Generierung."
+    "title": "Arclet Copier - URLs neu gedacht",
+    "description": "URLs kopieren, wie es sein sollte – sauber, intelligent und mühelos. Kein Tracking-Chaos, keine manuelle Arbeit. Nur elegantes URL-Management für moderne Workflows."
   },
   "nav": {
     "features": "Funktionen",
-    "download": "Herunterladen",
+    "download": "Download",
     "faq": "FAQ",
     "github": "GitHub",
     "about": "Über"
   },
   "hero": {
-    "title": "Verabschieden Sie sich von Komplexität",
-    "subtitle": "URL-Freigabe elegant und effizient gestalten",
-    "description": "Keine manuelle Bereinigung von Tracking-Parametern, keine Sorgen über lange URLs. Intelligente Filterung, Batch-Verarbeitung und Kurz-URL-Generierung machen jede Freigabe sauber und professionell.",
-    "add_to_chrome": "Zu Chrome hinzufügen",
-    "add_to_edge": "Zu Edge hinzufügen",
-    "feature_1": "Intelligente Parameter-Bereinigung",
-    "feature_2": "Batch-Verarbeitung",
+    "title": "URLs sollten sauber sein",
+    "subtitle": "Kein Tracking. Kein Chaos. Nur der Link, den Sie teilen wollten.",
+    "description": "Großartige Tools lassen Sie nicht nachdenken – sie lösen Probleme leise. Intelligente Filterung entfernt das Rauschen. Batch-Verarbeitung spart Zeit. Jede URL, perfekt sauber.",
+    "add_to_chrome": "Zu Chrome",
+    "add_to_edge": "Zu Edge",
+    "feature_1": "Reinigt automatisch",
+    "feature_2": "Batch-fähig",
     "feature_3": "Kostenlos & Open Source"
   },
   "video": {
-    "title": "In Aktion sehen",
-    "description": "Sehen Sie sich diese kurze Demo an, um zu erfahren, wie Arclet Copier Ihren Workflow optimieren kann"
+    "title": "Live erleben",
+    "description": "Sehen Sie, wie Arclet Copier Ihren Workflow vereinfacht"
   },
   "features": {
-    "title": "Funktionen",
-    "subtitle": "Entwickelt für moderne Browser-Erfahrung",
+    "title": "Gebaut für Ihre Arbeitsweise",
+    "subtitle": "Jede Funktion dient einem Zweck. Nicht mehr, nicht weniger.",
     "items": [
       {
-        "title": "Ein-Klick-URL-Kopieren",
-        "description": "URLs schnell über Popup, Tastenkombinationen oder Kontextmenü kopieren"
+        "title": "Ein-Klick-Kopieren",
+        "description": "Popup, Tastenkürzel oder Rechtsklick. Wählen Sie, was sich natürlich anfühlt."
       },
       {
-        "title": "Intelligente Parameterreinigung",
-        "description": "Entfernt automatisch Tracking-Parameter und behält funktionale Parameter"
+        "title": "Intelligente Reinigung",
+        "description": "Entfernt Tracking-Müll. Behält das Wesentliche. Automatisch."
       },
       {
-        "title": "Benutzerdefinierte Parameterregeln",
-        "description": "Definieren Sie Ihre eigenen Regeln für zu behaltende oder zu entfernende Parameter"
+        "title": "Ihre Regeln",
+        "description": "Definieren Sie genau, welche Parameter bleiben und welche gehen."
       },
       {
-        "title": "Benutzerdefiniertes Vorlagensystem",
-        "description": "Erstellen Sie personalisierte Kopierformate mit flexiblen Variablenfeldern"
+        "title": "Eigene Vorlagen",
+        "description": "Formatieren Sie URLs nach Ihrem Stil mit flexiblen Variablen."
       },
       {
-        "title": "Batch-Kopier-Funktion",
-        "description": "Kopieren Sie mehrere URLs auf einmal mit Filterung und Deduplizierung"
+        "title": "Batch-Operationen",
+        "description": "Dutzende URLs auf einmal. Filtern, deduplizieren, fertig."
       },
       {
-        "title": "Kurz-URL-Generierung",
-        "description": "Generieren Sie verkürzte URLs für einfaches Teilen"
+        "title": "Kurz-Links",
+        "description": "Lange URLs sofort in handliche Short-Links verwandeln."
       },
       {
-        "title": "QR-Code-Generierung",
-        "description": "QR-Codes für URLs erstellen"
+        "title": "QR-Codes",
+        "description": "Scannbare Codes für nahtloses mobiles Teilen generieren."
       },
       {
-        "title": "Modernes Design",
-        "description": "Schöne Benutzeroberfläche mit hellem, dunklem und automatischem Modus"
+        "title": "Durchdachtes Design",
+        "description": "Hell, dunkel oder automatisch. Schönheit, die sich anpasst."
       },
       {
-        "title": "Tastenkürzel-Unterstützung",
-        "description": "Schneller Zugriff über anpassbare Tastenkombinationen"
+        "title": "Tastatur zuerst",
+        "description": "Shortcuts, die zu Ihrem Muskelgedächtnis passen."
       },
       {
-        "title": "Mehrsprachige Unterstützung",
-        "description": "Verfügbar in 9 Sprachen für globale Nutzer"
+        "title": "Spricht Ihre Sprache",
+        "description": "Neun Sprachen. Überall die gleiche durchdachte Erfahrung."
       }
     ]
   },
   "screenshots": {
-    "title": "Benutzeroberflächen-Vorschau",
-    "home1": "Haupt-Erweiterungsschnittstelle",
-    "home1_desc": "Sauberes und intuitives Erweiterungs-Popup mit klarem funktionalem Layout",
-    "home2": "Batch-Operationen-Unterstützung",
-    "home2_desc": "Unterstützt Batch-Operationen für mehrere URLs zur Verbesserung der Arbeitseffizienz",
-    "home3": "Umfangreiche Einstellungsoptionen",
-    "home3_desc": "Anpassung von Kurz-Link-Diensten, Benachrichtigungen, Oberflächensprache, Themen und verschiedene Konfigurationen",
-    "home4": "Benutzerdefinierte Vorlagen & URL-Parameter",
-    "home4_desc": "Erstellen Sie personalisierte Kopierformat-Vorlagen und konfigurieren Sie benutzerdefinierte URL-Parameterregeln für intelligentes Management"
+    "title": "Überzeugen Sie sich selbst",
+    "home1": "Hauptoberfläche",
+    "home1_desc": "Klar, offensichtlich, bereit. Alles was Sie brauchen, nichts was Sie nicht brauchen.",
+    "home2": "Batch-Operationen",
+    "home2_desc": "Mehrere URLs auf einmal. Weil sich wiederholende Arbeit nicht wiederholend anfühlen sollte.",
+    "home3": "Einstellungen, die zählen",
+    "home3_desc": "Passen Sie Short-Links, Themes, Sprachen an. Machen Sie es zu Ihrem, ohne nachzudenken.",
+    "home4": "Vorlagen & Regeln",
+    "home4_desc": "Bauen Sie Ihr perfektes URL-Format. Setzen Sie Ihre Filter-Regeln. Dann vergessen Sie sie."
   },
   "download": {
-    "title": "Jetzt herunterladen",
-    "subtitle": "Kostenlos zu verwenden, Open Source und vertrauenswürdig",
+    "title": "Loslegen",
+    "subtitle": "Kostenlos, Open Source, mit Sorgfalt gebaut.",
     "chrome_store": "Chrome Web Store",
-    "chrome_store_desc": "Installation aus dem offiziellen Store, sicher und zuverlässig",
-    "edge_store": "Edge Add-ons Store",
-    "edge_store_desc": "Für Microsoft Edge Browser-Benutzer",
-    "install_guide": "Installationsanleitung",
+    "chrome_store_desc": "Ein-Klick-Installation. Sicher und verifiziert.",
+    "edge_store": "Edge Add-ons",
+    "edge_store_desc": "Gleiche Erfahrung auf Microsoft Edge.",
+    "install_guide": "Installation",
     "install_steps": [
-      "Installation aus dem Store: Chrome Web Store oder Edge Add-ons Store",
-      "Oder Quellpaket für manuelle Installation herunterladen",
-      "Browser-Erweiterungsverwaltungsseite öffnen (Chrome: chrome://extensions/ oder Edge: edge://extensions/)",
-      "Bei Verwendung des Quellpakets, Entwicklermodus aktivieren und entpackte Erweiterung laden",
-      "Beginnen Sie mit Arclet Copier!"
+      "Chrome Web Store oder Edge Add-ons Store besuchen",
+      "Oder Quellcode für manuelle Installation herunterladen",
+      "Erweiterungs-Seite öffnen (chrome://extensions/ oder edge://extensions/)",
+      "Bei Quellcode-Installation: Entwicklermodus aktivieren, entpackt laden",
+      "Bereit. Starten Sie mit sauberen URLs."
     ],
     "install_now": "Jetzt installieren",
-    "download_source": "Quellcode herunterladen"
+    "download_source": "Quellcode laden"
   },
   "faq": {
-    "title": "Häufig gestellte Fragen",
-    "subtitle": "Alles, was Sie über Arclet Copier wissen müssen",
+    "title": "Fragen?",
+    "subtitle": "Das wird meist gefragt.",
     "items": [
       {
-        "question": "Wie installiere ich Arclet Copier?",
-        "answer": "Sie können Arclet Copier mit einem Klick aus dem Chrome Web Store oder Edge Add-ons Store installieren. Alternativ laden Sie das Quellpaket von GitHub für die manuelle Installation herunter."
+        "question": "Wie installiere ich das?",
+        "answer": "Ein Klick aus Chrome Web Store oder Edge Add-ons. Oder laden Sie den Quellcode von GitHub für manuelle Installation. Dauert so oder so 30 Sekunden."
       },
       {
-        "question": "Was ist intelligente Parameterfilterung?",
-        "answer": "Die intelligente Parameterfilterung entfernt intelligent Tracking-Parameter (wie UTM, Facebook, Google Analytics) und bewahrt dabei funktionale Parameter, die für das ordnungsgemäße Funktionieren der Webseite erforderlich sind."
+        "question": "Was macht 'intelligente Reinigung' eigentlich?",
+        "answer": "Entfernt Tracking-Müll – UTM-Tags, Facebook-Tracker, Google-Analytics-Parameter. Behält die Parameter, die die Seite braucht. Automatisch."
       },
       {
-        "question": "Kann ich benutzerdefinierte Kopiervorlagen erstellen?",
-        "answer": "Ja! Arclet Copier unterstützt ein leistungsstarkes Vorlagensystem mit 11 Variablenfeldern wie {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}} und mehr. Sie können personalisierte Formate für verschiedene Anwendungsfälle erstellen."
+        "question": "Kann ich das Kopierformat anpassen?",
+        "answer": "Absolut. Nutzen Sie 11 Variablenfelder wie {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}}, um Ihre perfekte Vorlage zu bauen. Für Markdown, Klartext, was auch immer Sie brauchen."
       },
       {
-        "question": "Wie funktioniert das Batch-Kopieren?",
-        "answer": "Die Batch-Funktion ermöglicht es Ihnen, mehrere Browser-Tabs auszuwählen und alle ihre URLs auf einmal zu kopieren. Sie können nach Fensterbereich filtern, Duplikate entfernen und aus mehreren Exportformaten wählen."
+        "question": "Wie funktioniert Batch-Kopieren?",
+        "answer": "Mehrere Tabs auswählen. Einmal klicken. Alle URLs kopiert, gefiltert und dedupliziert. Exportformat wählen. Fertig."
       },
       {
-        "question": "Ist Arclet Copier kostenlos zu verwenden?",
-        "answer": "Ja, Arclet Copier ist vollständig kostenlos und Open Source. Sie können alle Funktionen ohne Einschränkungen oder Abonnements nutzen."
+        "question": "Ist das kostenlos?",
+        "answer": "Ja. Für immer kostenlos, Open Source, keine Limits, keine Abos. Nutzen Sie alles."
       },
       {
-        "question": "Welche Browser werden unterstützt?",
-        "answer": "Arclet Copier funktioniert mit Google Chrome, Microsoft Edge und anderen Chromium-basierten Browsern. Es erfordert Manifest V3-Unterstützung."
+        "question": "Welche Browser funktionieren?",
+        "answer": "Chrome, Edge und alle Chromium-Browser mit Manifest-V3-Support. Wenn Sie das hier auf einem davon lesen, passt's."
       },
       {
-        "question": "Wie verwende ich Tastenkürzel?",
-        "answer": "Verwenden Sie Strg+Umschalt+C (Cmd+Umschalt+C auf Mac) für stilles URL-Kopieren. Sie können auch über das Rechtsklick-Kontextmenü oder das Erweiterungs-Popup auf Funktionen zugreifen."
+        "question": "Kann ich Tastenkürzel nutzen?",
+        "answer": "Strg+Shift+C (Cmd+Shift+C auf Mac) für stilles Kopieren. Oder Rechtsklick, oder das Popup. Was zu Ihrem Flow passt."
       }
     ]
   },
   "footer": {
-    "description": "Arclet Copier ist eine Open-Source-Chrome-Erweiterung",
-    "quick_links": "Schnelle Links",
+    "description": "Open Source. Mit Sorgfalt gebaut.",
+    "quick_links": "Quick Links",
     "contact_us": "Kontakt",
-    "privacy_policy": "Datenschutzrichtlinie",
-    "terms_of_service": "Nutzungsbedingungen",
+    "privacy_policy": "Datenschutz",
+    "terms_of_service": "Bedingungen",
     "links": {
       "github": "GitHub",
-      "website": "Offizielle Website",
+      "website": "Website",
       "sitemap": "Sitemap"
     },
-    "developed_by": "Entwickelt von",
+    "developed_by": "Gemacht von",
     "partners": "Partner"
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Arclet Copier - Quick URL Copy Chrome Extension",
-    "description": "A powerful Chrome extension for quick URL copying with smart parameter filtering, custom template system, batch copying, short URL generation, and QR code generation."
+    "title": "Arclet Copier - URL Copying Reimagined",
+    "description": "Copy URLs the way they should be—clean, smart, and effortless. No tracking clutter, no manual work. Just elegant URL management for modern workflows."
   },
   "nav": {
     "features": "Features",
@@ -11,13 +11,13 @@
     "about": "About"
   },
   "hero": {
-    "title": "Say Goodbye to Complexity",
-    "subtitle": "Make URL Sharing Elegant and Efficient",
-    "description": "No need to manually clean tracking parameters, no worries about long URLs. Smart filtering, batch processing, and short URL generation make every share clean and professional.",
+    "title": "URLs Should Be Clean",
+    "subtitle": "No tracking. No clutter. Just the link you meant to share.",
+    "description": "Great tools don't make you think—they quietly solve problems. Smart filtering removes the noise. Batch processing saves your time. Every URL, perfectly clean.",
     "add_to_chrome": "Add to Chrome",
     "add_to_edge": "Add to Edge",
-    "feature_1": "Smart Parameter Cleaning",
-    "feature_2": "Batch Processing",
+    "feature_1": "Cleans Automatically",
+    "feature_2": "Works in Batches",
     "feature_3": "Free & Open Source"
   },
   "video": {
@@ -25,126 +25,126 @@
     "description": "Watch this quick demo to learn how Arclet Copier can streamline your workflow"
   },
   "features": {
-    "title": "Features",
-    "subtitle": "Designed for modern browsing experience",
+    "title": "Built for How You Work",
+    "subtitle": "Every feature serves a purpose. Nothing more, nothing less.",
     "items": [
       {
-        "title": "One-Click URL Copy",
-        "description": "Quickly copy URLs through popup, hotkeys, or context menu"
+        "title": "One-Click Copying",
+        "description": "Popup, hotkey, or right-click. Choose what feels natural."
       },
       {
-        "title": "Smart Parameter Cleaning",
-        "description": "Automatically remove tracking parameters while preserving functional ones"
+        "title": "Smart Cleaning",
+        "description": "Strips tracking junk. Keeps what matters. Automatically."
       },
       {
-        "title": "Custom Parameter Rules",
-        "description": "Define your own rules for which parameters to keep or remove"
+        "title": "Your Rules",
+        "description": "Define exactly which parameters stay and which go."
       },
       {
-        "title": "Custom Template System",
-        "description": "Create personalized copy formats with flexible variable fields"
+        "title": "Custom Templates",
+        "description": "Format URLs your way with flexible variables and patterns."
       },
       {
-        "title": "Batch Copy Feature",
-        "description": "Copy multiple URLs at once with filtering and deduplication"
+        "title": "Batch Operations",
+        "description": "Handle dozens of URLs at once. Filter, dedupe, done."
       },
       {
-        "title": "Short URL Generation",
-        "description": "Generate shortened URLs for easier sharing"
+        "title": "Short Links",
+        "description": "Turn long URLs into tidy short links instantly."
       },
       {
-        "title": "QR Code Generation",
-        "description": "Create QR codes for easy mobile access"
+        "title": "QR Codes",
+        "description": "Generate scannable codes for seamless mobile sharing."
       },
       {
-        "title": "Modern Theme",
-        "description": "Beautiful interface with light, dark, and auto modes"
+        "title": "Thoughtful Design",
+        "description": "Light, dark, or auto themes. Beauty that adapts to you."
       },
       {
-        "title": "Hotkey Support",
-        "description": "Fast access through customizable keyboard shortcuts"
+        "title": "Keyboard First",
+        "description": "Set shortcuts that match your muscle memory."
       },
       {
-        "title": "Multi-Language Support",
-        "description": "Available in 9 languages for global users"
+        "title": "Speaks Your Language",
+        "description": "Nine languages. Same thoughtful experience everywhere."
       }
     ]
   },
   "screenshots": {
-    "title": "Interface Preview",
-    "home1": "Extension Main Interface",
-    "home1_desc": "Clean and intuitive extension popup with clear functional layout",
-    "home2": "Batch Operations Support",
-    "home2_desc": "Support batch operations on multiple URLs to improve work efficiency",
-    "home3": "Rich Settings Options",
-    "home3_desc": "Customize short link services, notifications, interface language, themes and various configurations",
-    "home4": "Custom Templates & URL Parameters",
-    "home4_desc": "Create personalized copy format templates and configure custom URL parameter rules for intelligent management"
+    "title": "See for Yourself",
+    "home1": "Main Interface",
+    "home1_desc": "Clean, obvious, ready. Everything you need, nothing you don't.",
+    "home2": "Batch Operations",
+    "home2_desc": "Handle multiple URLs at once. Because repetitive work shouldn't feel repetitive.",
+    "home3": "Settings That Matter",
+    "home3_desc": "Customize short links, themes, languages. Make it yours without overthinking.",
+    "home4": "Templates & Rules",
+    "home4_desc": "Build your perfect URL format. Set your filtering rules. Then forget about them."
   },
   "download": {
-    "title": "Download Now",
-    "subtitle": "Free to use, open source and trustworthy",
+    "title": "Get Started",
+    "subtitle": "Free, open source, and built with care.",
     "chrome_store": "Chrome Web Store",
-    "chrome_store_desc": "Install from official store, safe and reliable",
-    "edge_store": "Edge Add-ons Store",
-    "edge_store_desc": "For Microsoft Edge browser users",
-    "install_guide": "Installation Guide",
+    "chrome_store_desc": "One-click install. Safe and verified.",
+    "edge_store": "Edge Add-ons",
+    "edge_store_desc": "Same experience on Microsoft Edge.",
+    "install_guide": "How to Install",
     "install_steps": [
-      "Install from store: Chrome Web Store or Edge Add-ons Store",
-      "Or download source package for manual installation",
-      "Open browser extension management page (Chrome: chrome://extensions/ or Edge: edge://extensions/)",
-      "If using source package, enable developer mode and load unpacked extension",
-      "Start using Arclet Copier!"
+      "Visit Chrome Web Store or Edge Add-ons Store",
+      "Or grab the source code for manual install",
+      "Open your browser extensions page (chrome://extensions/ or edge://extensions/)",
+      "For source install: enable developer mode, load unpacked",
+      "You're ready. Start copying clean URLs."
     ],
     "install_now": "Install Now",
-    "download_source": "Download Source"
+    "download_source": "Get Source Code"
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about Arclet Copier",
+    "title": "Questions?",
+    "subtitle": "Here's what people usually ask.",
     "items": [
       {
-        "question": "How do I install Arclet Copier?",
-        "answer": "You can install Arclet Copier from the Chrome Web Store or Edge Add-ons Store with one click. Alternatively, download the source package from GitHub for manual installation."
+        "question": "How do I install this?",
+        "answer": "One click from Chrome Web Store or Edge Add-ons. Or download the source from GitHub if you prefer manual installation. Takes 30 seconds either way."
       },
       {
-        "question": "What is smart parameter filtering?",
-        "answer": "Smart parameter filtering intelligently removes tracking parameters (like UTM, Facebook, Google Analytics) while preserving functional parameters that are necessary for the webpage to work properly."
+        "question": "What does 'smart cleaning' actually do?",
+        "answer": "It strips out tracking junk—UTM tags, Facebook trackers, Google Analytics parameters. Keeps the parameters that matter for the page to work. Automatically."
       },
       {
-        "question": "Can I create custom copy templates?",
-        "answer": "Yes! Arclet Copier supports a powerful template system with 11 variable fields including {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}}, and more. You can create personalized formats for different use cases."
+        "question": "Can I customize the copy format?",
+        "answer": "Absolutely. Use 11 variable fields like {{url}}, {{title}}, {{hostname}}, {{date}}, {{time}} to build your perfect template. For Markdown, plain text, whatever you need."
       },
       {
         "question": "How does batch copying work?",
-        "answer": "The batch feature allows you to select multiple browser tabs and copy all their URLs at once. You can filter by window scope, remove duplicates, and choose from multiple export formats."
+        "answer": "Select multiple tabs. Click once. Get all URLs copied, filtered, and deduplicated. Choose your export format. Done."
       },
       {
-        "question": "Is Arclet Copier free to use?",
-        "answer": "Yes, Arclet Copier is completely free and open source. You can use all features without any limitations or subscriptions."
+        "question": "Is this free?",
+        "answer": "Yes. Free forever, open source, no limits, no subscriptions. Use everything."
       },
       {
-        "question": "Which browsers are supported?",
-        "answer": "Arclet Copier works on Google Chrome, Microsoft Edge, and other Chromium-based browsers. It requires Manifest V3 support."
+        "question": "Which browsers work?",
+        "answer": "Chrome, Edge, and any Chromium-based browser with Manifest V3 support. If you're reading this on one of those, you're good."
       },
       {
-        "question": "How do I use keyboard shortcuts?",
-        "answer": "Use Ctrl+Shift+C (Cmd+Shift+C on Mac) for silent URL copying. You can also access features through right-click context menu or the extension popup."
+        "question": "Can I use keyboard shortcuts?",
+        "answer": "Ctrl+Shift+C (Cmd+Shift+C on Mac) for silent copying. Or right-click, or use the popup. Whatever matches your flow."
       }
     ]
   },
   "footer": {
-    "description": "Arclet Copier is an open source Chrome extension",
+    "description": "Open source. Built with care.",
     "quick_links": "Quick Links",
-    "contact_us": "Contact Us",
-    "privacy_policy": "Privacy Policy",
-    "terms_of_service": "Terms of Service",
+    "contact_us": "Contact",
+    "privacy_policy": "Privacy",
+    "terms_of_service": "Terms",
     "links": {
       "github": "GitHub",
-      "website": "Official Website",
+      "website": "Website",
       "sitemap": "Sitemap"
     },
-    "developed_by": "Developed by",
+    "developed_by": "Made by",
     "partners": "Partners"
   }
 }
