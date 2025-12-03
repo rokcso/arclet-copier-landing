@@ -139,6 +139,10 @@
       {
         "question": "Можно использовать горячие клавиши?",
         "answer": "Ctrl+Shift+C (Cmd+Shift+C на Mac) для тихого копирования. Или правый клик, или popup. Что подходит вашему workflow."
+      },
+      {
+        "question": "Как настроить горячие клавиши?",
+        "answer": "После установки расширения перейдите на chrome://extensions/shortcuts, найдите Arclet Copier и назначьте сочетание клавиш для тихого копирования, например Cmd+Shift+C (Ctrl+Shift+C в Windows)."
       }
     ]
   },

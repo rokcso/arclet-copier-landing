@@ -139,6 +139,10 @@
       {
         "question": "키보드 단축키를 사용할 수 있나요?",
         "answer": "Ctrl+Shift+C (Mac에서는 Cmd+Shift+C)로 무음 복사. 또는 우클릭이나 팝업 사용. 당신의 흐름에 맞는 걸로."
+      },
+      {
+        "question": "키보드 단축키를 어떻게 설정하나요?",
+        "answer": "확장 프로그램 설치 후 chrome://extensions/shortcuts를 방문하고 Arclet Copier를 찾아 무음 복사용 단축키를 할당하세요. 예를 들어 Cmd+Shift+C (Windows에서는 Ctrl+Shift+C)."
       }
     ]
   },

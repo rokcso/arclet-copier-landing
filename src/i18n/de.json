@@ -139,6 +139,10 @@
       {
         "question": "Kann ich Tastenkürzel nutzen?",
         "answer": "Strg+Shift+C (Cmd+Shift+C auf Mac) für stilles Kopieren. Oder Rechtsklick, oder das Popup. Was zu Ihrem Flow passt."
+      },
+      {
+        "question": "Wie konfiguriere ich Tastenkürzel?",
+        "answer": "Nach der Installation besuchen Sie chrome://extensions/shortcuts, finden Sie Arclet Copier und weisen Sie eine Tastenkombination für stilles Kopieren zu, z.B. Cmd+Shift+C (Strg+Shift+C unter Windows)."
       }
     ]
   },

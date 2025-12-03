@@ -139,6 +139,10 @@
       {
         "question": "Can I use keyboard shortcuts?",
         "answer": "Ctrl+Shift+C (Cmd+Shift+C on Mac) for silent copying. Or right-click, or use the popup. Whatever matches your flow."
+      },
+      {
+        "question": "How do I configure keyboard shortcuts?",
+        "answer": "After installing the extension, visit chrome://extensions/shortcuts, find Arclet Copier, and assign a shortcut for silent copying, such as Cmd+Shift+C (Ctrl+Shift+C on Windows)."
       }
     ]
   },

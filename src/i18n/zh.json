@@ -142,6 +142,10 @@
       {
         "question": "可以用键盘快捷键吗？",
         "answer": "Ctrl+Shift+C（Mac 上 Cmd+Shift+C）静默复制。或右键，或用弹窗。适配你的习惯。"
+      },
+      {
+        "question": "如何配置快捷键？",
+        "answer": "安装扩展程序后，访问 chrome://extensions/shortcuts，找到 Arclet Copier，为静默复制分配一个快捷键，比如 Cmd+Shift+C（Windows 上是 Ctrl+Shift+C）。"
       }
     ]
   },

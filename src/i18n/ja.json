@@ -139,6 +139,10 @@
       {
         "question": "キーボードショートカットは使える?",
         "answer": "Ctrl+Shift+C（MacではCmd+Shift+C）でサイレントコピー。または右クリックかポップアップで。あなたの流れに合った方法で。"
+      },
+      {
+        "question": "キーボードショートカットを設定するには?",
+        "answer": "拡張機能をインストールした後、chrome://extensions/shortcutsにアクセスし、Arclet Copierを見つけて、サイレントコピー用のショートカットを割り当てます。例えばCmd+Shift+C（WindowsではCtrl+Shift+C）。"
       }
     ]
   },

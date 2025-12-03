@@ -139,6 +139,10 @@
       {
         "question": "Puis-je utiliser des raccourcis clavier ?",
         "answer": "Ctrl+Shift+C (Cmd+Shift+C sur Mac) pour copie silencieuse. Ou clic droit, ou le popup. Ce qui correspond à votre flux."
+      },
+      {
+        "question": "Comment configurer les raccourcis clavier ?",
+        "answer": "Après avoir installé l'extension, visitez chrome://extensions/shortcuts, trouvez Arclet Copier et attribuez un raccourci pour la copie silencieuse, tel que Cmd+Shift+C (Ctrl+Shift+C sous Windows)."
       }
     ]
   },

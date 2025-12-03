@@ -139,6 +139,10 @@
       {
         "question": "Posso usar atalhos de teclado?",
         "answer": "Ctrl+Shift+C (Cmd+Shift+C no Mac) para cópia silenciosa. Ou clique direito, ou use o popup. O que combinar com seu fluxo."
+      },
+      {
+        "question": "Como configurar atalhos de teclado?",
+        "answer": "Após instalar a extensão, visite chrome://extensions/shortcuts, encontre Arclet Copier e atribua um atalho para cópia silenciosa, como Cmd+Shift+C (Ctrl+Shift+C no Windows)."
       }
     ]
   },
