@@ -11,12 +11,14 @@
     "about": "소개"
   },
   "hero": {
-    "title": "URL 빠른 복사",
-    "subtitle": "강력한 Chrome 확장 프로그램",
-    "description": "한 번의 클릭으로 현재 페이지 URL을 복사하세요. 스마트 매개변수 필터링, 사용자 정의 템플릿, 일괄 복사, 단축 URL 생성 및 QR 코드 생성을 지원합니다. 생산성을 향상시키세요.",
-    "download": "지금 다운로드",
-    "github": "소스 코드 보기",
-    "version": "현재 버전 v1.6.4"
+    "title": "복잡함에 작별을",
+    "subtitle": "URL 공유를 우아하고 효율적으로",
+    "description": "추적 매개변수를 수동으로 정리할 필요 없고, 긴 URL에 대해 걱정할 필요 없습니다. 스마트 필터링, 일괄 처리 및 단축 URL 생성으로 모든 공유를 깔끔하고 전문적으로 만듭니다.",
+    "add_to_chrome": "Chrome에 추가",
+    "add_to_edge": "Edge에 추가",
+    "feature_1": "스마트 매개변수 정리",
+    "feature_2": "일괄 처리",
+    "feature_3": "무료 및 오픈소스"
   },
   "video": {
     "title": "실제로 보기",

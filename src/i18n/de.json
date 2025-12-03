@@ -11,12 +11,14 @@
     "about": "Über"
   },
   "hero": {
-    "title": "Schnelles URL-Kopieren",
-    "subtitle": "Leistungsstarke Chrome-Erweiterung",
-    "description": "Kopieren Sie die aktuelle Seiten-URL mit einem Klick. Unterstützt intelligente Parameterfilterung, benutzerdefinierte Vorlagen, Batch-Kopieren, Kurz-URL-Generierung und QR-Code-Generierung. Steigern Sie Ihre Produktivität.",
-    "download": "Jetzt herunterladen",
-    "github": "Quellcode anzeigen",
-    "version": "Aktuelle Version v1.6.4"
+    "title": "Verabschieden Sie sich von Komplexität",
+    "subtitle": "URL-Freigabe elegant und effizient gestalten",
+    "description": "Keine manuelle Bereinigung von Tracking-Parametern, keine Sorgen über lange URLs. Intelligente Filterung, Batch-Verarbeitung und Kurz-URL-Generierung machen jede Freigabe sauber und professionell.",
+    "add_to_chrome": "Zu Chrome hinzufügen",
+    "add_to_edge": "Zu Edge hinzufügen",
+    "feature_1": "Intelligente Parameter-Bereinigung",
+    "feature_2": "Batch-Verarbeitung",
+    "feature_3": "Kostenlos & Open Source"
   },
   "video": {
     "title": "In Aktion sehen",

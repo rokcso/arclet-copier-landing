@@ -11,12 +11,14 @@
     "about": "About"
   },
   "hero": {
-    "title": "Quick URL Copy",
-    "subtitle": "Powerful Chrome Extension",
-    "description": "Copy current page URL with one click. Supports smart parameter filtering, custom templates, batch copying, short URL generation, and QR code generation. Boost your productivity.",
-    "download": "Download Now",
-    "github": "View Source",
-    "version": "Current Version v1.6.4"
+    "title": "Say Goodbye to Complexity",
+    "subtitle": "Make URL Sharing Elegant and Efficient",
+    "description": "No need to manually clean tracking parameters, no worries about long URLs. Smart filtering, batch processing, and short URL generation make every share clean and professional.",
+    "add_to_chrome": "Add to Chrome",
+    "add_to_edge": "Add to Edge",
+    "feature_1": "Smart Parameter Cleaning",
+    "feature_2": "Batch Processing",
+    "feature_3": "Free & Open Source"
   },
   "video": {
     "title": "See It In Action",

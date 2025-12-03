@@ -11,12 +11,14 @@
     "about": "Acerca de"
   },
   "hero": {
-    "title": "Copia Rápida de URL",
-    "subtitle": "Extensión Chrome Potente",
-    "description": "Copia la URL de la página actual con un clic. Soporta filtrado inteligente de parámetros, plantillas personalizadas, copia por lotes, generación de URLs cortas y códigos QR. Aumenta tu productividad.",
-    "download": "Descargar ahora",
-    "github": "Ver Código",
-    "version": "Versión Actual v1.6.4"
+    "title": "Diga adiós a la complejidad",
+    "subtitle": "Haga que compartir URLs sea elegante y eficiente",
+    "description": "No necesita limpiar manualmente los parámetros de seguimiento, no se preocupe por las URLs largas. Filtrado inteligente, procesamiento por lotes y generación de URLs cortas hacen que cada intercambio sea limpio y profesional.",
+    "add_to_chrome": "Añadir a Chrome",
+    "add_to_edge": "Añadir a Edge",
+    "feature_1": "Limpieza inteligente de parámetros",
+    "feature_2": "Procesamiento por lotes",
+    "feature_3": "Gratis y Código Abierto"
   },
   "video": {
     "title": "Ver en acción",

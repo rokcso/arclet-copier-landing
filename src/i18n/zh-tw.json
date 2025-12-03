@@ -11,12 +11,14 @@
     "about": "關於"
   },
   "hero": {
-    "title": "快速複製 URL",
-    "subtitle": "功能強大的 Chrome 擴充功能",
-    "description": "一鍵複製目前頁面 URL，支援智慧參數清理、自訂範本、批量複製、短鏈生成和 QR Code 生成。全面提升您的工作效率。",
-    "download": "立即下載",
-    "github": "檢視原始碼",
-    "version": "目前版本 v1.6.4"
+    "title": "告別繁瑣，一鍵複製",
+    "subtitle": "讓 URL 分享變得優雅而高效",
+    "description": "無需手動清理追蹤參數，無需擔心連結太長。智慧過濾、批次處理、短網址生成，讓每次分享都乾淨俐落。",
+    "add_to_chrome": "加到 Chrome",
+    "add_to_edge": "加到 Edge",
+    "feature_1": "智慧清理參數",
+    "feature_2": "批次快速處理",
+    "feature_3": "完全免費開源"
   },
   "video": {
     "title": "實際演示",
