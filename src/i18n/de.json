@@ -30,43 +30,43 @@
     "items": [
       {
         "title": "Ein-Klick-URL-Kopieren",
-        "description": "Unterstützt Popup-Klick, Tastenkürzel für stilles Kopieren und Rechtsklick-Menü-Zugriff"
+        "description": "URLs schnell über Popup, Tastenkombinationen oder Kontextmenü kopieren"
       },
       {
         "title": "Intelligente Parameterreinigung",
-        "description": "Drei Modi: Aus (alles behalten), Intelligent (entfernt nur Tracking-Parameter wie utm_*, fbclid, gclid, behält funktionale Parameter), Aggressiv (entfernt alles)"
+        "description": "Entfernt automatisch Tracking-Parameter und behält funktionale Parameter"
       },
       {
         "title": "Benutzerdefinierte Parameterregeln",
-        "description": "Unterstützt benutzerdefinierte Tracking- und Funktionsparameterlisten mit Hinzufügen, Löschen und Bearbeitungsfunktionen"
+        "description": "Definieren Sie Ihre eigenen Regeln für zu behaltende oder zu entfernende Parameter"
       },
       {
         "title": "Benutzerdefiniertes Vorlagensystem",
-        "description": "Erstellen Sie personalisierte Kopierformat-Vorlagen mit 11 Variablenfeldern (url, title, hostname, domain, shortUrl, author, description, date, time, timestamp, originalUrl), Echtzeitvorschau und Validierung"
+        "description": "Erstellen Sie personalisierte Kopierformate mit flexiblen Variablenfeldern"
       },
       {
         "title": "Batch-Kopier-Funktion",
-        "description": "Multi-Fenster-Tab-Auswahl mit Fensterbereichsfilter, Nur-Webseiten-Option, Duplikaterkennung, Vorschau vor dem Kopieren und mehreren Exportformaten"
+        "description": "Kopieren Sie mehrere URLs auf einmal mit Filterung und Deduplizierung"
       },
       {
         "title": "Kurz-URL-Generierung",
-        "description": "Unterstützt is.gd und TinyURL-Dienste mit Caching-Mechanismus und gleichzeitigen Limits"
+        "description": "Generieren Sie verkürzte URLs für einfaches Teilen"
       },
       {
         "title": "QR-Code-Generierung",
-        "description": "Generiert QR-Codes für aktuelle Seiten-URLs, unterstützt das Kopieren von QR-Code-Bildern in die Zwischenablage"
+        "description": "QR-Codes für URLs erstellen"
       },
       {
         "title": "Modernes Design",
-        "description": "Arc-Stil-Design mit Auto/Hell/Dunkel-Modi und mehreren Themenfarben"
+        "description": "Schöne Benutzeroberfläche mit hellem, dunklem und automatischem Modus"
       },
       {
         "title": "Tastenkürzel-Unterstützung",
-        "description": "Strg+Umschalt+C stilles Kopieren, Rechtsklick-Menü, Popup Strg+C Schnellbedienung"
+        "description": "Schneller Zugriff über anpassbare Tastenkombinationen"
       },
       {
         "title": "Mehrsprachige Unterstützung",
-        "description": "Unterstützt 9 Sprachen: Chinesisch, Englisch, Japanisch, Deutsch, Französisch, Spanisch, etc."
+        "description": "Verfügbar in 9 Sprachen für globale Nutzer"
       }
     ]
   },

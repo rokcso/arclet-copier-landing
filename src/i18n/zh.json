@@ -30,43 +30,43 @@
     "items": [
       {
         "title": "一键复制 URL",
-        "description": "支持 popup 点击和快捷键静默复制，右键菜单快速访问"
+        "description": "通过弹窗、快捷键或右键菜单快速复制链接"
       },
       {
         "title": "智能参数清理",
-        "description": "三种模式：关闭(保留全部)、智能(仅移除 utm_*、fbclid、gclid 等跟踪参数，保留功能参数)、激进(移除全部)"
+        "description": "自动移除跟踪参数，同时保留功能性参数"
       },
       {
         "title": "自定义参数规则",
-        "description": "支持自定义跟踪参数和功能参数列表，可添加、删除、编辑参数规则"
+        "description": "自定义参数保留和过滤规则"
       },
       {
         "title": "自定义模板系统",
-        "description": "创建个性化复制格式模板，支持11种变量字段(url、title、hostname、domain、shortUrl、author、description、date、time、timestamp、originalUrl)，实时预览和模板验证"
+        "description": "创建个性化的复制格式模板"
       },
       {
         "title": "批量复制功能",
-        "description": "多窗口标签页选择，支持窗口范围过滤、仅网页选项、去重、复制前预览和多种导出格式"
+        "description": "一次性复制多个链接，支持过滤和去重"
       },
       {
         "title": "短链生成",
-        "description": "支持 is.gd 和 TinyURL 服务，带缓存机制和并发限制"
+        "description": "生成短链接，便于分享传播"
       },
       {
         "title": "二维码生成",
-        "description": "为当前页面URL生成二维码，支持复制二维码图片到剪贴板"
+        "description": "生成二维码，方便移动端访问"
       },
       {
         "title": "现代化主题",
-        "description": "Arc风格设计，自动/明亮/深色三种模式，多主题色彩可选"
+        "description": "精美界面，支持明亮、深色和自动模式"
       },
       {
         "title": "快捷键支持",
-        "description": "Ctrl+Shift+C静默复制，右键菜单，popup内Ctrl+C快速操作"
+        "description": "通过自定义快捷键快速访问功能"
       },
       {
         "title": "多语言支持",
-        "description": "支持9种语言：中文、英文、日文、德文、法文、西班牙文等"
+        "description": "支持9种语言，服务全球用户"
       }
     ]
   },

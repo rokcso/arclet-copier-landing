@@ -30,43 +30,43 @@
     "items": [
       {
         "title": "Cópia de URL com Um Clique",
-        "description": "Suporte a clique no popup, cópia silenciosa por atalho de teclado e acesso por menu de contexto"
+        "description": "Copie URLs rapidamente através de popup, atalhos de teclado ou menu de contexto"
       },
       {
         "title": "Limpeza Inteligente de Parâmetros",
-        "description": "Três modos: Desativado (manter tudo), Inteligente (remove apenas parâmetros de rastreamento como utm_*, fbclid, gclid, preserva parâmetros funcionais), Agressivo (remove tudo)"
+        "description": "Remove automaticamente parâmetros de rastreamento preservando os funcionais"
       },
       {
         "title": "Regras de Parâmetros Personalizadas",
-        "description": "Suporta listas personalizadas de parâmetros de rastreamento e funcionais com capacidades de adicionar, excluir e editar"
+        "description": "Defina suas próprias regras de parâmetros a manter ou remover"
       },
       {
         "title": "Sistema de Modelos Personalizados",
-        "description": "Crie modelos de formato de cópia personalizados com 11 campos de variáveis (url, title, hostname, domain, shortUrl, author, description, date, time, timestamp, originalUrl), visualização e validação em tempo real"
+        "description": "Crie formatos de cópia personalizados com campos variáveis flexíveis"
       },
       {
         "title": "Recurso de Cópia em Lote",
-        "description": "Seleção de abas multi-janelas com filtro de escopo de janela, opção apenas páginas web, desduplicação, visualização antes de copiar e múltiplos formatos de exportação"
+        "description": "Copie múltiplos URLs de uma vez com filtragem e desduplicação"
       },
       {
         "title": "Geração de URLs Curtas",
-        "description": "Suporte aos serviços is.gd e TinyURL com mecanismo de cache e limites concorrentes"
+        "description": "Gere URLs encurtados para compartilhamento fácil"
       },
       {
         "title": "Geração de Códigos QR",
-        "description": "Gera códigos QR para URLs de páginas atuais, suporte a cópia de imagens de códigos QR para a área de transferência"
+        "description": "Crie códigos QR para fácil acesso móvel"
       },
       {
         "title": "Tema Moderno",
-        "description": "Design estilo Arc com modos Auto/Claro/Escuro e múltiplas cores de tema"
+        "description": "Interface elegante com modos claro, escuro e automático"
       },
       {
         "title": "Suporte a Atalhos de Teclado",
-        "description": "Ctrl+Shift+C cópia silenciosa, menu de contexto, operação rápida Ctrl+C no popup"
+        "description": "Acesso rápido através de atalhos de teclado personalizáveis"
       },
       {
         "title": "Suporte Multilíngue",
-        "description": "Suporte a 9 idiomas: chinês, inglês, japonês, alemão, francês, espanhol, português, etc."
+        "description": "Disponível em 9 idiomas para usuários globais"
       }
     ]
   },

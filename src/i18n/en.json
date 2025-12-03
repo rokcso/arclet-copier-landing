@@ -30,43 +30,43 @@
     "items": [
       {
         "title": "One-Click URL Copy",
-        "description": "Support popup click, hotkey silent copy, and right-click menu access"
+        "description": "Quickly copy URLs through popup, hotkeys, or context menu"
       },
       {
         "title": "Smart Parameter Cleaning",
-        "description": "Three modes: Off (keep all), Smart (removes tracking params like utm_*, fbclid, gclid while preserving functional params), Aggressive (removes all)"
+        "description": "Automatically remove tracking parameters while preserving functional ones"
       },
       {
         "title": "Custom Parameter Rules",
-        "description": "Support custom tracking and functional parameter lists with add, delete, and edit capabilities"
+        "description": "Define your own rules for which parameters to keep or remove"
       },
       {
         "title": "Custom Template System",
-        "description": "Create personalized copy format templates with 11 variable fields (url, title, hostname, domain, shortUrl, author, description, date, time, timestamp, originalUrl), real-time preview and validation"
+        "description": "Create personalized copy formats with flexible variable fields"
       },
       {
         "title": "Batch Copy Feature",
-        "description": "Multi-window tab selection with window scope filter, web pages only option, deduplication, preview before copying, and multiple export formats"
+        "description": "Copy multiple URLs at once with filtering and deduplication"
       },
       {
         "title": "Short URL Generation",
-        "description": "Support is.gd and TinyURL services with caching mechanism and concurrent limits"
+        "description": "Generate shortened URLs for easier sharing"
       },
       {
         "title": "QR Code Generation",
-        "description": "Generate QR codes for current page URLs, support copying QR code images to clipboard"
+        "description": "Create QR codes for easy mobile access"
       },
       {
         "title": "Modern Theme",
-        "description": "Arc-style design with Auto/Light/Dark modes and multiple theme colors"
+        "description": "Beautiful interface with light, dark, and auto modes"
       },
       {
         "title": "Hotkey Support",
-        "description": "Ctrl+Shift+C silent copy, right-click menu, popup Ctrl+C quick operation"
+        "description": "Fast access through customizable keyboard shortcuts"
       },
       {
         "title": "Multi-Language Support",
-        "description": "Support 9 languages: Chinese, English, Japanese, German, French, Spanish, etc."
+        "description": "Available in 9 languages for global users"
       }
     ]
   },

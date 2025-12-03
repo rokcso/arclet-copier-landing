@@ -30,43 +30,43 @@
     "items": [
       {
         "title": "원클릭 URL 복사",
-        "description": "팝업 클릭, 단축키 무음 복사 및 우클릭 메뉴 액세스 지원"
+        "description": "팝업, 단축키 또는 컨텍스트 메뉴를 통해 빠르게 복사"
       },
       {
         "title": "스마트 매개변수 정리",
-        "description": "세 가지 모드: 끄기(모두 유지), 스마트(utm_*, fbclid, gclid 등 추적 매개변수만 제거, 기능 매개변수는 유지), 공격적(모두 제거)"
+        "description": "추적 매개변수를 자동으로 제거하고 기능 매개변수는 유지"
       },
       {
         "title": "사용자 정의 매개변수 규칙",
-        "description": "추가, 삭제, 편집 기능을 갖춘 사용자 정의 추적 및 기능 매개변수 목록 지원"
+        "description": "유지하거나 제거할 매개변수 규칙 정의"
       },
       {
         "title": "사용자 정의 템플릿 시스템",
-        "description": "11개의 변수 필드(url, title, hostname, domain, shortUrl, author, description, date, time, timestamp, originalUrl), 실시간 미리보기 및 검증 기능을 갖춘 개인화된 복사 형식 템플릿 생성"
+        "description": "유연한 변수 필드로 맞춤 복사 형식 생성"
       },
       {
         "title": "일괄 복사 기능",
-        "description": "다중 창 탭 선택, 창 범위 필터, 웹 페이지만 옵션, 중복 제거, 복사 전 미리보기 및 여러 내보내기 형식 지원"
+        "description": "필터링 및 중복 제거로 여러 URL을 한 번에 복사"
       },
       {
         "title": "단축 URL 생성",
-        "description": "캐싱 메커니즘과 동시 제한이 있는 is.gd 및 TinyURL 서비스 지원"
+        "description": "쉬운 공유를 위한 단축 URL 생성"
       },
       {
         "title": "QR 코드 생성",
-        "description": "현재 페이지 URL에 대한 QR 코드 생성, QR 코드 이미지를 클립보드에 복사 지원"
+        "description": "모바일 액세스를 위한 QR 코드 생성"
       },
       {
         "title": "모던 테마",
-        "description": "자동/밝게/어둡게 모드와 여러 테마 색상을 제공하는 Arc 스타일 디자인"
+        "description": "밝게, 어둡게, 자동 모드를 갖춘 아름다운 인터페이스"
       },
       {
         "title": "단축키 지원",
-        "description": "Ctrl+Shift+C 무음 복사, 우클릭 메뉴, 팝업에서 Ctrl+C 빠른 작업"
+        "description": "사용자 정의 가능한 키보드 단축키로 빠른 액세스"
       },
       {
         "title": "다국어 지원",
-        "description": "중국어, 영어, 일본어, 독일어, 프랑스어, 스페인어, 포르투갈어, 러시아어, 한국어 등 9개 언어 지원"
+        "description": "전 세계 사용자를 위한 9개 언어 지원"
       }
     ]
   },

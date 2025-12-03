@@ -30,43 +30,43 @@
     "items": [
       {
         "title": "一鍵複製 URL",
-        "description": "支援彈出視窗點擊和快捷鍵靜默複製，右鍵選單快速存取"
+        "description": "透過彈窗、快捷鍵或右鍵選單快速複製連結"
       },
       {
         "title": "智慧參數清理",
-        "description": "三種模式：關閉(保留全部)、智慧(僅移除 utm_*、fbclid、gclid 等追蹤參數，保留功能參數)、激進(移除全部)"
+        "description": "自動移除追蹤參數，同時保留功能性參數"
       },
       {
         "title": "自訂參數規則",
-        "description": "支援自訂追蹤與功能參數列表，可新增、刪除、編輯"
+        "description": "自訂參數保留和過濾規則"
       },
       {
         "title": "自訂範本系統",
-        "description": "建立個人化複製格式範本，支援11個變數欄位(url、title、hostname、domain、shortUrl、author、description、date、time、timestamp、originalUrl)，即時預覽和驗證"
+        "description": "建立個人化的複製格式範本"
       },
       {
         "title": "批量複製功能",
-        "description": "多視窗分頁選擇，支援視窗範圍篩選、僅網頁選項、去重、複製前預覽和多種匯出格式"
+        "description": "一次性複製多個連結，支援過濾和去重"
       },
       {
         "title": "短鏈生成",
-        "description": "支援 is.gd 和 TinyURL 服務，附快取機制和並行限制"
+        "description": "生成短連結，便於分享傳播"
       },
       {
         "title": "QR Code 生成",
-        "description": "為目前頁面 URL 生成 QR Code，支援複製 QR Code 圖片到剪貼簿"
+        "description": "生成 QR Code，方便行動裝置存取"
       },
       {
         "title": "現代化主題",
-        "description": "Arc 風格設計，自動/明亮/深色三種模式，多主題色彩可選"
+        "description": "精美介面，支援明亮、深色和自動模式"
       },
       {
         "title": "快捷鍵支援",
-        "description": "Ctrl+Shift+C 靜默複製，右鍵選單，彈出視窗內 Ctrl+C 快速操作"
+        "description": "透過自訂快捷鍵快速存取功能"
       },
       {
         "title": "多語言支援",
-        "description": "支援9種語言：中文、英文、日文、德文、法文、西班牙文等"
+        "description": "支援9種語言，服務全球使用者"
       }
     ]
   },
