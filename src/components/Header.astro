@@ -322,9 +322,6 @@ const currentLanguage = languageOptions.find(option => option.code === lang) || 
 ---
 
 <style>
-  .logo-rotate:hover {
-    transform: rotate(-360deg);
-  }
 
   .language-dropdown {
     position: relative;
@@ -363,9 +360,12 @@ const currentLanguage = languageOptions.find(option => option.code === lang) || 
     padding: 0.5rem 0.75rem;
     color: #64748b;
     text-decoration: none;
-    transition: background-color 0.15s ease;
     font-size: 0.875rem;
     cursor: pointer;
+  }
+
+  .language-option:hover {
+    background-color: #f1f5f9;
   }
 
   .language-option:first-child {
@@ -380,9 +380,6 @@ const currentLanguage = languageOptions.find(option => option.code === lang) || 
     border-radius: 0.5rem;
   }
 
-  .language-option:hover {
-    background-color: #f1f5f9;
-  }
 
   .language-option.active {
     background-color: #16a34a;
@@ -417,7 +414,7 @@ const currentLanguage = languageOptions.find(option => option.code === lang) || 
       <!-- Logo -->
       <a
         href={lang === 'en' ? '/' : `/${lang}`}
-        class="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200"
+        class="flex items-center space-x-3 hover:opacity-80"
       >
         <img
           src="/img/logo.webp"
@@ -433,19 +430,19 @@ const currentLanguage = languageOptions.find(option => option.code === lang) || 
         <div class="hidden md:flex items-center space-x-6">
           <a
             href={lang === 'en' ? '/#features' : `/${lang}#features`}
-            class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+            class="text-secondary-600 font-medium hover:text-primary-600"
           >
             {translate('nav.features')}
           </a>
           <a
             href={lang === 'en' ? '/#download' : `/${lang}#download`}
-            class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+            class="text-secondary-600 font-medium hover:text-primary-600"
           >
             {translate('nav.download')}
           </a>
           <a
             href={lang === 'en' ? '/#faq' : `/${lang}#faq`}
-            class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+            class="text-secondary-600 font-medium hover:text-primary-600"
           >
             {translate('nav.faq')}
           </a>
@@ -454,7 +451,7 @@ const currentLanguage = languageOptions.find(option => option.code === lang) || 
         <!-- Language Dropdown -->
         <div class="language-dropdown">
           <button
-            class="flex items-center space-x-2 px-3 py-2 bg-secondary-100 rounded-lg text-sm font-medium text-secondary-700 hover:bg-secondary-200 transition-all duration-200"
+            class="flex items-center space-x-2 px-3 py-2 bg-secondary-100 rounded-lg text-sm font-medium text-secondary-700 hover:bg-secondary-200"
             id="language-toggle"
           >
             <span class="flag">{currentLanguage.flag}</span>
@@ -509,19 +506,19 @@ const currentLanguage = languageOptions.find(option => option.code === lang) || 
       <div class="flex flex-col space-y-3 pt-4">
         <a
           href={lang === 'en' ? '/#features' : `/${lang}#features`}
-          class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+          class="text-secondary-600 font-medium"
         >
           {translate('nav.features')}
         </a>
         <a
           href={lang === 'en' ? '/#download' : `/${lang}#download`}
-          class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+          class="text-secondary-600 font-medium"
         >
           {translate('nav.download')}
         </a>
         <a
           href={lang === 'en' ? '/#faq' : `/${lang}#faq`}
-          class="text-secondary-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+          class="text-secondary-600 font-medium"
         >
           {translate('nav.faq')}
         </a>
