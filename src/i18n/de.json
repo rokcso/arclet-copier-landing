@@ -97,6 +97,10 @@
     "home4": "Vorlagen & Regeln",
     "home4_desc": "Bauen Sie Ihr perfektes URL-Format. Setzen Sie Ihre Filter-Regeln. Dann vergessen Sie sie."
   },
+  "quickCta": {
+    "chrome": "Aus Chrome Web Store installieren",
+    "edge": "Aus Edge Add-ons installieren"
+  },
   "download": {
     "title": "Loslegen",
     "subtitle": "Kostenlos, Open Source, mit Sorgfalt gebaut.",

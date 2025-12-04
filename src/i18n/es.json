@@ -97,6 +97,10 @@
     "home4": "Plantillas y Reglas",
     "home4_desc": "Construye tu formato perfecto de URL. Define tus reglas de filtrado. Luego olvídalas."
   },
+  "quickCta": {
+    "chrome": "Instalar desde Chrome Web Store",
+    "edge": "Instalar desde Edge Add-ons"
+  },
   "download": {
     "title": "Comienza Ahora",
     "subtitle": "Gratis, código abierto y hecho con cuidado.",

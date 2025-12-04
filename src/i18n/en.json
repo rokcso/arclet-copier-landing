@@ -97,6 +97,10 @@
     "home4": "Templates & Rules",
     "home4_desc": "Build your perfect URL format. Set your filtering rules. Then forget about them."
   },
+  "quickCta": {
+    "chrome": "Install from Chrome Store",
+    "edge": "Install from Edge Add-ons"
+  },
   "download": {
     "title": "Get Started",
     "subtitle": "Free, open source, and built with care.",

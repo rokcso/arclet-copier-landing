@@ -97,6 +97,10 @@
     "home4": "範本與規則",
     "home4_desc": "構建你的完美 URL 格式。設定過濾規則。然後忘掉它們。"
   },
+  "quickCta": {
+    "chrome": "從 Chrome 商店安裝",
+    "edge": "從 Edge 商店安裝"
+  },
   "download": {
     "title": "開始使用",
     "subtitle": "免費、開源、用心打造。",
