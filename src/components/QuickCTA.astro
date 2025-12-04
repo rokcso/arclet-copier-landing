@@ -17,7 +17,7 @@ const translate = t(lang);
       target="_blank"
       data-edge-text={translate('quickCta.edge')}
       class="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-primary-600 font-medium text-sm border-2 border-primary-600 rounded-lg shadow-soft hover:bg-primary-600 hover:text-white hover:shadow-soft-md transition-all duration-300 group"
-      onclick={`if (typeof umami !== 'undefined') { umami.track('quick_cta_click', { store: 'chrome', language: '${lang}', source: 'screenshots' }); }`}
+      onclick={`if (typeof umami !== 'undefined') { umami.track('download_click', { store: 'chrome', language: '${lang}', source: 'screenshots' }); }`}
     >
       <span id="quick-cta-text">{translate('quickCta.chrome')}</span>
       <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -61,7 +61,7 @@ const translate = t(lang);
 
       // Update analytics tracking
       ctaLink.setAttribute('onclick',
-        `if (typeof umami !== 'undefined') { umami.track('quick_cta_click', { store: 'edge', language: '${currentLang}', source: 'screenshots' }); }`
+        `if (typeof umami !== 'undefined') { umami.track('download_click', { store: 'edge', language: '${currentLang}', source: 'screenshots' }); }`
       );
     }
   });
