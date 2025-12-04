@@ -27,14 +27,16 @@ const translate = t(lang);
     >
       <!-- Chrome Web Store - Recommended -->
       <div class="relative">
-        <!-- Recommended Badge -->
+        <!-- Recommended Badge for Chrome (shown by default) -->
         <div
+          id="chrome-recommended-badge"
           class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-md z-10"
         >
           ⭐ {translate('download.recommended')}
         </div>
 
         <div
+          id="chrome-card"
           class="bg-white rounded-2xl p-8 text-center border-2 border-primary-600 shadow-lg flex flex-col min-h-[380px]"
         >
           <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -74,9 +76,19 @@ const translate = t(lang);
       </div>
 
       <!-- Microsoft Edge Add-ons Store -->
-      <div
-        class="bg-white rounded-2xl p-8 text-center border border-secondary-200 shadow-soft flex flex-col min-h-[380px]"
-      >
+      <div class="relative">
+        <!-- Recommended Badge for Edge (hidden by default) -->
+        <div
+          id="edge-recommended-badge"
+          class="hidden absolute -top-3 left-1/2 -translate-x-1/2 bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-md z-10"
+        >
+          ⭐ {translate('download.recommended')}
+        </div>
+
+        <div
+          id="edge-card"
+          class="bg-white rounded-2xl p-8 text-center border border-secondary-200 shadow-soft flex flex-col min-h-[380px]"
+        >
         <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
           <img
             src="/img/edge-logo.svg"
@@ -150,3 +162,38 @@ const translate = t(lang);
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const chromeRecommendedBadge = document.getElementById('chrome-recommended-badge');
+    const edgeRecommendedBadge = document.getElementById('edge-recommended-badge');
+    const chromeCard = document.getElementById('chrome-card');
+    const edgeCard = document.getElementById('edge-card');
+
+    // Detect browser
+    const userAgent = navigator.userAgent.toLowerCase();
+    const isEdge = userAgent.includes('edg/');
+
+    // Switch recommended badge based on browser
+    if (isEdge) {
+      // Hide Chrome badge, show Edge badge
+      if (chromeRecommendedBadge) {
+        chromeRecommendedBadge.classList.add('hidden');
+      }
+      if (edgeRecommendedBadge) {
+        edgeRecommendedBadge.classList.remove('hidden');
+      }
+
+      // Update card borders - Edge gets primary border, Chrome gets secondary
+      if (chromeCard) {
+        chromeCard.classList.remove('border-2', 'border-primary-600', 'shadow-lg');
+        chromeCard.classList.add('border', 'border-secondary-200', 'shadow-soft');
+      }
+      if (edgeCard) {
+        edgeCard.classList.remove('border', 'border-secondary-200', 'shadow-soft');
+        edgeCard.classList.add('border-2', 'border-primary-600', 'shadow-lg');
+      }
+    }
+    // Default is Chrome (already set in HTML)
+  });
+</script>

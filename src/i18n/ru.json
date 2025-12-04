@@ -20,12 +20,13 @@
     "feature_2": "Конфиденциальность прежде всего",
     "feature_3": "Свои форматы",
     "feature_4": "Бесплатно и открыто",
-    "cta_primary_chrome": "Установить бесплатно - 50 000+ пользователей",
-    "cta_primary_edge": "Установить бесплатно - 50 000+ пользователей",
-    "cta_secondary": "Смотреть демо (30с)",
-    "trust_verified": "Проверено Chrome",
-    "trust_opensource": "Открытый код",
-    "trust_rating": "4.8/5 (50+ отзывов)"
+    "cta_primary_chrome": "Установить бесплатно",
+    "cta_primary_edge": "Установить бесплатно",
+    "cta_secondary": "Посмотреть скриншоты",
+    "trust_verified": "Проверено в Chrome Web Store",
+    "trust_verified_edge": "Проверено в Edge Add-ons",
+    "trust_opensource": "Открытый ис��одный код на GitHub",
+    "trust_rating": "Конфиденциальность · Без рекламы"
   },
   "video": {
     "title": "Посмотрите в действии",
@@ -113,7 +114,7 @@
     ],
     "install_now": "Установить сейчас",
     "download_source": "Получить исходный код",
-    "recommended": "Самый популярный",
+    "recommended": "Рекомендуется",
     "cta_chrome": "Установить из Chrome Store",
     "cta_edge": "Установить из Edge Add-ons"
   },

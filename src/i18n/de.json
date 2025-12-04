@@ -20,12 +20,13 @@
     "feature_2": "Privatsphäre zuerst",
     "feature_3": "Eigene Formate",
     "feature_4": "Kostenlos & Open Source",
-    "cta_primary_chrome": "Kostenlos installieren - 50.000+ Nutzer",
-    "cta_primary_edge": "Kostenlos installieren - 50.000+ Nutzer",
-    "cta_secondary": "30s Demo ansehen",
-    "trust_verified": "Chrome-verifiziert",
-    "trust_opensource": "Open Source",
-    "trust_rating": "4.8/5 (50+ Bewertungen)"
+    "cta_primary_chrome": "Kostenlos installieren",
+    "cta_primary_edge": "Kostenlos installieren",
+    "cta_secondary": "Screenshots ansehen",
+    "trust_verified": "Im Chrome Web Store verifiziert",
+    "trust_verified_edge": "Verifiziert im Edge Add-ons Store",
+    "trust_opensource": "Open Source auf GitHub",
+    "trust_rating": "Datenschutzorientiert & werbefrei"
   },
   "video": {
     "title": "Live erleben",
@@ -113,7 +114,7 @@
     ],
     "install_now": "Jetzt installieren",
     "download_source": "Quellcode laden",
-    "recommended": "Am beliebtesten",
+    "recommended": "Empfohlen",
     "cta_chrome": "Vom Chrome Store installieren",
     "cta_edge": "Von Edge Add-ons installieren"
   },

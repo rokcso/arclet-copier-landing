@@ -20,12 +20,13 @@
     "feature_2": "隐私优先",
     "feature_3": "自定义格式",
     "feature_4": "免费开源",
-    "cta_primary_chrome": "免费安装 - 50,000+ 用户",
-    "cta_primary_edge": "免费安装 - 50,000+ 用户",
-    "cta_secondary": "观看 30 秒演示",
-    "trust_verified": "Chrome 官方认证",
-    "trust_opensource": "开源软件",
-    "trust_rating": "4.8/5 (50+ 评价)"
+    "cta_primary_chrome": "免费安装扩展",
+    "cta_primary_edge": "免费安装扩展",
+    "cta_secondary": "查看截图",
+    "trust_verified": "已在 Chrome 应用商店认证",
+    "trust_verified_edge": "已在 Edge 扩展商店认证",
+    "trust_opensource": "GitHub 开源项目",
+    "trust_rating": "注重隐私 · 无广告"
   },
   "video": {
     "title": "实际演示",
@@ -116,7 +117,7 @@
     "feishu_guide": "飞书下载",
     "feishu_guide_desc": "如果无法访问官方商店，可通过飞书下载",
     "view_guide": "立即下载",
-    "recommended": "最受欢迎",
+    "recommended": "推荐",
     "cta_chrome": "从 Chrome 商店安装",
     "cta_edge": "从 Edge 商店安装"
   },

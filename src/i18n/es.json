@@ -20,12 +20,13 @@
     "feature_2": "Privacidad Primero",
     "feature_3": "Formatos Personalizados",
     "feature_4": "Gratis & Open Source",
-    "cta_primary_chrome": "Instalar Gratis - 50,000+ usuarios",
-    "cta_primary_edge": "Instalar Gratis - 50,000+ usuarios",
-    "cta_secondary": "Ver Demo (30s)",
-    "trust_verified": "Verificado por Chrome",
-    "trust_opensource": "Código Abierto",
-    "trust_rating": "4.8/5 (50+ reseñas)"
+    "cta_primary_chrome": "Instalar Gratis",
+    "cta_primary_edge": "Instalar Gratis",
+    "cta_secondary": "Ver capturas",
+    "trust_verified": "Verificado en Chrome Web Store",
+    "trust_verified_edge": "Verificado en Edge Add-ons",
+    "trust_opensource": "Código Abierto en GitHub",
+    "trust_rating": "Enfocado en privacidad · Sin anuncios"
   },
   "video": {
     "title": "Míralo en Acción",
@@ -113,7 +114,7 @@
     ],
     "install_now": "Instalar Ahora",
     "download_source": "Obtener Código Fuente",
-    "recommended": "Más Popular",
+    "recommended": "Recomendado",
     "cta_chrome": "Instalar desde Chrome Store",
     "cta_edge": "Instalar desde Edge Add-ons"
   },

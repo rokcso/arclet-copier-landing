@@ -20,12 +20,13 @@
     "feature_2": "隱私優先",
     "feature_3": "自訂格式",
     "feature_4": "免費開源",
-    "cta_primary_chrome": "免費安裝 - 50,000+ 用戶",
-    "cta_primary_edge": "免費安裝 - 50,000+ 用戶",
-    "cta_secondary": "觀看 30 秒演示",
-    "trust_verified": "Chrome 官方認證",
-    "trust_opensource": "開源軟體",
-    "trust_rating": "4.8/5 (50+ 評價)"
+    "cta_primary_chrome": "免費安裝擴充功能",
+    "cta_primary_edge": "免費安裝擴充功能",
+    "cta_secondary": "查看截圖",
+    "trust_verified": "已在 Chrome 應用商店認證",
+    "trust_verified_edge": "已在 Edge 擴充功能商店認證",
+    "trust_opensource": "GitHub 開源專案",
+    "trust_rating": "注重隱私 · 無廣告"
   },
   "video": {
     "title": "實際演示",
@@ -113,7 +114,7 @@
     ],
     "install_now": "立即安裝",
     "download_source": "獲取原始碼",
-    "recommended": "最受歡迎",
+    "recommended": "推薦",
     "cta_chrome": "從 Chrome 商店安裝",
     "cta_edge": "從 Edge 商店安裝"
   },
