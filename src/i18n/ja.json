@@ -19,7 +19,13 @@
     "feature_1": "超高速",
     "feature_2": "プライバシー優先",
     "feature_3": "カスタム形式",
-    "feature_4": "無料オープンソース"
+    "feature_4": "無料オープンソース",
+    "cta_primary_chrome": "無料インストール - 50,000+ ユーザー",
+    "cta_primary_edge": "無料インストール - 50,000+ ユーザー",
+    "cta_secondary": "30秒デモを見る",
+    "trust_verified": "Chrome認証済み",
+    "trust_opensource": "オープンソース",
+    "trust_rating": "4.8/5 (50+ レビュー)"
   },
   "video": {
     "title": "実際の動作",
@@ -106,7 +112,10 @@
       "準備完了。きれいなURLのコピーを始めましょう。"
     ],
     "install_now": "今すぐインストール",
-    "download_source": "ソースコードを入手"
+    "download_source": "ソースコードを入手",
+    "recommended": "最も人気",
+    "cta_chrome": "Chrome ストアからインストール",
+    "cta_edge": "Edge アドオンからインストール"
   },
   "faq": {
     "title": "ご質問は?",

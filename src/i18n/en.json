@@ -16,10 +16,16 @@
     "description": "Great tools don't make you think—they quietly solve problems. Smart filtering removes the noise. Batch processing saves your time. Every URL, perfectly clean.",
     "add_to_chrome": "Add to Chrome",
     "add_to_edge": "Add to Edge",
+    "cta_primary_chrome": "Install Free - 50,000+ Users",
+    "cta_primary_edge": "Install Free - 50,000+ Users",
+    "cta_secondary": "Watch 30s Demo",
     "feature_1": "Lightning Fast",
     "feature_2": "Privacy First",
     "feature_3": "Custom Formats",
-    "feature_4": "Free & Open Source"
+    "feature_4": "Free & Open Source",
+    "trust_verified": "Chrome Verified",
+    "trust_opensource": "Open Source",
+    "trust_rating": "4.8/5 (50+ reviews)"
   },
   "video": {
     "title": "See It In Action",
@@ -93,10 +99,13 @@
   "download": {
     "title": "Get Started",
     "subtitle": "Free, open source, and built with care.",
+    "recommended": "Most Popular",
     "chrome_store": "Chrome Web Store",
     "chrome_store_desc": "One-click install. Safe and verified.",
+    "cta_chrome": "Install from Chrome Store",
     "edge_store": "Edge Add-ons",
     "edge_store_desc": "Same experience on Microsoft Edge.",
+    "cta_edge": "Install from Edge Add-ons",
     "install_guide": "How to Install",
     "install_steps": [
       "Visit Chrome Web Store or Edge Add-ons Store",

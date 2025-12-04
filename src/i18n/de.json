@@ -19,7 +19,13 @@
     "feature_1": "Blitzschnell",
     "feature_2": "Privatsphäre zuerst",
     "feature_3": "Eigene Formate",
-    "feature_4": "Kostenlos & Open Source"
+    "feature_4": "Kostenlos & Open Source",
+    "cta_primary_chrome": "Kostenlos installieren - 50.000+ Nutzer",
+    "cta_primary_edge": "Kostenlos installieren - 50.000+ Nutzer",
+    "cta_secondary": "30s Demo ansehen",
+    "trust_verified": "Chrome-verifiziert",
+    "trust_opensource": "Open Source",
+    "trust_rating": "4.8/5 (50+ Bewertungen)"
   },
   "video": {
     "title": "Live erleben",
@@ -106,7 +112,10 @@
       "Bereit. Starten Sie mit sauberen URLs."
     ],
     "install_now": "Jetzt installieren",
-    "download_source": "Quellcode laden"
+    "download_source": "Quellcode laden",
+    "recommended": "Am beliebtesten",
+    "cta_chrome": "Vom Chrome Store installieren",
+    "cta_edge": "Von Edge Add-ons installieren"
   },
   "faq": {
     "title": "Fragen?",

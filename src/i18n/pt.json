@@ -19,7 +19,13 @@
     "feature_1": "Ultra Rápido",
     "feature_2": "Privacidade Primeiro",
     "feature_3": "Formatos Personalizados",
-    "feature_4": "Gratuito & Open Source"
+    "feature_4": "Gratuito & Open Source",
+    "cta_primary_chrome": "Instalar Grátis - 50.000+ usuários",
+    "cta_primary_edge": "Instalar Grátis - 50.000+ usuários",
+    "cta_secondary": "Ver Demo (30s)",
+    "trust_verified": "Verificado pelo Chrome",
+    "trust_opensource": "Código Aberto",
+    "trust_rating": "4.8/5 (50+ avaliações)"
   },
   "video": {
     "title": "Veja em Ação",
@@ -106,7 +112,10 @@
       "Pronto. Comece a copiar URLs limpas."
     ],
     "install_now": "Instalar Agora",
-    "download_source": "Obter Código Fonte"
+    "download_source": "Obter Código Fonte",
+    "recommended": "Mais Popular",
+    "cta_chrome": "Instalar da Chrome Store",
+    "cta_edge": "Instalar do Edge Add-ons"
   },
   "faq": {
     "title": "Perguntas?",

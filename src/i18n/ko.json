@@ -19,7 +19,13 @@
     "feature_1": "초고속",
     "feature_2": "프라이버시 우선",
     "feature_3": "맞춤 형식",
-    "feature_4": "무료 오픈소스"
+    "feature_4": "무료 오픈소스",
+    "cta_primary_chrome": "무료 설치 - 50,000+ 사용자",
+    "cta_primary_edge": "무료 설치 - 50,000+ 사용자",
+    "cta_secondary": "30초 데모 보기",
+    "trust_verified": "Chrome 인증",
+    "trust_opensource": "오픈 소스",
+    "trust_rating": "4.8/5 (50+ 리뷰)"
   },
   "video": {
     "title": "실제 작동 모습",
@@ -106,7 +112,10 @@
       "준비 완료. 깨끗한 URL 복사를 시작하세요."
     ],
     "install_now": "지금 설치",
-    "download_source": "소스 코드 받기"
+    "download_source": "소스 코드 받기",
+    "recommended": "가장 인기있는",
+    "cta_chrome": "Chrome 스토어에서 설치",
+    "cta_edge": "Edge 추가 기능에서 설치"
   },
   "faq": {
     "title": "궁금하신가요?",

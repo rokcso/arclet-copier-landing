@@ -25,43 +25,52 @@ const translate = t(lang);
     <div
       class:list={`grid grid-cols-1 md:grid-cols-2 ${lang === 'zh' ? 'lg:grid-cols-3' : 'lg:grid-cols-2'} gap-8 mb-16`}
     >
-      <!-- Chrome Web Store -->
-      <div
-        class="bg-white rounded-2xl p-8 text-center border border-secondary-200 shadow-soft flex flex-col min-h-[380px]"
-      >
-        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
-          <img
-            src="/img/chrome-logo.svg"
-            alt="Google Chrome"
-            class="w-16 h-16"
-            width="64"
-            height="64"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
-        <h3 class="text-2xl font-semibold text-secondary-900 mb-3">
-          {translate('download.chrome_store')}
-        </h3>
-        <p class="text-secondary-600 mb-6">
-          {translate('download.chrome_store_desc')}
-        </p>
-        <a
-          href="https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil"
-          target="_blank"
-          class="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl shadow-soft mt-auto w-fit mx-auto hover:bg-primary-700"
-          onclick={`if (typeof umami !== 'undefined') { umami.track('download_click', { store: 'chrome', language: '${lang}', source: 'download' }); }`}
+      <!-- Chrome Web Store - Recommended -->
+      <div class="relative">
+        <!-- Recommended Badge -->
+        <div
+          class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-md z-10"
         >
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-            ></path>
-          </svg>
-          {translate('download.install_now')}
-        </a>
+          ⭐ {translate('download.recommended')}
+        </div>
+
+        <div
+          class="bg-white rounded-2xl p-8 text-center border-2 border-primary-600 shadow-lg flex flex-col min-h-[380px]"
+        >
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <img
+              src="/img/chrome-logo.svg"
+              alt="Google Chrome"
+              class="w-16 h-16"
+              width="64"
+              height="64"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h3 class="text-2xl font-semibold text-secondary-900 mb-3">
+            {translate('download.chrome_store')}
+          </h3>
+          <p class="text-secondary-600 mb-6">
+            {translate('download.chrome_store_desc')}
+          </p>
+          <a
+            href="https://chromewebstore.google.com/detail/mkflehheaokdfopijachhfdbofkppdil"
+            target="_blank"
+            class="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl shadow-soft mt-auto w-fit mx-auto hover:bg-primary-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+            onclick={`if (typeof umami !== 'undefined') { umami.track('download_click', { store: 'chrome', language: '${lang}', source: 'download' }); }`}
+          >
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-label="Download icon">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              ></path>
+            </svg>
+            {translate('download.cta_chrome')}
+          </a>
+        </div>
       </div>
 
       <!-- Microsoft Edge Add-ons Store -->
@@ -88,10 +97,10 @@ const translate = t(lang);
         <a
           href="https://microsoftedge.microsoft.com/addons/detail/flcemgbijffbmbgcmabmmjhankbegdgm"
           target="_blank"
-          class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow-soft mt-auto w-fit mx-auto hover:bg-blue-700"
+          class="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl shadow-soft mt-auto w-fit mx-auto hover:bg-primary-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
           onclick={`if (typeof umami !== 'undefined') { umami.track('download_click', { store: 'edge', language: '${lang}', source: 'download' }); }`}
         >
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-label="Download icon">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -99,15 +108,15 @@ const translate = t(lang);
               d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
             ></path>
           </svg>
-          {translate('download.install_now')}
+          {translate('download.cta_edge')}
         </a>
       </div>
 
       {
         lang === 'zh' && (
           <div class="bg-white rounded-2xl p-8 text-center border border-secondary-200 shadow-soft flex flex-col min-h-[380px]">
-            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-700 mx-auto mb-6">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center text-primary-700 mx-auto mb-6">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-label="Document icon">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -123,9 +132,9 @@ const translate = t(lang);
             <a
               href="https://thecoryso.feishu.cn/wiki/X551wqeDAiICrfkqoiacQxtNnme"
               target="_blank"
-              class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow-soft mt-auto w-fit mx-auto hover:bg-blue-700"
+              class="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl shadow-soft mt-auto w-fit mx-auto hover:bg-primary-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
             >
-              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-label="External link icon">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
