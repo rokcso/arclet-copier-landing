@@ -15,7 +15,27 @@ while (translate(`faq.items.${index}.question`) !== `faq.items.${index}.question
   faqItems.push(index);
   index++;
 }
+
+// Generate FAQ Schema data
+const faqSchemaItems = faqItems.map(index => ({
+  '@type': 'Question',
+  name: translate(`faq.items.${index}.question`),
+  acceptedAnswer: {
+    '@type': 'Answer',
+    text: translate(`faq.items.${index}.answer`).replace(/<[^>]*>/g, '') // Strip HTML tags for Schema
+  }
+}));
 ---
+
+<!-- FAQ Schema Markup -->
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqSchemaItems
+  })}
+/>
 
 <section id="faq" class="py-20 bg-white">
   <div class="max-w-4xl mx-auto px-6">
