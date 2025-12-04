@@ -22,9 +22,7 @@ const translate = t(lang);
     </div>
 
     <!-- Download Options -->
-    <div
-      class:list={`grid grid-cols-1 md:grid-cols-2 ${lang === 'zh' ? 'lg:grid-cols-3' : 'lg:grid-cols-2'} gap-8 mb-16`}
-    >
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
       <!-- Chrome Web Store - Recommended -->
       <div class="relative">
         <!-- Recommended Badge for Chrome (shown by default) -->
@@ -123,42 +121,6 @@ const translate = t(lang);
           {translate('download.cta_edge')}
         </a>
       </div>
-
-      {
-        lang === 'zh' && (
-          <div class="bg-white rounded-2xl p-8 text-center border border-secondary-200 shadow-soft flex flex-col min-h-[380px]">
-            <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center text-primary-700 mx-auto mb-6">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-label="Document icon">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-semibold text-secondary-900 mb-3">
-              {translate('download.feishu_guide')}
-            </h3>
-            <p class="text-secondary-600 mb-6">{translate('download.feishu_guide_desc')}</p>
-            <a
-              href="https://thecoryso.feishu.cn/wiki/X551wqeDAiICrfkqoiacQxtNnme"
-              target="_blank"
-              class="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl shadow-soft mt-auto w-fit mx-auto hover:bg-primary-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
-            >
-              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-label="External link icon">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                />
-              </svg>
-              {translate('download.view_guide')}
-            </a>
-          </div>
-        )
-      }
     </div>
   </div>
 </section>

@@ -114,9 +114,6 @@
     ],
     "install_now": "立即安装",
     "download_source": "获取源码",
-    "feishu_guide": "飞书下载",
-    "feishu_guide_desc": "如果无法访问官方商店，可通过飞书下载",
-    "view_guide": "立即下载",
     "recommended": "推荐",
     "cta_chrome": "从 Chrome 商店安装",
     "cta_edge": "从 Edge 商店安装"
