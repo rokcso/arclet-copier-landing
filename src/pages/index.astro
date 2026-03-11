@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import AnnouncementBanner from '../components/AnnouncementBanner.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Video from '../components/Video.astro';
@@ -19,6 +20,7 @@ const description = translate('meta.description');
 ---
 
 <Layout title={title} lang={lang} description={description}>
+  <AnnouncementBanner />
   <Header lang={lang} />
   <main>
     <Hero lang={lang} />
